@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0zb76bg" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="AsthmaSymptoms" name="Asthma Symptoms">
+    <decisionTable id="decisionTable_1">
+      <input id="InputClause_0o7jmrv" label="ContinuingSymptomsRisk" camunda:inputVariable="ContinuingSymptomsRisk.random">
+        <inputExpression id="LiteralExpression_10f25m2" typeRef="double">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="AsthmaSymptoms" name="AsthmaSymptoms" typeRef="boolean" />
+      <output id="OutputClause_051ewx0" label="SymptomsSeverity" name="SymptomsSeverity" typeRef="string" />
+      <rule id="DecisionRule_0ycnuf5">
+        <inputEntry id="UnaryTests_0ni03c0">
+          <text><![CDATA[> .9]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01dkpnq">
+          <text>True</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1mtmdoa">
+          <text><![CDATA["Severe"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tmrh6w">
+        <inputEntry id="UnaryTests_18897nn">
+          <text><![CDATA[> .8]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1m35pww">
+          <text>True</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1b3lre0">
+          <text><![CDATA["Moderate"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1aju1rd">
+        <inputEntry id="UnaryTests_1mez4uq">
+          <text><![CDATA[> 0.7]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0up2kqg">
+          <text>True</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_15p4yxi">
+          <text><![CDATA["Mild"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_004yzcw">
+        <inputEntry id="UnaryTests_1d23jdz">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1fygrux">
+          <text>False</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_15hr9x6">
+          <text><![CDATA["None"]]></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

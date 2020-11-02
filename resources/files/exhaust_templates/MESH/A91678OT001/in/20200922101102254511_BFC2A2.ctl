@@ -1,0 +1,26 @@
+<DTSControl>
+  <Version>1.0</Version>
+  <AddressType>ALL</AddressType>
+  <MessageType>Data</MessageType>
+  <From_DTS>NOWOT004</From_DTS>
+  <To_DTS>A91678OT001</To_DTS>
+  <From_ESMTP>nowot004@dts.nhs.uk</From_ESMTP>
+  <To_ESMTP>a91678ot001@dts.nhs.uk</To_ESMTP>
+  <Subject></Subject>
+  <LocalId>infAck-94f2fd95-9e16-4d59-ae4f-d72f73607d30</LocalId>
+  <DTSId>20200922101102254511_BFC2A2</DTSId>
+  <PartnerId></PartnerId>
+  <Compress>N</Compress>
+  <Encrypted>N</Encrypted>
+  <WorkflowId>TOC_FHIR_IP_DISCH_ACK</WorkflowId>
+  <ProcessId></ProcessId>
+  <DataChecksum></DataChecksum>
+  <IsCompressed>N</IsCompressed>
+  <StatusRecord>
+    <DateTime>20200922111102</DateTime>
+    <Event>TRANSFER</Event>
+    <Status>SUCCESS</Status>
+    <StatusCode>00</StatusCode>
+    <Description>Transferred to recipient mailbox</Description>
+  </StatusRecord>
+</DTSControl>

@@ -1,0 +1,32 @@
+ {"records":[{"key":"{{ item_id }}","value":{"resourceType": "Patient",
+          "id": "{{ item_id }}",
+          "active": true,
+          "identifier": [
+            {
+              "use": "usual",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR"
+                  }
+                ]
+              },
+              "system": "http://ramseysystems.co.uk",
+              "value": "{{ person.PersonID }}",
+              "assigner": {
+                "display": "CADE Simulation"
+              }
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "{{ person.Surname }}",
+              "given": [
+                "{{ person.GivenName }}"
+              ]
+            }
+          ],
+          "birthDate": "{{ person.DOB.strftime('%Y-%m-%d')  }}"
+        }}]}

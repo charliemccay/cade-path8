@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{% set inbundle = True %}
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="{{ person.This.id }}"/>
+	<meta>
+		<lastUpdated value="{{ person.This.date }}Z"/>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
+	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="{{ person.This.id }}"/>
+	</identifier>
+	<type value="message"/>
+
+	<entry>
+		<fullUrl value="urn:uuid:{{ person.This.id  }}"/>
+		<resource>
+			<MessageHeader>
+				<id value="{{ person.This.id  }}"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2"/>
+				</meta>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+					<extension url="BusAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="InfAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="RecipientType">
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1"/>
+							<code value="FA"/>
+							<display value="For Action"/>
+						</valueCoding>
+					</extension>
+					<extension url="MessageDefinition">
+					    <valueReference>
+					        <reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-NP-MessageDefinition-1"/>
+				        </valueReference>
+				    </extension>
+				    <extension url="SenderReference">
+					    <valueString value="None"/>
+				    </extension>
+				    <extension url="LocalExtension">
+					    <valueString value="None"/>
+				    </extension>
+				</extension>
+				<event>
+					<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+					<code value="ITK012M"/>
+					<display value="ITK National Pathology"/>
+				</event>
+				<receiver>
+					<reference value="urn:uuid:{{ person.Last.OrgRequesting.id }}"/>
+				</receiver>
+				<sender>
+					<reference value="urn:uuid:{{ person.Last.PerformingOrg.id }}"/>
+				</sender>
+				<timestamp value="{{ person.Last.Report.date }}Z"/>
+				<source>
+					<endpoint value="{{ person.PerformingOrg.Code }}"/>
+				</source>
+				<focus>
+					<reference value="urn:uuid:{{ person.Last.Report.id }}"/>
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<!--Provider from result-->
+	<entry>
+		<fullUrl value="urn:uuid:{{ person.Last.PerformingOrg.id }}"/>
+		<resource>
+        {% include "FHIR_XML_PerformingOrg.txt" %}
+		<!--Requesting Org-->
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:{{ person.Last.OrgRequesting.id }}"/>
+		<resource>
+			{% include "FHIR_XML_OrgRequesting.txt" %}
+		</resource>
+	</entry>
+	<!--Requesting Practitioner-->
+	<entry>
+		<fullUrl value="urn:uuid:{{ person.Last.RequestingHCP.id }}"/>
+		<resource>
+            {% include "FHIR_XML_RequestingHCP.txt" %}
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:{{ person.Last.PatientRcorded.id }}"/>
+		<resource>
+			 {% include "FHIR_XML_Patient.txt" %}
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:{{ person.Last.Request.id }}"/>
+		<resource>
+			 {% include "FHIR_XML_ProcedureRequest.txt" %}
+		</resource>
+	</entry>
+		<entry>
+		<fullUrl value="urn:uuid:{{ person.Last.Specimen.id }}"/>
+		<resource>
+			 {% include "FHIR_XML_Specimen.txt" %}
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:{{ person.Last.Report.id }}"/>
+		<resource>
+		   {% include "FHIR_XML_DiagnosticReport.txt" %}
+		</resource>
+	</entry>
+	<entry>
+	<fullUrl value="urn:uuid:{{ person.Last.obs.id }}"/>
+		<resource>
+			{% include "FHIR_XML_Observation.txt" %}
+		</resource>
+	</entry>
+</Bundle>
+

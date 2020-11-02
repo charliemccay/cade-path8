@@ -1,0 +1,35 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="a2d4ef5c-187d-44bc-943f-9754f39e76a0"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/19eb1c26-259b-4648-b3a8-ea8b8864f24c"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/9a680fa1-87ae-450a-93e7-7c24f609ff44"/>
+
+        <display value="Powell, Zachary"/>
+    </subject>
+    <issued value="2012-08-18T01:11:00Z"/>
+    <performer>
+        <actor>
+        <reference value="Organization/74113d9e-ea29-4faf-8723-b705854448d8"/>
+
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/27ac33c4-3103-4477-94c5-d71730d376ce"/>
+
+    </result>
+</DiagnosticReport>

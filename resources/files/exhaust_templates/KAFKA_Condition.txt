@@ -1,0 +1,19 @@
+ {"records":[{"key":"{{ item_id }}","value":{"resourceType": "Condition",
+  "id": "{{ item_id }}",
+  "clinicalStatus": "active",
+  "category": [{
+        "coding": [
+        {"system": "http://terminology.hl7.org/CodeSystem/condition-category", "code": "problem-list-item", "display": "Problem List Item"}]
+        }],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "{{ person.This.value[0] }}",
+        "display": "{{ person.This.value[1] }}"
+      }
+    ]
+  },
+  "subject": {"reference":  "Patient/{{ person.patient_id }}"},
+  "dateRecorded": "{{ activity_time }}"
+}}]}

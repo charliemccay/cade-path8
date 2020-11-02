@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_167l9m8" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_13nyxhf" name="Decision 1">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="AsthmaRelatedDeathRisk" camunda:inputVariable="AsthmaRelatedDeathRisk.random">
+        <inputExpression id="inputExpression_1" typeRef="boolean">
+          <text>AsthmaRelatedDeathRisk</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0wcupfy" label="GeneralRisk" camunda:inputVariable="GeneralRisk">
+        <inputExpression id="LiteralExpression_18bbexh" typeRef="double">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="AsthmaDeath" name="AsthmaDeath" typeRef="boolean" />
+      <rule id="DecisionRule_0a9kosw">
+        <inputEntry id="UnaryTests_0klhv86">
+          <text><![CDATA[< 0.5]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rh1e0p">
+          <text><![CDATA[> 0.9]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yw1c7l">
+          <text>True</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0a5e5af">
+        <inputEntry id="UnaryTests_1qb160s">
+          <text><![CDATA[< 0.5]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ny90v6">
+          <text><![CDATA[< 0.9]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03q4amq">
+          <text>False</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0vonp49">
+        <inputEntry id="UnaryTests_0z2mznr">
+          <text><![CDATA[>0.5]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vffk13">
+          <text><![CDATA[<1.0]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0qwg1ph">
+          <text>False</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

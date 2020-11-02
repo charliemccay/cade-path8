@@ -1,0 +1,45 @@
+{% from "FHIR_XML_Reference.txt" import reference with context -%}
+<Observation>
+    <id value="{{ person.Last.obs.id }}"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="{{ person.Last.obs.id }}"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="{{ person.obs.code }}"/>
+            <display value="{{ person.obs.DisplayName }}"/>
+        </coding>
+    </code>
+    <subject>
+        {{ reference("Patient", person.Last.PatientRcorded.id) }}
+        <display value="{{ person.Surname }}, {{ person.GivenName }}"/>
+    </subject>
+    <effectiveDateTime value="{{ person.Last.obs.date }}Z"/>
+    <performer>
+        {{ reference("Organization", person.Last.PerformingOrg.id) }}
+        <display value="{{ person.PerformingOrg.DisplayName }}"/>
+    </performer>
+    <valueQuantity>
+        <value value="{{ person.obs.value }}"/>
+        <unit value="{{ person.obs.unit }} as text"/>
+        <system value="{{ person.obs.system }}"/>
+        <code value="{{ person.obs.unit_code }}"/>
+    </valueQuantity>
+    <specimen>
+        {{ reference("Specimen", person.Last.Specimen.id) }}
+    </specimen>
+</Observation>

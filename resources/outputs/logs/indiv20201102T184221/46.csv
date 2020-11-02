@@ -1,0 +1,15 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+312,Path1,Initial_patient_GP_Visit,,,,1981-04-17T00:00:00
+312,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,1981-04-17T00:00:00
+313,Path1,patient_assessment,,,,1981-04-17T00:00:00
+314,Path1,test_request,,,,1981-04-17T00:49:00
+315,Path1,Specimen_check,,,,1981-04-17T00:49:00
+316,Path1,specimen_ready_for_test,,,,1981-04-17T00:49:00
+317,Path1,lab_test,,,,1981-04-17T00:49:00
+318,Path1,test_report,,,,1981-04-17T01:17:00
+319,Path1,send_report,,,,1981-04-17T01:17:00
+320,Path1,receive_report,,,,1981-04-17T01:17:00
+321,Path1,GP_checks_report,,,,1981-04-17T01:17:00
+322,Path1,inform_patient,,,,1981-04-17T01:17:00
+323,Path1,Finish,,,,1981-04-18T00:17:00
+324,Path1,Finish,,,,1981-04-18T00:17:00

@@ -1,0 +1,33 @@
+{% from "FHIR_XML_Reference.txt" import reference with context -%}
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="{{ person.Last.Report.id }}"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/{{ person.Last.Request.id }}"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        {{ reference("Patient", person.Last.PatientRcorded.id) }}
+        <display value="{{ person.Surname }}, {{ person.GivenName }}"/>
+    </subject>
+    <issued value="{{ person.Last.Report.date }}Z"/>
+    <performer>
+        <actor>
+        {{ reference("Organization", person.Last.PerformingOrg.id) }}
+        <display value="{{ person.PerformingOrg.DisplayName }}"/>
+        </actor>
+    </performer>
+    <result>
+        {{ reference("Observation", person.Last.obs.id) }}
+    </result>
+</DiagnosticReport>

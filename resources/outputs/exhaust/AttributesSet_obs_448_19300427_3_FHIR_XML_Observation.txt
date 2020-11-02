@@ -1,0 +1,47 @@
+<Observation>
+    <id value="dbd818f0-4590-4316-992d-56e5670b7679"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="dbd818f0-4590-4316-992d-56e5670b7679"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1000381000000105"/>
+            <display value="Se prostate specific Ag level"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/026cb3cc-31db-49df-973d-1ba1b336bc0b"/>
+
+        <display value="Nelson, Samantha"/>
+    </subject>
+    <effectiveDateTime value="1994-08-24T00:44:00Z"/>
+    <performer>
+        <reference value="Organization/89c67999-e8b6-46c8-a1f2-8af120119cb6"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="74"/>
+        <unit value="ug/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="ug/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/93fd8036-afd3-4d49-b8b3-b92430069c64"/>
+
+    </specimen>
+</Observation>

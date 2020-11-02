@@ -1,0 +1,41 @@
+GivenAttribute,GivenAttributeType,OfValue,Percentage,SetAttribute,SetAttributeType,ToValue
+Area,String,Abbey,1,School,String,Abbey School
+Area,String,Bagley,1,School,String,Bagley School
+Area,String,Battlefield,1,School,String,Battlefield School
+Area,String,Belle Vue,1,School,String,Belle Vue School
+Area,String,Bowbrook,1,School,String,Bowbrook School
+Area,String,Castlefields and Ditherington,0.5,School,String,Castlefields School
+Area,String,Castlefields and Ditherington,0.5,School,String,Ditherington School
+Area,String,Column,1,School,String,Column School
+Area,String,Copthorne,1,School,String,Copthorne School
+Area,String,Harlescott,1,School,String,Harlescott School
+Area,String,Meole,1,School,String,Meole School
+Area,String,Monkmoor,1,School,String,Monkmoor School
+Area,String,Porthill,1,School,String,Porthill School
+Area,String,Quarry and Coton Hill,0.4,School,String,Quarry School
+Area,String,Quarry and Coton Hill,0.6,School,String,Coton Hill School
+Area,String,Radbrook,1,School,String,Radbrook School
+Area,String,Sundorne,1,School,String,Sundorne School
+Area,String,Sutton and Reabrook,0.2,School,String,Sutton School
+Area,String,Sutton and Reabrook,0.8,School,String,Reabrook School
+Area,String,Underdale,1,School,String,Underdale School
+Area,String,Abbey,1,GP,String,Abbey GP
+Area,String,Bagley,1,GP,String,Bagely GP
+Area,String,Battlefield,1,GP,String,Battlefield GP
+Area,String,Belle Vue,1,GP,String,Belle Vue GP
+Area,String,Bowbrook,1,GP,String,Bowbrook GP
+Area,String,Castlefields and Ditherington,1,GP,String,Castlefields GP
+Area,String,Castlefields and Ditherington,1,GP,String,Ditherington GP
+Area,String,Column,1,GP,String,Column GP
+Area,String,Copthorne,1,GP,String,Copthorne GP
+Area,String,Harlescott,1,GP,String,Harlescott GP
+Area,String,Meole,1,GP,String,Meole GP
+Area,String,Monkmoor,1,GP,String,Monkmoor GP
+Area,String,Porthill,1,GP,String,Porthill GP
+Area,String,Quarry and Coton Hill,1,GP,String,Quarry GP
+Area,String,Quarry and Coton Hill,1,GP,String,Coton Hill GP
+Area,String,Radbrook,1,GP,String,Radbrook GP
+Area,String,Sundorne,1,GP,String,Sundorne GP
+Area,String,Sutton and Reabrook,1,GP,String,Sutton GP
+Area,String,Sutton and Reabrook,1,GP,String,Reabrook GP
+Area,String,Underdale,1,GP,String,Underdale GP

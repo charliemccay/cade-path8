@@ -1,0 +1,103 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="c7dd8a31-fcbb-11ea-aee5-2f0980d808f8"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
+	</meta>
+	<identifier>
+		<value value="c7dd8a32-fcbb-11ea-aee5-2f0980d808f8"/>
+	</identifier>
+	<type value="message"/>
+	<entry>
+		<fullUrl value="urn:uuid:c7dd8a33-fcbb-11ea-aee5-2f0980d808f8"/>
+		<resource>
+			<MessageHeader>
+				<id value="c7dd8a33-fcbb-11ea-aee5-2f0980d808f8"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2"/>
+				</meta>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+					<extension url="BusAckRequested">
+						<valueBoolean value="false"/>
+					</extension>
+					<extension url="InfAckRequested">
+						<valueBoolean value="false"/>
+					</extension>
+					<extension url="RecipientType">
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1"/>
+							<code value="FA"/>
+							<display value="For Action"/>
+						</valueCoding>
+					</extension>
+					<extension url="MessageDefinition">
+						<valueReference>
+							<reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-Response-MessageDefinition-1"/>
+						</valueReference>
+					</extension>
+					<extension url="SenderReference">
+						<valueString value="None"/>
+					</extension>
+					<extension url="LocalExtension">
+						<valueString value="None"/>
+					</extension>
+				</extension>
+				<event>
+					<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+					<code value="ITK008M"/>
+					<display value="ITK Response"/>
+				</event>
+				<sender>
+					<reference value="urn:uuid:c7dd8a30-fcbb-11ea-aee5-2f0980d808f8"/>
+				</sender>
+				<timestamp value="2020-09-22T10:10:03Z"/>
+				<source>
+					<endpoint value="urn:nhs-uk:addressing:ods:ITKTestHarness"/>
+				</source>
+				<response>
+					<identifier value="UNREADABLE-IN-ORIGINAL-MESSAGE"/>
+					<code value="fatal-error"/>
+					<details>
+						<reference value="urn:uuid:c7dd8a34-fcbb-11ea-aee5-2f0980d808f8"/>
+					</details>
+				</response>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c7dd8a30-fcbb-11ea-aee5-2f0980d808f8"/>
+		<resource>
+			<Practitioner>
+				<id value="c7dd8a30-fcbb-11ea-aee5-2f0980d808f8"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-Header-Practitioner-1"/>
+				</meta>
+				<name>
+					<family value="Harness"/>
+					<given value="ITK Test"/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:c7dd8a34-fcbb-11ea-aee5-2f0980d808f8"/>
+		<resource>
+			<OperationOutcome>
+				<id value="c7dd8a34-fcbb-11ea-aee5-2f0980d808f8"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Response-OperationOutcome-1"/>
+				</meta>
+				<issue>
+					<severity value="fatal"/>
+					<code value="processing"/>
+					<details>
+						<coding>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-ResponseCodes-1"/>
+							<code value="10009"/>
+							<display value="Unreadable message received"/>
+						</coding>
+					</details>
+				</issue>
+			</OperationOutcome>
+		</resource>
+	</entry>
+</Bundle>

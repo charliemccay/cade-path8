@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_15kazdw" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="DecideAsthmaDiagnosis" name="Decide Asthma Diagnosis">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="Asthmatic" camunda:inputVariable="Asthmatic">
+        <inputExpression id="inputExpression_1" typeRef="boolean">
+          <text>Asthmatic</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_082gcjh" label="SymptomSeverity" camunda:inputVariable="SymptomSeverity">
+        <inputExpression id="LiteralExpression_0c4g7fi" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="DiagnosedAsthma" name="DiagnosedAsthma" typeRef="boolean" />
+      <rule id="DecisionRule_1dvs2w8">
+        <inputEntry id="UnaryTests_0991915">
+          <text>True</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1e1autv">
+          <text><![CDATA["Severe"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1973v74">
+          <text>True</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1gz9f52">
+        <inputEntry id="UnaryTests_1w69zqc">
+          <text>True</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xuuoyn">
+          <text><![CDATA["Moderate"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0tf5hno">
+          <text>True</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07x3omx">
+        <inputEntry id="UnaryTests_059xpwl">
+          <text>False</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_002alkr">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1hq74uq">
+          <text>False</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

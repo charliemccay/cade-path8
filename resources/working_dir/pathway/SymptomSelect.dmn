@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1cn8o1k" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="SymptomSelect" name="SymptomSelect">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="AsthmaSeverity" camunda:inputVariable="AsthmaSeverity">
+        <inputExpression id="inputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="SymptomSeverity" name="SymptomSeverity" typeRef="string" />
+      <rule id="DecisionRule_13hrhzv">
+        <inputEntry id="UnaryTests_1qm9q1f">
+          <text><![CDATA['Severe']]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_082as8d">
+          <text><![CDATA['Severe']]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1bv7689">
+        <inputEntry id="UnaryTests_087xufd">
+          <text><![CDATA["Moderate"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17l6iw3">
+          <text><![CDATA['Moderate']]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0hm1sy2">
+        <inputEntry id="UnaryTests_0wqkzge">
+          <text><![CDATA["Mild"]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_19a36v2">
+          <text><![CDATA["Mild"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0c5y34s">
+        <inputEntry id="UnaryTests_0kyw5qb">
+          <text><![CDATA["Intermittent']]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0f9frdy">
+          <text><![CDATA['Mild']]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0faishr">
+        <inputEntry id="UnaryTests_0nvxmpb">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bffk7a">
+          <text><![CDATA["None"]]></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

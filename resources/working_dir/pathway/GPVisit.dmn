@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_04bwno6" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_13nyxhf" name="Decision 1">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="PersonID" camunda:inputVariable="PersonID">
+        <inputExpression id="inputExpression_1" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="Symptom" name="Symptom" typeRef="string" />
+      <rule id="DecisionRule_0rwoimp">
+        <inputEntry id="UnaryTests_1wa5v0e">
+          <text><![CDATA[<=10]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08kt05e">
+          <text><![CDATA["['3141-9','Weight Measured','27113001','Body weight',randint(54,120),'kg']"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_14cf9ws">
+        <inputEntry id="UnaryTests_1hnnlbr">
+          <text><![CDATA[>10]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0j5bzhs">
+          <text><![CDATA["'all the rest'"]]></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

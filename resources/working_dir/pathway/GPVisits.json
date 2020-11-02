@@ -1,0 +1,1 @@
+[{"states": {"Birth": {"type": "Initial", "direct_transition": "TimeBetweenGPVisit"}, "GPVisit": {"type": "Event", "steps": [{"type": "sub", "step": "AsthmaGPVisit"}], "direct_transition": "TimeBetweenGPVisit"}, "TimeBetweenGPVisit": {"type": "Delay", "exact": "{'quantity':randint(0,1200), 'unit':'days'}", "direct_transition": "GPVisit"}}}]

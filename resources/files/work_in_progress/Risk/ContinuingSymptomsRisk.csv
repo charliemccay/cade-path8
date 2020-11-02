@@ -1,0 +1,5 @@
+Name,ExpressionType,Constraint,Calculation,Weighting
+Asthma Severity,String,"[""High"", ""Moderate"", ""Mild"", ""Intermittent""]","[x = ""High"" = 1, x = ""Moderate"" = 0.7, x = ""Mild"" = 0.4, x = ""Intermittent"" = 0.1]",0.1
+Symptoms Severity,String,"[""Severe"", ""Moderate"", ""Mild""]","[x = ""Severe"" = .2, x = ""Moderate"" = 0.4, x = ""Mild"" = 1]",0.5
+Medication Taken,Integer,> 0,"[x < 1 = 1, x > 1 && x < 6 = 0.6, x > 5 && x < 10 = 0.3, x > 10 = 0]",0.35
+General Risk,Double,"[>= 0, <= 1]",,0.05

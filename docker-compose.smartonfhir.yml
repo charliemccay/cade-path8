@@ -1,0 +1,8 @@
+version: '3'
+services:
+
+
+networks:
+    cade-path5_ccri_net:
+        external: true
+

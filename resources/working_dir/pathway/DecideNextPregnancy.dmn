@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1k3xrbf" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="DecideNextPregnancy" name="DecideNextPregnancy">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="Age" camunda:inputVariable="Age">
+        <inputExpression id="inputExpression_1" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1wasdo2" label="fertility" camunda:inputVariable="fertility.random">
+        <inputExpression id="LiteralExpression_0c4wz2c" typeRef="double">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="DelayBeforeConception" name="DelayBeforeConception" typeRef="string" />
+      <output id="OutputClause_09yxrdx" label="NoMorePregnancy" name="NoMorePregnancy" typeRef="boolean" />
+      <rule id="DecisionRule_1pix350">
+        <inputEntry id="UnaryTests_19mpib6">
+          <text><![CDATA[>50]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bpuns5">
+          <text><![CDATA[<1.0]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01x64m6">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1hl3tcx">
+          <text>True</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1k91qfb">
+        <inputEntry id="UnaryTests_0ryl1k5">
+          <text><![CDATA[> 45]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jh9nhg">
+          <text><![CDATA[<.2]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05rzkb3">
+          <text><![CDATA[{'quantity':24,'unit':'months'}]]></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1sepot5">
+          <text>False</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1bq22t6">
+        <inputEntry id="UnaryTests_1gn4iwz">
+          <text><![CDATA[> 45]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16qsp70">
+          <text><![CDATA[<1.0]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1lvzhpu">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_140ck5o">
+          <text>True</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_17th6ti">
+        <inputEntry id="UnaryTests_0bgdu0b">
+          <text><![CDATA[>20]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vquazp">
+          <text><![CDATA[<0.5]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sy92kz">
+          <text><![CDATA[{'quantity':24, 'unit':'months'}]]></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1r3lnvu">
+          <text>False</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0r1ir8d">
+        <inputEntry id="UnaryTests_13o9whi">
+          <text><![CDATA[>20]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ic0cab">
+          <text><![CDATA[<1.0]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0pvq1o0">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_10now4w">
+          <text>True</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05vrrev">
+        <inputEntry id="UnaryTests_1x64cg7">
+          <text><![CDATA[>16]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0efhuoi">
+          <text><![CDATA[<.8]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1wr605u">
+          <text><![CDATA[{'quantity':24, 'unit':'months'}]]></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0r2y27o">
+          <text>False</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ty8nwv">
+        <inputEntry id="UnaryTests_1vx4bno">
+          <text><![CDATA[>16]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16i33sf">
+          <text><![CDATA[<1.0]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0w2pbq5">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1gplc6w">
+          <text>True</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

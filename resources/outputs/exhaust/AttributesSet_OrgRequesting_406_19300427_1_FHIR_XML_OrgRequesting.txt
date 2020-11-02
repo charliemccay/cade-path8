@@ -1,0 +1,19 @@
+<Organization>
+    <id value="2903c66e-8d2d-44b3-9af4-5634fbb479e8"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="D82015"/>
+    </identifier>
+    <!--
+    <name value="Manor GP Practice"/>
+    <address>
+        <line value="30/32 Bridge Street"/>
+        <city value="Downham Market"/>
+        <district value="Norfolk"/>
+        <postalCode value="PE38 9DH"/>
+    </address>
+    -->
+</Organization>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_04lifjm" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="DecidePatientReaction" name="Decide Patient Reaction">
+    <decisionTable id="decisionTable_1">
+      <input id="InputClause_18r8srh" label="GeneralRisk" camunda:inputVariable="GeneralRisk">
+        <inputExpression id="LiteralExpression_148cr4a" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="ChosenReaction" name="ChosenReaction" typeRef="string" />
+      <rule id="DecisionRule_03cnb4x">
+        <inputEntry id="UnaryTests_15gksn7">
+          <text><![CDATA[< 0.3]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06f1lnl">
+          <text><![CDATA["ER"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0qxm72b">
+        <inputEntry id="UnaryTests_14t7ncv">
+          <text><![CDATA[< 0.5]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0z5hkho">
+          <text><![CDATA["Nothing"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19p1rhf">
+        <inputEntry id="UnaryTests_19j6k8u">
+          <text>- </text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_02mig4c">
+          <text><![CDATA["Medicate"]]></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_12onl4b" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="DecideEditActionPlan" name="Decide Edit Action Plan">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="RandomGPdecision" camunda:inputVariable="RandomGPdecision.random">
+        <inputExpression id="inputExpression_1" typeRef="double">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="EditPlan" name="EditPlan" typeRef="boolean" />
+      <rule id="DecisionRule_1m75kl8">
+        <inputEntry id="UnaryTests_0ct7yjd">
+          <text><![CDATA[< 0.5]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0c75i6f">
+          <text>True</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1bf7x5i">
+        <inputEntry id="UnaryTests_0tjr24s">
+          <text><![CDATA[> 0.5]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0q6px9z">
+          <text>False</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1yfz110">
+        <inputEntry id="UnaryTests_194moa6">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_13pb1nt">
+          <text>True</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

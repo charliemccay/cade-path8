@@ -1,0 +1,39 @@
+<ProcedureRequest>
+    <id value="19eb1c26-259b-4648-b3a8-ea8b8864f24c"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="19eb1c26-259b-4648-b3a8-ea8b8864f24c"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/9a680fa1-87ae-450a-93e7-7c24f609ff44"/>
+
+        <display value="Powell, Zachary"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/55a708f1-4e45-453a-9c3f-f6f518d18a15"/>
+
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/74113d9e-ea29-4faf-8723-b705854448d8"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>

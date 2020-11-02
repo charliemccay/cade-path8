@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1jhz0gi" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.13.0">
+  <bpmn:process id="Process_1" isExecutable="true">
+    <bpmn:sequenceFlow id="SequenceFlow_0domo59" sourceRef="StartEvent_1" targetRef="Task_050iapr" />
+    <bpmn:intermediateCatchEvent id="IntermediateThrowEvent_0t9qyzu">
+      <bpmn:incoming>SequenceFlow_12fmr8x</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1sze7j7</bpmn:outgoing>
+      <bpmn:timerEventDefinition />
+    </bpmn:intermediateCatchEvent>
+    <bpmn:businessRuleTask id="Task_050iapr" name="Decide to Follow Up">
+      <bpmn:incoming>SequenceFlow_0domo59</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_029a7gs</bpmn:outgoing>
+    </bpmn:businessRuleTask>
+    <bpmn:exclusiveGateway id="ExclusiveGateway_1v5808r">
+      <bpmn:incoming>SequenceFlow_029a7gs</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_12fmr8x</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_03o4c95</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="SequenceFlow_029a7gs" sourceRef="Task_050iapr" targetRef="ExclusiveGateway_1v5808r" />
+    <bpmn:sequenceFlow id="SequenceFlow_12fmr8x" sourceRef="ExclusiveGateway_1v5808r" targetRef="IntermediateThrowEvent_0t9qyzu" />
+    <bpmn:sequenceFlow id="SequenceFlow_03o4c95" sourceRef="ExclusiveGateway_1v5808r" targetRef="Task_014grsp" />
+    <bpmn:task id="Task_0p5iic7" name="Edit Asthma Action Plan">
+      <bpmn:incoming>SequenceFlow_1fyy2of</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1ggs8gv</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1fyy2of" sourceRef="Task_014grsp" targetRef="Task_0p5iic7" />
+    <bpmn:sequenceFlow id="SequenceFlow_1sze7j7" sourceRef="IntermediateThrowEvent_0t9qyzu" targetRef="GPVisit" />
+    <bpmn:endEvent id="EndFollowUp" name="End Follow Up">
+      <bpmn:incoming>SequenceFlow_1dbvism</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_1ggs8gv</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_1dbvism" sourceRef="GPVisit" targetRef="EndFollowUp" />
+    <bpmn:sequenceFlow id="SequenceFlow_1ggs8gv" sourceRef="Task_0p5iic7" targetRef="EndFollowUp" />
+    <bpmn:businessRuleTask id="Task_014grsp" name="Decide to edit Asthma Action Plan">
+      <bpmn:incoming>SequenceFlow_03o4c95</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1fyy2of</bpmn:outgoing>
+    </bpmn:businessRuleTask>
+    <bpmn:callActivity id="GPVisit" name="GP Follow Up Visit" calledElement="AsthmaGPVisit">
+      <bpmn:incoming>SequenceFlow_1sze7j7</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1dbvism</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:startEvent id="StartEvent_1" name="Symptoms Recovery" camunda:initiator="SymptomsRecovery">
+      <bpmn:outgoing>SequenceFlow_0domo59</bpmn:outgoing>
+      <bpmn:signalEventDefinition />
+    </bpmn:startEvent>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNEdge id="SequenceFlow_0domo59_di" bpmnElement="SequenceFlow_0domo59">
+        <di:waypoint x="209" y="120" />
+        <di:waypoint x="259" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="234" y="98.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="IntermediateCatchEvent_0xt3s76_di" bpmnElement="IntermediateThrowEvent_0t9qyzu">
+        <dc:Bounds x="529" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="547" y="141" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BusinessRuleTask_135jk7o_di" bpmnElement="Task_050iapr">
+        <dc:Bounds x="259" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ExclusiveGateway_1v5808r_di" bpmnElement="ExclusiveGateway_1v5808r" isMarkerVisible="true">
+        <dc:Bounds x="408" y="95" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="433" y="71.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_029a7gs_di" bpmnElement="SequenceFlow_029a7gs">
+        <di:waypoint x="359" y="120" />
+        <di:waypoint x="408" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="383.5" y="98.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_12fmr8x_di" bpmnElement="SequenceFlow_12fmr8x">
+        <di:waypoint x="458" y="120" />
+        <di:waypoint x="529" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="493.5" y="98" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_03o4c95_di" bpmnElement="SequenceFlow_03o4c95">
+        <di:waypoint x="433" y="145" />
+        <di:waypoint x="433" y="207" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="448" y="169.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0p5iic7_di" bpmnElement="Task_0p5iic7">
+        <dc:Bounds x="636" y="207" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1fyy2of_di" bpmnElement="SequenceFlow_1fyy2of">
+        <di:waypoint x="483" y="247" />
+        <di:waypoint x="636" y="247" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="514.5" y="225.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1sze7j7_di" bpmnElement="SequenceFlow_1sze7j7">
+        <di:waypoint x="565" y="120" />
+        <di:waypoint x="636" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="600.5" y="98.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_10gx5nw_di" bpmnElement="EndFollowUp">
+        <dc:Bounds x="807" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="791" y="79" width="72" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1dbvism_di" bpmnElement="SequenceFlow_1dbvism">
+        <di:waypoint x="736" y="120" />
+        <di:waypoint x="807" y="120" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="771.5" y="98.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1ggs8gv_di" bpmnElement="SequenceFlow_1ggs8gv">
+        <di:waypoint x="736" y="247" />
+        <di:waypoint x="825" y="247" />
+        <di:waypoint x="825" y="138" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="735.5" y="225.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="BusinessRuleTask_0gdq2lc_di" bpmnElement="Task_014grsp">
+        <dc:Bounds x="383" y="207" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="CallActivity_1963vyp_di" bpmnElement="GPVisit">
+        <dc:Bounds x="636" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_1acnbd8_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="173" y="102" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="165" y="147" width="52" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

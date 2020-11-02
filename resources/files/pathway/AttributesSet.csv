@@ -1,0 +1,16 @@
+pathway,Node,GivenAttribute,TemplateName,EndPoint,Percentage,Attribute,ExpressionType,Value,TypeConnections,Connection
+Path1,Start,,,,,NhsNumber,string,7832003812,['fhir'],
+Path1,patient_assessment,person['PersonID']<6,FHIR_XML_Patient.txt,Patient/,,PatientRcorded,string,TRUE, ['fhir'],smartonfhir()
+Path1,test_request,person['PersonID']<6,FHIR_XML_PerformingOrg.txt,Organization/,,PerformingOrg,script,getvalue('PerformingOrg'), ['fhir'],smartonfhir()
+Path1,test_request,person['PersonID']<6,FHIR_XML_RequestingHCP.txt,Practitioner/,,RequestingHCP,script,getvalue('RequestingHCP'), ['fhir'],smartonfhir()
+Path1,test_request,person['PersonID']<6,FHIR_XML_OrgRequesting.txt,Organization/,,OrgRequesting,script,getvalue('RequestingOrg'),['fhir'],smartonfhir()
+Path1,Specimen_check,person['PersonID']<6,FHIR_XML_ProcedureRequest.txt,ProcedureRequest/,,Request,script,getvalue('Request'),['fhir'],smartonfhir()
+Path1,Specimen_check,person['PersonID']<6,,,,CollectingHCP,script,getvalue('CollectingHCP'),['fhir'],
+Path1,Specimen_check,person['PersonID']<6,,,,OrgCollecting,script,getvalue('CollectingOrganization'),['fhir'],
+Path1,Specimen_check,person['PersonID']<6,FHIR_XML_Specimen.txt,Specimen/,,Specimen,script,getvalue('Specimen'),['fhir'],smartonfhir()
+Path1,lab_test,person['PersonID']<6,,,,PerformingHCP,script,getvalue('PerformingHCP'),['fhir'],
+Path1,lab_test,person['PersonID']<6,FHIR_XML_Observation.txt,Observation/,,obs,script,"getvalue('Observation', person['PersonID'])", ['fhir'],smartonfhir()
+Path1,send_report,person['PersonID']<6,FHIR_XML_DiagnosticReport.txt,DiagnosticReport/,,Report,script,getvalue('DiagnosticReport'), ['fhir'],smartonfhir()
+Path1,send_report,person['PersonID']<6,FHIR_Bundle.txt,Bundle/$validate,,BundleSent,string,TRUE, ['fhir'],ccri()
+Path1,inform_patient,person['PersonID']<6,InputsListing.txt,,,listing_provided,string,TRUE,,
+Path1,inform_patient,person['PersonID']<6,person_json.txt,,,json_provided,string,TRUE,,

@@ -1,0 +1,26 @@
+Pathway,Node,GivenAttribute,GivenAttributeType,OfValue,Percentage,Attribute,ExpressionType,Value
+Asthma Symptoms,SymptomsEvent,,,,,Medication Taken,Integer,0
+Asthma Symptoms,SymptomsEvent,,,,,StartOfSymptoms,Datetime,Current
+Asthma Triggers,High Severity Trigger Attack,,,,,Symptoms Severity,String,Severe
+Asthma Triggers,Intermittent Severity Trigger,,,,,Symptoms Severity,String,Mild
+Asthma Triggers,Mild Severity Trigger Attack,,,,,Symptoms Severity,String,Severe
+Asthma Triggers,Mild Severity Trigger Exacerbation,,,,,Symptoms Severity,String,Moderate
+Asthma Triggers,Mild Severity Trigger Symptoms,,,,,Symptoms Severity,String,Mild
+Asthma Triggers,Moderate Severity Trigger Attack,,,,,Symptoms Severity,String,Severe
+Asthma Triggers,Moderate Severity Trigger Exacerbation,,,,,Symptoms Severity,String,Moderate
+Asthma Triggers,Moderate Severity Trigger Symptoms,,,,,Symptoms Severity,String,Mild
+Asthma Triggers,Intermittent Severity Trigger Exacerbation,,,,,Symptoms Severity ,String,Moderate
+Asthma Triggers,High Severity Trigger Exacerbation,,,,,SymptomsSeverity,String,Moderate
+Asthma Triggers ,Intermittent Severity Trigger Attack,,,,,Symptoms Severity,String,Severe
+Biological Asthma,Asthma Onset,AsthmaSeverity,String,Intermittent,,Asthma Related Death Risk,Boolean,FALSE
+Biological Asthma,Asthma Onset,AsthmaSeverity,String,Low,,Asthma Related Death Risk,Boolean,FALSE
+Biological Asthma,Asthma Onset,AsthmaSeverity,String,Moderate,,Asthma Related Death Risk,Boolean,FALSE
+Biological Asthma,Asthma Onset,AsthmaSeverity,String,High,0.1,Asthma Related Death Risk,Boolean,TRUE
+Biological Asthma,Asthma Onset,AsthmaSeverity,String,High,0.9,Asthma Related Death Risk,Boolean,FALSE
+Symptoms Reaction,Seek Adult Help,,,,0.5,Time To Help,Duration,[0..1] minutes
+Symptoms Reaction,Seek Adult Help,,,,0.3,TimeToHelp,Duration,[1..5] minutes
+Symptoms Reaction,Seek Adult Help,,,,0.15,TimeToHelp,Duration,[5..15] minutes
+Symptoms Reaction,Seek Adult Help,,,,0.5,TimeToHelp,Duration,[15..30] minutes
+Symptoms Reaction,Seek Adult Help,,,,,PatientAlone,Boolean,FALSE
+Symptoms Reaction,SymptomsStart,,,,0.2,PatientAlone,Boolean,TRUE
+Symptoms Reaction,SymptomsStart,,,,0.8,PatientAlone,Boolean,FALSE

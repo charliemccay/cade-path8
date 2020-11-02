@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0kfr3u9" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="AsthmaComplianceRisk" name="Asthma Compliance Risk">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="GeneralRisk" camunda:inputVariable="GeneralRisk">
+        <inputExpression id="inputExpression_1" typeRef="double">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="Compliance" name="Compliance" typeRef="double" />
+      <rule id="DecisionRule_18zts9a">
+        <inputEntry id="UnaryTests_0thyh4j">
+          <text><![CDATA[<0.5]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_01gwgdh">
+          <text>0.4</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1224f9a">
+        <inputEntry id="UnaryTests_1t1fki2">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_070770c">
+          <text>0.6</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

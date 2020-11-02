@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1vq2o53" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.12.0">
+  <bpmn:process id="Process_1" isExecutable="true">
+    <bpmn:startEvent id="SymptomsStart" name="Symptoms Start">
+      <bpmn:outgoing>JustStarted</bpmn:outgoing>
+      <bpmn:signalEventDefinition signalRef="Signal_0vq0901" />
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway id="InitialChoices">
+      <bpmn:incoming>JustStarted</bpmn:incoming>
+      <bpmn:outgoing>PatientIsAlone</bpmn:outgoing>
+      <bpmn:outgoing>AdultPresentAndHelping</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="JustStarted" sourceRef="SymptomsStart" targetRef="InitialChoices" />
+    <bpmn:sequenceFlow id="PatientIsAlone" name="Patient is alone" sourceRef="InitialChoices" targetRef="DecidePatientReaction" />
+    <bpmn:sequenceFlow id="AdultPresentAndHelping" name="Adult Present and Helping" sourceRef="InitialChoices" targetRef="DecideAdultReaction">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">80%</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:businessRuleTask id="DecidePatientReaction" name="Decide Patient Reaction" camunda:decisionRef="DecidePatientReaction">
+      <bpmn:incoming>PatientIsAlone</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_0kkuksp</bpmn:incoming>
+      <bpmn:outgoing>DoneDecidePatientReaction</bpmn:outgoing>
+    </bpmn:businessRuleTask>
+    <bpmn:businessRuleTask id="DecideAdultReaction" name="Decide Adult Reaction" camunda:decisionRef="DecideAdultReaction">
+      <bpmn:incoming>AdultPresentAndHelping</bpmn:incoming>
+      <bpmn:incoming>PatientWithAdultSupervisionGoingToAdultReaction</bpmn:incoming>
+      <bpmn:incoming>HelpFoundGoingToEnact</bpmn:incoming>
+      <bpmn:outgoing>DoneDecideAdultReaction</bpmn:outgoing>
+    </bpmn:businessRuleTask>
+    <bpmn:exclusiveGateway id="ActionChoice">
+      <bpmn:incoming>DoneDecideAdultReaction</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_14cdiwc</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1ya8981</bpmn:outgoing>
+      <bpmn:outgoing>GoingToWaitForEmergencyRoom</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_06oyq1c</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="DoneDecideAdultReaction" sourceRef="DecideAdultReaction" targetRef="ActionChoice" />
+    <bpmn:task id="Medicate" name="Medicate">
+      <bpmn:incoming>SequenceFlow_1ya8981</bpmn:incoming>
+      <bpmn:outgoing>MedicateToSymptoms</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="SequenceFlow_1ya8981" sourceRef="ActionChoice" targetRef="Medicate" />
+    <bpmn:task id="EmergencyRoomVisit" name="Emergency Room Visit">
+      <bpmn:incoming>GoingIntoEmergencyRoom</bpmn:incoming>
+      <bpmn:outgoing>LeavingEmergencyRoom</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="GoingToWaitForEmergencyRoom" sourceRef="ActionChoice" targetRef="WaitingForEmergencyRoomVisit" />
+    <bpmn:sequenceFlow id="LeavingEmergencyRoom" sourceRef="EmergencyRoomVisit" targetRef="IntermediateThrowEvent_1858alr" />
+    <bpmn:intermediateCatchEvent id="IntermediateThrowEvent_1858alr" name="Time Till Recovery">
+      <bpmn:incoming>LeavingEmergencyRoom</bpmn:incoming>
+      <bpmn:outgoing>HeadingForRecovery</bpmn:outgoing>
+      <bpmn:timerEventDefinition>
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">1 - 3 hours</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:exclusiveGateway id="AfterSymptomsChoice">
+      <bpmn:incoming>SequenceFlow_16j2uw6</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_0lkni6f</bpmn:incoming>
+      <bpmn:incoming>LeavingMildSymptoms</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0tzzt2q</bpmn:outgoing>
+      <bpmn:outgoing>NoRecoveryChoice</bpmn:outgoing>
+      <bpmn:outgoing>GoingToDEath</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="PatientWithAdultSupervisionGoingToAdultReaction" name="Patient with adult supervision" sourceRef="ExclusiveGateway_121mo8x" targetRef="DecideAdultReaction" />
+    <bpmn:task id="DoNothing" name="Do Nothing">
+      <bpmn:incoming>SequenceFlow_06oyq1c</bpmn:incoming>
+      <bpmn:outgoing>NothingToSymptoms</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="EnactPatientReaction">
+      <bpmn:incoming>DoneDecidePatientReaction</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_1dw9zd0</bpmn:incoming>
+      <bpmn:outgoing>SeekHelpFromAdult</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_14cdiwc</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_0kkuksp</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="DoneDecidePatientReaction" sourceRef="DecidePatientReaction" targetRef="EnactPatientReaction" />
+    <bpmn:sequenceFlow id="SeekHelpFromAdult" sourceRef="EnactPatientReaction" targetRef="SeekAdultHelp">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression"><![CDATA[SymptomReaction == "Seek Adult"]]></bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:intermediateCatchEvent id="TimeUntilHelpFound" name="Time Until Help Found&#10;">
+      <bpmn:incoming>GoLookForAdultHelp</bpmn:incoming>
+      <bpmn:outgoing>HelpFoundGoingToEnact</bpmn:outgoing>
+      <bpmn:timerEventDefinition>
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">1 - 10 minutes</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_14cdiwc" name="Decide what to do alone" sourceRef="EnactPatientReaction" targetRef="ActionChoice">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">else</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="GoLookForAdultHelp" sourceRef="SeekAdultHelp" targetRef="TimeUntilHelpFound" />
+    <bpmn:sequenceFlow id="SequenceFlow_1dw9zd0" name="Patient is alone" sourceRef="ExclusiveGateway_121mo8x" targetRef="EnactPatientReaction" />
+    <bpmn:exclusiveGateway id="ExclusiveGateway_121mo8x">
+      <bpmn:incoming>NoRecoveryChoice</bpmn:incoming>
+      <bpmn:outgoing>PatientWithAdultSupervisionGoingToAdultReaction</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_1dw9zd0</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="SequenceFlow_0tzzt2q" name="Recover from symptoms" sourceRef="AfterSymptomsChoice" targetRef="RecoveryEvent" />
+    <bpmn:sequenceFlow id="HeadingForRecovery" sourceRef="IntermediateThrowEvent_1858alr" targetRef="RecoveryEvent" />
+    <bpmn:endEvent id="AsthmaRelatedDeath" name="Asthma Related Death">
+      <bpmn:incoming>GoingToDEath</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_06oyq1c" sourceRef="ActionChoice" targetRef="DoNothing" />
+    <bpmn:intermediateCatchEvent id="TimeSufferingFromMildSymptoms" name="Suffering From Mild Asthma Symptoms&#10;(10 - 60 minutes)&#10;">
+      <bpmn:incoming>ExperiencingMildSymptoms</bpmn:incoming>
+      <bpmn:outgoing>LeavingMildSymptoms</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1ijhp0d">
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">10 - 60 minutes</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="timerSufferModerateAsthmaAttack" name="Suffering From Moderate Asthma Symptoms&#10;(1 - 10 minutes)&#10;">
+      <bpmn:incoming>ExperiencingModerateSymptoms</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_0lkni6f</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_192q5hq">
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">1 - 10 minutes</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateCatchEvent id="timerSufferAsthmaAttack" name="Suffering from Asthma Attack&#10;(10 - 60 seconds)&#10;">
+      <bpmn:incoming>ExperiencingAsthmaAttack</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_16j2uw6</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_1ownvt1">
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">10 - 60 seconds</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:exclusiveGateway id="gatewayToSymptoms">
+      <bpmn:incoming>NothingToSymptoms</bpmn:incoming>
+      <bpmn:incoming>MedicateToSymptoms</bpmn:incoming>
+      <bpmn:outgoing>ExperiencingMildSymptoms</bpmn:outgoing>
+      <bpmn:outgoing>ExperiencingModerateSymptoms</bpmn:outgoing>
+      <bpmn:outgoing>ExperiencingAsthmaAttack</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="NothingToSymptoms" sourceRef="DoNothing" targetRef="gatewayToSymptoms" />
+    <bpmn:sequenceFlow id="MedicateToSymptoms" sourceRef="Medicate" targetRef="gatewayToSymptoms" />
+    <bpmn:sequenceFlow id="ExperiencingMildSymptoms" name="Experiencing Mild Symptoms" sourceRef="gatewayToSymptoms" targetRef="TimeSufferingFromMildSymptoms" />
+    <bpmn:sequenceFlow id="ExperiencingModerateSymptoms" name="Experiencing Moderate Symptoms" sourceRef="gatewayToSymptoms" targetRef="timerSufferModerateAsthmaAttack" />
+    <bpmn:sequenceFlow id="ExperiencingAsthmaAttack" name="Experiencing Asthma Attack" sourceRef="gatewayToSymptoms" targetRef="timerSufferAsthmaAttack" />
+    <bpmn:sequenceFlow id="SequenceFlow_16j2uw6" sourceRef="timerSufferAsthmaAttack" targetRef="AfterSymptomsChoice" />
+    <bpmn:sequenceFlow id="SequenceFlow_0lkni6f" sourceRef="timerSufferModerateAsthmaAttack" targetRef="AfterSymptomsChoice" />
+    <bpmn:sequenceFlow id="LeavingMildSymptoms" sourceRef="TimeSufferingFromMildSymptoms" targetRef="AfterSymptomsChoice" />
+    <bpmn:task id="SeekAdultHelp" name="Seek Adult Help">
+      <bpmn:incoming>SeekHelpFromAdult</bpmn:incoming>
+      <bpmn:outgoing>GoLookForAdultHelp</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="NoRecoveryChoice" name="No Recovery" sourceRef="AfterSymptomsChoice" targetRef="ExclusiveGateway_121mo8x" />
+    <bpmn:sequenceFlow id="HelpFoundGoingToEnact" sourceRef="TimeUntilHelpFound" targetRef="DecideAdultReaction" />
+    <bpmn:sequenceFlow id="GoingToDEath" sourceRef="AfterSymptomsChoice" targetRef="AsthmaRelatedDeath" />
+    <bpmn:endEvent id="RecoveryEvent" name="Recovery">
+      <bpmn:incoming>HeadingForRecovery</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_0tzzt2q</bpmn:incoming>
+      <bpmn:signalEventDefinition signalRef="Signal_1utfml8" />
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="GoingIntoEmergencyRoom" sourceRef="WaitingForEmergencyRoomVisit" targetRef="EmergencyRoomVisit" />
+    <bpmn:intermediateCatchEvent id="WaitingForEmergencyRoomVisit" name="Time Till Arrival at the Emergency Room">
+      <bpmn:incoming>GoingToWaitForEmergencyRoom</bpmn:incoming>
+      <bpmn:outgoing>GoingIntoEmergencyRoom</bpmn:outgoing>
+      <bpmn:timerEventDefinition>
+        <bpmn:timeDuration xsi:type="bpmn:tFormalExpression">10 - 60 minutes</bpmn:timeDuration>
+      </bpmn:timerEventDefinition>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:sequenceFlow id="SequenceFlow_0kkuksp" sourceRef="EnactPatientReaction" targetRef="DecidePatientReaction" />
+  </bpmn:process>
+  <bpmn:signal id="Signal_0vq0901" name="SymptomsTriggerEvent" />
+  <bpmn:signal id="Signal_1utfml8" name="SymptomsFollowUp" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="StartEvent_06ywdre_di" bpmnElement="SymptomsStart">
+        <dc:Bounds x="153" y="162" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="89" y="198" width="79" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ExclusiveGateway_0dgn8cq_di" bpmnElement="InitialChoices" isMarkerVisible="true">
+        <dc:Bounds x="250" y="155" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="265" y="174" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_172pgfi_di" bpmnElement="JustStarted">
+        <di:waypoint x="189" y="180" />
+        <di:waypoint x="250" y="180" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="174.5" y="158.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0idzoux_di" bpmnElement="PatientIsAlone">
+        <di:waypoint x="275" y="155" />
+        <di:waypoint x="275" y="54" />
+        <di:waypoint x="348" y="54" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="167" y="116" width="76" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0arjnkc_di" bpmnElement="AdultPresentAndHelping">
+        <di:waypoint x="275" y="205" />
+        <di:waypoint x="275" y="296" />
+        <di:waypoint x="348" y="296" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="181" y="214" width="88" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="BusinessRuleTask_1oxmxfr_di" bpmnElement="DecidePatientReaction">
+        <dc:Bounds x="348" y="14" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BusinessRuleTask_14e1fp9_di" bpmnElement="DecideAdultReaction">
+        <dc:Bounds x="348" y="256" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ExclusiveGateway_0eni01j_di" bpmnElement="ActionChoice" isMarkerVisible="true">
+        <dc:Bounds x="549" y="271" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="541" y="248" width="68" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0u9hm02_di" bpmnElement="DoneDecideAdultReaction">
+        <di:waypoint x="448" y="296" />
+        <di:waypoint x="549" y="296" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="453.5" y="274.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_1b97o6i_di" bpmnElement="Medicate">
+        <dc:Bounds x="646" y="356" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1ya8981_di" bpmnElement="SequenceFlow_1ya8981">
+        <di:waypoint x="585" y="310" />
+        <di:waypoint x="585" y="396" />
+        <di:waypoint x="646" y="396" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="555" y="346.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_0tzq22j_di" bpmnElement="EmergencyRoomVisit">
+        <dc:Bounds x="806" y="603" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1eg078q_di" bpmnElement="GoingToWaitForEmergencyRoom">
+        <di:waypoint x="574" y="321" />
+        <di:waypoint x="574" y="643" />
+        <di:waypoint x="678" y="643" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="544" y="475.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_014lrx2_di" bpmnElement="LeavingEmergencyRoom">
+        <di:waypoint x="906" y="643" />
+        <di:waypoint x="985" y="643" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="900.5" y="621.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="IntermediateCatchEvent_0z4hu7w_di" bpmnElement="IntermediateThrowEvent_1858alr">
+        <dc:Bounds x="985" y="625" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="982" y="664" width="47" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ExclusiveGateway_198vfpc_di" bpmnElement="AfterSymptomsChoice" isMarkerVisible="true">
+        <dc:Bounds x="1075" y="271" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1055" y="247.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_050koeg_di" bpmnElement="PatientWithAdultSupervisionGoingToAdultReaction">
+        <di:waypoint x="1230" y="321" />
+        <di:waypoint x="1230" y="714" />
+        <di:waypoint x="398" y="714" />
+        <di:waypoint x="398" y="336" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1239" y="339" width="84" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_11ooibb_di" bpmnElement="DoNothing">
+        <dc:Bounds x="646" y="256.4736842105263" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ExclusiveGateway_12eb4qn_di" bpmnElement="EnactPatientReaction" isMarkerVisible="true">
+        <dc:Bounds x="549" y="29" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="529" y="6" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1h61l9m_di" bpmnElement="DoneDecidePatientReaction">
+        <di:waypoint x="448" y="54" />
+        <di:waypoint x="549" y="54" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="453.5" y="32.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0gbpd3h_di" bpmnElement="SeekHelpFromAdult">
+        <di:waypoint x="565" y="70" />
+        <di:waypoint x="516" y="150" />
+        <di:waypoint x="448" y="150" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="308" y="215" width="90" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="IntermediateCatchEvent_1lythgp_di" bpmnElement="TimeUntilHelpFound">
+        <dc:Bounds x="462" y="210" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="500" y="209" width="75" height="38" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_14cdiwc_di" bpmnElement="SequenceFlow_14cdiwc">
+        <di:waypoint x="574" y="79" />
+        <di:waypoint x="574" y="162" />
+        <di:waypoint x="574" y="271" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="511" y="180" width="89" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0isn8vz_di" bpmnElement="GoLookForAdultHelp">
+        <di:waypoint x="398" y="190" />
+        <di:waypoint x="398" y="200" />
+        <di:waypoint x="480" y="200" />
+        <di:waypoint x="480" y="210" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="394" y="178.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1dw9zd0_di" bpmnElement="SequenceFlow_1dw9zd0">
+        <di:waypoint x="1230" y="271" />
+        <di:waypoint x="1230" y="54" />
+        <di:waypoint x="599" y="54" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1240" y="235" width="76" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="ExclusiveGateway_121mo8x_di" bpmnElement="ExclusiveGateway_121mo8x" isMarkerVisible="true">
+        <dc:Bounds x="1205" y="271" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1265" y="289.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0tzzt2q_di" bpmnElement="SequenceFlow_0tzzt2q">
+        <di:waypoint x="1100" y="321" />
+        <di:waypoint x="1100" y="625" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1107" y="335" width="67" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1bs3vf3_di" bpmnElement="HeadingForRecovery">
+        <di:waypoint x="1021" y="643" />
+        <di:waypoint x="1082" y="643" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1006.5" y="621.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_0khbkbg_di" bpmnElement="AsthmaRelatedDeath">
+        <dc:Bounds x="1133" y="162" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1111" y="126" width="79" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_06oyq1c_di" bpmnElement="SequenceFlow_06oyq1c">
+        <di:waypoint x="599" y="296" />
+        <di:waypoint x="646" y="296" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="594.5" y="274.5" width="56" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="IntermediateCatchEvent_0eqro6e_di" bpmnElement="TimeSufferingFromMildSymptoms">
+        <dc:Bounds x="985" y="278" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="964" y="317" width="84" height="63" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IntermediateCatchEvent_0x95zr8_di" bpmnElement="timerSufferModerateAsthmaAttack">
+        <dc:Bounds x="985" y="378" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="960" y="417" width="87" height="63" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IntermediateCatchEvent_0wyt0wt_di" bpmnElement="timerSufferAsthmaAttack">
+        <dc:Bounds x="985" y="479" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="962" y="518" width="86" height="50" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ExclusiveGateway_1mt4x3l_di" bpmnElement="gatewayToSymptoms" isMarkerVisible="true">
+        <dc:Bounds x="793" y="371" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="818" y="431" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_080ikxz_di" bpmnElement="NothingToSymptoms">
+        <di:waypoint x="746" y="296" />
+        <di:waypoint x="807" y="296" />
+        <di:waypoint x="807" y="382" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="776.5" y="274.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0fyz6ku_di" bpmnElement="MedicateToSymptoms">
+        <di:waypoint x="746" y="396" />
+        <di:waypoint x="793" y="396" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="724.5" y="374.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1nyx9bg_di" bpmnElement="ExperiencingMildSymptoms">
+        <di:waypoint x="829" y="382" />
+        <di:waypoint x="829" y="296" />
+        <di:waypoint x="985" y="296" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="877" y="263" width="76" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1b8onli_di" bpmnElement="ExperiencingModerateSymptoms">
+        <di:waypoint x="843" y="396" />
+        <di:waypoint x="985" y="396" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="872" y="351" width="64" height="38" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_16norop_di" bpmnElement="ExperiencingAsthmaAttack">
+        <di:waypoint x="829" y="410" />
+        <di:waypoint x="829" y="497" />
+        <di:waypoint x="985" y="497" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="873" y="464" width="71" height="25" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_16j2uw6_di" bpmnElement="SequenceFlow_16j2uw6">
+        <di:waypoint x="1021" y="497" />
+        <di:waypoint x="1089" y="497" />
+        <di:waypoint x="1089" y="310" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1055" y="475.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_0lkni6f_di" bpmnElement="SequenceFlow_0lkni6f">
+        <di:waypoint x="1021" y="396" />
+        <di:waypoint x="1079" y="396" />
+        <di:waypoint x="1079" y="300" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1050" y="374.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1x1xlf2_di" bpmnElement="LeavingMildSymptoms">
+        <di:waypoint x="1021" y="296" />
+        <di:waypoint x="1075" y="296" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1048" y="274.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Task_19k3jex_di" bpmnElement="SeekAdultHelp">
+        <dc:Bounds x="348" y="110" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0rck4my_di" bpmnElement="NoRecoveryChoice">
+        <di:waypoint x="1125" y="296" />
+        <di:waypoint x="1205" y="296" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1127" y="273" width="64" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1cgjk54_di" bpmnElement="HelpFoundGoingToEnact">
+        <di:waypoint x="480" y="246" />
+        <di:waypoint x="480" y="266" />
+        <di:waypoint x="448" y="266" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="450" y="249.5" width="90" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_1qi7ow9_di" bpmnElement="GoingToDEath">
+        <di:waypoint x="1100" y="271" />
+        <di:waypoint x="1100" y="180" />
+        <di:waypoint x="1133" y="180" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1115" y="219" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="EndEvent_1u8r0as_di" bpmnElement="RecoveryEvent">
+        <dc:Bounds x="1082" y="625" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1077" y="664" width="47" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0l7cc6n_di" bpmnElement="GoingIntoEmergencyRoom">
+        <di:waypoint x="714" y="643" />
+        <di:waypoint x="806" y="643" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="760" y="621.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="IntermediateCatchEvent_02iq4ie_di" bpmnElement="WaitingForEmergencyRoomVisit">
+        <dc:Bounds x="678" y="625" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="656" y="664" width="89" height="38" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_0kkuksp_di" bpmnElement="SequenceFlow_0kkuksp">
+        <di:waypoint x="549" y="54" />
+        <di:waypoint x="448" y="54" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="498.5" y="32.5" width="0" height="13" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

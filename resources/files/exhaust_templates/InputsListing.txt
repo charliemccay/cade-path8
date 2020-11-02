@@ -1,0 +1,13 @@
+{# Test file to print out all the available data for use in templates #}
+timestamp: {{ timestamp }}
+activity_time: {{ activity_time }}
+person: {% for key, value in person.items() if key not in ["Hist", "Last"] %}
+   {{ key }}: {{ value -}}
+{% endfor %}
+----------------------------
+person['Hist']':  {% for key, value in person['Hist'].items() %}
+   {{ key }}: {{ value -}}
+{% endfor %}
+person['Last']':  {% for key, value in person['Last'].items() %}
+   {{ key }}: {{ value -}}
+{% endfor %}

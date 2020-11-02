@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_102np9u" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="DetermineLifeExpectancy" name="Determine Life Expectancy">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="Age" camunda:inputVariable="Age">
+        <inputExpression id="inputExpression_1" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1d7xen8" label="Gender" camunda:inputVariable="Gender">
+        <inputExpression id="LiteralExpression_1hmt6pb" typeRef="string">
+          <text>Gender</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1oj3v3h" label="GeneralRisk" camunda:inputVariable="GeneralRisk">
+        <inputExpression id="LiteralExpression_10lc9us" typeRef="double">
+          <text>Death Probability</text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="DeathWithinYear" name="DeathWithinYear" typeRef="boolean" />
+      <rule id="DecisionRule_0eq9dq0">
+        <inputEntry id="UnaryTests_0sbwkkh">
+          <text>[0..1[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1o9bvka">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1b4f3m2">
+          <text><![CDATA[< 0.005374]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ytf1j4">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00idl39">
+        <inputEntry id="UnaryTests_1ud7hna">
+          <text>[0..1[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16e6sy1">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rfczrr">
+          <text><![CDATA[>= 0.005374]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1b42i40">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lotkuu">
+        <inputEntry id="UnaryTests_0tz7r2h">
+          <text>[0..1[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1b6gp7i">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_091goix">
+          <text><![CDATA[< 0.006383]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0nt78cq">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1bj7tmi">
+        <inputEntry id="UnaryTests_0aspfdd">
+          <text>[0..1[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0i01n69">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1nlkqqi">
+          <text><![CDATA[>= 0.006383]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1y8qt13">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1slwb71">
+        <inputEntry id="UnaryTests_0quyuy3">
+          <text>[1..2[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qpgs1e">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0p9gpg5">
+          <text><![CDATA[< 0.000353]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1afcppp">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1fbx139">
+        <inputEntry id="UnaryTests_0d77fp0">
+          <text>[1..2[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0clhvk5">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0dkmh51">
+          <text><![CDATA[>= 0.000353]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15s1dpp">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07q5134">
+        <inputEntry id="UnaryTests_0mp4pby">
+          <text>[1..2[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1v6n53o">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fjhvi7">
+          <text><![CDATA[< 0.000453]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bagnec">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1d2i4zw">
+        <inputEntry id="UnaryTests_1bq0769">
+          <text>[1..2[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06eqjd1">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vdvei3">
+          <text><![CDATA[>= 0.000453]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0emfjab">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1sc4oxq">
+        <inputEntry id="UnaryTests_1vwe3oy">
+          <text>[2..3[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zp6a3r">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0p089oo">
+          <text><![CDATA[< 0.000231]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1m05heb">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1uqg6ux">
+        <inputEntry id="UnaryTests_0aw1k5u">
+          <text>[2..3[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05yf25o">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0iv971t">
+          <text><![CDATA[>= 0.000231]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1vybv18">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0qk89b8">
+        <inputEntry id="UnaryTests_1tvdkig">
+          <text>[2..3[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08l4jta">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0n7w8nf">
+          <text><![CDATA[< 0.000282]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1c8i92g">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08nh2zi">
+        <inputEntry id="UnaryTests_1hbyd1k">
+          <text>[2..3[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17mvd21">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19j7kdx">
+          <text><![CDATA[>= 0.000282]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1qzl9ec">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0mzdgze">
+        <inputEntry id="UnaryTests_1k832wj">
+          <text>[3..4[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zd4zii">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yw9xph">
+          <text><![CDATA[< 0.000165]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06bg0sv">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1nbnvpm">
+        <inputEntry id="UnaryTests_10xrpxx">
+          <text>[3..4[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1s3lckl">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10nb55w">
+          <text><![CDATA[>= 0.000165]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0u2nerh">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vyisqf">
+        <inputEntry id="UnaryTests_0b8k2sa">
+          <text>[3..4[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02kgc4r">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ihn1yd">
+          <text><![CDATA[< 0.000230]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1y9m2oa">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1t4nqeb">
+        <inputEntry id="UnaryTests_1uz2nqm">
+          <text>[3..4[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14v5up5">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m4ty5j">
+          <text><![CDATA[>= 0.000230]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14dorv0">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0h411bp">
+        <inputEntry id="UnaryTests_1bfrqiv">
+          <text>[4..5[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1l35kbi">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vdoidu">
+          <text><![CDATA[< 0.000129]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12z0log">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0rfrh2e">
+        <inputEntry id="UnaryTests_0fuaqkx">
+          <text>[4..5[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13r52i7">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ht7tnj">
+          <text><![CDATA[>= 0.000129]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1tyjbh2">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07xe2p6">
+        <inputEntry id="UnaryTests_0aplq7p">
+          <text>[4..5[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qbdwcr">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02eu0vx">
+          <text><![CDATA[< 0.000169]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0iv2uj5">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_026rdha">
+        <inputEntry id="UnaryTests_0aa3kc7">
+          <text>[4..5[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0s5g0l7">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zq91wc">
+          <text><![CDATA[>= 0.000169]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0qn6n32">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hsaum2">
+        <inputEntry id="UnaryTests_0kattz7">
+          <text>[5..6[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13wtv2w">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1v502iq">
+          <text><![CDATA[< 0.000116]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1uscml0">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00bw0cm">
+        <inputEntry id="UnaryTests_0hp68lq">
+          <text>[5..6[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1o28ugu">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_149o9bz">
+          <text><![CDATA[>= 0.000116]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1wysesp">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1pcqer1">
+        <inputEntry id="UnaryTests_0wvq1lg">
+          <text>[5..6[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1orra6t">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15tib66">
+          <text><![CDATA[< 0.000155]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14u4bhr">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tbv4oc">
+        <inputEntry id="UnaryTests_1ljhjf0">
+          <text>[5..6[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0863h19">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mn8jfd">
+          <text><![CDATA[>= 0.000155]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0y5tmv0">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mmkabq">
+        <inputEntry id="UnaryTests_1mvdwg7">
+          <text>[6..7[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09bzvjy">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kz0uvo">
+          <text><![CDATA[< 0.000107]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1tp59xc">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0p2lfs3">
+        <inputEntry id="UnaryTests_12pdvrg">
+          <text>[6..7[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0x4aadl">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0duwxn1">
+          <text><![CDATA[>= 0.000107]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xlpiug">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1nmq4ei">
+        <inputEntry id="UnaryTests_0w92ax0">
+          <text>[6..7[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0drkbic">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1czymib">
+          <text><![CDATA[< 0.000145]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_133ntem">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_06ite76">
+        <inputEntry id="UnaryTests_1lcl0g7">
+          <text>[6..7[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0a18usk">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08584g1">
+          <text><![CDATA[>= 0.000145]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yynxi8">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ppfzob">
+        <inputEntry id="UnaryTests_0z2lq4b">
+          <text>[7..8[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1msafi0">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ruvy28">
+          <text><![CDATA[< 0.000101]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vn7bn7">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1vldlf5">
+        <inputEntry id="UnaryTests_0mtg8dd">
+          <text>[7..8[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19j1xf5">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17wsowt">
+          <text><![CDATA[>= 0.000101]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jwajai">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0q9f9f0">
+        <inputEntry id="UnaryTests_0wwc9jo">
+          <text>[7..8[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vlr43d">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1xvht9y">
+          <text><![CDATA[< 0.000135]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_12eg18s">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1lgggpj">
+        <inputEntry id="UnaryTests_1bhvvcq">
+          <text>[7..8[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05il7j8">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f1msnk">
+          <text><![CDATA[>= 0.000135]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0xdjcgk">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0jwstkw">
+        <inputEntry id="UnaryTests_02nzzq0">
+          <text>[8..9[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05gviv8">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qmlvjs">
+          <text><![CDATA[< 0.000096]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00jh0og">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1j7rgas">
+        <inputEntry id="UnaryTests_1edmjfe">
+          <text>[8..9[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11y42u3">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gap9h6">
+          <text><![CDATA[>= 0.000096]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jnx8wg">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0yvk26h">
+        <inputEntry id="UnaryTests_15x3r2g">
+          <text>[8..9[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1macio0">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1syzz5q">
+          <text><![CDATA[< 0.000120]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wro05j">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ihkifv">
+        <inputEntry id="UnaryTests_1sckig2">
+          <text>[8..9[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16vtdrd">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0a2gyl6">
+          <text><![CDATA[>= 0.000120]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_154tdo6">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0fc2bt1">
+        <inputEntry id="UnaryTests_0pq3l6q">
+          <text>[9..10[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mtgaun">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18fyjtt">
+          <text><![CDATA[< 0.000092]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0wtsl2g">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_05sh9ku">
+        <inputEntry id="UnaryTests_0ootok4">
+          <text>[9..10[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1564ysi">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1u9x3l0">
+          <text><![CDATA[>= 0.000092]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_100aldl">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ujk4v9">
+        <inputEntry id="UnaryTests_1xjoa9a">
+          <text>[9..10[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1osr8bu">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1764qpg">
+          <text><![CDATA[< 0.000105]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1sjfemt">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0535xwu">
+        <inputEntry id="UnaryTests_1uv1ubc">
+          <text>[9..10[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1trw39w">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09v0emd">
+          <text><![CDATA[>= 0.000105]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1dkc4y3">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ajivzr">
+        <inputEntry id="UnaryTests_1v4uvq2">
+          <text>[10..11[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ykk9x6">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06f92c7">
+          <text><![CDATA[< 0.000091]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1daktnq">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1v6d7pw">
+        <inputEntry id="UnaryTests_1lp81et">
+          <text>[10..11[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1q34sxd">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0n4q8g9">
+          <text><![CDATA[>= 0.000091]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_05bjpmf">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1v3hj04">
+        <inputEntry id="UnaryTests_08zz3nc">
+          <text>[10..11[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hg0wkg">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_057eeid">
+          <text><![CDATA[< 0.000094]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gwjxtb">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0x6jf93">
+        <inputEntry id="UnaryTests_19dyp94">
+          <text>[10..11[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yvwsrf">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0j8ib74">
+          <text><![CDATA[>= 0.000094]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1tqkaow">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_17tnfza">
+        <inputEntry id="UnaryTests_0bx1rsl">
+          <text>[11..12[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02m1uuv">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1v7xf1l">
+          <text><![CDATA[< 0.000096]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0aa886k">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_094mqpn">
+        <inputEntry id="UnaryTests_1t06z1o">
+          <text>[11..12[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0syiy06">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1w6baic">
+          <text><![CDATA[>= 0.000096]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vtveg5">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_03kpb9e">
+        <inputEntry id="UnaryTests_187m4lp">
+          <text>[11..12[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bld97t">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ecpvi3">
+          <text><![CDATA[< 0.000099]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06qc53b">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0u3w7hh">
+        <inputEntry id="UnaryTests_1mue7ji">
+          <text>[11..12[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02dp26y">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0w7w3mh">
+          <text><![CDATA[>= 0.000099]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_17nfo3k">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mq5lo7">
+        <inputEntry id="UnaryTests_19kervk">
+          <text>[12..13[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1s80ggd">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pwazv3">
+          <text><![CDATA[< 0.000111]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_10gj58l">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0nyszir">
+        <inputEntry id="UnaryTests_1ybwtq4">
+          <text>[12..13[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0q1exl9">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1uecpov">
+          <text><![CDATA[>= 0.000111]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_09tq6fu">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0dwqbe8">
+        <inputEntry id="UnaryTests_1sw2g8k">
+          <text>[12..13[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17qe8ak">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ely0nl">
+          <text><![CDATA[< 0.000134]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jlwe2s">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_04v81ar">
+        <inputEntry id="UnaryTests_0kn63f3">
+          <text>[12..13[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pxx583">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_167k8k6">
+          <text><![CDATA[>= 0.000134]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ur5hke">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ebr2ln">
+        <inputEntry id="UnaryTests_0niwl9c">
+          <text>[13..14[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mv7a4j">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1kpf5of">
+          <text><![CDATA[< 0.000138]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0jbeita">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_09fq9eu">
+        <inputEntry id="UnaryTests_0iuoa1q">
+          <text>[13..14[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1v22lg0">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14912pt">
+          <text><![CDATA[>= 0.000138]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06myk80">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0wi6hqk">
+        <inputEntry id="UnaryTests_1r7f3jz">
+          <text>[13..14[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00pzh84">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09wv1lk">
+          <text><![CDATA[< 0.000207]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0x73wzd">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_15zv1sg">
+        <inputEntry id="UnaryTests_1kfnzbn">
+          <text>[13..14[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1snxuar">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02do811">
+          <text><![CDATA[>= 0.000207]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1xkwraq">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1jptkc3">
+        <inputEntry id="UnaryTests_0gom5br">
+          <text>[14..15[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00x9j8s">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0g4yw6c">
+          <text><![CDATA[< 0.000174]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1a0fked">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tr6hrd">
+        <inputEntry id="UnaryTests_0h113o3">
+          <text>[14..15[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fssyeq">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fo7y5y">
+          <text><![CDATA[>= 0.000174]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yxnlqp">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0aoop1m">
+        <inputEntry id="UnaryTests_11j6lef">
+          <text>[14..15[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01lo9yj">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17yoqfh">
+          <text><![CDATA[< 0.000309]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_06mvt5z">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1iyaeja">
+        <inputEntry id="UnaryTests_1s0lecv">
+          <text>[14..15[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_022sh8q">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_105s49q">
+          <text><![CDATA[>= 0.000309]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0idkcsy">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13tgo5i">
+        <inputEntry id="UnaryTests_12hbtme">
+          <text>[15..16[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09oab52">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vgpxwi">
+          <text><![CDATA[< 0.000214]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_165gasy">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0c7yln1">
+        <inputEntry id="UnaryTests_0fxjs6j">
+          <text>[15..16[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_16mf9rk">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17ofp0u">
+          <text><![CDATA[>= 0.000214]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_08591qo">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1khumgs">
+        <inputEntry id="UnaryTests_083yazs">
+          <text>[15..16[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12z2vzr">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fqjvdp">
+          <text><![CDATA[< 0.000419]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0buybn1">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1wbiob4">
+        <inputEntry id="UnaryTests_1hlcg6f">
+          <text>[15..16[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06tfvoh">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0aoeax7">
+          <text><![CDATA[>= 0.000419]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0el3eo6">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_16ildaz">
+        <inputEntry id="UnaryTests_0x50gda">
+          <text>[16..17[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1m0jwir">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vimfju">
+          <text><![CDATA[< 0.000254]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0e6jqnr">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0chmvg8">
+        <inputEntry id="UnaryTests_1v7buzo">
+          <text>[16..17[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yteynr">
+          <text><![CDATA["Female"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0jfyjd1">
+          <text><![CDATA[>= 0.000254]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ucdgf0">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1grfgfm">
+        <inputEntry id="UnaryTests_14hfi0h">
+          <text>[16..17[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1skil33">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cow2fv">
+          <text><![CDATA[< 0.000530]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1p5r0ns">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0cfx3r3">
+        <inputEntry id="UnaryTests_179ysax">
+          <text>[16..17[</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_066j6t2">
+          <text><![CDATA["Male"]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fq4sxr">
+          <text><![CDATA[>= 0.000530]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_11u05zr">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

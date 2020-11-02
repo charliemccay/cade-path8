@@ -1,0 +1,27 @@
+<Specimen>
+    <id value="93fd8036-afd3-4d49-b8b3-b92430069c64"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="93fd8036-afd3-4d49-b8b3-b92430069c64"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/026cb3cc-31db-49df-973d-1ba1b336bc0b"/>
+
+        <display value="Nelson, Samantha"/>
+    </subject>
+    <receivedTime value="1994-08-24T00:34:00Z"/>
+    <collection>
+        <collectedDateTime value="1994-08-24T00:34:00Z"/>
+    </collection>
+</Specimen>

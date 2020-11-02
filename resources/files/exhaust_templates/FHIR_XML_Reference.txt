@@ -1,0 +1,5 @@
+{% macro reference(type, resource) -%}
+{% if inbundle %}<reference value="urn:uuid:{{ resource }}"/>
+        {% else %}<reference value="{{ type }}/{{ resource }}"/>
+{% endif %}
+{%- endmacro %}

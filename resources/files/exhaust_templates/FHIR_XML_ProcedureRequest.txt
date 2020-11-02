@@ -1,0 +1,37 @@
+{% from "FHIR_XML_Reference.txt" import reference with context -%}
+<ProcedureRequest>
+    <id value="{{ person.Last.Request.id }}"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="{{ person.Last.Request.id }}"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="{{ person.Request.Code }}"/>
+            <display value="{{ person.Request.DisplayName }}"/>
+        </coding>
+    </code>
+    <subject>
+        {{ reference("Patient", person.Last.PatientRcorded.id) }}
+        <display value="{{ person.Surname }}, {{ person.GivenName }}"/>
+    </subject>
+    <requester>
+        <agent>
+            {{ reference("Practitioner", person.Last.RequestingHCP.id) }}
+            <display value="{{ person.RequestingHCP.DisplayName }}"/>
+        </agent>
+    </requester>
+    <performer>
+        {{ reference("Organization", person.Last.PerformingOrg.id) }}
+        <display value="{{ person.PerformingOrg.DisplayName }}"/>
+    </performer>
+    <note>
+        <text value="{{ person.Request.text }}"/>
+    </note>
+</ProcedureRequest>

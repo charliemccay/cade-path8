@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1okt18g" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="ChildhoodAsthma" name="Childhood Asthma">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="ChildhoodAsthmaticRisk" camunda:inputVariable="GeneralRisk">
+        <inputExpression id="inputExpression_1" typeRef="double">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0wyy0li" label="SeverityRisk" camunda:inputVariable="GeneralRisk">
+        <inputExpression id="LiteralExpression_09vfgl5" typeRef="double">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="Asthmatic" name="Asthmatic" typeRef="boolean" />
+      <output id="OutputClause_1x25p6t" label="TimeTillOnset" name="TimeTillOnset" typeRef="string" />
+      <output id="OutputClause_1ohjvgs" label="AsthmaSeverity" name="AsthmaSeverity" typeRef="string" />
+      <rule id="DecisionRule_1f5b4mj">
+        <inputEntry id="UnaryTests_103wqeg">
+          <text><![CDATA[< 0.9]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0003c7r">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0647y4l">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1erh7ks">
+          <text></text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_01mr30i">
+          <text></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11nh3d3">
+        <inputEntry id="UnaryTests_0gvgfhj">
+          <text><![CDATA[>= 0.1]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1d7fu4f">
+          <text>[0..0.45[</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0d583f3">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1i9uioy">
+          <text>[0..18] years</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_006ezqx">
+          <text><![CDATA["Intermittent"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ejp5ez">
+        <inputEntry id="UnaryTests_1irt656">
+          <text><![CDATA[>= 0.1]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dqr7vf">
+          <text>[0.45..0.75[</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ldotva">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0ji5a7h">
+          <text>[0..18] years</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_02usyto">
+          <text><![CDATA["Mild"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1td8s11">
+        <inputEntry id="UnaryTests_0qa5ny4">
+          <text><![CDATA[>= 0.1]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13r5yya">
+          <text>[0.75..0.95[</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16jv82a">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1gkgt03">
+          <text>[0..18] years</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1fudzdn">
+          <text><![CDATA["Moderate"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_13225qf">
+        <inputEntry id="UnaryTests_11smydt">
+          <text><![CDATA[>= 0.1]]></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xtw1dl">
+          <text>[0.95..1]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1wtuw8w">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1lz0vxy">
+          <text>[0..18] years</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_067n6vb">
+          <text><![CDATA["Severe"]]></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

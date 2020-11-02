@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_03306uw" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="Decision_13nyxhf" name="Decision 1">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="SymptomsSeriousness" camunda:inputVariable="SymptomsSeriousness">
+        <inputExpression id="inputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1ew7lhy" label="AsthmaCompliance" camunda:inputVariable="AsthmaCompliance">
+        <inputExpression id="LiteralExpression_0gh47pg" typeRef="boolean">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1baolsx" label="Patient Choice" camunda:inputVariable="GeneralRisk">
+        <inputExpression id="LiteralExpression_0y8loiz" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="FollowUp" name="FollowUp" typeRef="boolean" />
+      <rule id="DecisionRule_1ko6rt8">
+        <inputEntry id="UnaryTests_1w2nmvm">
+          <text>&gt; 0.7</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1j99a1m">
+          <text>&gt; 0.5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_09f6of3">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_18xu9b8">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_10izbzr">
+        <inputEntry id="UnaryTests_03tt7un">
+          <text>&gt; 0.9</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0d6whq2">
+          <text>&lt; 0.5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0r2exts">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_089t59w">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qnjggt">
+        <inputEntry id="UnaryTests_1v9x094">
+          <text>&lt; 0.5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vgmkz3">
+          <text>&gt; 0.5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zg997t">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_19vb9s4">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0uc64iu">
+        <inputEntry id="UnaryTests_1oqbyc8">
+          <text>&lt; 0.2</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hqbbqh">
+          <text>&lt; 0.5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05jt1zm">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0aczyvt">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1nv2zs8">
+        <inputEntry id="UnaryTests_1go5ykp">
+          <text>[0.5..0.7]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mfwioi">
+          <text>&gt; 0.5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gtirak">
+          <text>&gt; 0.5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1r0sm5a">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_07t0ia4">
+        <inputEntry id="UnaryTests_0pc7s1j">
+          <text>[0.5..0.7]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_12mkmmx">
+          <text>&gt; 0.5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0swacx2">
+          <text>&lt; 0.5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1qoxdh4">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0i536t7">
+        <inputEntry id="UnaryTests_1tedkgz">
+          <text>[0.2..0.9]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1pv29yl">
+          <text>&lt; 0.5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1tvnl5f">
+          <text>&gt; 0.7</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0laz6ov">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1tz8fo0">
+        <inputEntry id="UnaryTests_0wlorj3">
+          <text>[0.2..0.9]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kfa3s9">
+          <text>&lt; 0.5</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1axlsoa">
+          <text>&lt; 0.3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_16l8zfv">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

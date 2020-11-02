@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0781pa2" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="ChildGender1" name="ChildGender1">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="GenderProbability" camunda:inputVariable="GenderProbability.random">
+        <inputExpression id="inputExpression_1" typeRef="double">
+          <text>GenderProbability.random</text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="ChildGender" name="ChildGender" typeRef="string" />
+      <rule id="DecisionRule_0o56anu">
+        <inputEntry id="UnaryTests_0thkm1u">
+          <text><![CDATA[<0.5]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_02fvec2">
+          <text><![CDATA["0"]]></text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1pvs872">
+        <inputEntry id="UnaryTests_0rgbhmp">
+          <text><![CDATA[>=0.5]]></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0n89gn0">
+          <text><![CDATA["1"]]></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

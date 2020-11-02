@@ -1,0 +1,20 @@
+<DTSControl>
+  <Version>1.0</Version>
+  <AddressType>ALL</AddressType>
+  <MessageType>Report</MessageType>
+  <From_DTS>A91678OT001</From_DTS>
+  <To_DTS>NOWOT004</To_DTS>
+  <Subject>PipeCleaning</Subject>
+  <Compress>N</Compress>
+  <Encrypted>N</Encrypted>
+  <WorkflowId>TOC_FHIR_IP_DISCH</WorkflowId>
+  <IsCompressed>N</IsCompressed>
+  <AllowChunking>N</AllowChunking>
+  <StatusRecord>
+    <DateTime>20200917162159</DateTime>
+    <Event>COLLECT</Event>
+    <Status>SUCCESS</Status>
+    <StatusCode>00</StatusCode>
+    <Description>Data collect success confirmation.</Description>
+  </StatusRecord>
+</DTSControl>

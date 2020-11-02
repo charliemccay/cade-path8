@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmmn:definitions xmlns:dc="http://www.omg.org/spec/CMMN/20151109/DC" xmlns:cmmndi="http://www.omg.org/spec/CMMN/20151109/CMMNDI" xmlns:cmmn="http://www.omg.org/spec/CMMN/20151109/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_01avlym" targetNamespace="http://bpmn.io/schema/cmmn" exporter="Camunda Modeler" exporterVersion="1.13.0">
+  <cmmn:case id="AsthmaTriggers" name="Asthma Triggers">
+    <cmmn:casePlanModel id="CasePlanModel_1" name="Asthma Triggers">
+      <cmmn:planItem id="IntermittentSeverityTriggerSymptoms" name="Intermittent Severity Trigger Symptoms" definitionRef="ProcessTask_18dlyya">
+        <cmmn:itemControl id="PlanItemControl_1dtsxoc">
+          <cmmn:repetitionRule id="RepetitionRule_0gstkmn">
+            <cmmn:condition id="Expression_0alpevm">1 - 6 weeks</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityIntSym" sentryRef="Sentry_0w6avj6" />
+      </cmmn:planItem>
+      <cmmn:planItem id="IntermittentSeverityTriggerExacerbation" name="Intermittent Severity Trigger Exacerbation" definitionRef="ProcessTask_0n1xnjn">
+        <cmmn:itemControl id="PlanItemControl_0sa5zr7">
+          <cmmn:repetitionRule id="RepetitionRule_1dqhqrr">
+            <cmmn:condition id="Expression_1rjmofl">1 - 6 months</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityIntEx" sentryRef="Sentry_1jbu61k" />
+      </cmmn:planItem>
+      <cmmn:planItem id="IntermittentSeverityTriggerAttack" name="Intermittent Severity Trigger Attack" definitionRef="ProcessTask_1uyr9dw">
+        <cmmn:itemControl id="PlanItemControl_04cr3rf">
+          <cmmn:repetitionRule id="RepetitionRule_004ab17">
+            <cmmn:condition id="Expression_1wzk8o7">1 - 200 years</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityIntAtt" sentryRef="Sentry_1nd45d2" />
+      </cmmn:planItem>
+      <cmmn:planItem id="MildSeverityTriggerAttack" name="Mild Severity Trigger Attack" definitionRef="ProcessTask_0dcp2kg">
+        <cmmn:itemControl id="PlanItemControl_1csgrtg">
+          <cmmn:repetitionRule id="RepetitionRule_0rf64k5">
+            <cmmn:condition id="Expression_0tr75cz">1 - 40 years</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityMildAtt" sentryRef="Sentry_1nsap3i" />
+      </cmmn:planItem>
+      <cmmn:planItem id="ModerateSeverityTriggerAttack" name="Moderate Severity Trigger Attack" definitionRef="ProcessTask_1c3chgs">
+        <cmmn:itemControl id="PlanItemControl_1q71qej">
+          <cmmn:repetitionRule id="RepetitionRule_16hz5g4">
+            <cmmn:condition id="Expression_0iy8qay">1 - 13 years</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityModAtt" sentryRef="Sentry_1gpr15q" />
+      </cmmn:planItem>
+      <cmmn:planItem id="HighSeverityTriggerAttack" name="High Severity Trigger Attack" definitionRef="ProcessTask_1xbval1">
+        <cmmn:itemControl id="PlanItemControl_0b38ck2">
+          <cmmn:repetitionRule id="RepetitionRule_19rvew2">
+            <cmmn:condition id="Expression_0p97wm6">1 - 24 months</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityHighAtt" sentryRef="Sentry_005jozd" />
+      </cmmn:planItem>
+      <cmmn:planItem id="HighSeverityTriggerExacerbation" name="High Severity Trigger Exacerbation" definitionRef="ProcessTask_0v6rx02">
+        <cmmn:itemControl id="PlanItemControl_06brr7p">
+          <cmmn:repetitionRule id="RepetitionRule_1kj4pc4">
+            <cmmn:condition id="Expression_1d6fet9">1 - 48 hours</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityHighEx" sentryRef="Sentry_1p8tu0r" />
+      </cmmn:planItem>
+      <cmmn:planItem id="ModerateSeverityTriggerExacerbation" name="Moderate Severity Trigger Exacerbation" definitionRef="ProcessTask_1rrnabc">
+        <cmmn:itemControl id="PlanItemControl_0aqre7g">
+          <cmmn:repetitionRule id="RepetitionRule_0w10t05">
+            <cmmn:condition id="Expression_1kpdsq5">1 - 7 days</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityModEx" sentryRef="Sentry_1bj38sn" />
+      </cmmn:planItem>
+      <cmmn:planItem id="MildSeverityTriggerExacerbation" name="Mild Severity Trigger Exacerbation" definitionRef="ProcessTask_1d52hhh">
+        <cmmn:itemControl id="PlanItemControl_0ifc5xv">
+          <cmmn:repetitionRule id="RepetitionRule_0admejz">
+            <cmmn:condition id="Expression_1fy6gpv">1 - 14 days</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityMildEx" sentryRef="Sentry_16y0yfj" />
+      </cmmn:planItem>
+      <cmmn:planItem id="MildSeverityTriggerSymptoms" name="Mild Severity Trigger Symptoms" definitionRef="ProcessTask_1bt9ctl">
+        <cmmn:itemControl id="PlanItemControl_0myw0cb">
+          <cmmn:repetitionRule id="RepetitionRule_1t2sjee">
+            <cmmn:condition id="Expression_0j7cnbr">1 - 4 days</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityMildSym" sentryRef="Sentry_0oroxhn" />
+      </cmmn:planItem>
+      <cmmn:planItem id="ModerateSeverityTriggerSymptoms" name="Moderate Severity Trigger Symptoms" definitionRef="ProcessTask_1dae9oe">
+        <cmmn:itemControl id="PlanItemControl_02nsvss">
+          <cmmn:repetitionRule id="RepetitionRule_1g9j69g">
+            <cmmn:condition id="Expression_153hy67">1 - 24 hours</cmmn:condition>
+          </cmmn:repetitionRule>
+        </cmmn:itemControl>
+        <cmmn:entryCriterion id="SeverityModSym" sentryRef="Sentry_1rd2joz" />
+      </cmmn:planItem>
+      <cmmn:sentry id="Sentry_1h8tuwt">
+        <cmmn:ifPart id="IfPart_16ro8mg">
+          <cmmn:condition id="Expression_1bdaqmi">Terminal == true</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_1p8tu0r">
+        <cmmn:ifPart id="IfPart_0an1m99">
+          <cmmn:condition id="Expression_13w767w">AsthmaSeverity == "High"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_0oroxhn">
+        <cmmn:ifPart id="IfPart_152lth9">
+          <cmmn:condition id="Expression_1rcmu3o">AsthmaSeverity == "Mild"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_1rd2joz">
+        <cmmn:ifPart id="IfPart_0gz99s7">
+          <cmmn:condition id="Expression_14fnamo">AsthmaSeverity == "Moderate"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_0w6avj6">
+        <cmmn:ifPart id="IfPart_1fvp0bw">
+          <cmmn:condition id="Expression_0jhnst3">AsthmaSeverity == "Intermittent"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_005jozd">
+        <cmmn:ifPart id="IfPart_02l5xlu">
+          <cmmn:condition id="Expression_1obpji5">AsthmaSeverity == "High"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_16y0yfj">
+        <cmmn:ifPart id="IfPart_1wo9l0e">
+          <cmmn:condition id="Expression_0zn64gh">AsthmaSeverity == "Mild"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_1nsap3i">
+        <cmmn:ifPart id="IfPart_0lp1qqk">
+          <cmmn:condition id="Expression_10g3ost">AsthmaSeverity == "Mild"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_1gpr15q">
+        <cmmn:ifPart id="IfPart_00dko02">
+          <cmmn:condition id="Expression_0w0k8h9">AsthmaSeverity == "Moderate"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_1bj38sn">
+        <cmmn:ifPart id="IfPart_1b1k681">
+          <cmmn:condition id="Expression_0m9vces">AsthmaSeverity == "Moderate"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_1jbu61k">
+        <cmmn:ifPart id="IfPart_0tzu4sk">
+          <cmmn:condition id="Expression_0003wx6">AsthmaSeverity == "Intermittent"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:sentry id="Sentry_1nd45d2">
+        <cmmn:ifPart id="IfPart_0673rjy">
+          <cmmn:condition id="Expression_0odz32t">AsthmaSeverity == "Intermittent"</cmmn:condition>
+        </cmmn:ifPart>
+      </cmmn:sentry>
+      <cmmn:processTask id="ProcessTask_18dlyya" name="Intermittent Severity Triggers Symptoms" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_0n1xnjn" name="Intermittent Severity Triggers Exacerbation" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_1uyr9dw" name="Intermittent Severity Triggers Attack" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_0dcp2kg" name="Mild Severity Triggers Attack" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_1c3chgs" name="Moderate Severity Triggers Attack" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_1xbval1" name="High Severity Triggers Attack" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_0v6rx02" name="High Severity Triggers" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_1rrnabc" name="Moderate Severity Triggers Exacerbation" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_1d52hhh" name="Mild Severity Triggers Exacerbation" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_1bt9ctl" name="Mild Severity Triggers Symptoms" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:processTask id="ProcessTask_1dae9oe" name="Moderate Severity Triggers Symptoms" processRef="Signal:SymptomsTriggerEvent" />
+      <cmmn:exitCriterion id="TerminalExit" sentryRef="Sentry_1h8tuwt" />
+    </cmmn:casePlanModel>
+  </cmmn:case>
+  <cmmndi:CMMNDI>
+    <cmmndi:CMMNDiagram id="AsthmaTriggersCase">
+      <cmmndi:Size width="500" height="500" />
+      <cmmndi:CMMNShape id="DI_CasePlanModel_1" cmmnElementRef="CasePlanModel_1">
+        <dc:Bounds x="133" y="75" width="413" height="448" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="ExitCriterion_0koboh8_di" cmmnElementRef="TerminalExit">
+        <dc:Bounds x="536" y="449" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_09310fi_di" cmmnElementRef="SeverityHighEx">
+        <dc:Bounds x="285" y="409" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_1uuimnh_di" cmmnElementRef="SeverityMildSym">
+        <dc:Bounds x="153" y="201" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_1re62zf_di" cmmnElementRef="SeverityModSym">
+        <dc:Bounds x="153" y="305" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_09cwubk_di" cmmnElementRef="SeverityIntSym">
+        <dc:Bounds x="153" y="100" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_1o78xid_di" cmmnElementRef="SeverityHighAtt">
+        <dc:Bounds x="416" y="409" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_1uxwdpt_di" cmmnElementRef="SeverityMildEx">
+        <dc:Bounds x="285" y="201" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_13hmnu7_di" cmmnElementRef="SeverityMildAtt">
+        <dc:Bounds x="416" y="201" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_0x5rhcj_di" cmmnElementRef="SeverityModAtt">
+        <dc:Bounds x="416" y="305" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_07cadxw_di" cmmnElementRef="SeverityModEx">
+        <dc:Bounds x="285" y="305" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_15vz2w2_di" cmmnElementRef="SeverityIntEx">
+        <dc:Bounds x="285" y="100" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="EntryCriterion_1ifgt4x_di" cmmnElementRef="SeverityIntAtt">
+        <dc:Bounds x="416" y="100" width="20" height="28" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_02bifc5_di" cmmnElementRef="IntermittentSeverityTriggerSymptoms">
+        <dc:Bounds x="163" y="114" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_1k912s7_di" cmmnElementRef="IntermittentSeverityTriggerExacerbation">
+        <dc:Bounds x="295" y="114" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_043nylh_di" cmmnElementRef="IntermittentSeverityTriggerAttack">
+        <dc:Bounds x="426" y="114" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_1io7s01_di" cmmnElementRef="MildSeverityTriggerAttack">
+        <dc:Bounds x="426" y="215" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_1ktmd2i_di" cmmnElementRef="ModerateSeverityTriggerAttack">
+        <dc:Bounds x="426" y="319" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_0lx4o5m_di" cmmnElementRef="HighSeverityTriggerAttack">
+        <dc:Bounds x="426" y="423" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_0hrl93f_di" cmmnElementRef="HighSeverityTriggerExacerbation">
+        <dc:Bounds x="295" y="423" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_1mtecbt_di" cmmnElementRef="ModerateSeverityTriggerExacerbation">
+        <dc:Bounds x="295" y="319" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_190j3g5_di" cmmnElementRef="MildSeverityTriggerExacerbation">
+        <dc:Bounds x="295" y="215" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_02dsi9l_di" cmmnElementRef="MildSeverityTriggerSymptoms">
+        <dc:Bounds x="163" y="215" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+      <cmmndi:CMMNShape id="PlanItem_05nlzrg_di" cmmnElementRef="ModerateSeverityTriggerSymptoms">
+        <dc:Bounds x="163" y="319" width="100" height="80" />
+        <cmmndi:CMMNLabel />
+      </cmmndi:CMMNShape>
+    </cmmndi:CMMNDiagram>
+  </cmmndi:CMMNDI>
+</cmmn:definitions>

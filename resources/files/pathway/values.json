@@ -1,0 +1,59 @@
+{
+  "PerformingOrg": {
+    "Code": "TKD13",
+    "DisplayName": "Midtown District Hospital",
+    "AddressLine": "Beckett Street",
+    "AddressCity": "Leeds",
+    "AddressDistrict": "West YorkShire",
+    "AddressPostalCode": "LS9 7TF"
+  },
+  "RequestingHCP": {
+    "Code": "G6040649",
+    "DisplayName": "Dr Jane Green"
+  },
+  "RequestingOrg": {
+    "Code": "D82015",
+    "DisplayName": "Manor GP Practice",
+    "AddressLine": "30/32 Bridge Street",
+    "AddressCity": "Downham Market",
+    "AddressDistrict": "Norfolk",
+    "AddressPostalCode": "PE38 9DH"
+  },
+  "Request": {
+    "Code": "26604007",
+    "DisplayName": "FBC - Full blood count",
+    "text": "FBC"
+  },
+  "CollectingHCP": {
+    "Code": "J7040649",
+    "DisplayName": "Alice Jones"
+  },
+  "CollectingOrganization": {
+    "Code": "D82015",
+    "DisplayName": "Manor GP Practice",
+    "AddressLine": "30/32 Bridge Street",
+    "AddressCity": "Downham Market",
+    "AddressDistrict": "Norfolk",
+    "AddressPostalCode": "PE38 9DH"
+  },
+  "Specimen": {
+    "Code": "53130003",
+    "DisplayName": "Venous blood (substance)"
+  },
+  "PerformingHCP": {
+    "Code": "J7040649",
+    "DisplayName": "Alice Jones"
+  },
+  "Observation": {
+    "code": "1000381000000105",
+    "DisplayName": "Se prostate specific Ag level",
+    "value": 72,
+    "unit": "ug/L",
+    "unit_code": "ug/L",
+    "system": "http://unitsofmeasure.org"
+  },
+  "DiagnosticReport": {
+    "Code": "1028441000000104",
+    "DisplayName": "Potassium Level (Observable entity)"
+  }
+}

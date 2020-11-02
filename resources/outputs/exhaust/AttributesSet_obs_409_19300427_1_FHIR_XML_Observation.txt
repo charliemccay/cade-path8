@@ -1,0 +1,47 @@
+<Observation>
+    <id value="ac0a8171-f731-4aa1-86c4-d7b93854dcec"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="ac0a8171-f731-4aa1-86c4-d7b93854dcec"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1000381000000105"/>
+            <display value="Se prostate specific Ag level"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/54debd05-3f0b-4a97-ab3b-f0418c3285d1"/>
+
+        <display value="Sanderson, Demi"/>
+    </subject>
+    <effectiveDateTime value="1988-06-06T00:37:00Z"/>
+    <performer>
+        <reference value="Organization/8425878b-1063-4a8b-b75a-51e49a4df6d5"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="72"/>
+        <unit value="ug/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="ug/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/55b26db3-90e7-48f6-b4e1-5a04ae92f677"/>
+
+    </specimen>
+</Observation>
