@@ -1,0 +1,10 @@
+Starting cade_no_connections ... done
+Attaching to cade_no_connections
+cade_no_connections    | /usr/src/app/resources/../resources/outputs/exhaust/
+cade_no_connections    | /usr/src/app/resources/../resources/outputs/exhaust/
+cade_no_connections    |
+cade_no_connections    | Time elapsed: 2 seconds
+cade_no_connections    | Starting simulation...
+Simulation date: 2019-03-07 11:30:00 Events processed: 662
+cade_no_connections    | Time elapsed: 7 seconds
+cade_no_connections exited with code 0

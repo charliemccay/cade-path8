@@ -1,0 +1,24 @@
+<Patient>
+    <id value="a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+    </meta>
+    <identifier>
+        <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
+                    <code value="01"/>
+                    <display value="Number present and verified"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+        <value value="7832003812"/>
+    </identifier>
+    <name>
+        <use value="official"/>
+        <family value="Farmer"/>
+        <given value="Jade"/>
+    </name>
+</Patient>

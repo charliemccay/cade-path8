@@ -30,7 +30,8 @@ This will start a number of containers:
     docker-compose -f docker-compose.cade.with.connections.yml up
 ```
 
-Once the cade contaner has stopped, there should be files in the directories under files/outputs directory
+Once the cade contaner has stopped, there should be files in the directories under files/outputs directory.  Note that the other containers will still be running allowing you to access the FHIR server on http://localhost:8080/baseDstu3/ to see the resources that have been pushed into it. 
+The file docker_outputs/cade.with.connections.output.txt provides an example of what should be displayed to teh screen if the container is running correctly.  Note that there are three errors reported as the resources are being validated - thsi si because within the pathology profiles there are some missing valuesaets, and the Care Connect Reference Implementation is unable to validate LOINC concept identifiers
 
 ## start simulation on its own without posting to the fhir servers
 
@@ -38,7 +39,7 @@ Once the cade contaner has stopped, there should be files in the directories und
     docker-compose -f docker-compose.cade.no.connections.yml up
 ```
 
-
+The file docker_outputs/cade.no.connections.output.txt provides an example of what should be displayed to teh screen if the container is running correctly.  
 
 ## start fhir servers independantly 
 

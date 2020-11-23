@@ -1,0 +1,35 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="4f3fc732-60f8-4046-b9e2-215d5f028ac7"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/12c356d3-5edc-457f-a909-e7515abc8a96"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+
+        <display value="Farmer, Jade"/>
+    </subject>
+    <issued value="2017-10-26T00:41:00Z"/>
+    <performer>
+        <actor>
+        <reference value="Organization/bccf7b69-6253-43fd-8136-db06c6ba1a5b"/>
+
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/51cea96b-4641-433b-a591-786fb86fc2ae"/>
+
+    </result>
+</DiagnosticReport>

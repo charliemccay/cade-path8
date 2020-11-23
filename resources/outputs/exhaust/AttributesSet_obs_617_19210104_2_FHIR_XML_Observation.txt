@@ -1,0 +1,47 @@
+<Observation>
+    <id value="51cea96b-4641-433b-a591-786fb86fc2ae"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="51cea96b-4641-433b-a591-786fb86fc2ae"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1000381000000105"/>
+            <display value="Se prostate specific Ag level"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+
+        <display value="Farmer, Jade"/>
+    </subject>
+    <effectiveDateTime value="2017-10-26T00:41:00Z"/>
+    <performer>
+        <reference value="Organization/bccf7b69-6253-43fd-8136-db06c6ba1a5b"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="73"/>
+        <unit value="ug/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="ug/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/2988579c-791c-4fc6-b6f7-07b1575f7272"/>
+
+    </specimen>
+</Observation>

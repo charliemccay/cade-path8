@@ -1,0 +1,39 @@
+<ProcedureRequest>
+    <id value="fc1159f4-da9f-4173-ad79-80f01fe48423"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="fc1159f4-da9f-4173-ad79-80f01fe48423"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5b1f30db-ed2f-4879-868d-74732431783d"/>
+
+        <display value="Charlton, Zachary"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/358aae8c-0947-4eca-898e-ecd6ba1c407f"/>
+
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/96fc63d8-a056-4cc4-b7c2-275de48a4791"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>

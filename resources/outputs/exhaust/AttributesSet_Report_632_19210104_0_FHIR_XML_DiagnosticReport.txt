@@ -1,0 +1,35 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="49094043-4c9f-415f-8d4a-628909c29c1f"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/54d323ba-9f97-4091-9217-c87fde7fe1a8"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/a24ee62d-c271-47f0-98d5-7b7699b8b50d"/>
+
+        <display value="Farmer, Laura"/>
+    </subject>
+    <issued value="2018-02-09T00:39:00Z"/>
+    <performer>
+        <actor>
+        <reference value="Organization/b273979f-9778-42f5-aeaa-b962d014fa03"/>
+
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/8250fcd0-80c0-40e0-ae9c-55ec05dae590"/>
+
+    </result>
+</DiagnosticReport>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="efbb5b72-70d9-43d3-8f1a-5d01db720180"/>
+	<meta>
+		<lastUpdated value="2017-10-26T00:41:00Z"/>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
+	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="efbb5b72-70d9-43d3-8f1a-5d01db720180"/>
+	</identifier>
+	<type value="message"/>
+
+	<entry>
+		<fullUrl value="urn:uuid:efbb5b72-70d9-43d3-8f1a-5d01db720180"/>
+		<resource>
+			<MessageHeader>
+				<id value="efbb5b72-70d9-43d3-8f1a-5d01db720180"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2"/>
+				</meta>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+					<extension url="BusAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="InfAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="RecipientType">
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1"/>
+							<code value="FA"/>
+							<display value="For Action"/>
+						</valueCoding>
+					</extension>
+					<extension url="MessageDefinition">
+					    <valueReference>
+					        <reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-NP-MessageDefinition-1"/>
+				        </valueReference>
+				    </extension>
+				    <extension url="SenderReference">
+					    <valueString value="None"/>
+				    </extension>
+				    <extension url="LocalExtension">
+					    <valueString value="None"/>
+				    </extension>
+				</extension>
+				<event>
+					<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+					<code value="ITK012M"/>
+					<display value="ITK National Pathology"/>
+				</event>
+				<receiver>
+					<reference value="urn:uuid:cb8e895c-5c85-4848-80b0-482a46756856"/>
+				</receiver>
+				<sender>
+					<reference value="urn:uuid:bccf7b69-6253-43fd-8136-db06c6ba1a5b"/>
+				</sender>
+				<timestamp value="2017-10-26T00:41:00Z"/>
+				<source>
+					<endpoint value="TKD13"/>
+				</source>
+				<focus>
+					<reference value="urn:uuid:4f3fc732-60f8-4046-b9e2-215d5f028ac7"/>
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<!--Provider from result-->
+	<entry>
+		<fullUrl value="urn:uuid:bccf7b69-6253-43fd-8136-db06c6ba1a5b"/>
+		<resource>
+        <Organization>
+    <id value="bccf7b69-6253-43fd-8136-db06c6ba1a5b"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="TKD13"/>
+    </identifier>
+    <!--
+    <name value="Midtown District Hospital"/>
+    <address>
+        <line value="Beckett Street"/>
+        <city value="Leeds"/>
+        <district value="West YorkShire"/>
+        <postalCode value="LS9 7TF"/>
+    </address>
+    -->
+</Organization>
+		<!--Requesting Org-->
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:cb8e895c-5c85-4848-80b0-482a46756856"/>
+		<resource>
+			<Organization>
+    <id value="cb8e895c-5c85-4848-80b0-482a46756856"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="D82015"/>
+    </identifier>
+    <!--
+    <name value="Manor GP Practice"/>
+    <address>
+        <line value="30/32 Bridge Street"/>
+        <city value="Downham Market"/>
+        <district value="Norfolk"/>
+        <postalCode value="PE38 9DH"/>
+    </address>
+    -->
+</Organization>
+		</resource>
+	</entry>
+	<!--Requesting Practitioner-->
+	<entry>
+		<fullUrl value="urn:uuid:6d2b54cf-123c-4481-bcb0-21a6cdc62140"/>
+		<resource>
+            <Practitioner>
+    <id value="6d2b54cf-123c-4481-bcb0-21a6cdc62140"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/sds-user-id"/>
+        <value value="G6040649"/>
+    </identifier>
+    <name>
+        <text value="Dr Jane Green"/>
+    </name>
+</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+		<resource>
+			 <Patient>
+    <id value="a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+    </meta>
+    <identifier>
+        <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
+                    <code value="01"/>
+                    <display value="Number present and verified"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+        <value value="7832003812"/>
+    </identifier>
+    <name>
+        <use value="official"/>
+        <family value="Farmer"/>
+        <given value="Jade"/>
+    </name>
+</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:12c356d3-5edc-457f-a909-e7515abc8a96"/>
+		<resource>
+			 <ProcedureRequest>
+    <id value="12c356d3-5edc-457f-a909-e7515abc8a96"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="12c356d3-5edc-457f-a909-e7515abc8a96"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+        
+        <display value="Farmer, Jade"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="urn:uuid:6d2b54cf-123c-4481-bcb0-21a6cdc62140"/>
+        
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="urn:uuid:bccf7b69-6253-43fd-8136-db06c6ba1a5b"/>
+        
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+		</resource>
+	</entry>
+		<entry>
+		<fullUrl value="urn:uuid:2988579c-791c-4fc6-b6f7-07b1575f7272"/>
+		<resource>
+			 <Specimen>
+    <id value="2988579c-791c-4fc6-b6f7-07b1575f7272"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="2988579c-791c-4fc6-b6f7-07b1575f7272"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="urn:uuid:a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+        
+        <display value="Farmer, Jade"/>
+    </subject>
+    <receivedTime value="2017-10-26T00:40:00Z"/>
+    <collection>
+        <collectedDateTime value="2017-10-26T00:40:00Z"/>
+    </collection>
+</Specimen>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:4f3fc732-60f8-4046-b9e2-215d5f028ac7"/>
+		<resource>
+		   <DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="4f3fc732-60f8-4046-b9e2-215d5f028ac7"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/12c356d3-5edc-457f-a909-e7515abc8a96"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+        
+        <display value="Farmer, Jade"/>
+    </subject>
+    <issued value="2017-10-26T00:41:00Z"/>
+    <performer>
+        <actor>
+        <reference value="urn:uuid:bccf7b69-6253-43fd-8136-db06c6ba1a5b"/>
+        
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="urn:uuid:51cea96b-4641-433b-a591-786fb86fc2ae"/>
+        
+    </result>
+</DiagnosticReport>
+		</resource>
+	</entry>
+	<entry>
+	<fullUrl value="urn:uuid:51cea96b-4641-433b-a591-786fb86fc2ae"/>
+		<resource>
+			<Observation>
+    <id value="51cea96b-4641-433b-a591-786fb86fc2ae"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="51cea96b-4641-433b-a591-786fb86fc2ae"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1000381000000105"/>
+            <display value="Se prostate specific Ag level"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+        
+        <display value="Farmer, Jade"/>
+    </subject>
+    <effectiveDateTime value="2017-10-26T00:41:00Z"/>
+    <performer>
+        <reference value="urn:uuid:bccf7b69-6253-43fd-8136-db06c6ba1a5b"/>
+        
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="73"/>
+        <unit value="ug/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="ug/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="urn:uuid:2988579c-791c-4fc6-b6f7-07b1575f7272"/>
+        
+    </specimen>
+</Observation>
+		</resource>
+	</entry>
+</Bundle>

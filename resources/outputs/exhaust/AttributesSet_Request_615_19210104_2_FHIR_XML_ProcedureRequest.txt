@@ -1,0 +1,39 @@
+<ProcedureRequest>
+    <id value="12c356d3-5edc-457f-a909-e7515abc8a96"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="12c356d3-5edc-457f-a909-e7515abc8a96"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/a003a3e5-76a2-48e8-b055-45aa6636180c"/>
+
+        <display value="Farmer, Jade"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/6d2b54cf-123c-4481-bcb0-21a6cdc62140"/>
+
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/bccf7b69-6253-43fd-8136-db06c6ba1a5b"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>

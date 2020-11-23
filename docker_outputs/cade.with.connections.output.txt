@@ -1,0 +1,1006 @@
+WARNING: The IMAGE_TAG variable is not set. Defaulting to a blank string.
+Recreating cade      ... done
+Starting smartonfhir ... done
+Starting ccrisql     ... done
+Starting ccriserver  ... done
+Starting fhirexplorer ... done
+Attaching to smartonfhir, ccrisql, cade, ccriserver, fhirexplorer
+ccrisql         | 2020-11-23 10:52:18.095 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+ccrisql         | 2020-11-23 10:52:18.095 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+ccrisql         | 2020-11-23 10:52:18.098 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+ccrisql         | 2020-11-23 10:52:18.150 UTC [24] LOG:  database system was shut down at 2020-11-20 17:34:02 UTC
+ccrisql         | 2020-11-23 10:52:18.164 UTC [1] LOG:  database system is ready to accept connections
+smartonfhir     | ------------------------------------------------------------
+smartonfhir     | 🔥 HAPI FHIR 3.2.0 - Command Line Tool
+smartonfhir     | ------------------------------------------------------------
+smartonfhir     | Max configured JVM memory (Xmx): 800.0MB
+smartonfhir     | Detected Java version: 1.8.0_111
+smartonfhir     | ------------------------------------------------------------
+smartonfhir     | 10:52:19 INFO  ca.uhn.fhir.cli.RunServerCommand - Server is configured to allow external references
+smartonfhir     | 10:52:19 INFO  ca.uhn.fhir.cli.RunServerCommand - Server is configured to not enforce referential integrity
+smartonfhir     | 10:52:19 INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [DSTU3]
+smartonfhir     | 10:52:19 INFO  ca.uhn.fhir.cli.RunServerCommand - Preparing HAPI FHIR JPA server on port 8080
+smartonfhir     | 10:52:20 INFO  ca.uhn.fhir.cli.RunServerCommand - Starting HAPI FHIR JPA server in DSTU3 mode
+fhirexplorer    |
+fhirexplorer    |   .   ____          _            __ _ _
+fhirexplorer    |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+fhirexplorer    | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+fhirexplorer    |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+fhirexplorer    |   '  |____| .__|_| |_|_| |_\__, | / / / /
+fhirexplorer    |  =========|_|==============|___/=/_/_/_/
+fhirexplorer    |  :: Spring Boot ::        (v2.1.1.RELEASE)
+fhirexplorer    |
+fhirexplorer    | 2020-11-23 10:52:24.738  INFO 1 --- [           main] u.n.careconnect.ri.explorer.ExplorerApp  : Starting ExplorerApp v4.0.0-SNAPSHOT on a0e429a87656 with PID 1 (/ccri-fhir-explorer.jar started by root in /)
+fhirexplorer    | 2020-11-23 10:52:24.847  INFO 1 --- [           main] u.n.careconnect.ri.explorer.ExplorerApp  : No active profile set, falling back to default profiles: default
+ccriserver      |
+ccriserver      |   .   ____          _            __ _ _
+ccriserver      |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+ccriserver      | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ccriserver      |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+ccriserver      |   '  |____| .__|_| |_|_| |_\__, | / / / /
+ccriserver      |  =========|_|==============|___/=/_/_/_/
+ccriserver      |  :: Spring Boot ::        (v2.2.0.RELEASE)
+ccriserver      |
+ccriserver      | 2020-11-23T10:52:26,623 INFO  [main] o.s.b.StartupInfoLogger: Starting CCRIFHIRServer v4.2.0 on b0b2a5004a21 with PID 1 (/ccri-fhirserver.jar started by root in /)
+ccriserver      | 2020-11-23T10:52:26,728 INFO  [main] o.s.b.SpringApplication: No active profile set, falling back to default profiles: default
+fhirexplorer    | 2020-11-23 10:52:31.983  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$a7406dd0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ccriserver      | 2020-11-23T10:52:32,719 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate: Bootstrapping Spring Data repositories in DEFAULT mode.
+ccriserver      | 2020-11-23T10:52:32,811 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 61ms. Found 0 repository interfaces.
+fhirexplorer    | 2020-11-23 10:52:33.242  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8188 (http)
+fhirexplorer    | 2020-11-23 10:52:33.349  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+fhirexplorer    | 2020-11-23 10:52:33.350  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+fhirexplorer    | 2020-11-23 10:52:33.382  INFO 1 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+fhirexplorer    | 2020-11-23 10:52:33.665  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/ccri]   : Initializing Spring embedded WebApplicationContext
+fhirexplorer    | 2020-11-23 10:52:33.665  INFO 1 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8387 ms
+fhirexplorer    | 2020-11-23 10:52:35.177  INFO 1 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Type converters loaded (core: 195, classpath: 14)
+fhirexplorer    | 2020-11-23 10:52:35.772  INFO 1 --- [           main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/jolokia' to jolokia-actuator-endpoint
+fhirexplorer    | 2020-11-23 10:52:35.820  INFO 1 --- [           main] io.hawt.HawtioContextListener            : Initialising hawtio services
+fhirexplorer    | 2020-11-23 10:52:35.846  INFO 1 --- [           main] io.hawt.system.ConfigManager             : Configuration will be discovered via system properties
+fhirexplorer    | 2020-11-23 10:52:35.855  INFO 1 --- [           main] io.hawt.jmx.JmxTreeWatcher               : Welcome to Hawtio 2.5.0
+fhirexplorer    | 2020-11-23 10:52:35.876  INFO 1 --- [           main] i.h.w.auth.AuthenticationConfiguration   : Starting hawtio authentication filter, JAAS authentication disabled
+ccriserver      | 2020-11-23T10:52:36,398 INFO  [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+fhirexplorer    | 2020-11-23 10:52:36.627  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b10a26d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4393593c, org.springframework.security.web.header.HeaderWriterFilter@6aef4eb8, org.springframework.security.web.authentication.logout.LogoutFilter@889d9e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26d820eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b05a99b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74075134, org.springframework.security.web.session.SessionManagementFilter@3f29e26, org.springframework.security.web.access.ExceptionTranslationFilter@79b08632, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@33f98231]
+fhirexplorer    | 2020-11-23 10:52:37.107  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+ccriserver      | 2020-11-23T10:52:37,470 INFO  [main] o.s.b.w.e.t.TomcatWebServer: Tomcat initialized with port(s): 8186 (http)
+ccriserver      | 2020-11-23T10:52:37,519 INFO  [main] o.a.j.l.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8186"]
+ccriserver      | 2020-11-23T10:52:37,531 INFO  [main] o.a.j.l.DirectJDKLog: Starting service [Tomcat]
+ccriserver      | 2020-11-23T10:52:37,538 INFO  [main] o.a.j.l.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.27]
+fhirexplorer    | 2020-11-23 10:52:37.559  INFO 1 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [resources/index.html]
+ccriserver      | 2020-11-23T10:52:37,801 INFO  [main] o.a.j.l.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+ccriserver      | 2020-11-23T10:52:37,802 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 10592 ms
+ccriserver      | 2020-11-23T10:52:37,921 INFO  [main] c.u.f.u.VersionUtil: HAPI FHIR version 4.2.0 - Rev 8491707942
+fhirexplorer    | 2020-11-23 10:52:38.404  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+fhirexplorer    | 2020-11-23 10:52:38.748  INFO 1 --- [           main] u.n.c.ri.explorer.CamelMonitorRoute      : Starting Camel Route MAIN FHIR Server = http://localhost:8186/ccri-fhir/STU3
+ccriserver      | 2020-11-23T10:52:38,879 INFO  [main] o.s.b.a.e.w.ServletEndpointRegistrar: Registered '/jolokia' to jolokia-actuator-endpoint
+ccriserver      | 2020-11-23T10:52:38,945 INFO  [main] i.h.HawtioContextListener: Initialising hawtio services
+ccriserver      | 2020-11-23T10:52:38,978 INFO  [main] i.h.s.ConfigManager: Configuration will be discovered via system properties
+ccriserver      | 2020-11-23T10:52:38,989 INFO  [main] i.h.j.JmxTreeWatcher: Welcome to Hawtio 2.5.0
+ccriserver      | 2020-11-23T10:52:39,017 INFO  [main] i.h.w.a.AuthenticationConfiguration: Starting hawtio authentication filter, JAAS authentication disabled
+fhirexplorer    | 2020-11-23 10:52:39.073  INFO 1 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+fhirexplorer    | 2020-11-23 10:52:39.074  INFO 1 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+fhirexplorer    | 2020-11-23 10:52:39.077  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.23.2 (CamelContext: FHIRExplorer-2) is starting
+fhirexplorer    | 2020-11-23 10:52:39.080  INFO 1 --- [           main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+ccriserver      | 2020-11-23T10:52:39,166 INFO  [main] c.u.f.c.FhirContext: Creating new FHIR context for FHIR version [R4]
+ccriserver      | 2020-11-23T10:52:39,309 INFO  [main] c.u.f.c.FhirContext: Creating new FHIR context for FHIR version [DSTU3]
+ccriserver      | 2020-11-23T10:52:39,455 INFO  [main] u.n.c.c.f.s.PackageManager: #1 Loading Ig Package for API Validation uk.testcore.r4 https://project-wildfyre.github.io/uk-testcore-r4/package.tgz 4.0.0
+ccriserver      | 2020-11-23T10:52:39,455 INFO  [main] u.n.c.c.f.s.PackageManager: Package Url: https://project-wildfyre.github.io/uk-testcore-r4/package.tgz
+fhirexplorer    | 2020-11-23 10:52:40.549  INFO 1 --- [           main] o.a.camel.component.http4.HttpComponent  : Created ClientConnectionManager org.apache.http.impl.conn.PoolingHttpClientConnectionManager@7a360554
+fhirexplorer    | 2020-11-23 10:52:40.606  INFO 1 --- [           main] o.a.camel.component.http4.HttpComponent  : Created ClientConnectionManager org.apache.http.impl.conn.PoolingHttpClientConnectionManager@5875de6a
+fhirexplorer    | 2020-11-23 10:52:40.631  INFO 1 --- [           main] o.a.camel.component.http4.HttpComponent  : Created ClientConnectionManager org.apache.http.impl.conn.PoolingHttpClientConnectionManager@d5af0a5
+fhirexplorer    | 2020-11-23 10:52:40.640  INFO 1 --- [           main] o.a.camel.component.http4.HttpComponent  : Created ClientConnectionManager org.apache.http.impl.conn.PoolingHttpClientConnectionManager@63d4f0a2
+fhirexplorer    | 2020-11-23 10:52:40.657  INFO 1 --- [           main] o.a.camel.component.http4.HttpComponent  : Created ClientConnectionManager org.apache.http.impl.conn.PoolingHttpClientConnectionManager@71926a36
+fhirexplorer    | 2020-11-23 10:52:40.741  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+ccriserver      | 2020-11-23T10:52:41,185 INFO  [main] u.n.c.c.f.s.PackageManager: Packaged Returned Ok: https://project-wildfyre.github.io/uk-testcore-r4/package.tgz
+ccriserver      | Installing uk.testcore.r4#4.0.0 to the package cache
+fhirexplorer    | 2020-11-23 10:52:41.374  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: helloTest started and consuming from: direct://hello
+fhirexplorer    | 2020-11-23 10:52:41.378  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: cc-portal started and consuming from: servlet:/cc-portal?matchOnUriPrefix=true
+fhirexplorer    | 2020-11-23 10:52:41.382  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: ccri-messaging started and consuming from: servlet:/ccri-messaging?matchOnUriPrefix=true
+fhirexplorer    | 2020-11-23 10:52:41.386  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: ccri-document started and consuming from: servlet:/ccri-document?matchOnUriPrefix=true
+fhirexplorer    | 2020-11-23 10:52:41.389  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: ccri-smart started and consuming from: servlet:/cc-smart?matchOnUriPrefix=true
+fhirexplorer    | 2020-11-23 10:52:41.400  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: tkw-validator started and consuming from: servlet:/tkw?matchOnUriPrefix=true
+fhirexplorer    | 2020-11-23 10:52:41.402  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Route: route1 started and consuming from: servlet:/config/http?httpMethodRestrict=GET
+fhirexplorer    | 2020-11-23 10:52:41.402  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Total 7 routes, of which 7 are started
+fhirexplorer    | 2020-11-23 10:52:41.407  INFO 1 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.23.2 (CamelContext: FHIRExplorer-2) started in 2.326 seconds
+fhirexplorer    | 2020-11-23 10:52:41.607  INFO 1 --- [           main] o.a.c.c.s.CamelHttpTransportServlet      : Initialized CamelHttpTransportServlet[name=CamelServlet, contextPath=/ccri]
+fhirexplorer    | 2020-11-23 10:52:41.610  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8188 (http) with context path '/ccri'
+fhirexplorer    | 2020-11-23 10:52:41.619  INFO 1 --- [           main] u.n.careconnect.ri.explorer.ExplorerApp  : Started ExplorerApp in 19.695 seconds (JVM running for 22.752)
+ccriserver      |   Fetching:....
+ccriserver      |   Installing: .... done.
+ccriserver      | 2020-11-23T10:52:42,768 INFO  [main] u.n.c.c.f.r.v.SNOMEDUKDbValidationSupportR4: https://ontoserver.dataproducts.nhs.uk/fhir
+ccriserver      | 2020-11-23T10:52:43,093 INFO  [main] c.u.f.u.j.DependencyLogImpl: FHIR XML procesing will use StAX implementation 'Woodstox XML-processor' version '4.4.1'
+ccriserver      | 2020-11-23T10:52:44,664 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AddressKey
+ccriserver      | 2020-11-23T10:52:44,673 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AdmissionMethod
+ccriserver      | 2020-11-23T10:52:44,695 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AllergyIntoleranceEnd
+ccriserver      | 2020-11-23T10:52:44,704 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-AnaestheticIssues
+ccriserver      | 2020-11-23T10:52:44,711 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ClinicalSetting
+ccriserver      | 2020-11-23T10:52:44,721 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ConditionEpisode
+ccriserver      | 2020-11-23T10:52:44,738 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactPreference
+ccriserver      | 2020-11-23T10:52:44,743 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactRank
+ccriserver      | 2020-11-23T10:52:44,748 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator
+ccriserver      | 2020-11-23T10:52:44,771 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DeathNotificationStatus
+ccriserver      | 2020-11-23T10:52:44,776 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-DischargeMethod
+ccriserver      | 2020-11-23T10:52:44,781 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EffectivePeriod
+ccriserver      | 2020-11-23T10:52:44,785 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EmergencyCareDischargeStatus
+ccriserver      | 2020-11-23T10:52:44,798 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EncounterTransport
+ccriserver      | 2020-11-23T10:52:44,802 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory
+ccriserver      | 2020-11-23T10:52:44,813 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-Evidence
+ccriserver      | 2020-11-23T10:52:44,819 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ListWarningCode
+ccriserver      | 2020-11-23T10:52:44,828 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MainLocation
+ccriserver      | 2020-11-23T10:52:44,864 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: http://example.org/fhir/StructureDefinition/Extension-UKCore-MedicationChangeSummary
+ccriserver      | 2020-11-23T10:52:44,869 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: http://example.org/fhir/StructureDefinition/Extension-UKCore-MedicationDosageLastChanged
+ccriserver      | 2020-11-23T10:52:44,874 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: http://example.org/fhir/StructureDefinition/Extension-UKCore-MedicationPrescribingAgency
+ccriserver      | 2020-11-23T10:52:44,881 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationQuantityText
+ccriserver      | 2020-11-23T10:52:44,897 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation
+ccriserver      | 2020-11-23T10:52:44,901 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationStatementLastIssueDate
+ccriserver      | 2020-11-23T10:52:44,923 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSCommunication
+ccriserver      | 2020-11-23T10:52:44,927 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus
+ccriserver      | 2020-11-23T10:52:44,936 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NominatedPharmacy
+ccriserver      | 2020-11-23T10:52:44,940 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-OutcomeOfAttendance
+ccriserver      | 2020-11-23T10:52:44,944 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ParentPresent
+ccriserver      | 2020-11-23T10:52:44,948 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-PrescriptionType
+ccriserver      | 2020-11-23T10:52:44,951 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ReligiousAffiliation
+ccriserver      | 2020-11-23T10:52:44,962 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ResidentialStatus
+ccriserver      | 2020-11-23T10:52:44,969 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-TreatmentCategory
+ccriserver      | 2020-11-23T10:52:44,974 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-VaccinationProcedure
+ccriserver      | 2020-11-23T10:52:44,996 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-AllergyIntolerance
+ccriserver      | 2020-11-23T10:52:45,071 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-CarePlan
+ccriserver      | 2020-11-23T10:52:45,082 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-CareTeam
+ccriserver      | 2020-11-23T10:52:45,099 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Condition
+ccriserver      | 2020-11-23T10:52:45,203 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DiagnosticReport
+ccriserver      | 2020-11-23T10:52:45,239 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-DocumentReference
+ccriserver      | 2020-11-23T10:52:45,292 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter
+ccriserver      | 2020-11-23T10:52:45,326 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Immunization
+ccriserver      | 2020-11-23T10:52:45,347 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List
+ccriserver      | 2020-11-23T10:52:45,364 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location
+ccriserver      | 2020-11-23T10:52:45,374 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Medication
+ccriserver      | 2020-11-23T10:52:45,450 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationDispense
+ccriserver      | 2020-11-23T10:52:45,512 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest
+ccriserver      | 2020-11-23T10:52:45,532 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationStatement
+ccriserver      | 2020-11-23T10:52:45,605 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Observation
+ccriserver      | 2020-11-23T10:52:45,623 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization
+ccriserver      | 2020-11-23T10:52:45,643 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient
+ccriserver      | 2020-11-23T10:52:45,659 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner
+ccriserver      | 2020-11-23T10:52:45,685 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole
+ccriserver      | 2020-11-23T10:52:45,708 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Procedure
+ccriserver      | 2020-11-23T10:52:45,719 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-RelatedPerson
+ccriserver      | 2020-11-23T10:52:45,822 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-ServiceRequest
+ccriserver      | 2020-11-23T10:52:45,938 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Specimen
+ccriserver      | 2020-11-23T10:52:46,003 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-AddressKeyType
+ccriserver      | 2020-11-23T10:52:46,010 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-AdmissionMethod
+ccriserver      | 2020-11-23T10:52:46,018 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-AllergyCertainty
+ccriserver      | 2020-11-23T10:52:46,021 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-AllergyCode
+ccriserver      | 2020-11-23T10:52:46,025 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-AllergyExposureRoute
+ccriserver      | 2020-11-23T10:52:46,027 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-AllergyManifestation
+ccriserver      | 2020-11-23T10:52:46,029 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-AllergySeverity
+ccriserver      | 2020-11-23T10:52:46,032 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-BodySite
+ccriserver      | 2020-11-23T10:52:46,046 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-CareSettingType
+ccriserver      | 2020-11-23T10:52:46,048 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ConditionCategory
+ccriserver      | 2020-11-23T10:52:46,049 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ConditionCode
+ccriserver      | 2020-11-23T10:52:46,061 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ConditionEpisode
+ccriserver      | 2020-11-23T10:52:46,063 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ConditionEpisodicity
+ccriserver      | 2020-11-23T10:52:46,076 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-DeathNotificationStatus
+ccriserver      | 2020-11-23T10:52:46,093 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-DischargeDestination
+ccriserver      | 2020-11-23T10:52:46,096 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-DischargeMethod
+ccriserver      | 2020-11-23T10:52:46,121 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-DocumentType
+ccriserver      | 2020-11-23T10:52:46,134 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-EmergencyCareDischargeStatus
+ccriserver      | 2020-11-23T10:52:46,136 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-EncounterType
+ccriserver      | 2020-11-23T10:52:46,138 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-EthnicCategory
+ccriserver      | 2020-11-23T10:52:46,140 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-FindingCode
+ccriserver      | 2020-11-23T10:52:46,143 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-HumanLanguage
+ccriserver      | 2020-11-23T10:52:46,145 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ImmunizationExplanationReason
+ccriserver      | 2020-11-23T10:52:46,147 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-LanguageAbilityMode
+ccriserver      | 2020-11-23T10:52:46,148 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-LanguageAbilityProficiency
+ccriserver      | 2020-11-23T10:52:46,150 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ListCode
+ccriserver      | 2020-11-23T10:52:46,152 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ListEmptyReasonCode
+ccriserver      | 2020-11-23T10:52:46,153 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ListWarningCode
+ccriserver      | 2020-11-23T10:52:46,155 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationCode
+ccriserver      | 2020-11-23T10:52:46,156 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationDosageRoute
+ccriserver      | 2020-11-23T10:52:46,158 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationForm
+ccriserver      | 2020-11-23T10:52:46,159 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationSupplyType
+ccriserver      | 2020-11-23T10:52:46,160 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-NHSDataDictionary-PersonMaritalStatus
+ccriserver      | 2020-11-23T10:52:46,162 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-NHSDataDictionary-PersonStatedGender
+ccriserver      | 2020-11-23T10:52:46,163 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-NHSNumberVerificationStatus
+ccriserver      | 2020-11-23T10:52:46,164 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ObservationType
+ccriserver      | 2020-11-23T10:52:46,166 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-OutcomeOfAttendance
+ccriserver      | 2020-11-23T10:52:46,167 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-PreferredContactMethod
+ccriserver      | 2020-11-23T10:52:46,168 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-PreferredWrittenCommunicationFormat
+ccriserver      | 2020-11-23T10:52:46,169 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-PrescriptionType
+ccriserver      | 2020-11-23T10:52:46,170 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ProcedureCode
+ccriserver      | 2020-11-23T10:52:46,172 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ReasonImmunizationNotAdministered
+ccriserver      | 2020-11-23T10:52:46,174 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ReligiousAffiliation
+ccriserver      | 2020-11-23T10:52:46,176 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ReportCodeSnCT
+ccriserver      | 2020-11-23T10:52:46,177 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-ResidentialStatus
+ccriserver      | 2020-11-23T10:52:46,179 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-SDSJobRoleName
+ccriserver      | 2020-11-23T10:52:46,181 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-SourceOfAdmission
+ccriserver      | 2020-11-23T10:52:46,184 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-SpecimenBodySite
+ccriserver      | 2020-11-23T10:52:46,185 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-SpecimenType
+ccriserver      | 2020-11-23T10:52:46,187 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-TreatmentCategory
+ccriserver      | 2020-11-23T10:52:46,189 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-VaccinationProcedure
+ccriserver      | 2020-11-23T10:52:46,191 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/ValueSet/UKCore-VaccineCode
+ccriserver      | 2020-11-23T10:52:46,216 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/Codesystem/UKCore-AdditionalRelatedPersonRole
+ccriserver      | 2020-11-23T10:52:46,218 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-AddressKeyType
+ccriserver      | 2020-11-23T10:52:46,222 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod
+ccriserver      | 2020-11-23T10:52:46,224 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-ConditionEpisodicity
+ccriserver      | 2020-11-23T10:52:46,226 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/Codesystem/UKCore-ConsentUpdateMode
+ccriserver      | 2020-11-23T10:52:46,227 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-DeathNotificationStatus
+ccriserver      | 2020-11-23T10:52:46,230 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeDestination
+ccriserver      | 2020-11-23T10:52:46,232 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod
+ccriserver      | 2020-11-23T10:52:46,236 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-EthnicCategory
+ccriserver      | 2020-11-23T10:52:46,247 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-HumanLanguage
+ccriserver      | 2020-11-23T10:52:46,248 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-LanguageAbilityMode
+ccriserver      | 2020-11-23T10:52:46,250 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-LanguageAbilityProficiency
+ccriserver      | 2020-11-23T10:52:46,252 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-ListEmptyReasonCode
+ccriserver      | 2020-11-23T10:52:46,254 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-ListWarningCode
+ccriserver      | 2020-11-23T10:52:46,256 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-MedicationSupplyType
+ccriserver      | 2020-11-23T10:52:46,259 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSDataDictionary-PersonMaritalStatus
+ccriserver      | 2020-11-23T10:52:46,261 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSDataDictionary-PersonStatedGender
+ccriserver      | 2020-11-23T10:52:46,264 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus
+ccriserver      | 2020-11-23T10:52:46,266 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-OutcomeOfAttendance
+ccriserver      | 2020-11-23T10:52:46,270 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-PreferredContactMethod
+ccriserver      | 2020-11-23T10:52:46,271 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-PreferredWrittenCommunicationFormat
+ccriserver      | 2020-11-23T10:52:46,274 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType
+ccriserver      | 2020-11-23T10:52:46,276 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-ResidentialStatus
+ccriserver      | 2020-11-23T10:52:46,296 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName
+ccriserver      | 2020-11-23T10:52:46,298 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission
+ccriserver      | 2020-11-23T10:52:46,300 INFO  [main] u.n.c.c.f.r.v.IGValidationSupportR4: https://fhir.nhs.uk/R4/CodeSystem/UKCore-TreatmentCategory
+ccriserver      | In Data Source
+ccriserver      | jdbc:postgresql://ccrisql:5432/careconnect
+ccriserver      | 2020-11-23T10:52:46,629 INFO  [main] o.h.j.i.u.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: CCRI_PERSISTENCE_UNIT]
+ccriserver      | 2020-11-23T10:52:46,903 INFO  [main] o.h.Version: HHH000412: Hibernate Core {5.4.2.Final}
+ccriserver      | 2020-11-23T10:52:47,362 INFO  [main] o.h.a.c.r.j.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+ccriserver      | 2020-11-23T10:52:49,492 INFO  [main] o.h.d.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+smartonfhir     | 10:52:50 INFO  ca.uhn.fhir.context.FhirContext - Creating new FHIR context for FHIR version [DSTU3]
+ccriserver      | 2020-11-23T10:52:53,863 INFO  [main] o.h.s.e.Version: HSEARCH000034: Hibernate Search 5.11.3.Final
+smartonfhir     | 10:53:03 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+smartonfhir     | 10:53:03 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'directory:target/jpaserver_derby_files' not created, connection made to existing database instead.
+smartonfhir     | 10:53:03 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 10000, SQLState: 01J01
+smartonfhir     | 10:53:03 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Database 'directory:target/jpaserver_derby_files' not created, connection made to existing database instead.
+smartonfhir     | 10:53:04 INFO  ca.uhn.fhir.cli.RunServerCommand - Server started on port 8080
+smartonfhir     | 10:53:04 INFO  ca.uhn.fhir.cli.RunServerCommand - Web Testing UI : http://localhost:8080/
+smartonfhir     | 10:53:04 INFO  ca.uhn.fhir.cli.RunServerCommand - Server Base URL: http://localhost:8080/baseDstu3/
+ccriserver      | 2020-11-23T10:53:05,108 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ccriserver      | 2020-11-23T10:53:05,487 INFO  [main] o.s.o.j.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'CCRI_PERSISTENCE_UNIT'
+smartonfhir     | 10:53:05 INFO  c.u.f.j.d.d.SearchParamRegistryDstu3 - Refreshed search parameter cache in 136ms
+ccriserver      | 2020-11-23T10:53:05,791 INFO  [main] u.n.c.c.f.s.PackageManager: #1 Loading Ig Package for API Validation careconnect.base.stu3 https://interopen.github.io/careconnect-base-stu3/package.tgz 3.0.0
+ccriserver      | 2020-11-23T10:53:05,791 INFO  [main] u.n.c.c.f.s.PackageManager: Package Url: https://interopen.github.io/careconnect-base-stu3/package.tgz
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Initializing HAPI FHIR restful server running in DSTU3 mode
+ccriserver      | 2020-11-23T10:53:06,508 INFO  [main] u.n.c.c.f.s.PackageManager: Packaged Returned Ok: https://interopen.github.io/careconnect-base-stu3/package.tgz
+ccriserver      | Installing careconnect.base.stu3#3.0.0 to the package cache
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Added 117 resource provider(s). Total 117
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.AccountResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ActivityDefinitionResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.AdverseEventResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.AllergyIntoleranceResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.AppointmentResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.AppointmentResponseResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.AuditEventResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.BasicResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.BinaryResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.BodySiteResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.BundleResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.CapabilityStatementResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.CarePlanResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.CareTeamResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ChargeItemResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ClaimResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ClaimResponseResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ClinicalImpressionResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.CodeSystemResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.CommunicationResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.CommunicationRequestResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.CompartmentDefinitionResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.CompositionResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ConceptMapResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ConditionResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ConsentResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ContractResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.CoverageResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DataElementResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DetectedIssueResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DeviceResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DeviceComponentResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DeviceMetricResourceProvider
+smartonfhir     | 10:53:06 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DeviceRequestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DeviceUseStatementResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DiagnosticReportResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DocumentManifestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.DocumentReferenceResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.EligibilityRequestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.EligibilityResponseResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.EncounterResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.EndpointResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.EnrollmentRequestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.EnrollmentResponseResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.EpisodeOfCareResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ExpansionProfileResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ExplanationOfBenefitResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.FamilyMemberHistoryResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.FlagResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.GoalResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.GraphDefinitionResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.GroupResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.GuidanceResponseResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.HealthcareServiceResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ImagingManifestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ImagingStudyResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ImmunizationResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ImmunizationRecommendationResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ImplementationGuideResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.LibraryResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.LinkageResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ListResourceResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.LocationResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MeasureResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MeasureReportResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MediaResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MedicationResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MedicationAdministrationResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MedicationDispenseResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MedicationRequestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MedicationStatementResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MessageDefinitionResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.MessageHeaderResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.NamingSystemResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.NutritionOrderResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ObservationResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.OperationDefinitionResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.OperationOutcomeResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.OrganizationResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ParametersResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.PatientResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.PaymentNoticeResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.PaymentReconciliationResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.PersonResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.PlanDefinitionResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.PractitionerResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.PractitionerRoleResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ProcedureResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ProcedureRequestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ProcessRequestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ProcessResponseResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ProvenanceResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.QuestionnaireResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.QuestionnaireResponseResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ReferralRequestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.RelatedPersonResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.RequestGroupResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ResearchStudyResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ResearchSubjectResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.RiskAssessmentResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ScheduleResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.SearchParameterResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.SequenceResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ServiceDefinitionResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.SlotResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.SpecimenResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.StructureDefinitionResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.StructureMapResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.SubscriptionResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.SubstanceResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.SupplyDeliveryResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.SupplyRequestResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.TaskResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.TestReportResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.TestScriptResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.ValueSetResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.rp.dstu3.VisionPrescriptionResourceProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Added 2 plain provider(s). Total 2
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.provider.dstu3.JpaSystemProviderDstu3
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.provider.dstu3.TerminologyUploaderProviderDstu3
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class org.hl7.fhir.dstu3.hapi.rest.server.ServerProfileProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.jpa.provider.dstu3.JpaConformanceProviderDstu3
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - Scanning type for RESTful methods: class ca.uhn.fhir.rest.server.PageProvider
+smartonfhir     | 10:53:07 INFO  c.uhn.fhir.rest.server.RestfulServer - A FHIR has been lit on this server
+smartonfhir     | 10:53:07 INFO  ca.uhn.fhir.util.XmlUtil - FHIR XML procesing will use StAX implementation 'null' version 'null'
+smartonfhir     | 10:53:07 INFO  c.u.f.n.BaseThymeleafNarrativeGenerator - Initializing narrative generator
+ccriserver      |   Fetching:......
+ccriserver      |   Installing: ...... done.
+ccriserver      | 2020-11-23T10:53:09,751 INFO  [main] u.n.c.c.f.s.v.TerminologyServerValidationSupport: IG Validation Support Constructor
+ccriserver      | 2020-11-23T10:53:09,752 INFO  [main] u.n.c.c.f.s.v.TerminologyServerValidationSupport: Creating Terminology Server Client https://ontoserver.dataproducts.nhs.uk/fhir
+smartonfhir     | 10:53:10 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Patient/b7877b78-1a6d-4e90-ad3f-ad8c5f43c18d/_history/1
+smartonfhir     | 10:53:10 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Patient/b7877b78-1a6d-4e90-ad3f-ad8c5f43c18d/_history/1" in 2,059ms
+ccriserver      | 2020-11-23T10:53:10,569 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ACVPU-Observation-1
+ccriserver      | 2020-11-23T10:53:10,593 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1
+ccriserver      | 2020-11-23T10:53:10,599 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1
+ccriserver      | 2020-11-23T10:53:10,643 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BloodPressure-Observation-1
+ccriserver      | 2020-11-23T10:53:10,657 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-CarePlan-1
+ccriserver      | 2020-11-23T10:53:10,664 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-CareTeam-1
+ccriserver      | 2020-11-23T10:53:10,673 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Composition-1
+ccriserver      | 2020-11-23T10:53:10,696 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1
+ccriserver      | 2020-11-23T10:53:10,712 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1
+ccriserver      | 2020-11-23T10:53:10,723 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1
+ccriserver      | 2020-11-23T10:53:10,743 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1
+ccriserver      | 2020-11-23T10:53:10,749 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-EpisodeOfCare-1
+ccriserver      | 2020-11-23T10:53:10,764 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-FamilyMemberHistory-1
+ccriserver      | 2020-11-23T10:53:10,770 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Flag-1
+ccriserver      | 2020-11-23T10:53:10,774 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1
+ccriserver      | 2020-11-23T10:53:10,842 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HeartRate-Observation-1
+ccriserver      | 2020-11-23T10:53:10,860 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Immunization-1
+ccriserver      | 2020-11-23T10:53:10,878 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-InspiredOxygen-Observation-1
+ccriserver      | 2020-11-23T10:53:10,885 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-List-1
+ccriserver      | 2020-11-23T10:53:10,891 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1
+ccriserver      | 2020-11-23T10:53:10,901 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1
+ccriserver      | 2020-11-23T10:53:10,909 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-Flag-1
+ccriserver      | 2020-11-23T10:53:10,919 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationAdministration-1
+ccriserver      | 2020-11-23T10:53:10,928 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationDispense-1
+ccriserver      | 2020-11-23T10:53:10,947 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1
+ccriserver      | 2020-11-23T10:53:10,960 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1
+ccriserver      | 2020-11-23T10:53:10,979 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1
+ccriserver      | 2020-11-23T10:53:10,987 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1
+ccriserver      | 2020-11-23T10:53:11,014 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-OxygenSaturation-Observation-1
+ccriserver      | 2020-11-23T10:53:11,045 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1
+ccriserver      | 2020-11-23T10:53:11,052 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1
+ccriserver      | 2020-11-23T10:53:11,061 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1
+ccriserver      | 2020-11-23T10:53:11,121 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProblemHeader-Condition-1
+ccriserver      | 2020-11-23T10:53:11,137 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Procedure-1
+ccriserver      | 2020-11-23T10:53:11,161 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1
+ccriserver      | 2020-11-23T10:53:11,164 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Quantity-1
+ccriserver      | 2020-11-23T10:53:11,172 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1
+ccriserver      | 2020-11-23T10:53:11,176 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RelatedPerson-1
+ccriserver      | 2020-11-23T10:53:11,184 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ResearchStudy-1
+ccriserver      | 2020-11-23T10:53:11,214 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RespiratoryRate-Observation-1
+ccriserver      | 2020-11-23T10:53:11,219 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RiskAssessment-1
+ccriserver      | 2020-11-23T10:53:11,222 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Schedule-1
+ccriserver      | 2020-11-23T10:53:11,225 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Slot-1
+ccriserver      | 2020-11-23T10:53:11,237 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1
+ccriserver      | 2020-11-23T10:53:11,253 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Subscore-Observation-1
+ccriserver      | 2020-11-23T10:53:11,284 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-VitalSigns-Observation-1
+ccriserver      | 2020-11-23T10:53:11,289 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ActualProblem-1
+ccriserver      | 2020-11-23T10:53:11,292 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AdmissionMethod-1
+ccriserver      | 2020-11-23T10:53:11,305 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergyIntoleranceEnd-1
+ccriserver      | 2020-11-23T10:53:11,314 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AllergySeverity-1
+ccriserver      | 2020-11-23T10:53:11,318 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-AnaestheticIssues-1
+ccriserver      | 2020-11-23T10:53:11,323 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-CareSettingType-1
+ccriserver      | 2020-11-23T10:53:11,326 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ClinicalSetting-1
+ccriserver      | 2020-11-23T10:53:11,328 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ConditionEpisode-1
+ccriserver      | 2020-11-23T10:53:11,331 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DateRecorded-1
+ccriserver      | 2020-11-23T10:53:11,345 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DeathNotificationStatus-1
+ccriserver      | 2020-11-23T10:53:11,349 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-DischargeMethod-1
+ccriserver      | 2020-11-23T10:53:11,352 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EmergencyCareDischargeStatus-1
+ccriserver      | 2020-11-23T10:53:11,358 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EncounterTransport-1
+ccriserver      | 2020-11-23T10:53:11,360 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-EthnicCategory-1
+ccriserver      | 2020-11-23T10:53:11,363 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-Evidence-1
+ccriserver      | 2020-11-23T10:53:11,366 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-FastingStatus-1
+ccriserver      | 2020-11-23T10:53:11,368 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ListWarningCode-1
+ccriserver      | 2020-11-23T10:53:11,371 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MainLocation-1
+ccriserver      | 2020-11-23T10:53:11,377 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationChangeSummary-1
+ccriserver      | 2020-11-23T10:53:11,380 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationFlagAssociation-1
+ccriserver      | 2020-11-23T10:53:11,382 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationQuantityText-1
+ccriserver      | 2020-11-23T10:53:11,440 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationRepeatInformation-1
+ccriserver      | 2020-11-23T10:53:11,449 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatementLastIssueDate-1
+ccriserver      | 2020-11-23T10:53:11,457 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-MedicationStatusReason-1
+ccriserver      | 2020-11-23T10:53:11,472 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSCommunication-1
+ccriserver      | 2020-11-23T10:53:11,474 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1
+ccriserver      | 2020-11-23T10:53:11,476 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NominatedPharmacy-1
+ccriserver      | 2020-11-23T10:53:11,478 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-OutcomeOfAttendance-1
+ccriserver      | 2020-11-23T10:53:11,481 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ParentPresent-1
+ccriserver      | 2020-11-23T10:53:11,483 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescribedElsewhere-1
+ccriserver      | 2020-11-23T10:53:11,485 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescriptionType-1
+ccriserver      | 2020-11-23T10:53:11,489 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProbabilityOfRecurrence-1
+ccriserver      | 2020-11-23T10:53:11,491 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ProblemSignificance-1
+ccriserver      | 2020-11-23T10:53:11,494 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReasonCondition-1
+ccriserver      | 2020-11-23T10:53:11,496 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-Recorder-1
+ccriserver      | 2020-11-23T10:53:11,499 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReferralRequestMethod-1
+ccriserver      | 2020-11-23T10:53:11,506 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RegistrationDetails-1
+ccriserver      | 2020-11-23T10:53:11,509 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedClinicalContent-1
+ccriserver      | 2020-11-23T10:53:11,516 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-RelatedProblemHeader-1
+ccriserver      | 2020-11-23T10:53:11,522 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ReligiousAffiliation-1
+ccriserver      | 2020-11-23T10:53:11,533 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ResidentialStatus-1
+ccriserver      | 2020-11-23T10:53:11,537 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-SourceOfReferral-1
+ccriserver      | 2020-11-23T10:53:11,539 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-TreatmentCategory-1
+ccriserver      | 2020-11-23T10:53:11,542 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1
+ccriserver      | 2020-11-23T10:53:11,545 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-ValueApproximation-1
+ccriserver      | 2020-11-23T10:53:11,556 INFO  [main] u.n.c.c.f.s.v.IGValidationSupport: https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-coding-sctdescid
+ccriserver      | 2020-11-23T10:53:11,600 INFO  [main] u.n.c.c.f.c.Config: Creating FHIR Validator STU3
+smartonfhir     | 10:53:11 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/98173c6d-0692-4a02-90c8-1b30cb7182d7/_history/1
+smartonfhir     | 10:53:11 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/98173c6d-0692-4a02-90c8-1b30cb7182d7/_history/1" in 26ms
+smartonfhir     | 10:53:12 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Practitioner/5733035f-1734-4178-8c8f-83872c8b6fda/_history/1
+smartonfhir     | 10:53:12 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Practitioner/5733035f-1734-4178-8c8f-83872c8b6fda/_history/1" in 34ms
+smartonfhir     | 10:53:12 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/368d2022-aa6f-4fca-8526-3a2fad49f056/_history/1
+smartonfhir     | 10:53:12 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/368d2022-aa6f-4fca-8526-3a2fad49f056/_history/1" in 26ms
+ccriserver      | 2020-11-23T10:53:12,857 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+smartonfhir     | 10:53:12 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry ProcedureRequest/ad48d656-d76e-45d2-9be5-94a40f6d4dcf/_history/1
+smartonfhir     | 10:53:12 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "ProcedureRequest/ad48d656-d76e-45d2-9be5-94a40f6d4dcf/_history/1" in 182ms
+smartonfhir     | 10:53:13 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Specimen/a145a158-fe6d-462f-89a6-7f9dd508058e/_history/1
+smartonfhir     | 10:53:13 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Specimen/a145a158-fe6d-462f-89a6-7f9dd508058e/_history/1" in 66ms
+ccriserver      | 2020-11-23T10:53:14,093 INFO  [main] o.s.b.a.e.w.EndpointLinksResolver: Exposing 2 endpoint(s) beneath base path ''
+smartonfhir     | 10:53:14 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Observation/53e4c1f5-e487-4e31-b9d3-8a7f24c19e8a/_history/1
+smartonfhir     | 10:53:14 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Observation/53e4c1f5-e487-4e31-b9d3-8a7f24c19e8a/_history/1" in 98ms
+ccriserver      | 2020-11-23T10:53:14,303 WARN  [main] o.f.c.i.l.s.Slf4jLog: Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+ccriserver      | 2020-11-23T10:53:14,304 INFO  [main] u.n.c.c.f.c.DataSourceConfig: FLYWAY Locations = db/postgreSQL
+ccriserver      | 2020-11-23T10:53:14,305 WARN  [main] o.f.c.i.l.s.Slf4jLog: Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+ccriserver      | 2020-11-23T10:53:14,306 WARN  [main] o.f.c.i.l.s.Slf4jLog: Direct configuration of the Flyway object has been deprecated and will be removed in Flyway 6.0. Use Flyway.configure() instead.
+ccriserver      | 2020-11-23T10:53:14,347 INFO  [main] o.f.c.i.l.s.Slf4jLog: Flyway Community Edition 5.2.4 by Boxfuse
+ccriserver      | 2020-11-23T10:53:14,389 INFO  [main] o.f.c.i.l.s.Slf4jLog: Database: jdbc:postgresql://ccrisql:5432/careconnect (PostgreSQL 11.3)
+ccriserver      | 2020-11-23T10:53:14,397 WARN  [main] o.f.c.i.l.s.Slf4jLog: Flyway upgrade recommended: PostgreSQL 11.3 is newer than this version of Flyway and support has not been tested.
+smartonfhir     | 10:53:14 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry DiagnosticReport/ba13ce72-1f61-413e-ba18-fa55d320c99e/_history/1
+smartonfhir     | 10:53:14 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "DiagnosticReport/ba13ce72-1f61-413e-ba18-fa55d320c99e/_history/1" in 30ms
+ccriserver      | 2020-11-23T10:53:14,536 INFO  [main] o.f.c.i.l.s.Slf4jLog: Repair of failed migration in Schema History table "public"."flyway_schema_history" not necessary. No failed migration detected.
+ccriserver      | 2020-11-23T10:53:16,840 INFO  [main] o.f.c.i.l.s.Slf4jLog: Successfully repaired schema history table "public"."flyway_schema_history" (execution time 00:02.344s).
+ccriserver      | 2020-11-23T10:53:16,849 WARN  [main] o.f.c.i.l.s.Slf4jLog: Flyway upgrade recommended: PostgreSQL 11.3 is newer than this version of Flyway and support has not been tested.
+ccriserver      | 2020-11-23T10:53:18,490 INFO  [main] o.f.c.i.l.s.Slf4jLog: Successfully validated 69 migrations (execution time 00:01.626s)
+ccriserver      | 2020-11-23T10:53:18,510 INFO  [main] o.f.c.i.l.s.Slf4jLog: Current version of schema "public": 6.4
+ccriserver      | 2020-11-23T10:53:18,511 INFO  [main] o.f.c.i.l.s.Slf4jLog: Schema "public" is up to date. No migration necessary.
+ccriserver      | 2020-11-23T10:53:18,791 INFO  [main] o.s.s.w.DefaultSecurityFilterChain: Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ea8b13c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6dd55493, org.springframework.security.web.header.HeaderWriterFilter@5bdb605c, org.springframework.security.web.authentication.logout.LogoutFilter@7f9c249c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@462d4f3c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6531c84, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6aa7c6c6, org.springframework.security.web.session.SessionManagementFilter@27f7c3e6, org.springframework.security.web.access.ExceptionTranslationFilter@4a79c8cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@108487e8]
+ccriserver      | 2020-11-23T10:53:18,836 INFO  [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping: Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+ccriserver      | 2020-11-23T10:53:19,050 INFO  [main] o.s.s.c.ExecutorConfigurationSupport: Initializing ExecutorService 'applicationTaskExecutor'
+ccriserver      | 2020-11-23T10:53:19,168 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping: Adding welcome page: class path resource [static/index.html]
+ccriserver      | 2020-11-23T10:53:19,295 WARN  [main] o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration: Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+ccriserver      | 2020-11-23T10:53:19,625 INFO  [main] o.q.i.StdSchedulerFactory: Using default implementation for ThreadExecutor
+ccriserver      | 2020-11-23T10:53:19,674 INFO  [main] o.q.c.SchedulerSignalerImpl: Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+ccriserver      | 2020-11-23T10:53:19,675 INFO  [main] o.q.c.QuartzScheduler: Quartz Scheduler v.2.3.1 created.
+ccriserver      | 2020-11-23T10:53:19,679 INFO  [main] o.q.s.RAMJobStore: RAMJobStore initialized.
+ccriserver      | 2020-11-23T10:53:19,681 INFO  [main] o.q.c.QuartzScheduler: Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+ccriserver      |   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+ccriserver      |   NOT STARTED.
+ccriserver      |   Currently in standby mode.
+ccriserver      |   Number of jobs executed: 0
+ccriserver      |   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+ccriserver      |   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ccriserver      |
+ccriserver      | 2020-11-23T10:53:19,681 INFO  [main] o.q.i.StdSchedulerFactory: Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+ccriserver      | 2020-11-23T10:53:19,682 INFO  [main] o.q.i.StdSchedulerFactory: Quartz scheduler version: 2.3.1
+ccriserver      | 2020-11-23T10:53:19,683 INFO  [main] o.q.c.QuartzScheduler: JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4919cfcf
+ccriserver      | 2020-11-23T10:53:19,697 INFO  [main] o.s.s.c.ExecutorConfigurationSupport: Initializing ExecutorService 'taskScheduler'
+ccriserver      | 2020-11-23T10:53:19,755 INFO  [main] s.d.s.w.p.DocumentationPluginsBootstrapper: Context refreshed
+ccriserver      | 2020-11-23T10:53:19,801 INFO  [main] s.d.s.w.p.DocumentationPluginsBootstrapper: Found 1 custom documentation plugin(s)
+ccriserver      | 2020-11-23T10:53:19,875 INFO  [main] s.d.s.w.s.ApiListingReferenceScanner: Scanning for api listing references
+ccriserver      | 2020-11-23T10:53:20,260 INFO  [main] o.s.s.q.SchedulerFactoryBean: Starting Quartz Scheduler now
+ccriserver      | 2020-11-23T10:53:20,261 INFO  [main] o.q.c.QuartzScheduler: Scheduler quartzScheduler_$_NON_CLUSTERED started.
+ccriserver      | 2020-11-23T10:53:20,289 INFO  [main] o.a.j.l.DirectJDKLog: Starting ProtocolHandler ["http-nio-8186"]
+ccriserver      | 2020-11-23T10:53:20,329 INFO  [main] c.u.f.c.FhirContext: Creating new FHIR context for FHIR version [DSTU3]
+ccriserver      | 2020-11-23T10:53:20,359 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: REST Servlet initialised with config: HAPIRestfulConfig{serverBase='/'}
+ccriserver      | 2020-11-23T10:53:20,359 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: Resource count 43
+ccriserver      | 2020-11-23T10:53:20,361 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,362 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods getResourceType
+ccriserver      | 2020-11-23T10:53:20,364 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods wait
+ccriserver      | 2020-11-23T10:53:20,365 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,366 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,367 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,368 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods update
+ccriserver      | 2020-11-23T10:53:20,369 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,369 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods get
+ccriserver      | 2020-11-23T10:53:20,370 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,371 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,371 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,372 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,372 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods getEndpoint
+ccriserver      | 2020-11-23T10:53:20,373 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,374 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods testResource
+ccriserver      | 2020-11-23T10:53:20,374 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods update
+ccriserver      | 2020-11-23T10:53:20,375 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods searchHealthcareService
+ccriserver      | 2020-11-23T10:53:20,375 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,376 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods createList
+ccriserver      | 2020-11-23T10:53:20,377 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods searchLocation
+ccriserver      | 2020-11-23T10:53:20,377 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods update
+ccriserver      | 2020-11-23T10:53:20,378 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,379 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,381 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,383 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,384 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods update
+ccriserver      | 2020-11-23T10:53:20,384 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods update
+ccriserver      | 2020-11-23T10:53:20,385 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,386 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods getResourceType
+ccriserver      | 2020-11-23T10:53:20,386 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods update
+ccriserver      | 2020-11-23T10:53:20,387 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods read
+ccriserver      | 2020-11-23T10:53:20,388 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods updatePractitioner
+ccriserver      | 2020-11-23T10:53:20,389 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods searchPractitioner
+ccriserver      | 2020-11-23T10:53:20,390 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,390 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods count
+ccriserver      | 2020-11-23T10:53:20,391 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods update
+ccriserver      | 2020-11-23T10:53:20,392 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods getResourceType
+ccriserver      | 2020-11-23T10:53:20,393 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods getRelatedPerson
+ccriserver      | 2020-11-23T10:53:20,393 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods createSchedule
+ccriserver      | 2020-11-23T10:53:20,394 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods testResource
+ccriserver      | 2020-11-23T10:53:20,394 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods update
+ccriserver      | 2020-11-23T10:53:20,395 INFO  [main] u.n.c.c.f.JpaRestfulServerSTU3: class methods update
+ccriserver      | 2020-11-23T10:53:20,970 INFO  [main] c.u.f.c.FhirContext: Creating new FHIR context for FHIR version [DSTU3]
+ccriserver      | 2020-11-23T10:53:21,001 INFO  [main] c.u.f.c.FhirContext: Creating new FHIR context for FHIR version [DSTU3]
+ccriserver      | 2020-11-23T10:53:21,017 INFO  [main] c.u.f.r.s.RestfulServer: Initializing HAPI FHIR restful server running in DSTU3 mode
+ccriserver      | 2020-11-23T10:53:21,018 INFO  [main] c.u.f.r.s.RestfulServer: Added 43 resource provider(s). Total 43
+ccriserver      | 2020-11-23T10:53:21,178 INFO  [main] c.u.f.r.s.RestfulServer: Added 1 plain provider(s). Total 1
+ccriserver      | 2020-11-23T10:53:21,237 INFO  [main] c.u.f.r.s.RestfulServer: A FHIR has been lit on this server
+ccriserver      | 2020-11-23T10:53:21,238 INFO  [main] c.u.f.c.FhirContext: Creating new FHIR context for FHIR version [R4]
+ccriserver      | 2020-11-23T10:53:21,242 INFO  [main] u.n.c.c.f.JpaRestfulServerR4: class methods delete
+ccriserver      | 2020-11-23T10:53:21,244 INFO  [main] u.n.c.c.f.JpaRestfulServerR4: class methods count
+ccriserver      | 2020-11-23T10:53:21,304 INFO  [main] c.u.f.c.FhirContext: Creating new FHIR context for FHIR version [DSTU3]
+ccriserver      | 2020-11-23T10:53:21,306 INFO  [main] c.u.f.c.FhirContext: Creating new FHIR context for FHIR version [DSTU3]
+ccriserver      | 2020-11-23T10:53:21,309 INFO  [main] c.u.f.r.s.RestfulServer: Initializing HAPI FHIR restful server running in R4 mode
+ccriserver      | 2020-11-23T10:53:21,309 INFO  [main] c.u.f.r.s.RestfulServer: Added 2 resource provider(s). Total 2
+ccriserver      | 2020-11-23T10:53:21,311 INFO  [main] c.u.f.r.s.RestfulServer: Added 1 plain provider(s). Total 1
+ccriserver      | 2020-11-23T10:53:21,361 INFO  [main] c.u.f.r.s.RestfulServer: A FHIR has been lit on this server
+ccriserver      | 2020-11-23T10:53:21,364 INFO  [main] o.s.b.w.e.t.TomcatWebServer: Tomcat started on port(s): 8186 (http) with context path '/ccri-fhir'
+ccriserver      | 2020-11-23T10:53:21,373 INFO  [main] o.s.b.StartupInfoLogger: Started CCRIFHIRServer in 56.887 seconds (JVM running for 63.058)
+ccriserver      | 2020-11-23T10:53:24,760 INFO  [http-nio-8186-exec-1] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:24,763 INFO  [http-nio-8186-exec-1] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:24,775 INFO  [http-nio-8186-exec-1] u.n.c.c.f.s.p.CareConnectServerConformanceProvider: restful2 Server not null = true
+ccriserver      | 2020-11-23T10:53:24,800 INFO  [http-nio-8186-exec-1] u.n.c.c.f.s.p.CareConnectServerConformanceProvider: restful Server not null
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(allergyint0_.ALLERGY_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         AllergyIntolerance allergyint0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(appointmen0_.APPOINTMENT_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Appointment appointmen0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(careplanen0_.CAREPLAN_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         CarePlan careplanen0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(careteamen0_.CARE_TEAM_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         CareTeam careteamen0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(claimentit0_.CLAIM_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Claim claimentit0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(clinicalim0_.IMPRESSION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         ClinicalImpression clinicalim0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(codesystem0_.CODESYSTEM_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         CodeSystem codesystem0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(conceptmap0_.CONCEPT_MAP_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         ConceptMap conceptmap0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(conditione0_.CONDITION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Condition_ conditione0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(consentent0_.CONSENT_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Consent consentent0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(documentre0_.DOCUMENT_REFERENCE_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         DocumentReference documentre0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(encountere0_.ENCOUNTER_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Encounter encountere0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(endpointen0_.ENDPOINT_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         EndPoint endpointen0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(episodeofc0_.EPISODE_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         EpisodeOfCare episodeofc0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(flagentity0_.FLAG_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Flag flagentity0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(graphdefin0_.GRAPH_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         GraphDefinition graphdefin0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(healthcare0_.SERVICE_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         HealthcareService healthcare0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(immunisati0_.IMMUNISATION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Immunisation immunisati0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(listentity0_.LIST_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         List listentity0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(locationen0_.LOCATION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Location locationen0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(medication0_.MEDICATION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Medication medication0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(medication0_.ADMINISTRATION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         MedicationAdministration medication0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(medication0_.DISPENSE_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         MedicationDispense medication0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(medication0_.PRESCRIPTION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         MedicationRequest medication0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(medication0_.MEDICATION_STATEMENT_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         MedicationStatement medication0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(messagedef0_.MESSAGE_DEFINITION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         MessageDefinition messagedef0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(namingsyst0_.NAMING_SYSTEM_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         NamingSystem namingsyst0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(observatio0_.OBSERVATION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Observation observatio0_
+ccriserver      |     where
+ccriserver      |         observatio0_.PARENT_OBSERVATION_ID is null
+ccriserver      | 2020-11-23T10:53:25,598 INFO  [http-nio-8186-exec-1] u.n.c.c.f.s.p.CareConnectServerConformanceProvider: Org called
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(organisati0_.ORGANISATION_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Organisation organisati0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(patientent0_.PATIENT_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Patient patientent0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(personenti0_.PERSON_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Person personenti0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(practition0_.PRACTITIONER_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Practitioner practition0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(practition0_.PRACTITIONER_ROLE_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         PractitionerRole practition0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(proceduree0_.PROCEDURE_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Procedure_ proceduree0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(questionna0_.QUESTIONNAIRE_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Questionnaire questionna0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(questionna0_.FORM_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         QuestionnaireResponse questionna0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(referralre0_.REFERRAL_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         ReferralRequest referralre0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(relatedper0_.PERSON_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         RelatedPerson relatedper0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(scheduleen0_.SCHEDULE_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Schedule2 scheduleen0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(slotentity0_.SLOT_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         Slot2 slotentity0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(structured0_.STRUCTURE_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         StructureDefinition structured0_
+ccriserver      | Hibernate:
+ccriserver      |     select
+ccriserver      |         count(valueseten0_.VALUESET_ID) as col_0_0_
+ccriserver      |     from
+ccriserver      |         ValueSet valueseten0_
+ccriserver      | 2020-11-23T10:53:25,913 INFO  [http-nio-8186-exec-1] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[1200] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:25,915 INFO  [http-nio-8186-exec-1] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[1210] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:25,924 INFO  [http-nio-8186-exec-2] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:25,925 INFO  [http-nio-8186-exec-2] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:28,651 INFO  [http-nio-8186-exec-2] c.h.j.JAXBContextCache: Creating JAXB context for package org.oclc.purl.dsdl.svrl using ClassLoader org.springframework.boot.loader.LaunchedURLClassLoader@3a82f6ef
+ccriserver      | 2020-11-23T10:53:30,781 INFO  [http-nio-8186-exec-2] o.h.f.d.h.c.DefaultProfileValidationSupport: Loading structure definitions from classpath: /org/hl7/fhir/dstu3/model/profile/profiles-resources.xml
+ccriserver      | 2020-11-23T10:53:31,388 INFO  [http-nio-8186-exec-2] o.h.f.d.h.c.DefaultProfileValidationSupport: Loading structure definitions from classpath: /org/hl7/fhir/dstu3/model/profile/profiles-types.xml
+ccriserver      | 2020-11-23T10:53:31,440 INFO  [http-nio-8186-exec-2] o.h.f.d.h.c.DefaultProfileValidationSupport: Loading structure definitions from classpath: /org/hl7/fhir/dstu3/model/profile/profiles-others.xml
+ccriserver      | 2020-11-23T10:53:31,586 INFO  [http-nio-8186-exec-2] o.h.f.d.h.c.DefaultProfileValidationSupport: Loading structure definitions from classpath: /org/hl7/fhir/dstu3/model/extension/extension-definitions.xml
+ccriserver      | 2020-11-23T10:53:33,975 INFO  [http-nio-8186-exec-2] u.n.c.c.f.s.v.TerminologyServerValidationSupport: fetchCodeSystem MISSING 8d5e2cfd-24e4-4b1f-b532-c0820016ab33
+ccriserver      | 2020-11-23T10:53:33,975 INFO  [http-nio-8186-exec-2] o.h.f.d.h.c.DefaultProfileValidationSupport: Loading CodeSystem/ValueSet from classpath: /org/hl7/fhir/dstu3/model/valueset/valuesets.xml
+ccriserver      | 2020-11-23T10:53:34,230 INFO  [http-nio-8186-exec-2] o.h.f.d.h.c.DefaultProfileValidationSupport: Loading CodeSystem/ValueSet from classpath: /org/hl7/fhir/dstu3/model/valueset/v2-tables.xml
+ccriserver      | 2020-11-23T10:53:34,382 INFO  [http-nio-8186-exec-2] o.h.f.d.h.c.DefaultProfileValidationSupport: Loading CodeSystem/ValueSet from classpath: /org/hl7/fhir/dstu3/model/valueset/v3-codesystems.xml
+ccriserver      | 2020-11-23T10:53:35,093 INFO  [http-nio-8186-exec-2] u.n.c.c.f.s.v.TerminologyServerValidationSupport: fetchValueSet MISSING https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1
+ccriserver      | 2020-11-23T10:53:35,643 INFO  [http-nio-8186-exec-2] u.n.c.c.f.s.v.TerminologyServerValidationSupport: fetchValueSet MISSING https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2
+ccriserver      | 2020-11-23T10:53:36,626 INFO  [http-nio-8186-exec-2] u.n.c.c.f.s.v.TerminologyServerValidationSupport: fetchValueSet MISSING https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1
+ccriserver      | 2020-11-23T10:53:37,758 INFO  [http-nio-8186-exec-2] u.n.c.c.f.s.v.TerminologyServerValidationSupport: fetchValueSet MISSING http://snomed.info/sct
+ccriserver      | 2020-11-23T10:53:38,454 ERROR [http-nio-8186-exec-2] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [a769edbb-ae08-47cf-9a82-db4f80859731]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:38,883 ERROR [http-nio-8186-exec-2] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 404 : [5617b6ce-cd7a-4beb-846b-a03237c3a555]: LOINC is not indexed!
+ccriserver      | 2020-11-23T10:53:39,123 ERROR [http-nio-8186-exec-2] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [fae01e74-7401-43d2-9d3d-eb4cc0ead377]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:39,762 INFO  [http-nio-8186-exec-2] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[13839] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:39,762 INFO  [http-nio-8186-exec-2] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[13839] ResponseCode[200]
+cade            | /usr/src/app/resources/../resources/outputs/exhaust/
+cade            | /usr/src/app/resources/../resources/outputs/exhaust/
+cade            |
+cade            | Time elapsed: 3 seconds
+cade            | Starting simulation...
+Simulation date: 1945-09-02 00:33:00 Events processed: 41                                           waiting  connect to FHIR server : http://fhir:8080/baseDstu3/metadata
+cade            | waiting  connect to FHIR server : http://fhir:8080/baseDstu3/metadata
+cade            | waiting  connect to FHIR server : http://fhir:8080/baseDstu3/metadata
+cade            | waiting  connect to FHIR server : http://fhir:8080/baseDstu3/metadata
+cade            | waiting  connect to FHIR server : http://fhir:8080/baseDstu3/metadata
+cade            | waiting  connect to FHIR server : http://fhir:8080/baseDstu3/metadata
+cade            | waiting  connect to FHIR server : http://fhir:8080/baseDstu3/metadata
+cade            | waiting  connect to FHIR server : http://fhir:8080/baseDstu3/metadata
+Simulation date: 1945-09-02 00:39:00 Events processed: 47                                           waiting  connect to FHIR server : http://ccriserver:8186/ccri-fhir/STU3/metadata
+cade            | waiting  connect to FHIR server : http://ccriserver:8186/ccri-fhir/STU3/metadata
+smartonfhir     | 10:53:41 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Patient/3551b09f-e692-42c5-b95b-87318e29e39a/_history/1
+smartonfhir     | 10:53:41 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Patient/3551b09f-e692-42c5-b95b-87318e29e39a/_history/1" in 13ms
+smartonfhir     | 10:53:41 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/90fe1a42-566c-49ac-a457-622463414e21/_history/1
+smartonfhir     | 10:53:41 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/90fe1a42-566c-49ac-a457-622463414e21/_history/1" in 8ms
+smartonfhir     | 10:53:41 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Practitioner/662ad1bd-e4ff-45b4-ad95-5e77f52c4797/_history/1
+smartonfhir     | 10:53:41 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Practitioner/662ad1bd-e4ff-45b4-ad95-5e77f52c4797/_history/1" in 9ms
+smartonfhir     | 10:53:41 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/ea1d7fe0-d878-4dc5-a67c-5c68dcd3ab68/_history/1
+smartonfhir     | 10:53:41 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/ea1d7fe0-d878-4dc5-a67c-5c68dcd3ab68/_history/1" in 6ms
+smartonfhir     | 10:53:41 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry ProcedureRequest/99707d5f-2029-4744-b8e7-ceda7d4fcf81/_history/1
+smartonfhir     | 10:53:41 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "ProcedureRequest/99707d5f-2029-4744-b8e7-ceda7d4fcf81/_history/1" in 18ms
+smartonfhir     | 10:53:41 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Specimen/ccf7277a-667f-45c8-abfa-bb5fb6530456/_history/1
+smartonfhir     | 10:53:41 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Specimen/ccf7277a-667f-45c8-abfa-bb5fb6530456/_history/1" in 10ms
+smartonfhir     | 10:53:41 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Observation/4f910eb3-58c6-45f7-af1f-de4327d30e7b/_history/1
+smartonfhir     | 10:53:41 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Observation/4f910eb3-58c6-45f7-af1f-de4327d30e7b/_history/1" in 25ms
+smartonfhir     | 10:53:41 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry DiagnosticReport/464d1f4a-939f-4952-9d02-eba5255641a4/_history/1
+smartonfhir     | 10:53:41 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "DiagnosticReport/464d1f4a-939f-4952-9d02-eba5255641a4/_history/1" in 24ms
+ccriserver      | 2020-11-23T10:53:42,053 INFO  [http-nio-8186-exec-3] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:42,055 INFO  [http-nio-8186-exec-3] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:42,079 INFO  [http-nio-8186-exec-3] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[27] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:42,080 INFO  [http-nio-8186-exec-3] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[28] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:42,093 INFO  [http-nio-8186-exec-5] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:42,094 INFO  [http-nio-8186-exec-5] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:44,087 ERROR [http-nio-8186-exec-5] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [36c0f5a0-a8fa-426b-a4cc-4e09cd56978a]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:44,257 ERROR [http-nio-8186-exec-5] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 404 : [904b8bce-98ea-4af7-b87b-c776e73e3741]: LOINC is not indexed!
+ccriserver      | 2020-11-23T10:53:44,408 ERROR [http-nio-8186-exec-5] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [cd147aa4-c703-4773-bb62-589aee5778ba]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:44,777 INFO  [http-nio-8186-exec-5] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[2684] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:44,778 INFO  [http-nio-8186-exec-5] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[2685] ResponseCode[200]
+smartonfhir     | 10:53:45 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Patient/3e7614a1-3e9f-480e-9e2c-80c89c99c7a8/_history/1
+smartonfhir     | 10:53:45 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Patient/3e7614a1-3e9f-480e-9e2c-80c89c99c7a8/_history/1" in 8ms
+smartonfhir     | 10:53:45 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/41897779-6ccf-4a30-ad1a-831d07cb3d51/_history/1
+smartonfhir     | 10:53:45 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/41897779-6ccf-4a30-ad1a-831d07cb3d51/_history/1" in 7ms
+smartonfhir     | 10:53:45 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Practitioner/12a7653b-77f5-4c5a-86b8-c7a789c00700/_history/1
+smartonfhir     | 10:53:45 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Practitioner/12a7653b-77f5-4c5a-86b8-c7a789c00700/_history/1" in 8ms
+smartonfhir     | 10:53:45 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/0f179f3d-e5c1-4b6d-95a8-6f9fdbe7ccec/_history/1
+smartonfhir     | 10:53:45 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/0f179f3d-e5c1-4b6d-95a8-6f9fdbe7ccec/_history/1" in 6ms
+smartonfhir     | 10:53:45 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry ProcedureRequest/a9652133-84b1-4a66-9b65-f98dfdf433b7/_history/1
+smartonfhir     | 10:53:45 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "ProcedureRequest/a9652133-84b1-4a66-9b65-f98dfdf433b7/_history/1" in 20ms
+smartonfhir     | 10:53:45 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Specimen/6c3a0fc7-c423-4df8-864a-bb93c2755335/_history/1
+smartonfhir     | 10:53:45 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Specimen/6c3a0fc7-c423-4df8-864a-bb93c2755335/_history/1" in 11ms
+smartonfhir     | 10:53:46 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Observation/43eee9b8-7e83-422b-8de4-ee045a5b9daf/_history/1
+smartonfhir     | 10:53:46 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Observation/43eee9b8-7e83-422b-8de4-ee045a5b9daf/_history/1" in 18ms
+smartonfhir     | 10:53:46 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry DiagnosticReport/931bb96f-8ade-4f26-a5b4-4019adfda985/_history/1
+smartonfhir     | 10:53:46 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "DiagnosticReport/931bb96f-8ade-4f26-a5b4-4019adfda985/_history/1" in 16ms
+ccriserver      | 2020-11-23T10:53:46,287 INFO  [http-nio-8186-exec-6] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:46,288 INFO  [http-nio-8186-exec-6] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:46,302 INFO  [http-nio-8186-exec-6] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[15] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:46,302 INFO  [http-nio-8186-exec-6] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[15] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:46,312 INFO  [http-nio-8186-exec-8] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:46,312 INFO  [http-nio-8186-exec-8] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:48,207 ERROR [http-nio-8186-exec-8] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [35a5bf75-8c30-41c3-8483-0b49b0604b0c]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:48,384 ERROR [http-nio-8186-exec-8] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 404 : [21355897-0f5d-4a62-87c9-990fca48a397]: LOINC is not indexed!
+ccriserver      | 2020-11-23T10:53:48,559 ERROR [http-nio-8186-exec-8] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [43f0f530-dd02-49fa-81f5-6dce75fd6404]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:49,312 ERROR [http-nio-8186-exec-8] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [35a5bf75-8c30-41c3-8483-0b49b0604b0c]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:49,320 INFO  [http-nio-8186-exec-8] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[3009] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:49,321 INFO  [http-nio-8186-exec-8] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[3010] ResponseCode[200]
+smartonfhir     | 10:53:49 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Patient/48afcf27-e5ae-433f-a789-ed2f672e8ec0/_history/1
+smartonfhir     | 10:53:49 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Patient/48afcf27-e5ae-433f-a789-ed2f672e8ec0/_history/1" in 6ms
+smartonfhir     | 10:53:49 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/9427448c-8a6f-450e-ae94-a13a13384461/_history/1
+smartonfhir     | 10:53:49 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/9427448c-8a6f-450e-ae94-a13a13384461/_history/1" in 5ms
+smartonfhir     | 10:53:49 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Practitioner/f8317f9a-9822-41ca-beca-3f2d633b6067/_history/1
+smartonfhir     | 10:53:49 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Practitioner/f8317f9a-9822-41ca-beca-3f2d633b6067/_history/1" in 5ms
+smartonfhir     | 10:53:49 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/770e766b-1993-474a-a253-4637d64a8c6c/_history/1
+smartonfhir     | 10:53:49 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/770e766b-1993-474a-a253-4637d64a8c6c/_history/1" in 5ms
+smartonfhir     | 10:53:49 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry ProcedureRequest/1735d04c-8c4a-4f89-9c4e-6db6ea7bb222/_history/1
+smartonfhir     | 10:53:49 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "ProcedureRequest/1735d04c-8c4a-4f89-9c4e-6db6ea7bb222/_history/1" in 14ms
+smartonfhir     | 10:53:50 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Specimen/c901a76c-4920-49d6-b448-7a16d7dd20d0/_history/1
+smartonfhir     | 10:53:50 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Specimen/c901a76c-4920-49d6-b448-7a16d7dd20d0/_history/1" in 9ms
+smartonfhir     | 10:53:50 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Observation/9bffb314-495d-4dae-b0d6-1c444c449f3b/_history/1
+smartonfhir     | 10:53:50 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Observation/9bffb314-495d-4dae-b0d6-1c444c449f3b/_history/1" in 16ms
+smartonfhir     | 10:53:50 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry DiagnosticReport/2e1746d8-a3a2-4181-a48b-4abbfb8618b5/_history/1
+smartonfhir     | 10:53:50 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "DiagnosticReport/2e1746d8-a3a2-4181-a48b-4abbfb8618b5/_history/1" in 19ms
+ccriserver      | 2020-11-23T10:53:50,439 INFO  [http-nio-8186-exec-9] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:50,440 INFO  [http-nio-8186-exec-9] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:50,453 INFO  [http-nio-8186-exec-9] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[15] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:50,457 INFO  [http-nio-8186-exec-9] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[19] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:50,470 INFO  [http-nio-8186-exec-10] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:50,471 INFO  [http-nio-8186-exec-10] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:52,541 ERROR [http-nio-8186-exec-10] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [cadc83f7-6e4a-457f-8e42-141ed4ecb237]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:52,704 ERROR [http-nio-8186-exec-10] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 404 : [157673a6-3f45-490b-8c50-c234e80ffe56]: LOINC is not indexed!
+ccriserver      | 2020-11-23T10:53:52,865 ERROR [http-nio-8186-exec-10] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [6d220967-3efa-47aa-91c9-104239cf2428]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:53,226 INFO  [http-nio-8186-exec-10] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[2758] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:53,227 INFO  [http-nio-8186-exec-10] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[2759] ResponseCode[200]
+smartonfhir     | 10:53:53 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Patient/73446b7c-ce24-4188-9b96-ab515396fbdf/_history/1
+smartonfhir     | 10:53:53 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Patient/73446b7c-ce24-4188-9b96-ab515396fbdf/_history/1" in 8ms
+smartonfhir     | 10:53:53 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/12697298-64f2-4a0a-84ac-1e1f35da95dc/_history/1
+smartonfhir     | 10:53:53 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/12697298-64f2-4a0a-84ac-1e1f35da95dc/_history/1" in 6ms
+smartonfhir     | 10:53:53 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Practitioner/61f902b7-ae3a-46e6-934f-7a423d707c8a/_history/1
+smartonfhir     | 10:53:53 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Practitioner/61f902b7-ae3a-46e6-934f-7a423d707c8a/_history/1" in 6ms
+smartonfhir     | 10:53:54 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/a72a2e7a-30fa-4981-ae6d-e91e7646eb5e/_history/1
+smartonfhir     | 10:53:54 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/a72a2e7a-30fa-4981-ae6d-e91e7646eb5e/_history/1" in 5ms
+smartonfhir     | 10:53:54 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry ProcedureRequest/23749dd9-d01a-489e-a523-4af7159080f0/_history/1
+smartonfhir     | 10:53:54 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "ProcedureRequest/23749dd9-d01a-489e-a523-4af7159080f0/_history/1" in 12ms
+smartonfhir     | 10:53:54 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Specimen/7d89b9a7-80f4-40c5-b1ec-45b751367382/_history/1
+smartonfhir     | 10:53:54 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Specimen/7d89b9a7-80f4-40c5-b1ec-45b751367382/_history/1" in 10ms
+smartonfhir     | 10:53:54 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Observation/ebe3a9ea-59bc-4a46-af6b-1f632cef4edc/_history/1
+smartonfhir     | 10:53:54 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Observation/ebe3a9ea-59bc-4a46-af6b-1f632cef4edc/_history/1" in 15ms
+smartonfhir     | 10:53:54 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry DiagnosticReport/cf5456f9-463a-473a-b7bc-f4e865443fb3/_history/1
+smartonfhir     | 10:53:54 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "DiagnosticReport/cf5456f9-463a-473a-b7bc-f4e865443fb3/_history/1" in 16ms
+ccriserver      | 2020-11-23T10:53:54,506 INFO  [http-nio-8186-exec-2] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:54,507 INFO  [http-nio-8186-exec-2] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:54,521 INFO  [http-nio-8186-exec-2] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[16] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:54,522 INFO  [http-nio-8186-exec-2] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[17] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:54,529 INFO  [http-nio-8186-exec-4] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:54,530 INFO  [http-nio-8186-exec-4] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:56,713 ERROR [http-nio-8186-exec-4] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [289e19e1-d1e8-472e-8390-af12f3be688b]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:56,876 ERROR [http-nio-8186-exec-4] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 404 : [58e41f7a-ab13-47be-9e62-b114924effa9]: LOINC is not indexed!
+ccriserver      | 2020-11-23T10:53:57,020 ERROR [http-nio-8186-exec-4] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [ed5ada22-5a87-40ed-92f5-3fdc127daa52]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:53:58,088 INFO  [http-nio-8186-exec-4] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[3560] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:58,089 INFO  [http-nio-8186-exec-4] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[3561] ResponseCode[200]
+smartonfhir     | 10:53:58 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Patient/a0d71f17-fcb8-4821-8d8b-f25c3c1f43f1/_history/1
+smartonfhir     | 10:53:58 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Patient/a0d71f17-fcb8-4821-8d8b-f25c3c1f43f1/_history/1" in 7ms
+smartonfhir     | 10:53:58 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/64567658-fa9a-416a-b49c-c6d5a597ff17/_history/1
+smartonfhir     | 10:53:58 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/64567658-fa9a-416a-b49c-c6d5a597ff17/_history/1" in 5ms
+smartonfhir     | 10:53:59 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Practitioner/2acf4e56-08c1-4590-9f20-75c4e05f8eed/_history/1
+smartonfhir     | 10:53:59 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Practitioner/2acf4e56-08c1-4590-9f20-75c4e05f8eed/_history/1" in 5ms
+smartonfhir     | 10:53:59 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Organization/d6ae6264-5f83-442e-bebc-63422d0d3814/_history/1
+smartonfhir     | 10:53:59 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Organization/d6ae6264-5f83-442e-bebc-63422d0d3814/_history/1" in 5ms
+smartonfhir     | 10:53:59 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry ProcedureRequest/138ad23d-2209-4eba-9036-9c17977beaa6/_history/1
+smartonfhir     | 10:53:59 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "ProcedureRequest/138ad23d-2209-4eba-9036-9c17977beaa6/_history/1" in 19ms
+smartonfhir     | 10:53:59 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Specimen/80ec71bf-0a3a-4c76-928f-1025f776581f/_history/1
+smartonfhir     | 10:53:59 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Specimen/80ec71bf-0a3a-4c76-928f-1025f776581f/_history/1" in 11ms
+smartonfhir     | 10:53:59 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry Observation/990cc3d5-a3f4-4f79-80ce-4e0683f62a10/_history/1
+smartonfhir     | 10:53:59 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "Observation/990cc3d5-a3f4-4f79-80ce-4e0683f62a10/_history/1" in 14ms
+smartonfhir     | 10:53:59 INFO  ca.uhn.fhir.jpa.dao.BaseHapiFhirDao - Saving history entry DiagnosticReport/0e5ce5ae-c5c0-4d51-8a9d-3e22f71b5609/_history/1
+smartonfhir     | 10:53:59 INFO  c.u.f.j.dao.BaseHapiFhirResourceDao - Successfully created resource "DiagnosticReport/0e5ce5ae-c5c0-4d51-8a9d-3e22f71b5609/_history/1" in 15ms
+ccriserver      | 2020-11-23T10:53:59,729 INFO  [http-nio-8186-exec-3] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:59,730 INFO  [http-nio-8186-exec-3] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:59,744 INFO  [http-nio-8186-exec-3] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[16] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:59,745 INFO  [http-nio-8186-exec-3] u.n.c.c.f.i.ServerInterceptor: httpVerb[GET] Source[172.22.0.4] Operation[metadata ] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[17] ResponseCode[200]
+ccriserver      | 2020-11-23T10:53:59,755 INFO  [http-nio-8186-exec-6] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:53:59,756 INFO  [http-nio-8186-exec-6] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[]  ResponseCode[]
+ccriserver      | 2020-11-23T10:54:01,840 ERROR [http-nio-8186-exec-6] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [e534fe9d-7bfa-4428-8018-dbb66df7699d]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:54:02,000 ERROR [http-nio-8186-exec-6] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 404 : [42f2c326-0ea1-423a-a260-e038ccbda276]: LOINC is not indexed!
+ccriserver      | 2020-11-23T10:54:02,142 ERROR [http-nio-8186-exec-6] u.n.c.c.f.s.v.TerminologyServerValidationSupport: HTTP 422 : [14d25185-fe1b-4bcd-9ce7-7166cf0bad44]: The SNOMED CT ECL expression is invalid
+ccriserver      | 2020-11-23T10:54:02,494 INFO  [http-nio-8186-exec-6] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[2740] ResponseCode[200]
+ccriserver      | 2020-11-23T10:54:02,495 INFO  [http-nio-8186-exec-6] u.n.c.c.f.i.ServerInterceptor: httpVerb[POST] Source[172.22.0.4] Operation[extended-operation-type Bundle] UA[python-requests/2.24.0] Params[] RequestId[] ForwardedFor[] ForwardedHost[] CorrelationId[] ProcessingTime[2741] ResponseCode[200]
+Simulation date: 2019-11-22 07:43:00 Events processed: 662
+cade            | Time elapsed: 101 seconds
+cade exited with code 0

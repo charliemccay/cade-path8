@@ -1,0 +1,35 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="1c67c322-d389-4155-9226-8f0e83139a76"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/2c20e62d-2334-4f03-8b36-a363bfb854ab"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/49de810c-457a-4d95-9c67-00fee4aec61c"/>
+
+        <display value="Walsh, Sebastian"/>
+    </subject>
+    <issued value="1946-01-11T00:53:00Z"/>
+    <performer>
+        <actor>
+        <reference value="Organization/1630555e-0ca8-433a-954f-122864a7b462"/>
+
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/625a04f9-c75c-403f-b4b8-0fc39592e102"/>
+
+    </result>
+</DiagnosticReport>

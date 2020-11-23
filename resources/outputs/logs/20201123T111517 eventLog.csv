@@ -1,0 +1,799 @@
+TimeStamp,EventID,PersonID,pathway,Node,DecisionTable,Attribute,Value,DateTime
+11.15.20,0,46,Path1,Start,,,,1921-01-04T00:00:00
+11.15.20,0,46,Path1,Start,,NhsNumber,7832003812,1921-01-04T00:00:00
+11.15.20,1,46,Path1,Initial_patient_GP_Visit,,Delay Until - ,1921-01-04 00:45:00,1921-01-04T00:00:00
+11.15.20,2,46,Path1,patient_assessment,,,,1921-01-04T00:45:00
+11.15.20,3,46,Path1,test_request,,,,1921-01-04T00:45:00
+11.15.20,4,46,Path1,Specimen_check,,,,1921-01-04T00:45:00
+11.15.20,5,46,Path1,specimen_ready_for_test,,Delay Until - ,1921-01-04 01:13:00,1921-01-04T00:45:00
+11.15.20,6,46,Path1,lab_test,,,,1921-01-04T01:13:00
+11.15.20,7,46,Path1,test_report,,,,1921-01-04T01:13:00
+11.15.20,8,46,Path1,send_report,,,,1921-01-04T01:13:00
+11.15.20,9,46,Path1,receive_report,,,,1921-01-04T01:13:00
+11.15.20,10,46,Path1,GP_checks_report,,Delay Until - ,1921-01-05 00:13:00,1921-01-04T01:13:00
+11.15.20,11,46,Path1,inform_patient,,,,1921-01-05T00:13:00
+11.15.20,12,46,Path1,Finish,,,,1921-01-05T00:13:00
+11.15.20,13,7,Path1,Start,,,,1927-04-07T00:00:00
+11.15.20,13,7,Path1,Start,,NhsNumber,7832003812,1927-04-07T00:00:00
+11.15.20,14,7,Path1,Initial_patient_GP_Visit,,Delay Until - ,1927-04-07 00:15:00,1927-04-07T00:00:00
+11.15.20,15,7,Path1,patient_assessment,,,,1927-04-07T00:15:00
+11.15.20,16,7,Path1,test_request,,,,1927-04-07T00:15:00
+11.15.20,17,7,Path1,Specimen_check,,,,1927-04-07T00:15:00
+11.15.20,18,7,Path1,specimen_ready_for_test,,Delay Until - ,1927-04-07 00:18:00,1927-04-07T00:15:00
+11.15.20,19,7,Path1,lab_test,,,,1927-04-07T00:18:00
+11.15.20,20,7,Path1,test_report,,,,1927-04-07T00:18:00
+11.15.20,21,7,Path1,send_report,,,,1927-04-07T00:18:00
+11.15.20,22,7,Path1,receive_report,,,,1927-04-07T00:18:00
+11.15.20,23,7,Path1,GP_checks_report,,Delay Until - ,1927-04-07 16:18:00,1927-04-07T00:18:00
+11.15.20,24,7,Path1,inform_patient,,,,1927-04-07T16:18:00
+11.15.20,25,7,Path1,Finish,,,,1927-04-07T16:18:00
+11.15.20,26,12,Path1,Start,,,,1929-06-05T00:00:00
+11.15.20,26,12,Path1,Start,,NhsNumber,7832003812,1929-06-05T00:00:00
+11.15.20,27,12,Path1,Initial_patient_GP_Visit,,Delay Until - ,1929-06-05 00:43:00,1929-06-05T00:00:00
+11.15.20,28,12,Path1,patient_assessment,,,,1929-06-05T00:43:00
+11.15.20,29,12,Path1,test_request,,,,1929-06-05T00:43:00
+11.15.20,30,12,Path1,Specimen_check,,,,1929-06-05T00:43:00
+11.15.20,31,12,Path1,specimen_ready_for_test,,Delay Until - ,1929-06-05 00:58:00,1929-06-05T00:43:00
+11.15.20,32,12,Path1,lab_test,,,,1929-06-05T00:58:00
+11.15.20,33,12,Path1,test_report,,,,1929-06-05T00:58:00
+11.15.20,34,12,Path1,send_report,,,,1929-06-05T00:58:00
+11.15.20,35,12,Path1,receive_report,,,,1929-06-05T00:58:00
+11.15.20,36,12,Path1,GP_checks_report,,Delay Until - ,1929-06-05 11:58:00,1929-06-05T00:58:00
+11.15.20,37,12,Path1,inform_patient,,,,1929-06-05T11:58:00
+11.15.20,38,12,Path1,Finish,,,,1929-06-05T11:58:00
+11.15.20,39,13,Path1,Start,,,,1929-10-24T00:00:00
+11.15.20,39,13,Path1,Start,,NhsNumber,7832003812,1929-10-24T00:00:00
+11.15.20,40,13,Path1,Initial_patient_GP_Visit,,Delay Until - ,1929-10-24 00:15:00,1929-10-24T00:00:00
+11.15.20,41,13,Path1,patient_assessment,,,,1929-10-24T00:15:00
+11.15.20,42,13,Path1,test_request,,,,1929-10-24T00:15:00
+11.15.20,43,13,Path1,Specimen_check,,,,1929-10-24T00:15:00
+11.15.20,44,13,Path1,specimen_ready_for_test,,Delay Until - ,1929-10-24 00:44:00,1929-10-24T00:15:00
+11.15.20,45,13,Path1,lab_test,,,,1929-10-24T00:44:00
+11.15.20,46,13,Path1,test_report,,,,1929-10-24T00:44:00
+11.15.20,47,13,Path1,send_report,,,,1929-10-24T00:44:00
+11.15.20,48,13,Path1,receive_report,,,,1929-10-24T00:44:00
+11.15.20,49,13,Path1,GP_checks_report,,Delay Until - ,1929-10-24 08:44:00,1929-10-24T00:44:00
+11.15.20,50,13,Path1,inform_patient,,,,1929-10-24T08:44:00
+11.15.20,51,13,Path1,Finish,,,,1929-10-24T08:44:00
+11.15.20,52,29,Path1,Start,,,,1945-05-07T00:00:00
+11.15.20,52,29,Path1,Start,,NhsNumber,7832003812,1945-05-07T00:00:00
+11.15.20,53,29,Path1,Initial_patient_GP_Visit,,Delay Until - ,1945-05-07 00:26:00,1945-05-07T00:00:00
+11.15.20,54,29,Path1,patient_assessment,,,,1945-05-07T00:26:00
+11.15.20,55,29,Path1,test_request,,,,1945-05-07T00:26:00
+11.15.20,56,29,Path1,Specimen_check,,,,1945-05-07T00:26:00
+11.15.20,57,29,Path1,specimen_ready_for_test,,Delay Until - ,1945-05-07 00:32:00,1945-05-07T00:26:00
+11.15.20,58,29,Path1,lab_test,,,,1945-05-07T00:32:00
+11.15.20,59,29,Path1,test_report,,,,1945-05-07T00:32:00
+11.15.20,60,29,Path1,send_report,,,,1945-05-07T00:32:00
+11.15.20,61,29,Path1,receive_report,,,,1945-05-07T00:32:00
+11.15.20,62,29,Path1,GP_checks_report,,Delay Until - ,1945-05-07 07:32:00,1945-05-07T00:32:00
+11.15.20,63,29,Path1,inform_patient,,,,1945-05-07T07:32:00
+11.15.20,64,29,Path1,Finish,,,,1945-05-07T07:32:00
+11.15.20,65,1,Path1,Start,,,,1946-01-11T00:00:00
+11.15.20,65,1,Path1,Start,,NhsNumber,7832003812,1946-01-11T00:00:00
+11.15.20,66,1,Path1,Initial_patient_GP_Visit,,Delay Until - ,1946-01-11 00:48:00,1946-01-11T00:00:00
+11.15.20,67,1,Path1,patient_assessment,,,,1946-01-11T00:48:00
+11.15.20,67,1,Path1,patient_assessment,,PatientRcorded,TRUE,1946-01-11T00:48:00
+11.15.20,68,1,Path1,test_request,,,,1946-01-11T00:48:00
+11.15.20,68,1,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1946-01-11T00:48:00
+11.15.20,68,1,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1946-01-11T00:48:00
+11.15.20,68,1,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1946-01-11T00:48:00
+11.15.20,69,1,Path1,Specimen_check,,,,1946-01-11T00:48:00
+11.15.20,69,1,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1946-01-11T00:48:00
+11.15.20,69,1,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1946-01-11T00:48:00
+11.15.20,69,1,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1946-01-11T00:48:00
+11.15.20,69,1,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1946-01-11T00:48:00
+11.15.20,70,1,Path1,specimen_ready_for_test,,Delay Until - ,1946-01-11 00:53:00,1946-01-11T00:48:00
+11.15.20,71,1,Path1,lab_test,,,,1946-01-11T00:53:00
+11.15.21,71,1,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1946-01-11T00:53:00
+11.15.21,71,1,Path1,lab_test,,obs,"OrderedDict([('id', '1'), ('code', '1000381000000105'), ('DisplayName', 'Se prostate specific Ag level'), ('value', '72'), ('unit', 'ug/L'), ('unit_code', 'ug/L'), ('system', 'http://unitsofmeasure.org')])",1946-01-11T00:53:00
+11.15.21,72,1,Path1,test_report,,,,1946-01-11T00:53:00
+11.15.21,73,1,Path1,send_report,,,,1946-01-11T00:53:00
+11.15.21,73,1,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1946-01-11T00:53:00
+11.15.21,73,1,Path1,send_report,,BundleSent,TRUE,1946-01-11T00:53:00
+11.15.21,74,1,Path1,receive_report,,,,1946-01-11T00:53:00
+11.15.21,75,1,Path1,GP_checks_report,,Delay Until - ,1946-01-11 03:53:00,1946-01-11T00:53:00
+11.15.21,76,1,Path1,inform_patient,,,,1946-01-11T03:53:00
+11.15.21,76,1,Path1,inform_patient,,listing_provided,TRUE,1946-01-11T03:53:00
+11.15.21,76,1,Path1,inform_patient,,json_provided,TRUE,1946-01-11T03:53:00
+11.15.21,77,1,Path1,Finish,,,,1946-01-11T03:53:00
+11.15.21,78,41,Path1,Start,,,,1946-09-20T00:00:00
+11.15.21,78,41,Path1,Start,,NhsNumber,7832003812,1946-09-20T00:00:00
+11.15.21,79,41,Path1,Initial_patient_GP_Visit,,Delay Until - ,1946-09-20 00:37:00,1946-09-20T00:00:00
+11.15.21,80,41,Path1,patient_assessment,,,,1946-09-20T00:37:00
+11.15.21,81,41,Path1,test_request,,,,1946-09-20T00:37:00
+11.15.21,82,41,Path1,Specimen_check,,,,1946-09-20T00:37:00
+11.15.21,83,41,Path1,specimen_ready_for_test,,Delay Until - ,1946-09-20 01:06:00,1946-09-20T00:37:00
+11.15.21,84,41,Path1,lab_test,,,,1946-09-20T01:06:00
+11.15.21,85,41,Path1,test_report,,,,1946-09-20T01:06:00
+11.15.21,86,41,Path1,send_report,,,,1946-09-20T01:06:00
+11.15.21,87,41,Path1,receive_report,,,,1946-09-20T01:06:00
+11.15.21,88,41,Path1,GP_checks_report,,Delay Until - ,1946-09-20 14:06:00,1946-09-20T01:06:00
+11.15.21,89,41,Path1,inform_patient,,,,1946-09-20T14:06:00
+11.15.21,90,41,Path1,Finish,,,,1946-09-20T14:06:00
+11.15.21,91,40,Path1,Start,,,,1947-10-10T00:00:00
+11.15.21,91,40,Path1,Start,,NhsNumber,7832003812,1947-10-10T00:00:00
+11.15.21,92,40,Path1,Initial_patient_GP_Visit,,Delay Until - ,1947-10-10 00:38:00,1947-10-10T00:00:00
+11.15.21,93,40,Path1,patient_assessment,,,,1947-10-10T00:38:00
+11.15.21,94,40,Path1,test_request,,,,1947-10-10T00:38:00
+11.15.21,95,40,Path1,Specimen_check,,,,1947-10-10T00:38:00
+11.15.21,96,40,Path1,specimen_ready_for_test,,Delay Until - ,1947-10-10 00:55:00,1947-10-10T00:38:00
+11.15.21,97,40,Path1,lab_test,,,,1947-10-10T00:55:00
+11.15.21,98,40,Path1,test_report,,,,1947-10-10T00:55:00
+11.15.21,99,40,Path1,send_report,,,,1947-10-10T00:55:00
+11.15.21,100,40,Path1,receive_report,,,,1947-10-10T00:55:00
+11.15.21,101,40,Path1,GP_checks_report,,Delay Until - ,1947-10-10 23:55:00,1947-10-10T00:55:00
+11.15.21,102,40,Path1,inform_patient,,,,1947-10-10T23:55:00
+11.15.21,103,40,Path1,Finish,,,,1947-10-10T23:55:00
+11.15.21,104,10,Path1,Start,,,,1948-07-22T00:00:00
+11.15.21,104,10,Path1,Start,,NhsNumber,7832003812,1948-07-22T00:00:00
+11.15.21,105,10,Path1,Initial_patient_GP_Visit,,Delay Until - ,1948-07-22 00:48:00,1948-07-22T00:00:00
+11.15.21,106,10,Path1,patient_assessment,,,,1948-07-22T00:48:00
+11.15.21,107,10,Path1,test_request,,,,1948-07-22T00:48:00
+11.15.21,108,10,Path1,Specimen_check,,,,1948-07-22T00:48:00
+11.15.21,109,10,Path1,specimen_ready_for_test,,Delay Until - ,1948-07-22 00:51:00,1948-07-22T00:48:00
+11.15.21,110,10,Path1,lab_test,,,,1948-07-22T00:51:00
+11.15.21,111,10,Path1,test_report,,,,1948-07-22T00:51:00
+11.15.21,112,10,Path1,send_report,,,,1948-07-22T00:51:00
+11.15.21,113,10,Path1,receive_report,,,,1948-07-22T00:51:00
+11.15.21,114,10,Path1,GP_checks_report,,Delay Until - ,1948-07-22 19:51:00,1948-07-22T00:51:00
+11.15.21,115,10,Path1,inform_patient,,,,1948-07-22T19:51:00
+11.15.21,116,10,Path1,Finish,,,,1948-07-22T19:51:00
+11.15.21,117,21,Path1,Start,,,,1953-06-22T00:00:00
+11.15.21,117,21,Path1,Start,,NhsNumber,7832003812,1953-06-22T00:00:00
+11.15.21,118,21,Path1,Initial_patient_GP_Visit,,Delay Until - ,1953-06-22 00:28:00,1953-06-22T00:00:00
+11.15.21,119,21,Path1,patient_assessment,,,,1953-06-22T00:28:00
+11.15.21,120,21,Path1,test_request,,,,1953-06-22T00:28:00
+11.15.21,121,21,Path1,Specimen_check,,,,1953-06-22T00:28:00
+11.15.21,122,21,Path1,specimen_ready_for_test,,Delay Until - ,1953-06-22 00:54:00,1953-06-22T00:28:00
+11.15.21,123,21,Path1,lab_test,,,,1953-06-22T00:54:00
+11.15.21,124,21,Path1,test_report,,,,1953-06-22T00:54:00
+11.15.21,125,21,Path1,send_report,,,,1953-06-22T00:54:00
+11.15.21,126,21,Path1,receive_report,,,,1953-06-22T00:54:00
+11.15.21,127,21,Path1,GP_checks_report,,Delay Until - ,1953-06-22 11:54:00,1953-06-22T00:54:00
+11.15.21,128,21,Path1,inform_patient,,,,1953-06-22T11:54:00
+11.15.21,129,21,Path1,Finish,,,,1953-06-22T11:54:00
+11.15.21,130,43,Path1,Start,,,,1963-07-12T00:00:00
+11.15.21,130,43,Path1,Start,,NhsNumber,7832003812,1963-07-12T00:00:00
+11.15.21,131,43,Path1,Initial_patient_GP_Visit,,Delay Until - ,1963-07-12 00:39:00,1963-07-12T00:00:00
+11.15.21,132,43,Path1,patient_assessment,,,,1963-07-12T00:39:00
+11.15.21,133,43,Path1,test_request,,,,1963-07-12T00:39:00
+11.15.21,134,43,Path1,Specimen_check,,,,1963-07-12T00:39:00
+11.15.21,135,43,Path1,specimen_ready_for_test,,Delay Until - ,1963-07-12 00:41:00,1963-07-12T00:39:00
+11.15.21,136,43,Path1,lab_test,,,,1963-07-12T00:41:00
+11.15.21,137,43,Path1,test_report,,,,1963-07-12T00:41:00
+11.15.21,138,43,Path1,send_report,,,,1963-07-12T00:41:00
+11.15.21,139,43,Path1,receive_report,,,,1963-07-12T00:41:00
+11.15.21,140,43,Path1,GP_checks_report,,Delay Until - ,1963-07-12 20:41:00,1963-07-12T00:41:00
+11.15.21,141,43,Path1,inform_patient,,,,1963-07-12T20:41:00
+11.15.21,142,43,Path1,Finish,,,,1963-07-12T20:41:00
+11.15.21,143,48,Path1,Start,,,,1964-07-26T00:00:00
+11.15.21,143,48,Path1,Start,,NhsNumber,7832003812,1964-07-26T00:00:00
+11.15.21,144,48,Path1,Initial_patient_GP_Visit,,Delay Until - ,1964-07-26 00:12:00,1964-07-26T00:00:00
+11.15.21,145,48,Path1,patient_assessment,,,,1964-07-26T00:12:00
+11.15.21,146,48,Path1,test_request,,,,1964-07-26T00:12:00
+11.15.21,147,48,Path1,Specimen_check,,,,1964-07-26T00:12:00
+11.15.21,148,48,Path1,specimen_ready_for_test,,Delay Until - ,1964-07-26 00:40:00,1964-07-26T00:12:00
+11.15.21,149,48,Path1,lab_test,,,,1964-07-26T00:40:00
+11.15.21,150,48,Path1,test_report,,,,1964-07-26T00:40:00
+11.15.21,151,48,Path1,send_report,,,,1964-07-26T00:40:00
+11.15.21,152,48,Path1,receive_report,,,,1964-07-26T00:40:00
+11.15.21,153,48,Path1,GP_checks_report,,Delay Until - ,1964-07-26 06:40:00,1964-07-26T00:40:00
+11.15.21,154,48,Path1,inform_patient,,,,1964-07-26T06:40:00
+11.15.21,155,48,Path1,Finish,,,,1964-07-26T06:40:00
+11.15.21,156,23,Path1,Start,,,,1965-05-19T00:00:00
+11.15.21,156,23,Path1,Start,,NhsNumber,7832003812,1965-05-19T00:00:00
+11.15.21,157,23,Path1,Initial_patient_GP_Visit,,Delay Until - ,1965-05-19 00:16:00,1965-05-19T00:00:00
+11.15.21,158,23,Path1,patient_assessment,,,,1965-05-19T00:16:00
+11.15.21,159,23,Path1,test_request,,,,1965-05-19T00:16:00
+11.15.21,160,23,Path1,Specimen_check,,,,1965-05-19T00:16:00
+11.15.21,161,23,Path1,specimen_ready_for_test,,Delay Until - ,1965-05-19 00:33:00,1965-05-19T00:16:00
+11.15.21,162,23,Path1,lab_test,,,,1965-05-19T00:33:00
+11.15.21,163,23,Path1,test_report,,,,1965-05-19T00:33:00
+11.15.21,164,23,Path1,send_report,,,,1965-05-19T00:33:00
+11.15.21,165,23,Path1,receive_report,,,,1965-05-19T00:33:00
+11.15.21,166,23,Path1,GP_checks_report,,Delay Until - ,1965-05-19 18:33:00,1965-05-19T00:33:00
+11.15.21,167,23,Path1,inform_patient,,,,1965-05-19T18:33:00
+11.15.21,168,23,Path1,Finish,,,,1965-05-19T18:33:00
+11.15.21,169,14,Path1,Start,,,,1965-05-21T00:00:00
+11.15.21,169,14,Path1,Start,,NhsNumber,7832003812,1965-05-21T00:00:00
+11.15.21,170,14,Path1,Initial_patient_GP_Visit,,Delay Until - ,1965-05-21 00:14:00,1965-05-21T00:00:00
+11.15.21,171,14,Path1,patient_assessment,,,,1965-05-21T00:14:00
+11.15.21,172,14,Path1,test_request,,,,1965-05-21T00:14:00
+11.15.21,173,14,Path1,Specimen_check,,,,1965-05-21T00:14:00
+11.15.21,174,14,Path1,specimen_ready_for_test,,Delay Until - ,1965-05-21 00:44:00,1965-05-21T00:14:00
+11.15.21,175,14,Path1,lab_test,,,,1965-05-21T00:44:00
+11.15.21,176,14,Path1,test_report,,,,1965-05-21T00:44:00
+11.15.21,177,14,Path1,send_report,,,,1965-05-21T00:44:00
+11.15.21,178,14,Path1,receive_report,,,,1965-05-21T00:44:00
+11.15.21,179,14,Path1,GP_checks_report,,Delay Until - ,1965-05-21 19:44:00,1965-05-21T00:44:00
+11.15.21,180,14,Path1,inform_patient,,,,1965-05-21T19:44:00
+11.15.21,181,14,Path1,Finish,,,,1965-05-21T19:44:00
+11.15.21,182,24,Path1,Start,,,,1966-09-27T00:00:00
+11.15.21,182,24,Path1,Start,,NhsNumber,7832003812,1966-09-27T00:00:00
+11.15.21,183,24,Path1,Initial_patient_GP_Visit,,Delay Until - ,1966-09-27 00:36:00,1966-09-27T00:00:00
+11.15.21,184,24,Path1,patient_assessment,,,,1966-09-27T00:36:00
+11.15.21,185,24,Path1,test_request,,,,1966-09-27T00:36:00
+11.15.21,186,24,Path1,Specimen_check,,,,1966-09-27T00:36:00
+11.15.21,187,24,Path1,specimen_ready_for_test,,Delay Until - ,1966-09-27 01:06:00,1966-09-27T00:36:00
+11.15.21,188,24,Path1,lab_test,,,,1966-09-27T01:06:00
+11.15.21,189,24,Path1,test_report,,,,1966-09-27T01:06:00
+11.15.21,190,24,Path1,send_report,,,,1966-09-27T01:06:00
+11.15.21,191,24,Path1,receive_report,,,,1966-09-27T01:06:00
+11.15.21,192,24,Path1,GP_checks_report,,Delay Until - ,1966-09-27 07:06:00,1966-09-27T01:06:00
+11.15.21,193,24,Path1,inform_patient,,,,1966-09-27T07:06:00
+11.15.21,194,24,Path1,Finish,,,,1966-09-27T07:06:00
+11.15.21,195,20,Path1,Start,,,,1967-11-06T00:00:00
+11.15.21,195,20,Path1,Start,,NhsNumber,7832003812,1967-11-06T00:00:00
+11.15.21,196,20,Path1,Initial_patient_GP_Visit,,Delay Until - ,1967-11-06 00:47:00,1967-11-06T00:00:00
+11.15.21,197,20,Path1,patient_assessment,,,,1967-11-06T00:47:00
+11.15.21,198,20,Path1,test_request,,,,1967-11-06T00:47:00
+11.15.21,199,20,Path1,Specimen_check,,,,1967-11-06T00:47:00
+11.15.21,200,20,Path1,specimen_ready_for_test,,Delay Until - ,1967-11-06 01:13:00,1967-11-06T00:47:00
+11.15.21,201,20,Path1,lab_test,,,,1967-11-06T01:13:00
+11.15.21,202,20,Path1,test_report,,,,1967-11-06T01:13:00
+11.15.21,203,20,Path1,send_report,,,,1967-11-06T01:13:00
+11.15.21,204,20,Path1,receive_report,,,,1967-11-06T01:13:00
+11.15.21,205,20,Path1,GP_checks_report,,Delay Until - ,1967-11-06 16:13:00,1967-11-06T01:13:00
+11.15.21,206,20,Path1,inform_patient,,,,1967-11-06T16:13:00
+11.15.21,207,20,Path1,Finish,,,,1967-11-06T16:13:00
+11.15.21,208,5,Path1,Start,,,,1969-08-10T00:00:00
+11.15.21,208,5,Path1,Start,,NhsNumber,7832003812,1969-08-10T00:00:00
+11.15.21,209,5,Path1,Initial_patient_GP_Visit,,Delay Until - ,1969-08-10 00:20:00,1969-08-10T00:00:00
+11.15.21,210,5,Path1,patient_assessment,,,,1969-08-10T00:20:00
+11.15.21,210,5,Path1,patient_assessment,,PatientRcorded,TRUE,1969-08-10T00:20:00
+11.15.21,211,5,Path1,test_request,,,,1969-08-10T00:20:00
+11.15.21,211,5,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1969-08-10T00:20:00
+11.15.21,211,5,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1969-08-10T00:20:00
+11.15.21,211,5,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1969-08-10T00:20:00
+11.15.21,212,5,Path1,Specimen_check,,,,1969-08-10T00:20:00
+11.15.21,212,5,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1969-08-10T00:20:00
+11.15.21,212,5,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1969-08-10T00:20:00
+11.15.21,212,5,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1969-08-10T00:20:00
+11.15.21,212,5,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1969-08-10T00:20:00
+11.15.21,213,5,Path1,specimen_ready_for_test,,Delay Until - ,1969-08-10 00:36:00,1969-08-10T00:20:00
+11.15.21,214,5,Path1,lab_test,,,,1969-08-10T00:36:00
+11.15.21,214,5,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1969-08-10T00:36:00
+11.15.21,214,5,Path1,lab_test,,obs,"OrderedDict([('id', '5'), ('code', '1000381000000105'), ('DisplayName', 'Se prostate specific Ag level'), ('value', '76'), ('unit', 'ug/L'), ('unit_code', 'ug/L'), ('system', 'http://unitsofmeasure.org')])",1969-08-10T00:36:00
+11.15.21,215,5,Path1,test_report,,,,1969-08-10T00:36:00
+11.15.21,216,5,Path1,send_report,,,,1969-08-10T00:36:00
+11.15.21,216,5,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1969-08-10T00:36:00
+11.15.21,216,5,Path1,send_report,,BundleSent,TRUE,1969-08-10T00:36:00
+11.15.21,217,5,Path1,receive_report,,,,1969-08-10T00:36:00
+11.15.21,218,5,Path1,GP_checks_report,,Delay Until - ,1969-08-10 14:36:00,1969-08-10T00:36:00
+11.15.21,219,5,Path1,inform_patient,,,,1969-08-10T14:36:00
+11.15.21,219,5,Path1,inform_patient,,listing_provided,TRUE,1969-08-10T14:36:00
+11.15.21,219,5,Path1,inform_patient,,json_provided,TRUE,1969-08-10T14:36:00
+11.15.21,220,5,Path1,Finish,,,,1969-08-10T14:36:00
+11.15.21,221,44,Path1,Start,,,,1970-03-02T00:00:00
+11.15.21,221,44,Path1,Start,,NhsNumber,7832003812,1970-03-02T00:00:00
+11.15.21,222,44,Path1,Initial_patient_GP_Visit,,Delay Until - ,1970-03-02 00:20:00,1970-03-02T00:00:00
+11.15.22,223,44,Path1,patient_assessment,,,,1970-03-02T00:20:00
+11.15.22,224,44,Path1,test_request,,,,1970-03-02T00:20:00
+11.15.22,225,44,Path1,Specimen_check,,,,1970-03-02T00:20:00
+11.15.22,226,44,Path1,specimen_ready_for_test,,Delay Until - ,1970-03-02 00:31:00,1970-03-02T00:20:00
+11.15.22,227,44,Path1,lab_test,,,,1970-03-02T00:31:00
+11.15.22,228,44,Path1,test_report,,,,1970-03-02T00:31:00
+11.15.22,229,44,Path1,send_report,,,,1970-03-02T00:31:00
+11.15.22,230,44,Path1,receive_report,,,,1970-03-02T00:31:00
+11.15.22,231,44,Path1,GP_checks_report,,Delay Until - ,1970-03-02 09:31:00,1970-03-02T00:31:00
+11.15.22,232,44,Path1,inform_patient,,,,1970-03-02T09:31:00
+11.15.22,233,44,Path1,Finish,,,,1970-03-02T09:31:00
+11.15.22,234,8,Path1,Start,,,,1970-06-06T00:00:00
+11.15.22,234,8,Path1,Start,,NhsNumber,7832003812,1970-06-06T00:00:00
+11.15.22,235,8,Path1,Initial_patient_GP_Visit,,Delay Until - ,1970-06-06 00:32:00,1970-06-06T00:00:00
+11.15.22,236,8,Path1,patient_assessment,,,,1970-06-06T00:32:00
+11.15.22,237,8,Path1,test_request,,,,1970-06-06T00:32:00
+11.15.22,238,8,Path1,Specimen_check,,,,1970-06-06T00:32:00
+11.15.22,239,8,Path1,specimen_ready_for_test,,Delay Until - ,1970-06-06 00:53:00,1970-06-06T00:32:00
+11.15.22,240,8,Path1,lab_test,,,,1970-06-06T00:53:00
+11.15.22,241,8,Path1,test_report,,,,1970-06-06T00:53:00
+11.15.22,242,8,Path1,send_report,,,,1970-06-06T00:53:00
+11.15.22,243,8,Path1,receive_report,,,,1970-06-06T00:53:00
+11.15.22,244,8,Path1,GP_checks_report,,Delay Until - ,1970-06-06 01:53:00,1970-06-06T00:53:00
+11.15.22,245,8,Path1,inform_patient,,,,1970-06-06T01:53:00
+11.15.22,246,8,Path1,Finish,,,,1970-06-06T01:53:00
+11.15.22,247,49,Path1,Start,,,,1970-09-06T00:00:00
+11.15.22,247,49,Path1,Start,,NhsNumber,7832003812,1970-09-06T00:00:00
+11.15.22,248,49,Path1,Initial_patient_GP_Visit,,Delay Until - ,1970-09-06 00:32:00,1970-09-06T00:00:00
+11.15.22,249,49,Path1,patient_assessment,,,,1970-09-06T00:32:00
+11.15.22,250,49,Path1,test_request,,,,1970-09-06T00:32:00
+11.15.22,251,49,Path1,Specimen_check,,,,1970-09-06T00:32:00
+11.15.22,252,49,Path1,specimen_ready_for_test,,Delay Until - ,1970-09-06 00:47:00,1970-09-06T00:32:00
+11.15.22,253,49,Path1,lab_test,,,,1970-09-06T00:47:00
+11.15.22,254,49,Path1,test_report,,,,1970-09-06T00:47:00
+11.15.22,255,49,Path1,send_report,,,,1970-09-06T00:47:00
+11.15.22,256,49,Path1,receive_report,,,,1970-09-06T00:47:00
+11.15.22,257,49,Path1,GP_checks_report,,Delay Until - ,1970-09-06 23:47:00,1970-09-06T00:47:00
+11.15.22,258,49,Path1,inform_patient,,,,1970-09-06T23:47:00
+11.15.22,259,49,Path1,Finish,,,,1970-09-06T23:47:00
+11.15.22,260,33,Path1,Start,,,,1972-06-24T00:00:00
+11.15.22,260,33,Path1,Start,,NhsNumber,7832003812,1972-06-24T00:00:00
+11.15.22,261,33,Path1,Initial_patient_GP_Visit,,Delay Until - ,1972-06-24 00:17:00,1972-06-24T00:00:00
+11.15.22,262,33,Path1,patient_assessment,,,,1972-06-24T00:17:00
+11.15.22,263,33,Path1,test_request,,,,1972-06-24T00:17:00
+11.15.22,264,33,Path1,Specimen_check,,,,1972-06-24T00:17:00
+11.15.22,265,33,Path1,specimen_ready_for_test,,Delay Until - ,1972-06-24 00:32:00,1972-06-24T00:17:00
+11.15.22,266,33,Path1,lab_test,,,,1972-06-24T00:32:00
+11.15.22,267,33,Path1,test_report,,,,1972-06-24T00:32:00
+11.15.22,268,33,Path1,send_report,,,,1972-06-24T00:32:00
+11.15.22,269,33,Path1,receive_report,,,,1972-06-24T00:32:00
+11.15.22,270,33,Path1,GP_checks_report,,Delay Until - ,1972-06-24 18:32:00,1972-06-24T00:32:00
+11.15.22,271,33,Path1,inform_patient,,,,1972-06-24T18:32:00
+11.15.22,272,33,Path1,Finish,,,,1972-06-24T18:32:00
+11.15.22,273,28,Path1,Start,,,,1977-05-20T00:00:00
+11.15.22,273,28,Path1,Start,,NhsNumber,7832003812,1977-05-20T00:00:00
+11.15.22,274,28,Path1,Initial_patient_GP_Visit,,Delay Until - ,1977-05-20 00:16:00,1977-05-20T00:00:00
+11.15.22,275,28,Path1,patient_assessment,,,,1977-05-20T00:16:00
+11.15.22,276,28,Path1,test_request,,,,1977-05-20T00:16:00
+11.15.22,277,28,Path1,Specimen_check,,,,1977-05-20T00:16:00
+11.15.22,278,28,Path1,specimen_ready_for_test,,Delay Until - ,1977-05-20 00:40:00,1977-05-20T00:16:00
+11.15.22,279,28,Path1,lab_test,,,,1977-05-20T00:40:00
+11.15.22,280,28,Path1,test_report,,,,1977-05-20T00:40:00
+11.15.22,281,28,Path1,send_report,,,,1977-05-20T00:40:00
+11.15.22,282,28,Path1,receive_report,,,,1977-05-20T00:40:00
+11.15.22,283,28,Path1,GP_checks_report,,Delay Until - ,1977-05-20 09:40:00,1977-05-20T00:40:00
+11.15.22,284,28,Path1,inform_patient,,,,1977-05-20T09:40:00
+11.15.22,285,28,Path1,Finish,,,,1977-05-20T09:40:00
+11.15.22,286,34,Path1,Start,,,,1979-08-25T00:00:00
+11.15.22,286,34,Path1,Start,,NhsNumber,7832003812,1979-08-25T00:00:00
+11.15.22,287,34,Path1,Initial_patient_GP_Visit,,Delay Until - ,1979-08-25 00:12:00,1979-08-25T00:00:00
+11.15.22,288,34,Path1,patient_assessment,,,,1979-08-25T00:12:00
+11.15.22,289,34,Path1,test_request,,,,1979-08-25T00:12:00
+11.15.22,290,34,Path1,Specimen_check,,,,1979-08-25T00:12:00
+11.15.22,291,34,Path1,specimen_ready_for_test,,Delay Until - ,1979-08-25 00:40:00,1979-08-25T00:12:00
+11.15.22,292,34,Path1,lab_test,,,,1979-08-25T00:40:00
+11.15.22,293,34,Path1,test_report,,,,1979-08-25T00:40:00
+11.15.22,294,34,Path1,send_report,,,,1979-08-25T00:40:00
+11.15.22,295,34,Path1,receive_report,,,,1979-08-25T00:40:00
+11.15.22,296,34,Path1,GP_checks_report,,Delay Until - ,1979-08-25 12:40:00,1979-08-25T00:40:00
+11.15.22,297,34,Path1,inform_patient,,,,1979-08-25T12:40:00
+11.15.22,298,34,Path1,Finish,,,,1979-08-25T12:40:00
+11.15.22,299,11,Path1,Start,,,,1980-03-25T00:00:00
+11.15.22,299,11,Path1,Start,,NhsNumber,7832003812,1980-03-25T00:00:00
+11.15.22,300,11,Path1,Initial_patient_GP_Visit,,Delay Until - ,1980-03-25 00:26:00,1980-03-25T00:00:00
+11.15.22,301,11,Path1,patient_assessment,,,,1980-03-25T00:26:00
+11.15.22,302,11,Path1,test_request,,,,1980-03-25T00:26:00
+11.15.22,303,11,Path1,Specimen_check,,,,1980-03-25T00:26:00
+11.15.22,304,11,Path1,specimen_ready_for_test,,Delay Until - ,1980-03-25 00:48:00,1980-03-25T00:26:00
+11.15.22,305,11,Path1,lab_test,,,,1980-03-25T00:48:00
+11.15.22,306,11,Path1,test_report,,,,1980-03-25T00:48:00
+11.15.22,307,11,Path1,send_report,,,,1980-03-25T00:48:00
+11.15.22,308,11,Path1,receive_report,,,,1980-03-25T00:48:00
+11.15.22,309,11,Path1,GP_checks_report,,Delay Until - ,1980-03-25 04:48:00,1980-03-25T00:48:00
+11.15.22,310,11,Path1,inform_patient,,,,1980-03-25T04:48:00
+11.15.22,311,11,Path1,Finish,,,,1980-03-25T04:48:00
+11.15.22,312,16,Path1,Start,,,,1980-06-22T00:00:00
+11.15.22,312,16,Path1,Start,,NhsNumber,7832003812,1980-06-22T00:00:00
+11.15.22,313,16,Path1,Initial_patient_GP_Visit,,Delay Until - ,1980-06-22 00:13:00,1980-06-22T00:00:00
+11.15.22,314,16,Path1,patient_assessment,,,,1980-06-22T00:13:00
+11.15.22,315,16,Path1,test_request,,,,1980-06-22T00:13:00
+11.15.22,316,16,Path1,Specimen_check,,,,1980-06-22T00:13:00
+11.15.22,317,16,Path1,specimen_ready_for_test,,Delay Until - ,1980-06-22 00:34:00,1980-06-22T00:13:00
+11.15.22,318,16,Path1,lab_test,,,,1980-06-22T00:34:00
+11.15.22,319,16,Path1,test_report,,,,1980-06-22T00:34:00
+11.15.22,320,16,Path1,send_report,,,,1980-06-22T00:34:00
+11.15.22,321,16,Path1,receive_report,,,,1980-06-22T00:34:00
+11.15.22,322,16,Path1,GP_checks_report,,Delay Until - ,1980-06-22 19:34:00,1980-06-22T00:34:00
+11.15.22,323,16,Path1,inform_patient,,,,1980-06-22T19:34:00
+11.15.22,324,16,Path1,Finish,,,,1980-06-22T19:34:00
+11.15.22,325,26,Path1,Start,,,,1980-07-30T00:00:00
+11.15.22,325,26,Path1,Start,,NhsNumber,7832003812,1980-07-30T00:00:00
+11.15.22,326,26,Path1,Initial_patient_GP_Visit,,Delay Until - ,1980-07-30 00:41:00,1980-07-30T00:00:00
+11.15.22,327,26,Path1,patient_assessment,,,,1980-07-30T00:41:00
+11.15.22,328,26,Path1,test_request,,,,1980-07-30T00:41:00
+11.15.22,329,26,Path1,Specimen_check,,,,1980-07-30T00:41:00
+11.15.22,330,26,Path1,specimen_ready_for_test,,Delay Until - ,1980-07-30 00:50:00,1980-07-30T00:41:00
+11.15.22,331,26,Path1,lab_test,,,,1980-07-30T00:50:00
+11.15.22,332,26,Path1,test_report,,,,1980-07-30T00:50:00
+11.15.22,333,26,Path1,send_report,,,,1980-07-30T00:50:00
+11.15.22,334,26,Path1,receive_report,,,,1980-07-30T00:50:00
+11.15.22,335,26,Path1,GP_checks_report,,Delay Until - ,1980-07-30 01:50:00,1980-07-30T00:50:00
+11.15.22,336,26,Path1,inform_patient,,,,1980-07-30T01:50:00
+11.15.22,337,26,Path1,Finish,,,,1980-07-30T01:50:00
+11.15.22,338,3,Path1,Start,,,,1981-04-04T00:00:00
+11.15.22,338,3,Path1,Start,,NhsNumber,7832003812,1981-04-04T00:00:00
+11.15.22,339,3,Path1,Initial_patient_GP_Visit,,Delay Until - ,1981-04-04 00:23:00,1981-04-04T00:00:00
+11.15.22,340,3,Path1,patient_assessment,,,,1981-04-04T00:23:00
+11.15.22,340,3,Path1,patient_assessment,,PatientRcorded,TRUE,1981-04-04T00:23:00
+11.15.22,341,3,Path1,test_request,,,,1981-04-04T00:23:00
+11.15.22,341,3,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1981-04-04T00:23:00
+11.15.22,341,3,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1981-04-04T00:23:00
+11.15.22,341,3,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1981-04-04T00:23:00
+11.15.22,342,3,Path1,Specimen_check,,,,1981-04-04T00:23:00
+11.15.22,342,3,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1981-04-04T00:23:00
+11.15.22,342,3,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1981-04-04T00:23:00
+11.15.22,342,3,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1981-04-04T00:23:00
+11.15.22,342,3,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1981-04-04T00:23:00
+11.15.22,343,3,Path1,specimen_ready_for_test,,Delay Until - ,1981-04-04 00:44:00,1981-04-04T00:23:00
+11.15.22,344,3,Path1,lab_test,,,,1981-04-04T00:44:00
+11.15.22,344,3,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1981-04-04T00:44:00
+11.15.22,344,3,Path1,lab_test,,obs,"OrderedDict([('id', '3'), ('code', '1000381000000105'), ('DisplayName', 'Se prostate specific Ag level'), ('value', '74'), ('unit', 'ug/L'), ('unit_code', 'ug/L'), ('system', 'http://unitsofmeasure.org')])",1981-04-04T00:44:00
+11.15.22,345,3,Path1,test_report,,,,1981-04-04T00:44:00
+11.15.22,346,3,Path1,send_report,,,,1981-04-04T00:44:00
+11.15.22,346,3,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1981-04-04T00:44:00
+11.15.22,346,3,Path1,send_report,,BundleSent,TRUE,1981-04-04T00:44:00
+11.15.22,347,3,Path1,receive_report,,,,1981-04-04T00:44:00
+11.15.22,348,3,Path1,GP_checks_report,,Delay Until - ,1981-04-04 03:44:00,1981-04-04T00:44:00
+11.15.22,349,3,Path1,inform_patient,,,,1981-04-04T03:44:00
+11.15.22,349,3,Path1,inform_patient,,listing_provided,TRUE,1981-04-04T03:44:00
+11.15.22,349,3,Path1,inform_patient,,json_provided,TRUE,1981-04-04T03:44:00
+11.15.22,350,3,Path1,Finish,,,,1981-04-04T03:44:00
+11.15.22,351,42,Path1,Start,,,,1982-09-28T00:00:00
+11.15.22,351,42,Path1,Start,,NhsNumber,7832003812,1982-09-28T00:00:00
+11.15.22,352,42,Path1,Initial_patient_GP_Visit,,Delay Until - ,1982-09-28 00:20:00,1982-09-28T00:00:00
+11.15.22,353,42,Path1,patient_assessment,,,,1982-09-28T00:20:00
+11.15.22,354,42,Path1,test_request,,,,1982-09-28T00:20:00
+11.15.22,355,42,Path1,Specimen_check,,,,1982-09-28T00:20:00
+11.15.22,356,42,Path1,specimen_ready_for_test,,Delay Until - ,1982-09-28 00:25:00,1982-09-28T00:20:00
+11.15.22,357,42,Path1,lab_test,,,,1982-09-28T00:25:00
+11.15.22,358,42,Path1,test_report,,,,1982-09-28T00:25:00
+11.15.22,359,42,Path1,send_report,,,,1982-09-28T00:25:00
+11.15.22,360,42,Path1,receive_report,,,,1982-09-28T00:25:00
+11.15.22,361,42,Path1,GP_checks_report,,Delay Until - ,1982-09-28 22:25:00,1982-09-28T00:25:00
+11.15.22,362,42,Path1,inform_patient,,,,1982-09-28T22:25:00
+11.15.22,363,42,Path1,Finish,,,,1982-09-28T22:25:00
+11.15.22,364,45,Path1,Start,,,,1984-01-17T00:00:00
+11.15.22,364,45,Path1,Start,,NhsNumber,7832003812,1984-01-17T00:00:00
+11.15.22,365,45,Path1,Initial_patient_GP_Visit,,Delay Until - ,1984-01-17 00:44:00,1984-01-17T00:00:00
+11.15.22,366,45,Path1,patient_assessment,,,,1984-01-17T00:44:00
+11.15.22,367,45,Path1,test_request,,,,1984-01-17T00:44:00
+11.15.22,368,45,Path1,Specimen_check,,,,1984-01-17T00:44:00
+11.15.22,369,45,Path1,specimen_ready_for_test,,Delay Until - ,1984-01-17 01:07:00,1984-01-17T00:44:00
+11.15.22,370,45,Path1,lab_test,,,,1984-01-17T01:07:00
+11.15.22,371,45,Path1,test_report,,,,1984-01-17T01:07:00
+11.15.22,372,45,Path1,send_report,,,,1984-01-17T01:07:00
+11.15.22,373,45,Path1,receive_report,,,,1984-01-17T01:07:00
+11.15.22,374,45,Path1,GP_checks_report,,Delay Until - ,1984-01-17 14:07:00,1984-01-17T01:07:00
+11.15.22,375,45,Path1,inform_patient,,,,1984-01-17T14:07:00
+11.15.22,376,45,Path1,Finish,,,,1984-01-17T14:07:00
+11.15.22,377,50,Path1,Start,,,,1984-04-06T00:00:00
+11.15.22,377,50,Path1,Start,,NhsNumber,7832003812,1984-04-06T00:00:00
+11.15.22,378,50,Path1,Initial_patient_GP_Visit,,Delay Until - ,1984-04-06 00:16:00,1984-04-06T00:00:00
+11.15.22,379,50,Path1,patient_assessment,,,,1984-04-06T00:16:00
+11.15.22,380,50,Path1,test_request,,,,1984-04-06T00:16:00
+11.15.22,381,50,Path1,Specimen_check,,,,1984-04-06T00:16:00
+11.15.22,382,50,Path1,specimen_ready_for_test,,Delay Until - ,1984-04-06 00:35:00,1984-04-06T00:16:00
+11.15.22,383,50,Path1,lab_test,,,,1984-04-06T00:35:00
+11.15.22,384,50,Path1,test_report,,,,1984-04-06T00:35:00
+11.15.22,385,50,Path1,send_report,,,,1984-04-06T00:35:00
+11.15.22,386,50,Path1,receive_report,,,,1984-04-06T00:35:00
+11.15.22,387,50,Path1,GP_checks_report,,Delay Until - ,1984-04-07 00:35:00,1984-04-06T00:35:00
+11.15.22,388,50,Path1,inform_patient,,,,1984-04-07T00:35:00
+11.15.22,389,50,Path1,Finish,,,,1984-04-07T00:35:00
+11.15.22,390,47,Path1,Start,,,,1984-08-18T00:00:00
+11.15.22,390,47,Path1,Start,,NhsNumber,7832003812,1984-08-18T00:00:00
+11.15.22,391,47,Path1,Initial_patient_GP_Visit,,Delay Until - ,1984-08-18 00:33:00,1984-08-18T00:00:00
+11.15.22,392,47,Path1,patient_assessment,,,,1984-08-18T00:33:00
+11.15.22,393,47,Path1,test_request,,,,1984-08-18T00:33:00
+11.15.22,394,47,Path1,Specimen_check,,,,1984-08-18T00:33:00
+11.15.22,395,47,Path1,specimen_ready_for_test,,Delay Until - ,1984-08-18 00:42:00,1984-08-18T00:33:00
+11.15.22,396,47,Path1,lab_test,,,,1984-08-18T00:42:00
+11.15.22,397,47,Path1,test_report,,,,1984-08-18T00:42:00
+11.15.22,398,47,Path1,send_report,,,,1984-08-18T00:42:00
+11.15.23,399,47,Path1,receive_report,,,,1984-08-18T00:42:00
+11.15.23,400,47,Path1,GP_checks_report,,Delay Until - ,1984-08-18 20:42:00,1984-08-18T00:42:00
+11.15.23,401,47,Path1,inform_patient,,,,1984-08-18T20:42:00
+11.15.23,402,47,Path1,Finish,,,,1984-08-18T20:42:00
+11.15.23,403,6,Path1,Start,,,,1985-03-07T00:00:00
+11.15.23,403,6,Path1,Start,,NhsNumber,7832003812,1985-03-07T00:00:00
+11.15.23,404,6,Path1,Initial_patient_GP_Visit,,Delay Until - ,1985-03-07 00:35:00,1985-03-07T00:00:00
+11.15.23,405,6,Path1,patient_assessment,,,,1985-03-07T00:35:00
+11.15.23,406,6,Path1,test_request,,,,1985-03-07T00:35:00
+11.15.23,407,6,Path1,Specimen_check,,,,1985-03-07T00:35:00
+11.15.23,408,6,Path1,specimen_ready_for_test,,Delay Until - ,1985-03-07 00:54:00,1985-03-07T00:35:00
+11.15.23,409,6,Path1,lab_test,,,,1985-03-07T00:54:00
+11.15.23,410,6,Path1,test_report,,,,1985-03-07T00:54:00
+11.15.23,411,6,Path1,send_report,,,,1985-03-07T00:54:00
+11.15.23,412,6,Path1,receive_report,,,,1985-03-07T00:54:00
+11.15.23,413,6,Path1,GP_checks_report,,Delay Until - ,1985-03-07 20:54:00,1985-03-07T00:54:00
+11.15.23,414,6,Path1,inform_patient,,,,1985-03-07T20:54:00
+11.15.23,415,6,Path1,Finish,,,,1985-03-07T20:54:00
+11.15.23,416,15,Path1,Start,,,,1985-11-08T00:00:00
+11.15.23,416,15,Path1,Start,,NhsNumber,7832003812,1985-11-08T00:00:00
+11.15.23,417,15,Path1,Initial_patient_GP_Visit,,Delay Until - ,1985-11-08 00:25:00,1985-11-08T00:00:00
+11.15.23,418,15,Path1,patient_assessment,,,,1985-11-08T00:25:00
+11.15.23,419,15,Path1,test_request,,,,1985-11-08T00:25:00
+11.15.23,420,15,Path1,Specimen_check,,,,1985-11-08T00:25:00
+11.15.23,421,15,Path1,specimen_ready_for_test,,Delay Until - ,1985-11-08 00:47:00,1985-11-08T00:25:00
+11.15.23,422,15,Path1,lab_test,,,,1985-11-08T00:47:00
+11.15.23,423,15,Path1,test_report,,,,1985-11-08T00:47:00
+11.15.23,424,15,Path1,send_report,,,,1985-11-08T00:47:00
+11.15.23,425,15,Path1,receive_report,,,,1985-11-08T00:47:00
+11.15.23,426,15,Path1,GP_checks_report,,Delay Until - ,1985-11-08 17:47:00,1985-11-08T00:47:00
+11.15.23,427,15,Path1,inform_patient,,,,1985-11-08T17:47:00
+11.15.23,428,15,Path1,Finish,,,,1985-11-08T17:47:00
+11.15.23,429,27,Path1,Start,,,,1986-04-05T00:00:00
+11.15.23,429,27,Path1,Start,,NhsNumber,7832003812,1986-04-05T00:00:00
+11.15.23,430,27,Path1,Initial_patient_GP_Visit,,Delay Until - ,1986-04-05 00:21:00,1986-04-05T00:00:00
+11.15.23,431,27,Path1,patient_assessment,,,,1986-04-05T00:21:00
+11.15.23,432,27,Path1,test_request,,,,1986-04-05T00:21:00
+11.15.23,433,27,Path1,Specimen_check,,,,1986-04-05T00:21:00
+11.15.23,434,27,Path1,specimen_ready_for_test,,Delay Until - ,1986-04-05 00:42:00,1986-04-05T00:21:00
+11.15.23,435,27,Path1,lab_test,,,,1986-04-05T00:42:00
+11.15.23,436,27,Path1,test_report,,,,1986-04-05T00:42:00
+11.15.23,437,27,Path1,send_report,,,,1986-04-05T00:42:00
+11.15.23,438,27,Path1,receive_report,,,,1986-04-05T00:42:00
+11.15.23,439,27,Path1,GP_checks_report,,Delay Until - ,1986-04-05 09:42:00,1986-04-05T00:42:00
+11.15.23,440,27,Path1,inform_patient,,,,1986-04-05T09:42:00
+11.15.23,441,27,Path1,Finish,,,,1986-04-05T09:42:00
+11.15.23,442,4,Path1,Start,,,,1988-03-07T00:00:00
+11.15.23,442,4,Path1,Start,,NhsNumber,7832003812,1988-03-07T00:00:00
+11.15.23,443,4,Path1,Initial_patient_GP_Visit,,Delay Until - ,1988-03-07 00:42:00,1988-03-07T00:00:00
+11.15.23,444,4,Path1,patient_assessment,,,,1988-03-07T00:42:00
+11.15.23,444,4,Path1,patient_assessment,,PatientRcorded,TRUE,1988-03-07T00:42:00
+11.15.23,445,4,Path1,test_request,,,,1988-03-07T00:42:00
+11.15.23,445,4,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1988-03-07T00:42:00
+11.15.23,445,4,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1988-03-07T00:42:00
+11.15.23,445,4,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1988-03-07T00:42:00
+11.15.23,446,4,Path1,Specimen_check,,,,1988-03-07T00:42:00
+11.15.23,446,4,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1988-03-07T00:42:00
+11.15.23,446,4,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1988-03-07T00:42:00
+11.15.23,446,4,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1988-03-07T00:42:00
+11.15.23,446,4,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1988-03-07T00:42:00
+11.15.23,447,4,Path1,specimen_ready_for_test,,Delay Until - ,1988-03-07 01:09:00,1988-03-07T00:42:00
+11.15.23,448,4,Path1,lab_test,,,,1988-03-07T01:09:00
+11.15.23,448,4,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1988-03-07T01:09:00
+11.15.23,448,4,Path1,lab_test,,obs,"OrderedDict([('id', '4'), ('code', '1000381000000105'), ('DisplayName', 'Se prostate specific Ag level'), ('value', '75'), ('unit', 'ug/L'), ('unit_code', 'ug/L'), ('system', 'http://unitsofmeasure.org')])",1988-03-07T01:09:00
+11.15.23,449,4,Path1,test_report,,,,1988-03-07T01:09:00
+11.15.23,450,4,Path1,send_report,,,,1988-03-07T01:09:00
+11.15.23,450,4,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1988-03-07T01:09:00
+11.15.23,450,4,Path1,send_report,,BundleSent,TRUE,1988-03-07T01:09:00
+11.15.23,451,4,Path1,receive_report,,,,1988-03-07T01:09:00
+11.15.23,452,4,Path1,GP_checks_report,,Delay Until - ,1988-03-07 03:09:00,1988-03-07T01:09:00
+11.15.23,453,4,Path1,inform_patient,,,,1988-03-07T03:09:00
+11.15.23,453,4,Path1,inform_patient,,listing_provided,TRUE,1988-03-07T03:09:00
+11.15.23,453,4,Path1,inform_patient,,json_provided,TRUE,1988-03-07T03:09:00
+11.15.23,454,4,Path1,Finish,,,,1988-03-07T03:09:00
+11.15.23,455,30,Path1,Start,,,,1988-08-22T00:00:00
+11.15.23,455,30,Path1,Start,,NhsNumber,7832003812,1988-08-22T00:00:00
+11.15.23,456,30,Path1,Initial_patient_GP_Visit,,Delay Until - ,1988-08-22 00:13:00,1988-08-22T00:00:00
+11.15.23,457,30,Path1,patient_assessment,,,,1988-08-22T00:13:00
+11.15.23,458,30,Path1,test_request,,,,1988-08-22T00:13:00
+11.15.23,459,30,Path1,Specimen_check,,,,1988-08-22T00:13:00
+11.15.23,460,30,Path1,specimen_ready_for_test,,Delay Until - ,1988-08-22 00:24:00,1988-08-22T00:13:00
+11.15.23,461,30,Path1,lab_test,,,,1988-08-22T00:24:00
+11.15.23,462,30,Path1,test_report,,,,1988-08-22T00:24:00
+11.15.23,463,30,Path1,send_report,,,,1988-08-22T00:24:00
+11.15.23,464,30,Path1,receive_report,,,,1988-08-22T00:24:00
+11.15.23,465,30,Path1,GP_checks_report,,Delay Until - ,1988-08-22 16:24:00,1988-08-22T00:24:00
+11.15.23,466,30,Path1,inform_patient,,,,1988-08-22T16:24:00
+11.15.23,467,30,Path1,Finish,,,,1988-08-22T16:24:00
+11.15.23,468,31,Path1,Start,,,,1990-10-21T00:00:00
+11.15.23,468,31,Path1,Start,,NhsNumber,7832003812,1990-10-21T00:00:00
+11.15.23,469,31,Path1,Initial_patient_GP_Visit,,Delay Until - ,1990-10-21 00:20:00,1990-10-21T00:00:00
+11.15.23,470,31,Path1,patient_assessment,,,,1990-10-21T00:20:00
+11.15.23,471,31,Path1,test_request,,,,1990-10-21T00:20:00
+11.15.23,472,31,Path1,Specimen_check,,,,1990-10-21T00:20:00
+11.15.23,473,31,Path1,specimen_ready_for_test,,Delay Until - ,1990-10-21 00:47:00,1990-10-21T00:20:00
+11.15.23,474,31,Path1,lab_test,,,,1990-10-21T00:47:00
+11.15.23,475,31,Path1,test_report,,,,1990-10-21T00:47:00
+11.15.23,476,31,Path1,send_report,,,,1990-10-21T00:47:00
+11.15.23,477,31,Path1,receive_report,,,,1990-10-21T00:47:00
+11.15.23,478,31,Path1,GP_checks_report,,Delay Until - ,1990-10-21 19:47:00,1990-10-21T00:47:00
+11.15.23,479,31,Path1,inform_patient,,,,1990-10-21T19:47:00
+11.15.23,480,31,Path1,Finish,,,,1990-10-21T19:47:00
+11.15.23,481,17,Path1,Start,,,,1990-12-21T00:00:00
+11.15.23,481,17,Path1,Start,,NhsNumber,7832003812,1990-12-21T00:00:00
+11.15.23,482,17,Path1,Initial_patient_GP_Visit,,Delay Until - ,1990-12-21 00:45:00,1990-12-21T00:00:00
+11.15.23,483,17,Path1,patient_assessment,,,,1990-12-21T00:45:00
+11.15.23,484,17,Path1,test_request,,,,1990-12-21T00:45:00
+11.15.23,485,17,Path1,Specimen_check,,,,1990-12-21T00:45:00
+11.15.23,486,17,Path1,specimen_ready_for_test,,Delay Until - ,1990-12-21 01:09:00,1990-12-21T00:45:00
+11.15.23,487,17,Path1,lab_test,,,,1990-12-21T01:09:00
+11.15.23,488,17,Path1,test_report,,,,1990-12-21T01:09:00
+11.15.23,489,17,Path1,send_report,,,,1990-12-21T01:09:00
+11.15.23,490,17,Path1,receive_report,,,,1990-12-21T01:09:00
+11.15.23,491,17,Path1,GP_checks_report,,Delay Until - ,1990-12-21 19:09:00,1990-12-21T01:09:00
+11.15.23,492,17,Path1,inform_patient,,,,1990-12-21T19:09:00
+11.15.23,493,17,Path1,Finish,,,,1990-12-21T19:09:00
+11.15.23,494,19,Path1,Start,,,,1994-10-23T00:00:00
+11.15.23,494,19,Path1,Start,,NhsNumber,7832003812,1994-10-23T00:00:00
+11.15.23,495,19,Path1,Initial_patient_GP_Visit,,Delay Until - ,1994-10-23 00:32:00,1994-10-23T00:00:00
+11.15.23,496,19,Path1,patient_assessment,,,,1994-10-23T00:32:00
+11.15.23,497,19,Path1,test_request,,,,1994-10-23T00:32:00
+11.15.23,498,19,Path1,Specimen_check,,,,1994-10-23T00:32:00
+11.15.23,499,19,Path1,specimen_ready_for_test,,Delay Until - ,1994-10-23 00:56:00,1994-10-23T00:32:00
+11.15.23,500,19,Path1,lab_test,,,,1994-10-23T00:56:00
+11.15.23,501,19,Path1,test_report,,,,1994-10-23T00:56:00
+11.15.23,502,19,Path1,send_report,,,,1994-10-23T00:56:00
+11.15.23,503,19,Path1,receive_report,,,,1994-10-23T00:56:00
+11.15.23,504,19,Path1,GP_checks_report,,Delay Until - ,1994-10-24 00:56:00,1994-10-23T00:56:00
+11.15.23,505,19,Path1,inform_patient,,,,1994-10-24T00:56:00
+11.15.23,506,19,Path1,Finish,,,,1994-10-24T00:56:00
+11.15.23,507,35,Path1,Start,,,,1995-08-09T00:00:00
+11.15.23,507,35,Path1,Start,,NhsNumber,7832003812,1995-08-09T00:00:00
+11.15.23,508,35,Path1,Initial_patient_GP_Visit,,Delay Until - ,1995-08-09 00:22:00,1995-08-09T00:00:00
+11.15.23,509,35,Path1,patient_assessment,,,,1995-08-09T00:22:00
+11.15.23,510,35,Path1,test_request,,,,1995-08-09T00:22:00
+11.15.23,511,35,Path1,Specimen_check,,,,1995-08-09T00:22:00
+11.15.23,512,35,Path1,specimen_ready_for_test,,Delay Until - ,1995-08-09 00:34:00,1995-08-09T00:22:00
+11.15.23,513,35,Path1,lab_test,,,,1995-08-09T00:34:00
+11.15.23,514,35,Path1,test_report,,,,1995-08-09T00:34:00
+11.15.23,515,35,Path1,send_report,,,,1995-08-09T00:34:00
+11.15.23,516,35,Path1,receive_report,,,,1995-08-09T00:34:00
+11.15.23,517,35,Path1,GP_checks_report,,Delay Until - ,1995-08-09 22:34:00,1995-08-09T00:34:00
+11.15.23,518,35,Path1,inform_patient,,,,1995-08-09T22:34:00
+11.15.23,519,35,Path1,Finish,,,,1995-08-09T22:34:00
+11.15.23,520,37,Path1,Start,,,,1997-10-11T00:00:00
+11.15.23,520,37,Path1,Start,,NhsNumber,7832003812,1997-10-11T00:00:00
+11.15.23,521,37,Path1,Initial_patient_GP_Visit,,Delay Until - ,1997-10-11 00:12:00,1997-10-11T00:00:00
+11.15.23,522,37,Path1,patient_assessment,,,,1997-10-11T00:12:00
+11.15.23,523,37,Path1,test_request,,,,1997-10-11T00:12:00
+11.15.23,524,37,Path1,Specimen_check,,,,1997-10-11T00:12:00
+11.15.23,525,37,Path1,specimen_ready_for_test,,Delay Until - ,1997-10-11 00:25:00,1997-10-11T00:12:00
+11.15.23,526,37,Path1,lab_test,,,,1997-10-11T00:25:00
+11.15.23,527,37,Path1,test_report,,,,1997-10-11T00:25:00
+11.15.23,528,37,Path1,send_report,,,,1997-10-11T00:25:00
+11.15.23,529,37,Path1,receive_report,,,,1997-10-11T00:25:00
+11.15.23,530,37,Path1,GP_checks_report,,Delay Until - ,1997-10-11 14:25:00,1997-10-11T00:25:00
+11.15.23,531,37,Path1,inform_patient,,,,1997-10-11T14:25:00
+11.15.23,532,37,Path1,Finish,,,,1997-10-11T14:25:00
+11.15.23,533,32,Path1,Start,,,,2002-02-04T00:00:00
+11.15.23,533,32,Path1,Start,,NhsNumber,7832003812,2002-02-04T00:00:00
+11.15.23,534,32,Path1,Initial_patient_GP_Visit,,Delay Until - ,2002-02-04 00:41:00,2002-02-04T00:00:00
+11.15.23,535,32,Path1,patient_assessment,,,,2002-02-04T00:41:00
+11.15.23,536,32,Path1,test_request,,,,2002-02-04T00:41:00
+11.15.23,537,32,Path1,Specimen_check,,,,2002-02-04T00:41:00
+11.15.23,538,32,Path1,specimen_ready_for_test,,Delay Until - ,2002-02-04 00:54:00,2002-02-04T00:41:00
+11.15.23,539,32,Path1,lab_test,,,,2002-02-04T00:54:00
+11.15.23,540,32,Path1,test_report,,,,2002-02-04T00:54:00
+11.15.23,541,32,Path1,send_report,,,,2002-02-04T00:54:00
+11.15.23,542,32,Path1,receive_report,,,,2002-02-04T00:54:00
+11.15.23,543,32,Path1,GP_checks_report,,Delay Until - ,2002-02-04 21:54:00,2002-02-04T00:54:00
+11.15.23,544,32,Path1,inform_patient,,,,2002-02-04T21:54:00
+11.15.23,545,32,Path1,Finish,,,,2002-02-04T21:54:00
+11.15.23,546,36,Path1,Start,,,,2002-09-08T00:00:00
+11.15.23,546,36,Path1,Start,,NhsNumber,7832003812,2002-09-08T00:00:00
+11.15.23,547,36,Path1,Initial_patient_GP_Visit,,Delay Until - ,2002-09-08 00:13:00,2002-09-08T00:00:00
+11.15.23,548,36,Path1,patient_assessment,,,,2002-09-08T00:13:00
+11.15.23,549,36,Path1,test_request,,,,2002-09-08T00:13:00
+11.15.23,550,36,Path1,Specimen_check,,,,2002-09-08T00:13:00
+11.15.23,551,36,Path1,specimen_ready_for_test,,Delay Until - ,2002-09-08 00:25:00,2002-09-08T00:13:00
+11.15.23,552,36,Path1,lab_test,,,,2002-09-08T00:25:00
+11.15.23,553,36,Path1,test_report,,,,2002-09-08T00:25:00
+11.15.23,554,36,Path1,send_report,,,,2002-09-08T00:25:00
+11.15.23,555,36,Path1,receive_report,,,,2002-09-08T00:25:00
+11.15.23,556,36,Path1,GP_checks_report,,Delay Until - ,2002-09-08 10:25:00,2002-09-08T00:25:00
+11.15.23,557,36,Path1,inform_patient,,,,2002-09-08T10:25:00
+11.15.23,558,36,Path1,Finish,,,,2002-09-08T10:25:00
+11.15.23,559,18,Path1,Start,,,,2009-04-29T00:00:00
+11.15.23,559,18,Path1,Start,,NhsNumber,7832003812,2009-04-29T00:00:00
+11.15.23,560,18,Path1,Initial_patient_GP_Visit,,Delay Until - ,2009-04-29 00:10:00,2009-04-29T00:00:00
+11.15.23,561,18,Path1,patient_assessment,,,,2009-04-29T00:10:00
+11.15.23,562,18,Path1,test_request,,,,2009-04-29T00:10:00
+11.15.23,563,18,Path1,Specimen_check,,,,2009-04-29T00:10:00
+11.15.23,564,18,Path1,specimen_ready_for_test,,Delay Until - ,2009-04-29 00:28:00,2009-04-29T00:10:00
+11.15.23,565,18,Path1,lab_test,,,,2009-04-29T00:28:00
+11.15.23,566,18,Path1,test_report,,,,2009-04-29T00:28:00
+11.15.23,567,18,Path1,send_report,,,,2009-04-29T00:28:00
+11.15.23,568,18,Path1,receive_report,,,,2009-04-29T00:28:00
+11.15.24,569,18,Path1,GP_checks_report,,Delay Until - ,2009-04-29 16:28:00,2009-04-29T00:28:00
+11.15.24,570,18,Path1,inform_patient,,,,2009-04-29T16:28:00
+11.15.24,571,18,Path1,Finish,,,,2009-04-29T16:28:00
+11.15.24,572,39,Path1,Start,,,,2010-04-22T00:00:00
+11.15.24,572,39,Path1,Start,,NhsNumber,7832003812,2010-04-22T00:00:00
+11.15.24,573,39,Path1,Initial_patient_GP_Visit,,Delay Until - ,2010-04-22 00:21:00,2010-04-22T00:00:00
+11.15.24,574,39,Path1,patient_assessment,,,,2010-04-22T00:21:00
+11.15.24,575,39,Path1,test_request,,,,2010-04-22T00:21:00
+11.15.24,576,39,Path1,Specimen_check,,,,2010-04-22T00:21:00
+11.15.24,577,39,Path1,specimen_ready_for_test,,Delay Until - ,2010-04-22 00:49:00,2010-04-22T00:21:00
+11.15.24,578,39,Path1,lab_test,,,,2010-04-22T00:49:00
+11.15.24,579,39,Path1,test_report,,,,2010-04-22T00:49:00
+11.15.24,580,39,Path1,send_report,,,,2010-04-22T00:49:00
+11.15.24,581,39,Path1,receive_report,,,,2010-04-22T00:49:00
+11.15.24,582,39,Path1,GP_checks_report,,Delay Until - ,2010-04-22 03:49:00,2010-04-22T00:49:00
+11.15.24,583,39,Path1,inform_patient,,,,2010-04-22T03:49:00
+11.15.24,584,39,Path1,Finish,,,,2010-04-22T03:49:00
+11.15.24,585,38,Path1,Start,,,,2014-10-05T00:00:00
+11.15.24,585,38,Path1,Start,,NhsNumber,7832003812,2014-10-05T00:00:00
+11.15.24,586,38,Path1,Initial_patient_GP_Visit,,Delay Until - ,2014-10-05 00:12:00,2014-10-05T00:00:00
+11.15.24,587,38,Path1,patient_assessment,,,,2014-10-05T00:12:00
+11.15.24,588,38,Path1,test_request,,,,2014-10-05T00:12:00
+11.15.24,589,38,Path1,Specimen_check,,,,2014-10-05T00:12:00
+11.15.24,590,38,Path1,specimen_ready_for_test,,Delay Until - ,2014-10-05 00:27:00,2014-10-05T00:12:00
+11.15.24,591,38,Path1,lab_test,,,,2014-10-05T00:27:00
+11.15.24,592,38,Path1,test_report,,,,2014-10-05T00:27:00
+11.15.24,593,38,Path1,send_report,,,,2014-10-05T00:27:00
+11.15.24,594,38,Path1,receive_report,,,,2014-10-05T00:27:00
+11.15.24,595,38,Path1,GP_checks_report,,Delay Until - ,2014-10-05 18:27:00,2014-10-05T00:27:00
+11.15.24,596,38,Path1,inform_patient,,,,2014-10-05T18:27:00
+11.15.24,597,38,Path1,Finish,,,,2014-10-05T18:27:00
+11.15.24,598,22,Path1,Start,,,,2017-09-05T00:00:00
+11.15.24,598,22,Path1,Start,,NhsNumber,7832003812,2017-09-05T00:00:00
+11.15.24,599,22,Path1,Initial_patient_GP_Visit,,Delay Until - ,2017-09-05 00:14:00,2017-09-05T00:00:00
+11.15.24,600,22,Path1,patient_assessment,,,,2017-09-05T00:14:00
+11.15.24,601,22,Path1,test_request,,,,2017-09-05T00:14:00
+11.15.24,602,22,Path1,Specimen_check,,,,2017-09-05T00:14:00
+11.15.24,603,22,Path1,specimen_ready_for_test,,Delay Until - ,2017-09-05 00:35:00,2017-09-05T00:14:00
+11.15.24,604,22,Path1,lab_test,,,,2017-09-05T00:35:00
+11.15.24,605,22,Path1,test_report,,,,2017-09-05T00:35:00
+11.15.24,606,22,Path1,send_report,,,,2017-09-05T00:35:00
+11.15.24,607,22,Path1,receive_report,,,,2017-09-05T00:35:00
+11.15.24,608,22,Path1,GP_checks_report,,Delay Until - ,2017-09-05 07:35:00,2017-09-05T00:35:00
+11.15.24,609,22,Path1,inform_patient,,,,2017-09-05T07:35:00
+11.15.24,610,22,Path1,Finish,,,,2017-09-05T07:35:00
+11.15.24,611,2,Path1,Start,,,,2017-10-26T00:00:00
+11.15.24,611,2,Path1,Start,,NhsNumber,7832003812,2017-10-26T00:00:00
+11.15.24,612,2,Path1,Initial_patient_GP_Visit,,Delay Until - ,2017-10-26 00:40:00,2017-10-26T00:00:00
+11.15.24,613,2,Path1,patient_assessment,,,,2017-10-26T00:40:00
+11.15.24,613,2,Path1,patient_assessment,,PatientRcorded,TRUE,2017-10-26T00:40:00
+11.15.24,614,2,Path1,test_request,,,,2017-10-26T00:40:00
+11.15.24,614,2,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2017-10-26T00:40:00
+11.15.24,614,2,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2017-10-26T00:40:00
+11.15.24,614,2,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2017-10-26T00:40:00
+11.15.24,615,2,Path1,Specimen_check,,,,2017-10-26T00:40:00
+11.15.24,615,2,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2017-10-26T00:40:00
+11.15.24,615,2,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2017-10-26T00:40:00
+11.15.24,615,2,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2017-10-26T00:40:00
+11.15.24,615,2,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2017-10-26T00:40:00
+11.15.24,616,2,Path1,specimen_ready_for_test,,Delay Until - ,2017-10-26 00:41:00,2017-10-26T00:40:00
+11.15.24,617,2,Path1,lab_test,,,,2017-10-26T00:41:00
+11.15.24,617,2,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2017-10-26T00:41:00
+11.15.24,617,2,Path1,lab_test,,obs,"OrderedDict([('id', '2'), ('code', '1000381000000105'), ('DisplayName', 'Se prostate specific Ag level'), ('value', '73'), ('unit', 'ug/L'), ('unit_code', 'ug/L'), ('system', 'http://unitsofmeasure.org')])",2017-10-26T00:41:00
+11.15.24,618,2,Path1,test_report,,,,2017-10-26T00:41:00
+11.15.24,619,2,Path1,send_report,,,,2017-10-26T00:41:00
+11.15.24,619,2,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2017-10-26T00:41:00
+11.15.24,619,2,Path1,send_report,,BundleSent,TRUE,2017-10-26T00:41:00
+11.15.24,620,2,Path1,receive_report,,,,2017-10-26T00:41:00
+11.15.24,621,2,Path1,GP_checks_report,,Delay Until - ,2017-10-26 13:41:00,2017-10-26T00:41:00
+11.15.24,622,2,Path1,inform_patient,,,,2017-10-26T13:41:00
+11.15.24,622,2,Path1,inform_patient,,listing_provided,TRUE,2017-10-26T13:41:00
+11.15.24,622,2,Path1,inform_patient,,json_provided,TRUE,2017-10-26T13:41:00
+11.15.24,623,2,Path1,Finish,,,,2017-10-26T13:41:00
+11.15.24,624,0,Path1,Start,,,,2018-02-09T00:00:00
+11.15.24,624,0,Path1,Start,,NhsNumber,7832003812,2018-02-09T00:00:00
+11.15.24,625,0,Path1,Initial_patient_GP_Visit,,Delay Until - ,2018-02-09 00:25:00,2018-02-09T00:00:00
+11.15.24,626,0,Path1,patient_assessment,,,,2018-02-09T00:25:00
+11.15.24,626,0,Path1,patient_assessment,,PatientRcorded,TRUE,2018-02-09T00:25:00
+11.15.24,627,0,Path1,test_request,,,,2018-02-09T00:25:00
+11.15.24,627,0,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2018-02-09T00:25:00
+11.15.24,627,0,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2018-02-09T00:25:00
+11.15.24,627,0,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2018-02-09T00:25:00
+11.15.24,628,0,Path1,Specimen_check,,,,2018-02-09T00:25:00
+11.15.24,628,0,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2018-02-09T00:25:00
+11.15.24,628,0,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2018-02-09T00:25:00
+11.15.24,628,0,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2018-02-09T00:25:00
+11.15.24,628,0,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2018-02-09T00:25:00
+11.15.24,629,0,Path1,specimen_ready_for_test,,Delay Until - ,2018-02-09 00:39:00,2018-02-09T00:25:00
+11.15.24,630,0,Path1,lab_test,,,,2018-02-09T00:39:00
+11.15.24,630,0,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2018-02-09T00:39:00
+11.15.24,630,0,Path1,lab_test,,obs,"{'code': '1000381000000105', 'DisplayName': 'Se prostate specific Ag level', 'value': 72, 'unit': 'ug/L', 'unit_code': 'ug/L', 'system': 'http://unitsofmeasure.org'}",2018-02-09T00:39:00
+11.15.24,631,0,Path1,test_report,,,,2018-02-09T00:39:00
+11.15.24,632,0,Path1,send_report,,,,2018-02-09T00:39:00
+11.15.24,632,0,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2018-02-09T00:39:00
+11.15.24,632,0,Path1,send_report,,BundleSent,TRUE,2018-02-09T00:39:00
+11.15.24,633,0,Path1,receive_report,,,,2018-02-09T00:39:00
+11.15.24,634,0,Path1,GP_checks_report,,Delay Until - ,2018-02-09 03:39:00,2018-02-09T00:39:00
+11.15.24,635,0,Path1,inform_patient,,,,2018-02-09T03:39:00
+11.15.24,635,0,Path1,inform_patient,,listing_provided,TRUE,2018-02-09T03:39:00
+11.15.24,635,0,Path1,inform_patient,,json_provided,TRUE,2018-02-09T03:39:00
+11.15.24,636,0,Path1,Finish,,,,2018-02-09T03:39:00
+11.15.24,637,9,Path1,Start,,,,2019-01-24T00:00:00
+11.15.24,637,9,Path1,Start,,NhsNumber,7832003812,2019-01-24T00:00:00
+11.15.24,638,9,Path1,Initial_patient_GP_Visit,,Delay Until - ,2019-01-24 00:16:00,2019-01-24T00:00:00
+11.15.24,639,9,Path1,patient_assessment,,,,2019-01-24T00:16:00
+11.15.24,640,9,Path1,test_request,,,,2019-01-24T00:16:00
+11.15.24,641,9,Path1,Specimen_check,,,,2019-01-24T00:16:00
+11.15.24,642,9,Path1,specimen_ready_for_test,,Delay Until - ,2019-01-24 00:19:00,2019-01-24T00:16:00
+11.15.24,643,9,Path1,lab_test,,,,2019-01-24T00:19:00
+11.15.24,644,9,Path1,test_report,,,,2019-01-24T00:19:00
+11.15.24,645,9,Path1,send_report,,,,2019-01-24T00:19:00
+11.15.24,646,9,Path1,receive_report,,,,2019-01-24T00:19:00
+11.15.24,647,9,Path1,GP_checks_report,,Delay Until - ,2019-01-24 15:19:00,2019-01-24T00:19:00
+11.15.24,648,9,Path1,inform_patient,,,,2019-01-24T15:19:00
+11.15.24,649,9,Path1,Finish,,,,2019-01-24T15:19:00
+11.15.24,650,25,Path1,Start,,,,2019-03-07T00:00:00
+11.15.24,650,25,Path1,Start,,NhsNumber,7832003812,2019-03-07T00:00:00
+11.15.24,651,25,Path1,Initial_patient_GP_Visit,,Delay Until - ,2019-03-07 00:10:00,2019-03-07T00:00:00
+11.15.24,652,25,Path1,patient_assessment,,,,2019-03-07T00:10:00
+11.15.24,653,25,Path1,test_request,,,,2019-03-07T00:10:00
+11.15.24,654,25,Path1,Specimen_check,,,,2019-03-07T00:10:00
+11.15.24,655,25,Path1,specimen_ready_for_test,,Delay Until - ,2019-03-07 00:30:00,2019-03-07T00:10:00
+11.15.24,656,25,Path1,lab_test,,,,2019-03-07T00:30:00
+11.15.25,657,25,Path1,test_report,,,,2019-03-07T00:30:00
+11.15.25,658,25,Path1,send_report,,,,2019-03-07T00:30:00
+11.15.25,659,25,Path1,receive_report,,,,2019-03-07T00:30:00
+11.15.25,660,25,Path1,GP_checks_report,,Delay Until - ,2019-03-07 11:30:00,2019-03-07T00:30:00
+11.15.25,661,25,Path1,inform_patient,,,,2019-03-07T11:30:00
+11.15.25,662,25,Path1,Finish,,,,2019-03-07T11:30:00

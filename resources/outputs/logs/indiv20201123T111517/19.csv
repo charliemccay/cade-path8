@@ -1,0 +1,15 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+494,Path1,Initial_patient_GP_Visit,,,,1994-10-23T00:00:00
+494,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,1994-10-23T00:00:00
+495,Path1,patient_assessment,,,,1994-10-23T00:00:00
+496,Path1,test_request,,,,1994-10-23T00:32:00
+497,Path1,Specimen_check,,,,1994-10-23T00:32:00
+498,Path1,specimen_ready_for_test,,,,1994-10-23T00:32:00
+499,Path1,lab_test,,,,1994-10-23T00:32:00
+500,Path1,test_report,,,,1994-10-23T00:56:00
+501,Path1,send_report,,,,1994-10-23T00:56:00
+502,Path1,receive_report,,,,1994-10-23T00:56:00
+503,Path1,GP_checks_report,,,,1994-10-23T00:56:00
+504,Path1,inform_patient,,,,1994-10-23T00:56:00
+505,Path1,Finish,,,,1994-10-24T00:56:00
+506,Path1,Finish,,,,1994-10-24T00:56:00

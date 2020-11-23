@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="e73d51a7-126e-4121-8f27-296b857ccaea"/>
+	<meta>
+		<lastUpdated value="1946-01-11T00:53:00Z"/>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
+	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="e73d51a7-126e-4121-8f27-296b857ccaea"/>
+	</identifier>
+	<type value="message"/>
+
+	<entry>
+		<fullUrl value="urn:uuid:e73d51a7-126e-4121-8f27-296b857ccaea"/>
+		<resource>
+			<MessageHeader>
+				<id value="e73d51a7-126e-4121-8f27-296b857ccaea"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2"/>
+				</meta>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+					<extension url="BusAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="InfAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="RecipientType">
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1"/>
+							<code value="FA"/>
+							<display value="For Action"/>
+						</valueCoding>
+					</extension>
+					<extension url="MessageDefinition">
+					    <valueReference>
+					        <reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-NP-MessageDefinition-1"/>
+				        </valueReference>
+				    </extension>
+				    <extension url="SenderReference">
+					    <valueString value="None"/>
+				    </extension>
+				    <extension url="LocalExtension">
+					    <valueString value="None"/>
+				    </extension>
+				</extension>
+				<event>
+					<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+					<code value="ITK012M"/>
+					<display value="ITK National Pathology"/>
+				</event>
+				<receiver>
+					<reference value="urn:uuid:aa67622d-cf9b-4cb1-b9a3-e642f997644f"/>
+				</receiver>
+				<sender>
+					<reference value="urn:uuid:1630555e-0ca8-433a-954f-122864a7b462"/>
+				</sender>
+				<timestamp value="1946-01-11T00:53:00Z"/>
+				<source>
+					<endpoint value="TKD13"/>
+				</source>
+				<focus>
+					<reference value="urn:uuid:1c67c322-d389-4155-9226-8f0e83139a76"/>
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<!--Provider from result-->
+	<entry>
+		<fullUrl value="urn:uuid:1630555e-0ca8-433a-954f-122864a7b462"/>
+		<resource>
+        <Organization>
+    <id value="1630555e-0ca8-433a-954f-122864a7b462"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="TKD13"/>
+    </identifier>
+    <!--
+    <name value="Midtown District Hospital"/>
+    <address>
+        <line value="Beckett Street"/>
+        <city value="Leeds"/>
+        <district value="West YorkShire"/>
+        <postalCode value="LS9 7TF"/>
+    </address>
+    -->
+</Organization>
+		<!--Requesting Org-->
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:aa67622d-cf9b-4cb1-b9a3-e642f997644f"/>
+		<resource>
+			<Organization>
+    <id value="aa67622d-cf9b-4cb1-b9a3-e642f997644f"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="D82015"/>
+    </identifier>
+    <!--
+    <name value="Manor GP Practice"/>
+    <address>
+        <line value="30/32 Bridge Street"/>
+        <city value="Downham Market"/>
+        <district value="Norfolk"/>
+        <postalCode value="PE38 9DH"/>
+    </address>
+    -->
+</Organization>
+		</resource>
+	</entry>
+	<!--Requesting Practitioner-->
+	<entry>
+		<fullUrl value="urn:uuid:8fb7a03c-fcdb-4577-bb90-9708bf973648"/>
+		<resource>
+            <Practitioner>
+    <id value="8fb7a03c-fcdb-4577-bb90-9708bf973648"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/sds-user-id"/>
+        <value value="G6040649"/>
+    </identifier>
+    <name>
+        <text value="Dr Jane Green"/>
+    </name>
+</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:49de810c-457a-4d95-9c67-00fee4aec61c"/>
+		<resource>
+			 <Patient>
+    <id value="49de810c-457a-4d95-9c67-00fee4aec61c"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+    </meta>
+    <identifier>
+        <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
+                    <code value="01"/>
+                    <display value="Number present and verified"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+        <value value="7832003812"/>
+    </identifier>
+    <name>
+        <use value="official"/>
+        <family value="Walsh"/>
+        <given value="Sebastian"/>
+    </name>
+</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:2c20e62d-2334-4f03-8b36-a363bfb854ab"/>
+		<resource>
+			 <ProcedureRequest>
+    <id value="2c20e62d-2334-4f03-8b36-a363bfb854ab"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="2c20e62d-2334-4f03-8b36-a363bfb854ab"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:49de810c-457a-4d95-9c67-00fee4aec61c"/>
+        
+        <display value="Walsh, Sebastian"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="urn:uuid:8fb7a03c-fcdb-4577-bb90-9708bf973648"/>
+        
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="urn:uuid:1630555e-0ca8-433a-954f-122864a7b462"/>
+        
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+		</resource>
+	</entry>
+		<entry>
+		<fullUrl value="urn:uuid:8b2a1276-6e47-4a5a-a7fb-bd9355ead98c"/>
+		<resource>
+			 <Specimen>
+    <id value="8b2a1276-6e47-4a5a-a7fb-bd9355ead98c"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="8b2a1276-6e47-4a5a-a7fb-bd9355ead98c"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="urn:uuid:49de810c-457a-4d95-9c67-00fee4aec61c"/>
+        
+        <display value="Walsh, Sebastian"/>
+    </subject>
+    <receivedTime value="1946-01-11T00:48:00Z"/>
+    <collection>
+        <collectedDateTime value="1946-01-11T00:48:00Z"/>
+    </collection>
+</Specimen>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1c67c322-d389-4155-9226-8f0e83139a76"/>
+		<resource>
+		   <DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="1c67c322-d389-4155-9226-8f0e83139a76"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/2c20e62d-2334-4f03-8b36-a363bfb854ab"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:49de810c-457a-4d95-9c67-00fee4aec61c"/>
+        
+        <display value="Walsh, Sebastian"/>
+    </subject>
+    <issued value="1946-01-11T00:53:00Z"/>
+    <performer>
+        <actor>
+        <reference value="urn:uuid:1630555e-0ca8-433a-954f-122864a7b462"/>
+        
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="urn:uuid:625a04f9-c75c-403f-b4b8-0fc39592e102"/>
+        
+    </result>
+</DiagnosticReport>
+		</resource>
+	</entry>
+	<entry>
+	<fullUrl value="urn:uuid:625a04f9-c75c-403f-b4b8-0fc39592e102"/>
+		<resource>
+			<Observation>
+    <id value="625a04f9-c75c-403f-b4b8-0fc39592e102"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="625a04f9-c75c-403f-b4b8-0fc39592e102"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1000381000000105"/>
+            <display value="Se prostate specific Ag level"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:49de810c-457a-4d95-9c67-00fee4aec61c"/>
+        
+        <display value="Walsh, Sebastian"/>
+    </subject>
+    <effectiveDateTime value="1946-01-11T00:53:00Z"/>
+    <performer>
+        <reference value="urn:uuid:1630555e-0ca8-433a-954f-122864a7b462"/>
+        
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="72"/>
+        <unit value="ug/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="ug/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="urn:uuid:8b2a1276-6e47-4a5a-a7fb-bd9355ead98c"/>
+        
+    </specimen>
+</Observation>
+		</resource>
+	</entry>
+</Bundle>

@@ -1,14 +1,10 @@
 version: '3'
 services:
-  cade:
-    container_name: cade
+  cade_no_connections:
+    container_name: cade_no_connections
     image: ramseysys/cade-2:latest
     command: "python start.py"
     volumes:
     - ./resources:/usr/src/app/resources
     - ./resources/config.no.connections.py:/usr/src/app/resources/config.py
-    networks:
-    - cade_net
-networks:
-    cade_net:
-        driver: bridge
+
