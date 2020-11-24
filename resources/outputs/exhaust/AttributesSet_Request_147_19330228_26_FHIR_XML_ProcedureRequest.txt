@@ -1,0 +1,63 @@
+<ProcedureRequest>
+    <id value="c9947e41-feac-42be-b27e-6593659b7266"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="c9947e41-feac-42be-b27e-6593659b7266"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/09f49961-8454-4b01-b4b9-b0e7549f05fd"/>
+
+        <display value="Lynch, Amber"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/3b09633c-77ea-4212-9202-7df92ac00d47"/>
+
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/b1e57fea-caa7-48d4-992f-0f049c01a489"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://fhir:8080/baseDstu3/ProcedureRequest/c9947e41-feac-42be-b27e-6593659b7266
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/c9947e41-feac-42be-b27e-6593659b7266/_history/1&quot; in 8ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/c9947e41-feac-42be-b27e-6593659b7266/_history/1&quot; in 8ms"/>
+   </issue>
+</OperationOutcome>

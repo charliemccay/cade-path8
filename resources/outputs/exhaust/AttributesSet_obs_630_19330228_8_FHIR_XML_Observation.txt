@@ -1,0 +1,71 @@
+<Observation>
+    <id value="34ce9edc-c713-4591-a3dc-4394a9bfb268"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="34ce9edc-c713-4591-a3dc-4394a9bfb268"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="15331000237104"/>
+            <display value="Bilirubin total molar concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/e218fe4c-dafb-492f-99f7-32372e58161d"/>
+
+        <display value="Franklin, Amy"/>
+    </subject>
+    <effectiveDateTime value="2017-11-09T00:37:00Z"/>
+    <performer>
+        <reference value="Organization/b0260aea-161e-4721-94ac-e73fbdf378a5"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="325"/>
+        <unit value="umol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="umol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/7fbc78e2-12b4-4802-aa1a-428cdb6102b8"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/34ce9edc-c713-4591-a3dc-4394a9bfb268
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/34ce9edc-c713-4591-a3dc-4394a9bfb268/_history/1&quot; in 8ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/34ce9edc-c713-4591-a3dc-4394a9bfb268/_history/1&quot; in 8ms"/>
+   </issue>
+</OperationOutcome>

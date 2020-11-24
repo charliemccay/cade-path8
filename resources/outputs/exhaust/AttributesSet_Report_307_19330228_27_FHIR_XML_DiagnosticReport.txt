@@ -1,0 +1,59 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="915f104f-93d5-4ef6-be1a-e4e49a823564"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/88859058-b774-4b28-989c-55e4d4421102"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5a3d236b-42d0-4863-9511-09567e05c3c9"/>
+
+        <display value="Frost, Connor"/>
+    </subject>
+    <issued value="1976-06-04T01:02:00Z"/>
+    <performer>
+        <actor>
+        <reference value="Organization/f8592ebf-3b0b-40cb-a306-4643adccee48"/>
+
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/4fdc8a19-9fb4-4909-bbf7-dab61db1f8c9"/>
+
+    </result>
+</DiagnosticReport>
+http://fhir:8080/baseDstu3/DiagnosticReport/915f104f-93d5-4ef6-be1a-e4e49a823564
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;DiagnosticReport/915f104f-93d5-4ef6-be1a-e4e49a823564/_history/1&quot; in 10ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;DiagnosticReport/915f104f-93d5-4ef6-be1a-e4e49a823564/_history/1&quot; in 10ms"/>
+   </issue>
+</OperationOutcome>

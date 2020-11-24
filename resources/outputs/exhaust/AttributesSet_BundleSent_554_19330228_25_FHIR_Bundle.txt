@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="1db01a3b-edb0-4025-9186-67199e7e8c88"/>
+	<meta>
+		<lastUpdated value="2008-03-13T00:20:00Z"/>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
+	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="1db01a3b-edb0-4025-9186-67199e7e8c88"/>
+	</identifier>
+	<type value="message"/>
+
+	<entry>
+		<fullUrl value="urn:uuid:1db01a3b-edb0-4025-9186-67199e7e8c88"/>
+		<resource>
+			<MessageHeader>
+				<id value="1db01a3b-edb0-4025-9186-67199e7e8c88"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2"/>
+				</meta>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+					<extension url="BusAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="InfAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="RecipientType">
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1"/>
+							<code value="FA"/>
+							<display value="For Action"/>
+						</valueCoding>
+					</extension>
+					<extension url="MessageDefinition">
+					    <valueReference>
+					        <reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-NP-MessageDefinition-1"/>
+				        </valueReference>
+				    </extension>
+				    <extension url="SenderReference">
+					    <valueString value="None"/>
+				    </extension>
+				    <extension url="LocalExtension">
+					    <valueString value="None"/>
+				    </extension>
+				</extension>
+				<event>
+					<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+					<code value="ITK012M"/>
+					<display value="ITK National Pathology"/>
+				</event>
+				<receiver>
+					<reference value="urn:uuid:17003c89-7440-4ea7-a3f7-d840746d35be"/>
+				</receiver>
+				<sender>
+					<reference value="urn:uuid:050afa71-6f90-4927-a305-1712fad0d937"/>
+				</sender>
+				<timestamp value="2008-03-13T00:20:00Z"/>
+				<source>
+					<endpoint value="TKD13"/>
+				</source>
+				<focus>
+					<reference value="urn:uuid:fa1e9f88-36fd-4bfe-a0e3-c65a19a9980f"/>
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<!--Provider from result-->
+	<entry>
+		<fullUrl value="urn:uuid:050afa71-6f90-4927-a305-1712fad0d937"/>
+		<resource>
+        <Organization>
+    <id value="050afa71-6f90-4927-a305-1712fad0d937"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="TKD13"/>
+    </identifier>
+    <!--
+    <name value="Midtown District Hospital"/>
+    <address>
+        <line value="Beckett Street"/>
+        <city value="Leeds"/>
+        <district value="West YorkShire"/>
+        <postalCode value="LS9 7TF"/>
+    </address>
+    -->
+</Organization>
+		<!--Requesting Org-->
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:17003c89-7440-4ea7-a3f7-d840746d35be"/>
+		<resource>
+			<Organization>
+    <id value="17003c89-7440-4ea7-a3f7-d840746d35be"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="D82015"/>
+    </identifier>
+    <!--
+    <name value="Manor GP Practice"/>
+    <address>
+        <line value="30/32 Bridge Street"/>
+        <city value="Downham Market"/>
+        <district value="Norfolk"/>
+        <postalCode value="PE38 9DH"/>
+    </address>
+    -->
+</Organization>
+		</resource>
+	</entry>
+	<!--Requesting Practitioner-->
+	<entry>
+		<fullUrl value="urn:uuid:40b990eb-b9f8-498e-b3c6-b6097d5d1756"/>
+		<resource>
+            <Practitioner>
+    <id value="40b990eb-b9f8-498e-b3c6-b6097d5d1756"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/sds-user-id"/>
+        <value value="G6040649"/>
+    </identifier>
+    <name>
+        <text value="Dr Jane Green"/>
+    </name>
+</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:5e0ce084-bd10-4526-8a7c-cdaa0e21e4c5"/>
+		<resource>
+			 <Patient>
+    <id value="5e0ce084-bd10-4526-8a7c-cdaa0e21e4c5"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+    </meta>
+    <identifier>
+        <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
+                    <code value="01"/>
+                    <display value="Number present and verified"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+        <value value="7832003812"/>
+    </identifier>
+    <name>
+        <use value="official"/>
+        <family value="Byrne"/>
+        <given value="Bailey"/>
+    </name>
+</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6ca98b82-94f2-4056-b45c-d3219e6ccb03"/>
+		<resource>
+			 <ProcedureRequest>
+    <id value="6ca98b82-94f2-4056-b45c-d3219e6ccb03"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="6ca98b82-94f2-4056-b45c-d3219e6ccb03"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:5e0ce084-bd10-4526-8a7c-cdaa0e21e4c5"/>
+        
+        <display value="Byrne, Bailey"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="urn:uuid:40b990eb-b9f8-498e-b3c6-b6097d5d1756"/>
+        
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="urn:uuid:050afa71-6f90-4927-a305-1712fad0d937"/>
+        
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+		</resource>
+	</entry>
+		<entry>
+		<fullUrl value="urn:uuid:b34d9fef-58e7-4302-818a-66e1c7fd031c"/>
+		<resource>
+			 <Specimen>
+    <id value="b34d9fef-58e7-4302-818a-66e1c7fd031c"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="b34d9fef-58e7-4302-818a-66e1c7fd031c"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="urn:uuid:5e0ce084-bd10-4526-8a7c-cdaa0e21e4c5"/>
+        
+        <display value="Byrne, Bailey"/>
+    </subject>
+    <receivedTime value="2008-03-13T00:12:00Z"/>
+    <collection>
+        <collectedDateTime value="2008-03-13T00:12:00Z"/>
+    </collection>
+</Specimen>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:fa1e9f88-36fd-4bfe-a0e3-c65a19a9980f"/>
+		<resource>
+		   <DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="fa1e9f88-36fd-4bfe-a0e3-c65a19a9980f"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/6ca98b82-94f2-4056-b45c-d3219e6ccb03"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:5e0ce084-bd10-4526-8a7c-cdaa0e21e4c5"/>
+        
+        <display value="Byrne, Bailey"/>
+    </subject>
+    <issued value="2008-03-13T00:20:00Z"/>
+    <performer>
+        <actor>
+        <reference value="urn:uuid:050afa71-6f90-4927-a305-1712fad0d937"/>
+        
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="urn:uuid:1a820c2c-b443-4661-a306-ae9e1b24e6b9"/>
+        
+    </result>
+</DiagnosticReport>
+		</resource>
+	</entry>
+	<entry>
+	<fullUrl value="urn:uuid:1a820c2c-b443-4661-a306-ae9e1b24e6b9"/>
+		<resource>
+			<Observation>
+    <id value="1a820c2c-b443-4661-a306-ae9e1b24e6b9"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="1a820c2c-b443-4661-a306-ae9e1b24e6b9"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1106511000000100"/>
+            <display value="Chloride substance concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="urn:uuid:5e0ce084-bd10-4526-8a7c-cdaa0e21e4c5"/>
+        
+        <display value="Byrne, Bailey"/>
+    </subject>
+    <effectiveDateTime value="2008-03-13T00:20:00Z"/>
+    <performer>
+        <reference value="urn:uuid:050afa71-6f90-4927-a305-1712fad0d937"/>
+        
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="107"/>
+        <unit value="mmol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="urn:uuid:b34d9fef-58e7-4302-818a-66e1c7fd031c"/>
+        
+    </specimen>
+</Observation>
+		</resource>
+	</entry>
+</Bundle>
+
+http://ccriserver:8186/ccri-fhir/STU3/Bundle/$validate
+200
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <issue>
+      <severity value="error"/>
+      <code value="processing"/>
+      <diagnostics value="[error] in /*:Observation[namespace-uri()='http://hl7.org/fhir'][1] @ Observation obs-7: If code is the same as a component code then the value element associated with the code SHALL NOT be present Test=not(exists(f:*[starts-with(local-name(.), 'value')])) or not(count(for $coding in f:code/f:coding return parent::*/f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value and f:system/@value=$coding/f:system/@value])=0)"/>
+      <location value="Observation"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="The Coding provided is not in the value set https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SpecimenType-1 (https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-SpecimenType-1, and a code should come from this value set unless it has no suitable code) (error message = Unknown code[53130003] in system[http://snomed.info/sct])"/>
+      <location value="Bundle.entry[6].resource.type.coding[0]"/>
+      <location value="Line 17, Col 2670"/>
+   </issue>
+   <issue>
+      <severity value="information"/>
+      <code value="processing"/>
+      <diagnostics value="None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes, and a code is recommended to come from this value set) (codes = http://snomed.info/sct#721981007)"/>
+      <location value="Bundle.entry[7].resource.code"/>
+      <location value="Line 17, Col 3445"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="The Coding provided is not in the value set https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ReportCodeSnCT-1 (https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ReportCodeSnCT-1, and a code should come from this value set unless it has no suitable code) (error message = Unknown code[721981007] in system[http://snomed.info/sct])"/>
+      <location value="Bundle.entry[7].resource.code.coding[0]"/>
+      <location value="Line 17, Col 3453"/>
+   </issue>
+   <issue>
+      <severity value="information"/>
+      <code value="processing"/>
+      <diagnostics value="None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://snomed.info/sct#394595002)"/>
+      <location value="Bundle.entry[8].resource.category[0]"/>
+      <location value="Line 17, Col 4394"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="The specified code '1106511000000100' is not known to belong to the specified code system 'http://snomed.info/sct'"/>
+      <location value="Bundle.entry[8].resource.code.coding[0]"/>
+      <location value="Line 17, Col 4574"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="The specified code '1106511000000100' is not known to belong to the specified code system 'http://snomed.info/sct'"/>
+      <location value="Bundle.entry[8].resource.code.coding[0]"/>
+      <location value="Line 17, Col 4574"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="The Coding provided is not in the value set https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ObservationType-1 (https://fhir.hl7.org.uk/STU3/ValueSet/CareConnect-ObservationType-1, and a code should come from this value set unless it has no suitable code) (error message = Unknown code[1106511000000100] in system[http://snomed.info/sct])"/>
+      <location value="Bundle.entry[8].resource.code.coding[0]"/>
+      <location value="Line 17, Col 4574"/>
+   </issue>
+</OperationOutcome>

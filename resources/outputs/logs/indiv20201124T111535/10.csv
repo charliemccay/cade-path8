@@ -1,0 +1,29 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+611,Path1,Initial_patient_GP_Visit,,,,2014-10-24T00:00:00
+611,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,2014-10-24T00:00:00
+612,Path1,patient_assessment,,,,2014-10-24T00:00:00
+613,Path1,test_request,,,,2014-10-24T00:37:00
+613,Path1,test_request,,PatientRcorded,TRUE,2014-10-24T00:37:00
+614,Path1,Specimen_check,,,,2014-10-24T00:37:00
+614,Path1,Specimen_check,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2014-10-24T00:37:00
+614,Path1,Specimen_check,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2014-10-24T00:37:00
+614,Path1,Specimen_check,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2014-10-24T00:37:00
+615,Path1,specimen_ready_for_test,,,,2014-10-24T00:37:00
+615,Path1,specimen_ready_for_test,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2014-10-24T00:37:00
+615,Path1,specimen_ready_for_test,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2014-10-24T00:37:00
+615,Path1,specimen_ready_for_test,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2014-10-24T00:37:00
+615,Path1,specimen_ready_for_test,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2014-10-24T00:37:00
+616,Path1,lab_test,,,,2014-10-24T00:37:00
+617,Path1,test_report,,,,2014-10-24T00:41:00
+617,Path1,test_report,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2014-10-24T00:41:00
+617,Path1,test_report,,obs,"OrderedDict([('id', '10'), ('code', '1107511000000100'), ('DisplayName', 'Haemoglobin mass concentration in blood'), ('value', '134'), ('unit', 'g/L'), ('unit_code', 'g/L'), ('system', 'http://unitsofmeasure.org')])",2014-10-24T00:41:00
+618,Path1,send_report,,,,2014-10-24T00:41:00
+619,Path1,receive_report,,,,2014-10-24T00:41:00
+619,Path1,receive_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2014-10-24T00:41:00
+619,Path1,receive_report,,BundleSent,TRUE,2014-10-24T00:41:00
+620,Path1,GP_checks_report,,,,2014-10-24T00:41:00
+621,Path1,inform_patient,,,,2014-10-24T00:41:00
+622,Path1,Finish,,,,2014-10-24T20:41:00
+622,Path1,Finish,,listing_provided,TRUE,2014-10-24T20:41:00
+622,Path1,Finish,,json_provided,TRUE,2014-10-24T20:41:00
+623,Path1,Finish,,,,2014-10-24T20:41:00

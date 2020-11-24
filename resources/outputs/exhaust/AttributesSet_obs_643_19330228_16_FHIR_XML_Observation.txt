@@ -1,0 +1,71 @@
+<Observation>
+    <id value="7ed5caa5-51df-4b53-84e5-412deefb27a9"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="7ed5caa5-51df-4b53-84e5-412deefb27a9"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1108071000000100"/>
+            <display value="Neutrophil count in blood"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/3a4ce09a-93f0-4a0e-9904-ce2a2eb2b027"/>
+
+        <display value="Stevenson, Jack"/>
+    </subject>
+    <effectiveDateTime value="2018-07-03T00:51:00Z"/>
+    <performer>
+        <reference value="Organization/0500081a-36db-4efd-92b3-50be6ac71fc3"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="4.02"/>
+        <unit value="10^9/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="10*9/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/b2d80660-4a3b-4172-a29c-583b356c011f"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/7ed5caa5-51df-4b53-84e5-412deefb27a9
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/7ed5caa5-51df-4b53-84e5-412deefb27a9/_history/1&quot; in 8ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/7ed5caa5-51df-4b53-84e5-412deefb27a9/_history/1&quot; in 8ms"/>
+   </issue>
+</OperationOutcome>

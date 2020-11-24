@@ -1,0 +1,71 @@
+<Observation>
+    <id value="a0b0e36e-d32b-4023-a722-2c0628efb886"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="a0b0e36e-d32b-4023-a722-2c0628efb886"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1107811000000100"/>
+            <display value="Prostate specific antigen mass concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/4c1ce23d-4a2e-4d1d-bd15-3b903ec90c5f"/>
+
+        <display value="Bray, Francesca"/>
+    </subject>
+    <effectiveDateTime value="1990-10-01T00:37:00Z"/>
+    <performer>
+        <reference value="Organization/516609f7-fadc-4cf0-98bf-21156bad82a3"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="5.9"/>
+        <unit value="ug/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="ug/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/c947c005-775a-4f75-8ca6-2ecd64ca954b"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/a0b0e36e-d32b-4023-a722-2c0628efb886
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/a0b0e36e-d32b-4023-a722-2c0628efb886/_history/1&quot; in 9ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/a0b0e36e-d32b-4023-a722-2c0628efb886/_history/1&quot; in 9ms"/>
+   </issue>
+</OperationOutcome>

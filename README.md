@@ -1,5 +1,5 @@
-# cade-path5
-This is a demo Resources folder for the CADE2 pathway-based simulation tool.  
+# cade-path8
+This is a demo Resources folder for the CADE2 pathway-based simulation tool.  This simulation contains extended examples of observations
 
 This implementation allow the simulation to be run from single docker-compose files, either simply generating the outputs in outputs/exhaust, or pushing the outputs into the fhir servers and logging the outputs and responses in outputs/exhaust
 
@@ -15,7 +15,7 @@ The simulation uses that Smart-on-fhir server for storing the resources locally,
 
 To download the required files cd to an appropriate directory and run the following:
 ```sh
-    git clone https://github.com/charliemccay/cade-path5
+    git clone https://github.com/charliemccay/cade-path8
 ```
 
 ## start the simulation and two fhir servers
@@ -27,7 +27,7 @@ This will start a number of containers:
 * cade: thsi is the simulation engine
 
 ```sh
-    docker-compose -f docker-compose.cade.with.connections.yml up
+    docker-compose -f docker-compose.cade.with.connections.yml up --force-recreate 
 ```
 
 Once the cade contaner has stopped, there should be files in the directories under files/outputs directory.  Note that the other containers will still be running allowing you to access the FHIR server on http://localhost:8080/baseDstu3/ to see the resources that have been pushed into it. 
@@ -36,7 +36,7 @@ The file docker_outputs/cade.with.connections.output.txt provides an example of 
 ## start simulation on its own without posting to the fhir servers
 
 ```sh
-    docker-compose -f docker-compose.cade.no.connections.yml up
+    docker-compose -f docker-compose.cade.no.connections.yml up --force-recreate 
 ```
 
 The file docker_outputs/cade.no.connections.output.txt provides an example of what should be displayed to teh screen if the container is running correctly.  
@@ -52,7 +52,7 @@ To Start the SMART on FHIR server that will act as a repository for the resource
 Open another terminal window to start the care connect reference implementation (for testing the bundle):
 
 ```sh
-    cd ../cade-path5
+    cd ../cade-path8
     docker-compose -f docker-compose-ccri.yml up
 ```
 

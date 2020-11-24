@@ -1,0 +1,71 @@
+<Observation>
+    <id value="0b3704ce-f448-4521-94c5-583363f0747c"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="0b3704ce-f448-4521-94c5-583363f0747c"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1107011000000100"/>
+            <display value="Creatinine substance concentration in urine"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/3272a33d-5d3b-401a-b614-f348ef026f24"/>
+
+        <display value="Savage, Jennifer"/>
+    </subject>
+    <effectiveDateTime value="1943-06-07T00:41:00Z"/>
+    <performer>
+        <reference value="Organization/18484db0-821d-404d-ba04-a5924a81bf41"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="4.2"/>
+        <unit value="mmol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/6961382e-40ea-42cc-9dbb-9bf12d60b1bf"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/0b3704ce-f448-4521-94c5-583363f0747c
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/0b3704ce-f448-4521-94c5-583363f0747c/_history/1&quot; in 11ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/0b3704ce-f448-4521-94c5-583363f0747c/_history/1&quot; in 11ms"/>
+   </issue>
+</OperationOutcome>

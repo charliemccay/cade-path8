@@ -1,0 +1,63 @@
+<ProcedureRequest>
+    <id value="6ca98b82-94f2-4056-b45c-d3219e6ccb03"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="6ca98b82-94f2-4056-b45c-d3219e6ccb03"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5e0ce084-bd10-4526-8a7c-cdaa0e21e4c5"/>
+
+        <display value="Byrne, Bailey"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/40b990eb-b9f8-498e-b3c6-b6097d5d1756"/>
+
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/050afa71-6f90-4927-a305-1712fad0d937"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://fhir:8080/baseDstu3/ProcedureRequest/6ca98b82-94f2-4056-b45c-d3219e6ccb03
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/6ca98b82-94f2-4056-b45c-d3219e6ccb03/_history/1&quot; in 7ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/6ca98b82-94f2-4056-b45c-d3219e6ccb03/_history/1&quot; in 7ms"/>
+   </issue>
+</OperationOutcome>

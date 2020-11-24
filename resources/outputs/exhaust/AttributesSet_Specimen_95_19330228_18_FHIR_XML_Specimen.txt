@@ -1,0 +1,51 @@
+<Specimen>
+    <id value="939dffec-2e21-4583-a0d6-63f7e55d4974"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="939dffec-2e21-4583-a0d6-63f7e55d4974"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/a5edd58c-aac8-4d47-a5bd-6ac18c9bea81"/>
+
+        <display value="Wilson, Hayden"/>
+    </subject>
+    <receivedTime value="1947-08-28T00:13:00Z"/>
+    <collection>
+        <collectedDateTime value="1947-08-28T00:13:00Z"/>
+    </collection>
+</Specimen>
+http://fhir:8080/baseDstu3/Specimen/939dffec-2e21-4583-a0d6-63f7e55d4974
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/939dffec-2e21-4583-a0d6-63f7e55d4974/_history/1&quot; in 13ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/939dffec-2e21-4583-a0d6-63f7e55d4974/_history/1&quot; in 13ms"/>
+   </issue>
+</OperationOutcome>

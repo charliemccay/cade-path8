@@ -1,0 +1,29 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+65,Path1,Initial_patient_GP_Visit,,,,1943-06-07T00:00:00
+65,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,1943-06-07T00:00:00
+66,Path1,patient_assessment,,,,1943-06-07T00:00:00
+67,Path1,test_request,,,,1943-06-07T00:25:00
+67,Path1,test_request,,PatientRcorded,TRUE,1943-06-07T00:25:00
+68,Path1,Specimen_check,,,,1943-06-07T00:25:00
+68,Path1,Specimen_check,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1943-06-07T00:25:00
+68,Path1,Specimen_check,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1943-06-07T00:25:00
+68,Path1,Specimen_check,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1943-06-07T00:25:00
+69,Path1,specimen_ready_for_test,,,,1943-06-07T00:25:00
+69,Path1,specimen_ready_for_test,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1943-06-07T00:25:00
+69,Path1,specimen_ready_for_test,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1943-06-07T00:25:00
+69,Path1,specimen_ready_for_test,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1943-06-07T00:25:00
+69,Path1,specimen_ready_for_test,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1943-06-07T00:25:00
+70,Path1,lab_test,,,,1943-06-07T00:25:00
+71,Path1,test_report,,,,1943-06-07T00:41:00
+71,Path1,test_report,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1943-06-07T00:41:00
+71,Path1,test_report,,obs,"OrderedDict([('id', '34'), ('code', '1107011000000100'), ('DisplayName', 'Creatinine substance concentration in urine'), ('value', '4.2'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1943-06-07T00:41:00
+72,Path1,send_report,,,,1943-06-07T00:41:00
+73,Path1,receive_report,,,,1943-06-07T00:41:00
+73,Path1,receive_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1943-06-07T00:41:00
+73,Path1,receive_report,,BundleSent,TRUE,1943-06-07T00:41:00
+74,Path1,GP_checks_report,,,,1943-06-07T00:41:00
+75,Path1,inform_patient,,,,1943-06-07T00:41:00
+76,Path1,Finish,,,,1943-06-07T14:41:00
+76,Path1,Finish,,listing_provided,TRUE,1943-06-07T14:41:00
+76,Path1,Finish,,json_provided,TRUE,1943-06-07T14:41:00
+77,Path1,Finish,,,,1943-06-07T14:41:00

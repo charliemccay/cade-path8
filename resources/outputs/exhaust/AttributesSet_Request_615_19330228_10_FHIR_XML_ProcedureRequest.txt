@@ -1,0 +1,63 @@
+<ProcedureRequest>
+    <id value="6da1014d-adbe-431b-bafc-d2a5772d98dc"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="6da1014d-adbe-431b-bafc-d2a5772d98dc"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5210c487-5551-496e-ba6b-a9fb654cc46f"/>
+
+        <display value="Lowe, Charlotte"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/ec2efed2-f052-4e33-9a4e-62992a0b213e"/>
+
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/fd210e37-5cf3-413f-b0df-469cf6760521"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://fhir:8080/baseDstu3/ProcedureRequest/6da1014d-adbe-431b-bafc-d2a5772d98dc
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/6da1014d-adbe-431b-bafc-d2a5772d98dc/_history/1&quot; in 37ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/6da1014d-adbe-431b-bafc-d2a5772d98dc/_history/1&quot; in 37ms"/>
+   </issue>
+</OperationOutcome>

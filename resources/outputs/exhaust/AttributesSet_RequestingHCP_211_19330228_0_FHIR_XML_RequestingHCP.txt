@@ -1,0 +1,37 @@
+<Practitioner>
+    <id value="a6b1d972-f2c0-4b7e-bae7-582403ade262"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/sds-user-id"/>
+        <value value="G6040649"/>
+    </identifier>
+    <name>
+        <text value="Dr Jane Green"/>
+    </name>
+</Practitioner>
+http://fhir:8080/baseDstu3/Practitioner/a6b1d972-f2c0-4b7e-bae7-582403ade262
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Practitioner/a6b1d972-f2c0-4b7e-bae7-582403ade262/_history/1&quot; in 5ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Practitioner/a6b1d972-f2c0-4b7e-bae7-582403ade262/_history/1&quot; in 5ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,0 +1,29 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+78,Path1,Initial_patient_GP_Visit,,,,1947-03-09T00:00:00
+78,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,1947-03-09T00:00:00
+79,Path1,patient_assessment,,,,1947-03-09T00:00:00
+80,Path1,test_request,,,,1947-03-09T00:34:00
+80,Path1,test_request,,PatientRcorded,TRUE,1947-03-09T00:34:00
+81,Path1,Specimen_check,,,,1947-03-09T00:34:00
+81,Path1,Specimen_check,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1947-03-09T00:34:00
+81,Path1,Specimen_check,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1947-03-09T00:34:00
+81,Path1,Specimen_check,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1947-03-09T00:34:00
+82,Path1,specimen_ready_for_test,,,,1947-03-09T00:34:00
+82,Path1,specimen_ready_for_test,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1947-03-09T00:34:00
+82,Path1,specimen_ready_for_test,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1947-03-09T00:34:00
+82,Path1,specimen_ready_for_test,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1947-03-09T00:34:00
+82,Path1,specimen_ready_for_test,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1947-03-09T00:34:00
+83,Path1,lab_test,,,,1947-03-09T00:34:00
+84,Path1,test_report,,,,1947-03-09T00:51:00
+84,Path1,test_report,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1947-03-09T00:51:00
+84,Path1,test_report,,obs,"OrderedDict([('id', '20'), ('code', '1106091000000100'), ('DisplayName', 'Basophil count in blood'), ('value', '0.03'), ('unit', '10^9/L'), ('unit_code', '10*9/L'), ('system', 'http://unitsofmeasure.org')])",1947-03-09T00:51:00
+85,Path1,send_report,,,,1947-03-09T00:51:00
+86,Path1,receive_report,,,,1947-03-09T00:51:00
+86,Path1,receive_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1947-03-09T00:51:00
+86,Path1,receive_report,,BundleSent,TRUE,1947-03-09T00:51:00
+87,Path1,GP_checks_report,,,,1947-03-09T00:51:00
+88,Path1,inform_patient,,,,1947-03-09T00:51:00
+89,Path1,Finish,,,,1947-03-09T22:51:00
+89,Path1,Finish,,listing_provided,TRUE,1947-03-09T22:51:00
+89,Path1,Finish,,json_provided,TRUE,1947-03-09T22:51:00
+90,Path1,Finish,,,,1947-03-09T22:51:00

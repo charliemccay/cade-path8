@@ -1,0 +1,29 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+169,Path1,Initial_patient_GP_Visit,,,,1961-09-07T00:00:00
+169,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,1961-09-07T00:00:00
+170,Path1,patient_assessment,,,,1961-09-07T00:00:00
+171,Path1,test_request,,,,1961-09-07T00:42:00
+171,Path1,test_request,,PatientRcorded,TRUE,1961-09-07T00:42:00
+172,Path1,Specimen_check,,,,1961-09-07T00:42:00
+172,Path1,Specimen_check,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1961-09-07T00:42:00
+172,Path1,Specimen_check,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1961-09-07T00:42:00
+172,Path1,Specimen_check,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1961-09-07T00:42:00
+173,Path1,specimen_ready_for_test,,,,1961-09-07T00:42:00
+173,Path1,specimen_ready_for_test,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1961-09-07T00:42:00
+173,Path1,specimen_ready_for_test,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1961-09-07T00:42:00
+173,Path1,specimen_ready_for_test,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1961-09-07T00:42:00
+173,Path1,specimen_ready_for_test,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1961-09-07T00:42:00
+174,Path1,lab_test,,,,1961-09-07T00:42:00
+175,Path1,test_report,,,,1961-09-07T00:51:00
+175,Path1,test_report,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1961-09-07T00:51:00
+175,Path1,test_report,,obs,"OrderedDict([('id', '35'), ('code', '1109411000000100'), ('DisplayName', 'TSH (thyroid stimulating hormone) arbitrary concentration in plasma'), ('value', '0.10'), ('unit', 'mU/L'), ('unit_code', 'mU/L'), ('system', 'http://unitsofmeasure.org')])",1961-09-07T00:51:00
+176,Path1,send_report,,,,1961-09-07T00:51:00
+177,Path1,receive_report,,,,1961-09-07T00:51:00
+177,Path1,receive_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1961-09-07T00:51:00
+177,Path1,receive_report,,BundleSent,TRUE,1961-09-07T00:51:00
+178,Path1,GP_checks_report,,,,1961-09-07T00:51:00
+179,Path1,inform_patient,,,,1961-09-07T00:51:00
+180,Path1,Finish,,,,1961-09-07T16:51:00
+180,Path1,Finish,,listing_provided,TRUE,1961-09-07T16:51:00
+180,Path1,Finish,,json_provided,TRUE,1961-09-07T16:51:00
+181,Path1,Finish,,,,1961-09-07T16:51:00

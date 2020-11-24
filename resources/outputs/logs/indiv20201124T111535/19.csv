@@ -1,0 +1,29 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+13,Path1,Initial_patient_GP_Visit,,,,1934-02-14T00:00:00
+13,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,1934-02-14T00:00:00
+14,Path1,patient_assessment,,,,1934-02-14T00:00:00
+15,Path1,test_request,,,,1934-02-14T00:19:00
+15,Path1,test_request,,PatientRcorded,TRUE,1934-02-14T00:19:00
+16,Path1,Specimen_check,,,,1934-02-14T00:19:00
+16,Path1,Specimen_check,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1934-02-14T00:19:00
+16,Path1,Specimen_check,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1934-02-14T00:19:00
+16,Path1,Specimen_check,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1934-02-14T00:19:00
+17,Path1,specimen_ready_for_test,,,,1934-02-14T00:19:00
+17,Path1,specimen_ready_for_test,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1934-02-14T00:19:00
+17,Path1,specimen_ready_for_test,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1934-02-14T00:19:00
+17,Path1,specimen_ready_for_test,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1934-02-14T00:19:00
+17,Path1,specimen_ready_for_test,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1934-02-14T00:19:00
+18,Path1,lab_test,,,,1934-02-14T00:19:00
+19,Path1,test_report,,,,1934-02-14T00:49:00
+19,Path1,test_report,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1934-02-14T00:49:00
+19,Path1,test_report,,obs,"OrderedDict([('id', '19'), ('code', '1107391000000100'), ('DisplayName', 'Eosinophil count in blood'), ('value', '0.06'), ('unit', '10^9/L'), ('unit_code', '10*9/L'), ('system', 'http://unitsofmeasure.org')])",1934-02-14T00:49:00
+20,Path1,send_report,,,,1934-02-14T00:49:00
+21,Path1,receive_report,,,,1934-02-14T00:49:00
+21,Path1,receive_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1934-02-14T00:49:00
+21,Path1,receive_report,,BundleSent,TRUE,1934-02-14T00:49:00
+22,Path1,GP_checks_report,,,,1934-02-14T00:49:00
+23,Path1,inform_patient,,,,1934-02-14T00:49:00
+24,Path1,Finish,,,,1934-02-14T15:49:00
+24,Path1,Finish,,listing_provided,TRUE,1934-02-14T15:49:00
+24,Path1,Finish,,json_provided,TRUE,1934-02-14T15:49:00
+25,Path1,Finish,,,,1934-02-14T15:49:00

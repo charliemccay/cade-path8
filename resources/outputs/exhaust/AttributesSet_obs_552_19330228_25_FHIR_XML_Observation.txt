@@ -1,0 +1,71 @@
+<Observation>
+    <id value="1a820c2c-b443-4661-a306-ae9e1b24e6b9"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="1a820c2c-b443-4661-a306-ae9e1b24e6b9"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1106511000000100"/>
+            <display value="Chloride substance concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5e0ce084-bd10-4526-8a7c-cdaa0e21e4c5"/>
+
+        <display value="Byrne, Bailey"/>
+    </subject>
+    <effectiveDateTime value="2008-03-13T00:20:00Z"/>
+    <performer>
+        <reference value="Organization/050afa71-6f90-4927-a305-1712fad0d937"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="107"/>
+        <unit value="mmol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/b34d9fef-58e7-4302-818a-66e1c7fd031c"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/1a820c2c-b443-4661-a306-ae9e1b24e6b9
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/1a820c2c-b443-4661-a306-ae9e1b24e6b9/_history/1&quot; in 7ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/1a820c2c-b443-4661-a306-ae9e1b24e6b9/_history/1&quot; in 7ms"/>
+   </issue>
+</OperationOutcome>

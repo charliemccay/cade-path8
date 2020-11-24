@@ -1,0 +1,71 @@
+<Observation>
+    <id value="75be736f-c101-4f07-8c4e-32acbef5e82c"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="75be736f-c101-4f07-8c4e-32acbef5e82c"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="993501000000105"/>
+            <display value="Red blood cell distribution width"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/34a8fb0e-9f3c-40d6-a3ef-f0f42104a022"/>
+
+        <display value="Douglas, Olivia"/>
+    </subject>
+    <effectiveDateTime value="1977-04-30T00:23:00Z"/>
+    <performer>
+        <reference value="Organization/7bc1264e-730c-45f6-972e-aeff3ea8e7a2"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="14"/>
+        <unit value="% as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="%"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/19c0c804-6012-46ed-a695-631a3c97f79c"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/75be736f-c101-4f07-8c4e-32acbef5e82c
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/75be736f-c101-4f07-8c4e-32acbef5e82c/_history/1&quot; in 8ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/75be736f-c101-4f07-8c4e-32acbef5e82c/_history/1&quot; in 8ms"/>
+   </issue>
+</OperationOutcome>

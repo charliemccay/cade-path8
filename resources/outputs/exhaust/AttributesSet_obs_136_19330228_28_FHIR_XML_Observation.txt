@@ -1,0 +1,71 @@
+<Observation>
+    <id value="b3c5412a-1b89-4128-a06d-0d9f176d3840"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="b3c5412a-1b89-4128-a06d-0d9f176d3840"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1106541000000100"/>
+            <display value="Cholesterol substance concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/645c1d00-bc85-4563-9860-137e0a0794e9"/>
+
+        <display value="Harvey, Chloe"/>
+    </subject>
+    <effectiveDateTime value="1956-09-07T00:24:00Z"/>
+    <performer>
+        <reference value="Organization/c7f45c5f-de07-4034-b4ee-69f405c18612"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="7.7"/>
+        <unit value="mmol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/614c7666-e2d7-4c63-9ff9-11ec082bea0c"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/b3c5412a-1b89-4128-a06d-0d9f176d3840
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/b3c5412a-1b89-4128-a06d-0d9f176d3840/_history/1&quot; in 15ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/b3c5412a-1b89-4128-a06d-0d9f176d3840/_history/1&quot; in 15ms"/>
+   </issue>
+</OperationOutcome>

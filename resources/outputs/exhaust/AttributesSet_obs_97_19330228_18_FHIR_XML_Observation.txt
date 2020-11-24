@@ -1,0 +1,71 @@
+<Observation>
+    <id value="4dd91897-37b0-4c51-944b-d83c938bd232"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="4dd91897-37b0-4c51-944b-d83c938bd232"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1107991000000100"/>
+            <display value="Monocyte count in blood"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/a5edd58c-aac8-4d47-a5bd-6ac18c9bea81"/>
+
+        <display value="Wilson, Hayden"/>
+    </subject>
+    <effectiveDateTime value="1947-08-28T00:41:00Z"/>
+    <performer>
+        <reference value="Organization/cb85a37d-8670-44f8-9c6a-1c223980f6d4"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="0.56"/>
+        <unit value="10^9/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="10*9/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/939dffec-2e21-4583-a0d6-63f7e55d4974"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/4dd91897-37b0-4c51-944b-d83c938bd232
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/4dd91897-37b0-4c51-944b-d83c938bd232/_history/1&quot; in 28ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/4dd91897-37b0-4c51-944b-d83c938bd232/_history/1&quot; in 28ms"/>
+   </issue>
+</OperationOutcome>

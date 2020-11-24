@@ -1,0 +1,59 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="003d895e-a2fa-4326-bc81-6bce43c328bb"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/cbdb3db0-6342-4944-b927-58c09c1bb2b5"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/8fa805de-aff1-4dcd-b1bb-4fbdd61e9e8b"/>
+
+        <display value="Armstrong, Jennifer"/>
+    </subject>
+    <issued value="1938-07-08T00:31:00Z"/>
+    <performer>
+        <actor>
+        <reference value="Organization/59d4a09b-a70f-46e2-b2ec-d24290ff05fa"/>
+
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/0dacb43d-181b-4299-91d6-f217e1244c33"/>
+
+    </result>
+</DiagnosticReport>
+http://fhir:8080/baseDstu3/DiagnosticReport/003d895e-a2fa-4326-bc81-6bce43c328bb
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;DiagnosticReport/003d895e-a2fa-4326-bc81-6bce43c328bb/_history/1&quot; in 25ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;DiagnosticReport/003d895e-a2fa-4326-bc81-6bce43c328bb/_history/1&quot; in 25ms"/>
+   </issue>
+</OperationOutcome>

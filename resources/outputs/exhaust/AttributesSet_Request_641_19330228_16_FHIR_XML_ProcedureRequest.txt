@@ -1,0 +1,63 @@
+<ProcedureRequest>
+    <id value="945f51d3-e568-4aa4-ae0e-270b8de7a9e7"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="945f51d3-e568-4aa4-ae0e-270b8de7a9e7"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/3a4ce09a-93f0-4a0e-9904-ce2a2eb2b027"/>
+
+        <display value="Stevenson, Jack"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/b631b160-cb27-4414-92d1-84cbe885ee3d"/>
+
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/0500081a-36db-4efd-92b3-50be6ac71fc3"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://fhir:8080/baseDstu3/ProcedureRequest/945f51d3-e568-4aa4-ae0e-270b8de7a9e7
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/945f51d3-e568-4aa4-ae0e-270b8de7a9e7/_history/1&quot; in 7ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/945f51d3-e568-4aa4-ae0e-270b8de7a9e7/_history/1&quot; in 7ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,0 +1,59 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="fa1e9f88-36fd-4bfe-a0e3-c65a19a9980f"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/6ca98b82-94f2-4056-b45c-d3219e6ccb03"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5e0ce084-bd10-4526-8a7c-cdaa0e21e4c5"/>
+
+        <display value="Byrne, Bailey"/>
+    </subject>
+    <issued value="2008-03-13T00:20:00Z"/>
+    <performer>
+        <actor>
+        <reference value="Organization/050afa71-6f90-4927-a305-1712fad0d937"/>
+
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/1a820c2c-b443-4661-a306-ae9e1b24e6b9"/>
+
+    </result>
+</DiagnosticReport>
+http://fhir:8080/baseDstu3/DiagnosticReport/fa1e9f88-36fd-4bfe-a0e3-c65a19a9980f
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;DiagnosticReport/fa1e9f88-36fd-4bfe-a0e3-c65a19a9980f/_history/1&quot; in 8ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;DiagnosticReport/fa1e9f88-36fd-4bfe-a0e3-c65a19a9980f/_history/1&quot; in 8ms"/>
+   </issue>
+</OperationOutcome>

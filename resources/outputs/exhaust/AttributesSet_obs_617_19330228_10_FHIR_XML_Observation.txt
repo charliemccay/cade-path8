@@ -1,0 +1,71 @@
+<Observation>
+    <id value="1cbb6259-5d23-42fa-bd8d-4064efacd328"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="1cbb6259-5d23-42fa-bd8d-4064efacd328"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1107511000000100"/>
+            <display value="Haemoglobin mass concentration in blood"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5210c487-5551-496e-ba6b-a9fb654cc46f"/>
+
+        <display value="Lowe, Charlotte"/>
+    </subject>
+    <effectiveDateTime value="2014-10-24T00:41:00Z"/>
+    <performer>
+        <reference value="Organization/fd210e37-5cf3-413f-b0df-469cf6760521"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="134"/>
+        <unit value="g/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="g/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/22d1e996-e018-4331-801f-426e02358d57"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/1cbb6259-5d23-42fa-bd8d-4064efacd328
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/1cbb6259-5d23-42fa-bd8d-4064efacd328/_history/1&quot; in 7ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/1cbb6259-5d23-42fa-bd8d-4064efacd328/_history/1&quot; in 7ms"/>
+   </issue>
+</OperationOutcome>

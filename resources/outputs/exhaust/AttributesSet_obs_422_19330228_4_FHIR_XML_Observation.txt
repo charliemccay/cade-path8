@@ -1,0 +1,71 @@
+<Observation>
+    <id value="a9696a3e-e3b0-45f1-93e3-0591ab78a1c6"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="a9696a3e-e3b0-45f1-93e3-0591ab78a1c6"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1107761000000100"/>
+            <display value="Potassium substance concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/44bc1242-b036-481e-9a37-0f4b44bdb5f2"/>
+
+        <display value="Owens, Amy"/>
+    </subject>
+    <effectiveDateTime value="1985-12-14T01:01:00Z"/>
+    <performer>
+        <reference value="Organization/4edcc909-8e04-401f-8a0b-dc2963cb368e"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="4.8"/>
+        <unit value="mmol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/cf8ad441-8aa2-47fa-ad73-c5d96d6c140d"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/a9696a3e-e3b0-45f1-93e3-0591ab78a1c6
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/a9696a3e-e3b0-45f1-93e3-0591ab78a1c6/_history/1&quot; in 8ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/a9696a3e-e3b0-45f1-93e3-0591ab78a1c6/_history/1&quot; in 8ms"/>
+   </issue>
+</OperationOutcome>

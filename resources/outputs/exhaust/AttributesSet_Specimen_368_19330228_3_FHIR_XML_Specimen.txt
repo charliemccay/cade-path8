@@ -1,0 +1,51 @@
+<Specimen>
+    <id value="e14d9bf8-c563-4f04-8f79-89d3a2d17afb"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="e14d9bf8-c563-4f04-8f79-89d3a2d17afb"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/63c6fb44-0d45-4aff-9194-abd9ddfe0a95"/>
+
+        <display value="Rowley, Madison"/>
+    </subject>
+    <receivedTime value="1982-11-14T00:46:00Z"/>
+    <collection>
+        <collectedDateTime value="1982-11-14T00:46:00Z"/>
+    </collection>
+</Specimen>
+http://fhir:8080/baseDstu3/Specimen/e14d9bf8-c563-4f04-8f79-89d3a2d17afb
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/e14d9bf8-c563-4f04-8f79-89d3a2d17afb/_history/1&quot; in 5ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/e14d9bf8-c563-4f04-8f79-89d3a2d17afb/_history/1&quot; in 5ms"/>
+   </issue>
+</OperationOutcome>

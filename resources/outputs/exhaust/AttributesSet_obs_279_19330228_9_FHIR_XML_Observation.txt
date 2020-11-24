@@ -1,0 +1,71 @@
+<Observation>
+    <id value="256bea3c-c349-41e5-822b-ff548ecececd"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="256bea3c-c349-41e5-822b-ff548ecececd"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1106561000000100"/>
+            <display value="Conjugated bilirubin substance concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5e8ad787-4b04-4129-bc89-0860e2054e56"/>
+
+        <display value="Foster, Holly"/>
+    </subject>
+    <effectiveDateTime value="1974-02-07T00:22:00Z"/>
+    <performer>
+        <reference value="Organization/7041324b-5193-4f56-b8d6-df79f500b044"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="14"/>
+        <unit value="umol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="umol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/1b66a242-8ff4-40d8-8260-8c598fa9ead0"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/256bea3c-c349-41e5-822b-ff548ecececd
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/256bea3c-c349-41e5-822b-ff548ecececd/_history/1&quot; in 10ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/256bea3c-c349-41e5-822b-ff548ecececd/_history/1&quot; in 10ms"/>
+   </issue>
+</OperationOutcome>

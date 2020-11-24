@@ -1,0 +1,59 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="8f9c6210-eba0-4655-a85b-d6eb283a7cf9"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/50498592-3bd5-46f6-8cca-a1133ac13c6d"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/765b6368-df2b-4249-87e1-f2da36335bb3"/>
+
+        <display value="Gough, Lucy"/>
+    </subject>
+    <issued value="1958-09-29T00:58:00Z"/>
+    <performer>
+        <actor>
+        <reference value="Organization/ccf34c5c-9b9d-4670-b09d-35984dd2980b"/>
+
+        <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/e62f9a9d-4983-48c3-8fa3-1a18676464e8"/>
+
+    </result>
+</DiagnosticReport>
+http://fhir:8080/baseDstu3/DiagnosticReport/8f9c6210-eba0-4655-a85b-d6eb283a7cf9
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;DiagnosticReport/8f9c6210-eba0-4655-a85b-d6eb283a7cf9/_history/1&quot; in 10ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;DiagnosticReport/8f9c6210-eba0-4655-a85b-d6eb283a7cf9/_history/1&quot; in 10ms"/>
+   </issue>
+</OperationOutcome>

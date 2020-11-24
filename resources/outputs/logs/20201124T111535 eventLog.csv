@@ -1,0 +1,1233 @@
+TimeStamp,EventID,PersonID,pathway,Node,DecisionTable,Attribute,Value,DateTime
+11.15.39,0,13,Path1,Start,,,,1933-02-28T00:00:00
+11.15.39,0,13,Path1,Start,,NhsNumber,7832003812,1933-02-28T00:00:00
+11.15.39,1,13,Path1,Initial_patient_GP_Visit,,Delay Until - ,1933-02-28 00:37:00,1933-02-28T00:00:00
+11.15.39,2,13,Path1,patient_assessment,,,,1933-02-28T00:37:00
+11.16.26,2,13,Path1,patient_assessment,,PatientRcorded,TRUE,1933-02-28T00:37:00
+11.16.26,3,13,Path1,test_request,,,,1933-02-28T00:37:00
+11.16.26,3,13,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1933-02-28T00:37:00
+11.16.27,3,13,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1933-02-28T00:37:00
+11.16.27,3,13,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1933-02-28T00:37:00
+11.16.27,4,13,Path1,Specimen_check,,,,1933-02-28T00:37:00
+11.16.27,4,13,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1933-02-28T00:37:00
+11.16.27,4,13,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1933-02-28T00:37:00
+11.16.27,4,13,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1933-02-28T00:37:00
+11.16.28,4,13,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1933-02-28T00:37:00
+11.16.28,5,13,Path1,specimen_ready_for_test,,Delay Until - ,1933-02-28 00:45:00,1933-02-28T00:37:00
+11.16.28,6,13,Path1,lab_test,,,,1933-02-28T00:45:00
+11.16.28,6,13,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1933-02-28T00:45:00
+11.16.28,6,13,Path1,lab_test,,obs,"OrderedDict([('id', '13'), ('code', '1111571000000100'), ('DisplayName', 'Haematocrit volume fraction of blood'), ('value', '0.372'), ('unit', 'ratio'), ('unit_code', '{ratio}'), ('system', 'http://unitsofmeasure.org')])",1933-02-28T00:45:00
+11.16.28,7,13,Path1,test_report,,,,1933-02-28T00:45:00
+11.16.28,8,13,Path1,send_report,,,,1933-02-28T00:45:00
+11.16.28,8,13,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1933-02-28T00:45:00
+11.16.49,8,13,Path1,send_report,,BundleSent,TRUE,1933-02-28T00:45:00
+11.16.49,9,13,Path1,receive_report,,,,1933-02-28T00:45:00
+11.16.49,10,13,Path1,GP_checks_report,,Delay Until - ,1933-02-28 03:45:00,1933-02-28T00:45:00
+11.16.49,11,13,Path1,inform_patient,,,,1933-02-28T03:45:00
+11.16.49,11,13,Path1,inform_patient,,listing_provided,TRUE,1933-02-28T03:45:00
+11.16.49,11,13,Path1,inform_patient,,json_provided,TRUE,1933-02-28T03:45:00
+11.16.49,12,13,Path1,Finish,,,,1933-02-28T03:45:00
+11.16.49,13,19,Path1,Start,,,,1934-02-14T00:00:00
+11.16.49,13,19,Path1,Start,,NhsNumber,7832003812,1934-02-14T00:00:00
+11.16.49,14,19,Path1,Initial_patient_GP_Visit,,Delay Until - ,1934-02-14 00:19:00,1934-02-14T00:00:00
+11.16.49,15,19,Path1,patient_assessment,,,,1934-02-14T00:19:00
+11.16.49,15,19,Path1,patient_assessment,,PatientRcorded,TRUE,1934-02-14T00:19:00
+11.16.49,16,19,Path1,test_request,,,,1934-02-14T00:19:00
+11.16.49,16,19,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1934-02-14T00:19:00
+11.16.49,16,19,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1934-02-14T00:19:00
+11.16.49,16,19,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1934-02-14T00:19:00
+11.16.49,17,19,Path1,Specimen_check,,,,1934-02-14T00:19:00
+11.16.50,17,19,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1934-02-14T00:19:00
+11.16.50,17,19,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1934-02-14T00:19:00
+11.16.50,17,19,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1934-02-14T00:19:00
+11.16.50,17,19,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1934-02-14T00:19:00
+11.16.50,18,19,Path1,specimen_ready_for_test,,Delay Until - ,1934-02-14 00:49:00,1934-02-14T00:19:00
+11.16.50,19,19,Path1,lab_test,,,,1934-02-14T00:49:00
+11.16.50,19,19,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1934-02-14T00:49:00
+11.16.50,19,19,Path1,lab_test,,obs,"OrderedDict([('id', '19'), ('code', '1107391000000100'), ('DisplayName', 'Eosinophil count in blood'), ('value', '0.06'), ('unit', '10^9/L'), ('unit_code', '10*9/L'), ('system', 'http://unitsofmeasure.org')])",1934-02-14T00:49:00
+11.16.50,20,19,Path1,test_report,,,,1934-02-14T00:49:00
+11.16.50,21,19,Path1,send_report,,,,1934-02-14T00:49:00
+11.16.50,21,19,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1934-02-14T00:49:00
+11.16.53,21,19,Path1,send_report,,BundleSent,TRUE,1934-02-14T00:49:00
+11.16.53,22,19,Path1,receive_report,,,,1934-02-14T00:49:00
+11.16.53,23,19,Path1,GP_checks_report,,Delay Until - ,1934-02-14 15:49:00,1934-02-14T00:49:00
+11.16.53,24,19,Path1,inform_patient,,,,1934-02-14T15:49:00
+11.16.53,24,19,Path1,inform_patient,,listing_provided,TRUE,1934-02-14T15:49:00
+11.16.53,24,19,Path1,inform_patient,,json_provided,TRUE,1934-02-14T15:49:00
+11.16.53,25,19,Path1,Finish,,,,1934-02-14T15:49:00
+11.16.53,26,12,Path1,Start,,,,1937-10-20T00:00:00
+11.16.53,26,12,Path1,Start,,NhsNumber,7832003812,1937-10-20T00:00:00
+11.16.53,27,12,Path1,Initial_patient_GP_Visit,,Delay Until - ,1937-10-20 00:10:00,1937-10-20T00:00:00
+11.16.53,28,12,Path1,patient_assessment,,,,1937-10-20T00:10:00
+11.16.53,28,12,Path1,patient_assessment,,PatientRcorded,TRUE,1937-10-20T00:10:00
+11.16.53,29,12,Path1,test_request,,,,1937-10-20T00:10:00
+11.16.53,29,12,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1937-10-20T00:10:00
+11.16.53,29,12,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1937-10-20T00:10:00
+11.16.54,29,12,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1937-10-20T00:10:00
+11.16.54,30,12,Path1,Specimen_check,,,,1937-10-20T00:10:00
+11.16.54,30,12,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1937-10-20T00:10:00
+11.16.54,30,12,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1937-10-20T00:10:00
+11.16.54,30,12,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1937-10-20T00:10:00
+11.16.54,30,12,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1937-10-20T00:10:00
+11.16.54,31,12,Path1,specimen_ready_for_test,,Delay Until - ,1937-10-20 00:32:00,1937-10-20T00:10:00
+11.16.54,32,12,Path1,lab_test,,,,1937-10-20T00:32:00
+11.16.54,32,12,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1937-10-20T00:32:00
+11.16.54,32,12,Path1,lab_test,,obs,"OrderedDict([('id', '12'), ('code', '1108041000000100'), ('DisplayName', 'Platelet count in blood'), ('value', '143'), ('unit', '10^9/L'), ('unit_code', '10*p/L'), ('system', 'http://unitsofmeasure.org')])",1937-10-20T00:32:00
+11.16.54,33,12,Path1,test_report,,,,1937-10-20T00:32:00
+11.16.54,34,12,Path1,send_report,,,,1937-10-20T00:32:00
+11.16.54,34,12,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1937-10-20T00:32:00
+11.16.58,34,12,Path1,send_report,,BundleSent,TRUE,1937-10-20T00:32:00
+11.16.58,35,12,Path1,receive_report,,,,1937-10-20T00:32:00
+11.16.58,36,12,Path1,GP_checks_report,,Delay Until - ,1937-10-20 19:32:00,1937-10-20T00:32:00
+11.16.58,37,12,Path1,inform_patient,,,,1937-10-20T19:32:00
+11.16.58,37,12,Path1,inform_patient,,listing_provided,TRUE,1937-10-20T19:32:00
+11.16.58,37,12,Path1,inform_patient,,json_provided,TRUE,1937-10-20T19:32:00
+11.16.58,38,12,Path1,Finish,,,,1937-10-20T19:32:00
+11.16.58,39,23,Path1,Start,,,,1938-01-23T00:00:00
+11.16.58,39,23,Path1,Start,,NhsNumber,7832003812,1938-01-23T00:00:00
+11.16.58,40,23,Path1,Initial_patient_GP_Visit,,Delay Until - ,1938-01-23 00:23:00,1938-01-23T00:00:00
+11.16.58,41,23,Path1,patient_assessment,,,,1938-01-23T00:23:00
+11.16.58,41,23,Path1,patient_assessment,,PatientRcorded,TRUE,1938-01-23T00:23:00
+11.16.58,42,23,Path1,test_request,,,,1938-01-23T00:23:00
+11.16.59,42,23,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1938-01-23T00:23:00
+11.16.59,42,23,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1938-01-23T00:23:00
+11.16.59,42,23,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1938-01-23T00:23:00
+11.16.59,43,23,Path1,Specimen_check,,,,1938-01-23T00:23:00
+11.16.59,43,23,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1938-01-23T00:23:00
+11.16.59,43,23,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1938-01-23T00:23:00
+11.16.59,43,23,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1938-01-23T00:23:00
+11.16.59,43,23,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1938-01-23T00:23:00
+11.16.59,44,23,Path1,specimen_ready_for_test,,Delay Until - ,1938-01-23 00:43:00,1938-01-23T00:23:00
+11.16.59,45,23,Path1,lab_test,,,,1938-01-23T00:43:00
+11.16.59,45,23,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1938-01-23T00:43:00
+11.16.59,45,23,Path1,lab_test,,obs,"OrderedDict([('id', '23'), ('code', '1107871000000100'), ('DisplayName', 'Sodium substance concentration in serum'), ('value', '143'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1938-01-23T00:43:00
+11.16.59,46,23,Path1,test_report,,,,1938-01-23T00:43:00
+11.16.59,47,23,Path1,send_report,,,,1938-01-23T00:43:00
+11.16.59,47,23,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1938-01-23T00:43:00
+11.17.02,47,23,Path1,send_report,,BundleSent,TRUE,1938-01-23T00:43:00
+11.17.02,48,23,Path1,receive_report,,,,1938-01-23T00:43:00
+11.17.02,49,23,Path1,GP_checks_report,,Delay Until - ,1938-01-23 13:43:00,1938-01-23T00:43:00
+11.17.02,50,23,Path1,inform_patient,,,,1938-01-23T13:43:00
+11.17.02,50,23,Path1,inform_patient,,listing_provided,TRUE,1938-01-23T13:43:00
+11.17.02,50,23,Path1,inform_patient,,json_provided,TRUE,1938-01-23T13:43:00
+11.17.02,51,23,Path1,Finish,,,,1938-01-23T13:43:00
+11.17.02,52,1,Path1,Start,,,,1938-07-08T00:00:00
+11.17.02,52,1,Path1,Start,,NhsNumber,7832003812,1938-07-08T00:00:00
+11.17.02,53,1,Path1,Initial_patient_GP_Visit,,Delay Until - ,1938-07-08 00:13:00,1938-07-08T00:00:00
+11.17.02,54,1,Path1,patient_assessment,,,,1938-07-08T00:13:00
+11.17.02,54,1,Path1,patient_assessment,,PatientRcorded,TRUE,1938-07-08T00:13:00
+11.17.02,55,1,Path1,test_request,,,,1938-07-08T00:13:00
+11.17.02,55,1,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1938-07-08T00:13:00
+11.17.02,55,1,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1938-07-08T00:13:00
+11.17.03,55,1,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1938-07-08T00:13:00
+11.17.03,56,1,Path1,Specimen_check,,,,1938-07-08T00:13:00
+11.17.03,56,1,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1938-07-08T00:13:00
+11.17.03,56,1,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1938-07-08T00:13:00
+11.17.03,56,1,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1938-07-08T00:13:00
+11.17.03,56,1,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1938-07-08T00:13:00
+11.17.03,57,1,Path1,specimen_ready_for_test,,Delay Until - ,1938-07-08 00:31:00,1938-07-08T00:13:00
+11.17.03,58,1,Path1,lab_test,,,,1938-07-08T00:31:00
+11.17.03,58,1,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1938-07-08T00:31:00
+11.17.03,58,1,Path1,lab_test,,obs,"OrderedDict([('id', '1'), ('code', '1000381000000105'), ('DisplayName', 'Se prostate specific Ag level'), ('value', '72'), ('unit', 'ug/L'), ('unit_code', 'ug/L'), ('system', 'http://unitsofmeasure.org')])",1938-07-08T00:31:00
+11.17.03,59,1,Path1,test_report,,,,1938-07-08T00:31:00
+11.17.03,60,1,Path1,send_report,,,,1938-07-08T00:31:00
+11.17.03,60,1,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1938-07-08T00:31:00
+11.17.07,60,1,Path1,send_report,,BundleSent,TRUE,1938-07-08T00:31:00
+11.17.07,61,1,Path1,receive_report,,,,1938-07-08T00:31:00
+11.17.07,62,1,Path1,GP_checks_report,,Delay Until - ,1938-07-08 12:31:00,1938-07-08T00:31:00
+11.17.07,63,1,Path1,inform_patient,,,,1938-07-08T12:31:00
+11.17.07,63,1,Path1,inform_patient,,listing_provided,TRUE,1938-07-08T12:31:00
+11.17.07,63,1,Path1,inform_patient,,json_provided,TRUE,1938-07-08T12:31:00
+11.17.07,64,1,Path1,Finish,,,,1938-07-08T12:31:00
+11.17.07,65,34,Path1,Start,,,,1943-06-07T00:00:00
+11.17.07,65,34,Path1,Start,,NhsNumber,7832003812,1943-06-07T00:00:00
+11.17.07,66,34,Path1,Initial_patient_GP_Visit,,Delay Until - ,1943-06-07 00:25:00,1943-06-07T00:00:00
+11.17.07,67,34,Path1,patient_assessment,,,,1943-06-07T00:25:00
+11.17.07,67,34,Path1,patient_assessment,,PatientRcorded,TRUE,1943-06-07T00:25:00
+11.17.07,68,34,Path1,test_request,,,,1943-06-07T00:25:00
+11.17.07,68,34,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1943-06-07T00:25:00
+11.17.07,68,34,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1943-06-07T00:25:00
+11.17.07,68,34,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1943-06-07T00:25:00
+11.17.07,69,34,Path1,Specimen_check,,,,1943-06-07T00:25:00
+11.17.07,69,34,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1943-06-07T00:25:00
+11.17.07,69,34,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1943-06-07T00:25:00
+11.17.07,69,34,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1943-06-07T00:25:00
+11.17.07,69,34,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1943-06-07T00:25:00
+11.17.07,70,34,Path1,specimen_ready_for_test,,Delay Until - ,1943-06-07 00:41:00,1943-06-07T00:25:00
+11.17.07,71,34,Path1,lab_test,,,,1943-06-07T00:41:00
+11.17.07,71,34,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1943-06-07T00:41:00
+11.17.08,71,34,Path1,lab_test,,obs,"OrderedDict([('id', '34'), ('code', '1107011000000100'), ('DisplayName', 'Creatinine substance concentration in urine'), ('value', '4.2'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1943-06-07T00:41:00
+11.17.08,72,34,Path1,test_report,,,,1943-06-07T00:41:00
+11.17.08,73,34,Path1,send_report,,,,1943-06-07T00:41:00
+11.17.08,73,34,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1943-06-07T00:41:00
+11.17.11,73,34,Path1,send_report,,BundleSent,TRUE,1943-06-07T00:41:00
+11.17.11,74,34,Path1,receive_report,,,,1943-06-07T00:41:00
+11.17.11,75,34,Path1,GP_checks_report,,Delay Until - ,1943-06-07 14:41:00,1943-06-07T00:41:00
+11.17.11,76,34,Path1,inform_patient,,,,1943-06-07T14:41:00
+11.17.11,76,34,Path1,inform_patient,,listing_provided,TRUE,1943-06-07T14:41:00
+11.17.11,76,34,Path1,inform_patient,,json_provided,TRUE,1943-06-07T14:41:00
+11.17.11,77,34,Path1,Finish,,,,1943-06-07T14:41:00
+11.17.11,78,20,Path1,Start,,,,1947-03-09T00:00:00
+11.17.11,78,20,Path1,Start,,NhsNumber,7832003812,1947-03-09T00:00:00
+11.17.11,79,20,Path1,Initial_patient_GP_Visit,,Delay Until - ,1947-03-09 00:34:00,1947-03-09T00:00:00
+11.17.11,80,20,Path1,patient_assessment,,,,1947-03-09T00:34:00
+11.17.11,80,20,Path1,patient_assessment,,PatientRcorded,TRUE,1947-03-09T00:34:00
+11.17.11,81,20,Path1,test_request,,,,1947-03-09T00:34:00
+11.17.11,81,20,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1947-03-09T00:34:00
+11.17.11,81,20,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1947-03-09T00:34:00
+11.17.11,81,20,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1947-03-09T00:34:00
+11.17.11,82,20,Path1,Specimen_check,,,,1947-03-09T00:34:00
+11.17.11,82,20,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1947-03-09T00:34:00
+11.17.11,82,20,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1947-03-09T00:34:00
+11.17.11,82,20,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1947-03-09T00:34:00
+11.17.11,82,20,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1947-03-09T00:34:00
+11.17.11,83,20,Path1,specimen_ready_for_test,,Delay Until - ,1947-03-09 00:51:00,1947-03-09T00:34:00
+11.17.11,84,20,Path1,lab_test,,,,1947-03-09T00:51:00
+11.17.11,84,20,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1947-03-09T00:51:00
+11.17.11,84,20,Path1,lab_test,,obs,"OrderedDict([('id', '20'), ('code', '1106091000000100'), ('DisplayName', 'Basophil count in blood'), ('value', '0.03'), ('unit', '10^9/L'), ('unit_code', '10*9/L'), ('system', 'http://unitsofmeasure.org')])",1947-03-09T00:51:00
+11.17.11,85,20,Path1,test_report,,,,1947-03-09T00:51:00
+11.17.11,86,20,Path1,send_report,,,,1947-03-09T00:51:00
+11.17.12,86,20,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1947-03-09T00:51:00
+11.17.14,86,20,Path1,send_report,,BundleSent,TRUE,1947-03-09T00:51:00
+11.17.14,87,20,Path1,receive_report,,,,1947-03-09T00:51:00
+11.17.14,88,20,Path1,GP_checks_report,,Delay Until - ,1947-03-09 22:51:00,1947-03-09T00:51:00
+11.17.14,89,20,Path1,inform_patient,,,,1947-03-09T22:51:00
+11.17.14,89,20,Path1,inform_patient,,listing_provided,TRUE,1947-03-09T22:51:00
+11.17.14,89,20,Path1,inform_patient,,json_provided,TRUE,1947-03-09T22:51:00
+11.17.14,90,20,Path1,Finish,,,,1947-03-09T22:51:00
+11.17.14,91,18,Path1,Start,,,,1947-08-28T00:00:00
+11.17.14,91,18,Path1,Start,,NhsNumber,7832003812,1947-08-28T00:00:00
+11.17.14,92,18,Path1,Initial_patient_GP_Visit,,Delay Until - ,1947-08-28 00:13:00,1947-08-28T00:00:00
+11.17.14,93,18,Path1,patient_assessment,,,,1947-08-28T00:13:00
+11.17.15,93,18,Path1,patient_assessment,,PatientRcorded,TRUE,1947-08-28T00:13:00
+11.17.15,94,18,Path1,test_request,,,,1947-08-28T00:13:00
+11.17.15,94,18,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1947-08-28T00:13:00
+11.17.15,94,18,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1947-08-28T00:13:00
+11.17.15,94,18,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1947-08-28T00:13:00
+11.17.15,95,18,Path1,Specimen_check,,,,1947-08-28T00:13:00
+11.17.15,95,18,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1947-08-28T00:13:00
+11.17.15,95,18,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1947-08-28T00:13:00
+11.17.15,95,18,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1947-08-28T00:13:00
+11.17.15,95,18,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1947-08-28T00:13:00
+11.17.15,96,18,Path1,specimen_ready_for_test,,Delay Until - ,1947-08-28 00:41:00,1947-08-28T00:13:00
+11.17.15,97,18,Path1,lab_test,,,,1947-08-28T00:41:00
+11.17.15,97,18,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1947-08-28T00:41:00
+11.17.15,97,18,Path1,lab_test,,obs,"OrderedDict([('id', '18'), ('code', '1107991000000100'), ('DisplayName', 'Monocyte count in blood'), ('value', '0.56'), ('unit', '10^9/L'), ('unit_code', '10*9/L'), ('system', 'http://unitsofmeasure.org')])",1947-08-28T00:41:00
+11.17.15,98,18,Path1,test_report,,,,1947-08-28T00:41:00
+11.17.15,99,18,Path1,send_report,,,,1947-08-28T00:41:00
+11.17.15,99,18,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1947-08-28T00:41:00
+11.17.18,99,18,Path1,send_report,,BundleSent,TRUE,1947-08-28T00:41:00
+11.17.18,100,18,Path1,receive_report,,,,1947-08-28T00:41:00
+11.17.18,101,18,Path1,GP_checks_report,,Delay Until - ,1947-08-28 12:41:00,1947-08-28T00:41:00
+11.17.18,102,18,Path1,inform_patient,,,,1947-08-28T12:41:00
+11.17.18,102,18,Path1,inform_patient,,listing_provided,TRUE,1947-08-28T12:41:00
+11.17.18,102,18,Path1,inform_patient,,json_provided,TRUE,1947-08-28T12:41:00
+11.17.18,103,18,Path1,Finish,,,,1947-08-28T12:41:00
+11.17.18,104,42,Path1,Start,,,,1949-11-05T00:00:00
+11.17.18,104,42,Path1,Start,,NhsNumber,7832003812,1949-11-05T00:00:00
+11.17.18,105,42,Path1,Initial_patient_GP_Visit,,Delay Until - ,1949-11-05 00:24:00,1949-11-05T00:00:00
+11.17.18,106,42,Path1,patient_assessment,,,,1949-11-05T00:24:00
+11.17.18,107,42,Path1,test_request,,,,1949-11-05T00:24:00
+11.17.18,108,42,Path1,Specimen_check,,,,1949-11-05T00:24:00
+11.17.18,109,42,Path1,specimen_ready_for_test,,Delay Until - ,1949-11-05 00:49:00,1949-11-05T00:24:00
+11.17.18,110,42,Path1,lab_test,,,,1949-11-05T00:49:00
+11.17.18,111,42,Path1,test_report,,,,1949-11-05T00:49:00
+11.17.18,112,42,Path1,send_report,,,,1949-11-05T00:49:00
+11.17.18,113,42,Path1,receive_report,,,,1949-11-05T00:49:00
+11.17.18,114,42,Path1,GP_checks_report,,Delay Until - ,1949-11-05 16:49:00,1949-11-05T00:49:00
+11.17.18,115,42,Path1,inform_patient,,,,1949-11-05T16:49:00
+11.17.18,116,42,Path1,Finish,,,,1949-11-05T16:49:00
+11.17.18,117,7,Path1,Start,,,,1956-05-31T00:00:00
+11.17.18,117,7,Path1,Start,,NhsNumber,7832003812,1956-05-31T00:00:00
+11.17.18,118,7,Path1,Initial_patient_GP_Visit,,Delay Until - ,1956-05-31 00:43:00,1956-05-31T00:00:00
+11.17.18,119,7,Path1,patient_assessment,,,,1956-05-31T00:43:00
+11.17.18,119,7,Path1,patient_assessment,,PatientRcorded,TRUE,1956-05-31T00:43:00
+11.17.18,120,7,Path1,test_request,,,,1956-05-31T00:43:00
+11.17.18,120,7,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1956-05-31T00:43:00
+11.17.18,120,7,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1956-05-31T00:43:00
+11.17.18,120,7,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1956-05-31T00:43:00
+11.17.18,121,7,Path1,Specimen_check,,,,1956-05-31T00:43:00
+11.17.19,121,7,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1956-05-31T00:43:00
+11.17.19,121,7,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1956-05-31T00:43:00
+11.17.19,121,7,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1956-05-31T00:43:00
+11.17.19,121,7,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1956-05-31T00:43:00
+11.17.19,122,7,Path1,specimen_ready_for_test,,Delay Until - ,1956-05-31 00:49:00,1956-05-31T00:43:00
+11.17.19,123,7,Path1,lab_test,,,,1956-05-31T00:49:00
+11.17.19,123,7,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1956-05-31T00:49:00
+11.17.19,123,7,Path1,lab_test,,obs,"OrderedDict([('id', '7'), ('code', '1107411000000100'), ('DisplayName', 'Estimated glomerular filtration rate by laboratory calculation'), ('value', '87'), ('unit', 'mL/min/1.73m2'), ('unit_code', 'mL/min/{1.73_m2}'), ('system', 'http://unitsofmeasure.org')])",1956-05-31T00:49:00
+11.17.19,124,7,Path1,test_report,,,,1956-05-31T00:49:00
+11.17.19,125,7,Path1,send_report,,,,1956-05-31T00:49:00
+11.17.19,125,7,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1956-05-31T00:49:00
+11.17.22,125,7,Path1,send_report,,BundleSent,TRUE,1956-05-31T00:49:00
+11.17.22,126,7,Path1,receive_report,,,,1956-05-31T00:49:00
+11.17.22,127,7,Path1,GP_checks_report,,Delay Until - ,1956-05-31 10:49:00,1956-05-31T00:49:00
+11.17.22,128,7,Path1,inform_patient,,,,1956-05-31T10:49:00
+11.17.22,128,7,Path1,inform_patient,,listing_provided,TRUE,1956-05-31T10:49:00
+11.17.22,128,7,Path1,inform_patient,,json_provided,TRUE,1956-05-31T10:49:00
+11.17.22,129,7,Path1,Finish,,,,1956-05-31T10:49:00
+11.17.22,130,28,Path1,Start,,,,1956-09-07T00:00:00
+11.17.22,130,28,Path1,Start,,NhsNumber,7832003812,1956-09-07T00:00:00
+11.17.22,131,28,Path1,Initial_patient_GP_Visit,,Delay Until - ,1956-09-07 00:12:00,1956-09-07T00:00:00
+11.17.22,132,28,Path1,patient_assessment,,,,1956-09-07T00:12:00
+11.17.22,132,28,Path1,patient_assessment,,PatientRcorded,TRUE,1956-09-07T00:12:00
+11.17.22,133,28,Path1,test_request,,,,1956-09-07T00:12:00
+11.17.22,133,28,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1956-09-07T00:12:00
+11.17.22,133,28,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1956-09-07T00:12:00
+11.17.22,133,28,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1956-09-07T00:12:00
+11.17.22,134,28,Path1,Specimen_check,,,,1956-09-07T00:12:00
+11.17.22,134,28,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1956-09-07T00:12:00
+11.17.22,134,28,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1956-09-07T00:12:00
+11.17.22,134,28,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1956-09-07T00:12:00
+11.17.23,134,28,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1956-09-07T00:12:00
+11.17.23,135,28,Path1,specimen_ready_for_test,,Delay Until - ,1956-09-07 00:24:00,1956-09-07T00:12:00
+11.17.23,136,28,Path1,lab_test,,,,1956-09-07T00:24:00
+11.17.23,136,28,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1956-09-07T00:24:00
+11.17.23,136,28,Path1,lab_test,,obs,"OrderedDict([('id', '28'), ('code', '1106541000000100'), ('DisplayName', 'Cholesterol substance concentration in serum'), ('value', '7.7'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1956-09-07T00:24:00
+11.17.23,137,28,Path1,test_report,,,,1956-09-07T00:24:00
+11.17.23,138,28,Path1,send_report,,,,1956-09-07T00:24:00
+11.17.23,138,28,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1956-09-07T00:24:00
+11.17.25,138,28,Path1,send_report,,BundleSent,TRUE,1956-09-07T00:24:00
+11.17.25,139,28,Path1,receive_report,,,,1956-09-07T00:24:00
+11.17.25,140,28,Path1,GP_checks_report,,Delay Until - ,1956-09-07 21:24:00,1956-09-07T00:24:00
+11.17.25,141,28,Path1,inform_patient,,,,1956-09-07T21:24:00
+11.17.25,141,28,Path1,inform_patient,,listing_provided,TRUE,1956-09-07T21:24:00
+11.17.25,141,28,Path1,inform_patient,,json_provided,TRUE,1956-09-07T21:24:00
+11.17.25,142,28,Path1,Finish,,,,1956-09-07T21:24:00
+11.17.26,143,26,Path1,Start,,,,1958-05-18T00:00:00
+11.17.26,143,26,Path1,Start,,NhsNumber,7832003812,1958-05-18T00:00:00
+11.17.26,144,26,Path1,Initial_patient_GP_Visit,,Delay Until - ,1958-05-18 00:13:00,1958-05-18T00:00:00
+11.17.26,145,26,Path1,patient_assessment,,,,1958-05-18T00:13:00
+11.17.26,145,26,Path1,patient_assessment,,PatientRcorded,TRUE,1958-05-18T00:13:00
+11.17.26,146,26,Path1,test_request,,,,1958-05-18T00:13:00
+11.17.26,146,26,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1958-05-18T00:13:00
+11.17.26,146,26,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1958-05-18T00:13:00
+11.17.26,146,26,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1958-05-18T00:13:00
+11.17.26,147,26,Path1,Specimen_check,,,,1958-05-18T00:13:00
+11.17.26,147,26,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1958-05-18T00:13:00
+11.17.26,147,26,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1958-05-18T00:13:00
+11.17.26,147,26,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1958-05-18T00:13:00
+11.17.26,147,26,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1958-05-18T00:13:00
+11.17.26,148,26,Path1,specimen_ready_for_test,,Delay Until - ,1958-05-18 00:18:00,1958-05-18T00:13:00
+11.17.26,149,26,Path1,lab_test,,,,1958-05-18T00:18:00
+11.17.26,149,26,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1958-05-18T00:18:00
+11.17.26,149,26,Path1,lab_test,,obs,"OrderedDict([('id', '26'), ('code', '1107001000000100'), ('DisplayName', 'Creatinine substance concentration in serum'), ('value', '58'), ('unit', 'umol/L'), ('unit_code', 'umol/L'), ('system', 'http://unitsofmeasure.org')])",1958-05-18T00:18:00
+11.17.26,150,26,Path1,test_report,,,,1958-05-18T00:18:00
+11.17.26,151,26,Path1,send_report,,,,1958-05-18T00:18:00
+11.17.26,151,26,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1958-05-18T00:18:00
+11.17.29,151,26,Path1,send_report,,BundleSent,TRUE,1958-05-18T00:18:00
+11.17.29,152,26,Path1,receive_report,,,,1958-05-18T00:18:00
+11.17.29,153,26,Path1,GP_checks_report,,Delay Until - ,1958-05-18 12:18:00,1958-05-18T00:18:00
+11.17.29,154,26,Path1,inform_patient,,,,1958-05-18T12:18:00
+11.17.29,154,26,Path1,inform_patient,,listing_provided,TRUE,1958-05-18T12:18:00
+11.17.29,154,26,Path1,inform_patient,,json_provided,TRUE,1958-05-18T12:18:00
+11.17.29,155,26,Path1,Finish,,,,1958-05-18T12:18:00
+11.17.29,156,6,Path1,Start,,,,1958-09-29T00:00:00
+11.17.29,156,6,Path1,Start,,NhsNumber,7832003812,1958-09-29T00:00:00
+11.17.29,157,6,Path1,Initial_patient_GP_Visit,,Delay Until - ,1958-09-29 00:33:00,1958-09-29T00:00:00
+11.17.29,158,6,Path1,patient_assessment,,,,1958-09-29T00:33:00
+11.17.29,158,6,Path1,patient_assessment,,PatientRcorded,TRUE,1958-09-29T00:33:00
+11.17.29,159,6,Path1,test_request,,,,1958-09-29T00:33:00
+11.17.29,159,6,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1958-09-29T00:33:00
+11.17.29,159,6,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1958-09-29T00:33:00
+11.17.29,159,6,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1958-09-29T00:33:00
+11.17.29,160,6,Path1,Specimen_check,,,,1958-09-29T00:33:00
+11.17.29,160,6,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1958-09-29T00:33:00
+11.17.29,160,6,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1958-09-29T00:33:00
+11.17.30,160,6,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1958-09-29T00:33:00
+11.17.30,160,6,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1958-09-29T00:33:00
+11.17.30,161,6,Path1,specimen_ready_for_test,,Delay Until - ,1958-09-29 00:58:00,1958-09-29T00:33:00
+11.17.30,162,6,Path1,lab_test,,,,1958-09-29T00:58:00
+11.17.30,162,6,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1958-09-29T00:58:00
+11.17.30,162,6,Path1,lab_test,,obs,"OrderedDict([('id', '6'), ('code', '1107001000000100'), ('DisplayName', 'Creatinine substance concentration in serum'), ('value', '64'), ('unit', 'umol/L'), ('unit_code', 'umol/L'), ('system', 'http://unitsofmeasure.org')])",1958-09-29T00:58:00
+11.17.30,163,6,Path1,test_report,,,,1958-09-29T00:58:00
+11.17.30,164,6,Path1,send_report,,,,1958-09-29T00:58:00
+11.17.30,164,6,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1958-09-29T00:58:00
+11.17.33,164,6,Path1,send_report,,BundleSent,TRUE,1958-09-29T00:58:00
+11.17.33,165,6,Path1,receive_report,,,,1958-09-29T00:58:00
+11.17.33,166,6,Path1,GP_checks_report,,Delay Until - ,1958-09-29 18:58:00,1958-09-29T00:58:00
+11.17.33,167,6,Path1,inform_patient,,,,1958-09-29T18:58:00
+11.17.33,167,6,Path1,inform_patient,,listing_provided,TRUE,1958-09-29T18:58:00
+11.17.33,167,6,Path1,inform_patient,,json_provided,TRUE,1958-09-29T18:58:00
+11.17.33,168,6,Path1,Finish,,,,1958-09-29T18:58:00
+11.17.33,169,35,Path1,Start,,,,1961-09-07T00:00:00
+11.17.33,169,35,Path1,Start,,NhsNumber,7832003812,1961-09-07T00:00:00
+11.17.33,170,35,Path1,Initial_patient_GP_Visit,,Delay Until - ,1961-09-07 00:42:00,1961-09-07T00:00:00
+11.17.33,171,35,Path1,patient_assessment,,,,1961-09-07T00:42:00
+11.17.33,171,35,Path1,patient_assessment,,PatientRcorded,TRUE,1961-09-07T00:42:00
+11.17.33,172,35,Path1,test_request,,,,1961-09-07T00:42:00
+11.17.33,172,35,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1961-09-07T00:42:00
+11.17.33,172,35,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1961-09-07T00:42:00
+11.17.33,172,35,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1961-09-07T00:42:00
+11.17.33,173,35,Path1,Specimen_check,,,,1961-09-07T00:42:00
+11.17.33,173,35,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1961-09-07T00:42:00
+11.17.33,173,35,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1961-09-07T00:42:00
+11.17.33,173,35,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1961-09-07T00:42:00
+11.17.33,173,35,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1961-09-07T00:42:00
+11.17.33,174,35,Path1,specimen_ready_for_test,,Delay Until - ,1961-09-07 00:51:00,1961-09-07T00:42:00
+11.17.33,175,35,Path1,lab_test,,,,1961-09-07T00:51:00
+11.17.33,175,35,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1961-09-07T00:51:00
+11.17.33,175,35,Path1,lab_test,,obs,"OrderedDict([('id', '35'), ('code', '1109411000000100'), ('DisplayName', 'TSH (thyroid stimulating hormone) arbitrary concentration in plasma'), ('value', '0.10'), ('unit', 'mU/L'), ('unit_code', 'mU/L'), ('system', 'http://unitsofmeasure.org')])",1961-09-07T00:51:00
+11.17.33,176,35,Path1,test_report,,,,1961-09-07T00:51:00
+11.17.33,177,35,Path1,send_report,,,,1961-09-07T00:51:00
+11.17.33,177,35,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1961-09-07T00:51:00
+11.17.36,177,35,Path1,send_report,,BundleSent,TRUE,1961-09-07T00:51:00
+11.17.36,178,35,Path1,receive_report,,,,1961-09-07T00:51:00
+11.17.36,179,35,Path1,GP_checks_report,,Delay Until - ,1961-09-07 16:51:00,1961-09-07T00:51:00
+11.17.36,180,35,Path1,inform_patient,,,,1961-09-07T16:51:00
+11.17.36,180,35,Path1,inform_patient,,listing_provided,TRUE,1961-09-07T16:51:00
+11.17.36,180,35,Path1,inform_patient,,json_provided,TRUE,1961-09-07T16:51:00
+11.17.36,181,35,Path1,Finish,,,,1961-09-07T16:51:00
+11.17.36,182,32,Path1,Start,,,,1962-07-22T00:00:00
+11.17.36,182,32,Path1,Start,,NhsNumber,7832003812,1962-07-22T00:00:00
+11.17.36,183,32,Path1,Initial_patient_GP_Visit,,Delay Until - ,1962-07-22 00:48:00,1962-07-22T00:00:00
+11.17.36,184,32,Path1,patient_assessment,,,,1962-07-22T00:48:00
+11.17.36,184,32,Path1,patient_assessment,,PatientRcorded,TRUE,1962-07-22T00:48:00
+11.17.36,185,32,Path1,test_request,,,,1962-07-22T00:48:00
+11.17.36,185,32,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1962-07-22T00:48:00
+11.17.37,185,32,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1962-07-22T00:48:00
+11.17.37,185,32,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1962-07-22T00:48:00
+11.17.37,186,32,Path1,Specimen_check,,,,1962-07-22T00:48:00
+11.17.37,186,32,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1962-07-22T00:48:00
+11.17.37,186,32,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1962-07-22T00:48:00
+11.17.37,186,32,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1962-07-22T00:48:00
+11.17.37,186,32,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1962-07-22T00:48:00
+11.17.37,187,32,Path1,specimen_ready_for_test,,Delay Until - ,1962-07-22 00:54:00,1962-07-22T00:48:00
+11.17.37,188,32,Path1,lab_test,,,,1962-07-22T00:54:00
+11.17.37,188,32,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1962-07-22T00:54:00
+11.17.37,188,32,Path1,lab_test,,obs,"OrderedDict([('id', '32'), ('code', '12021000237106'), ('DisplayName', 'Non-HDL (high density lipoprotein) cholesterol molar concentration in serum'), ('value', '6.9'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1962-07-22T00:54:00
+11.17.37,189,32,Path1,test_report,,,,1962-07-22T00:54:00
+11.17.37,190,32,Path1,send_report,,,,1962-07-22T00:54:00
+11.17.37,190,32,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1962-07-22T00:54:00
+11.17.40,190,32,Path1,send_report,,BundleSent,TRUE,1962-07-22T00:54:00
+11.17.40,191,32,Path1,receive_report,,,,1962-07-22T00:54:00
+11.17.40,192,32,Path1,GP_checks_report,,Delay Until - ,1962-07-22 12:54:00,1962-07-22T00:54:00
+11.17.40,193,32,Path1,inform_patient,,,,1962-07-22T12:54:00
+11.17.40,193,32,Path1,inform_patient,,listing_provided,TRUE,1962-07-22T12:54:00
+11.17.40,193,32,Path1,inform_patient,,json_provided,TRUE,1962-07-22T12:54:00
+11.17.40,194,32,Path1,Finish,,,,1962-07-22T12:54:00
+11.17.40,195,46,Path1,Start,,,,1962-11-14T00:00:00
+11.17.40,195,46,Path1,Start,,NhsNumber,7832003812,1962-11-14T00:00:00
+11.17.40,196,46,Path1,Initial_patient_GP_Visit,,Delay Until - ,1962-11-14 00:24:00,1962-11-14T00:00:00
+11.17.40,197,46,Path1,patient_assessment,,,,1962-11-14T00:24:00
+11.17.40,198,46,Path1,test_request,,,,1962-11-14T00:24:00
+11.17.40,199,46,Path1,Specimen_check,,,,1962-11-14T00:24:00
+11.17.40,200,46,Path1,specimen_ready_for_test,,Delay Until - ,1962-11-14 00:31:00,1962-11-14T00:24:00
+11.17.40,201,46,Path1,lab_test,,,,1962-11-14T00:31:00
+11.17.40,202,46,Path1,test_report,,,,1962-11-14T00:31:00
+11.17.40,203,46,Path1,send_report,,,,1962-11-14T00:31:00
+11.17.40,204,46,Path1,receive_report,,,,1962-11-14T00:31:00
+11.17.40,205,46,Path1,GP_checks_report,,Delay Until - ,1962-11-14 12:31:00,1962-11-14T00:31:00
+11.17.40,206,46,Path1,inform_patient,,,,1962-11-14T12:31:00
+11.17.40,207,46,Path1,Finish,,,,1962-11-14T12:31:00
+11.17.40,208,0,Path1,Start,,,,1963-04-22T00:00:00
+11.17.40,208,0,Path1,Start,,NhsNumber,7832003812,1963-04-22T00:00:00
+11.17.40,209,0,Path1,Initial_patient_GP_Visit,,Delay Until - ,1963-04-22 00:18:00,1963-04-22T00:00:00
+11.17.40,210,0,Path1,patient_assessment,,,,1963-04-22T00:18:00
+11.17.40,210,0,Path1,patient_assessment,,PatientRcorded,TRUE,1963-04-22T00:18:00
+11.17.40,211,0,Path1,test_request,,,,1963-04-22T00:18:00
+11.17.40,211,0,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1963-04-22T00:18:00
+11.17.40,211,0,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1963-04-22T00:18:00
+11.17.40,211,0,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1963-04-22T00:18:00
+11.17.40,212,0,Path1,Specimen_check,,,,1963-04-22T00:18:00
+11.17.40,212,0,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1963-04-22T00:18:00
+11.17.40,212,0,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1963-04-22T00:18:00
+11.17.40,212,0,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1963-04-22T00:18:00
+11.17.41,212,0,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1963-04-22T00:18:00
+11.17.41,213,0,Path1,specimen_ready_for_test,,Delay Until - ,1963-04-22 00:37:00,1963-04-22T00:18:00
+11.17.41,214,0,Path1,lab_test,,,,1963-04-22T00:37:00
+11.17.41,214,0,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1963-04-22T00:37:00
+11.17.41,214,0,Path1,lab_test,,obs,"{'code': '1000381000000105', 'DisplayName': 'Se prostate specific Ag level', 'value': 72, 'unit': 'ug/L', 'unit_code': 'ug/L', 'system': 'http://unitsofmeasure.org'}",1963-04-22T00:37:00
+11.17.41,215,0,Path1,test_report,,,,1963-04-22T00:37:00
+11.17.41,216,0,Path1,send_report,,,,1963-04-22T00:37:00
+11.17.41,216,0,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1963-04-22T00:37:00
+11.17.44,216,0,Path1,send_report,,BundleSent,TRUE,1963-04-22T00:37:00
+11.17.44,217,0,Path1,receive_report,,,,1963-04-22T00:37:00
+11.17.44,218,0,Path1,GP_checks_report,,Delay Until - ,1963-04-22 08:37:00,1963-04-22T00:37:00
+11.17.44,219,0,Path1,inform_patient,,,,1963-04-22T08:37:00
+11.17.44,219,0,Path1,inform_patient,,listing_provided,TRUE,1963-04-22T08:37:00
+11.17.44,219,0,Path1,inform_patient,,json_provided,TRUE,1963-04-22T08:37:00
+11.17.44,220,0,Path1,Finish,,,,1963-04-22T08:37:00
+11.17.44,221,30,Path1,Start,,,,1963-06-10T00:00:00
+11.17.44,221,30,Path1,Start,,NhsNumber,7832003812,1963-06-10T00:00:00
+11.17.44,222,30,Path1,Initial_patient_GP_Visit,,Delay Until - ,1963-06-10 00:43:00,1963-06-10T00:00:00
+11.17.44,223,30,Path1,patient_assessment,,,,1963-06-10T00:43:00
+11.17.44,223,30,Path1,patient_assessment,,PatientRcorded,TRUE,1963-06-10T00:43:00
+11.17.44,224,30,Path1,test_request,,,,1963-06-10T00:43:00
+11.17.44,224,30,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1963-06-10T00:43:00
+11.17.44,224,30,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1963-06-10T00:43:00
+11.17.44,224,30,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1963-06-10T00:43:00
+11.17.44,225,30,Path1,Specimen_check,,,,1963-06-10T00:43:00
+11.17.44,225,30,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1963-06-10T00:43:00
+11.17.44,225,30,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1963-06-10T00:43:00
+11.17.44,225,30,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1963-06-10T00:43:00
+11.17.45,225,30,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1963-06-10T00:43:00
+11.17.45,226,30,Path1,specimen_ready_for_test,,Delay Until - ,1963-06-10 01:07:00,1963-06-10T00:43:00
+11.17.45,227,30,Path1,lab_test,,,,1963-06-10T01:07:00
+11.17.45,227,30,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1963-06-10T01:07:00
+11.17.45,227,30,Path1,lab_test,,obs,"OrderedDict([('id', '30'), ('code', '1107681000000100'), ('DisplayName', 'HDL (high density lipoprotein) cholesterol substance concentration in serum'), ('value', '0.8'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1963-06-10T01:07:00
+11.17.45,228,30,Path1,test_report,,,,1963-06-10T01:07:00
+11.17.45,229,30,Path1,send_report,,,,1963-06-10T01:07:00
+11.17.45,229,30,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1963-06-10T01:07:00
+11.17.48,229,30,Path1,send_report,,BundleSent,TRUE,1963-06-10T01:07:00
+11.17.48,230,30,Path1,receive_report,,,,1963-06-10T01:07:00
+11.17.48,231,30,Path1,GP_checks_report,,Delay Until - ,1963-06-10 21:07:00,1963-06-10T01:07:00
+11.17.48,232,30,Path1,inform_patient,,,,1963-06-10T21:07:00
+11.17.48,232,30,Path1,inform_patient,,listing_provided,TRUE,1963-06-10T21:07:00
+11.17.48,232,30,Path1,inform_patient,,json_provided,TRUE,1963-06-10T21:07:00
+11.17.48,233,30,Path1,Finish,,,,1963-06-10T21:07:00
+11.17.48,234,15,Path1,Start,,,,1970-04-13T00:00:00
+11.17.48,234,15,Path1,Start,,NhsNumber,7832003812,1970-04-13T00:00:00
+11.17.48,235,15,Path1,Initial_patient_GP_Visit,,Delay Until - ,1970-04-13 00:44:00,1970-04-13T00:00:00
+11.17.48,236,15,Path1,patient_assessment,,,,1970-04-13T00:44:00
+11.17.48,236,15,Path1,patient_assessment,,PatientRcorded,TRUE,1970-04-13T00:44:00
+11.17.48,237,15,Path1,test_request,,,,1970-04-13T00:44:00
+11.17.48,237,15,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1970-04-13T00:44:00
+11.17.48,237,15,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1970-04-13T00:44:00
+11.17.48,237,15,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1970-04-13T00:44:00
+11.17.48,238,15,Path1,Specimen_check,,,,1970-04-13T00:44:00
+11.17.48,238,15,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1970-04-13T00:44:00
+11.17.48,238,15,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1970-04-13T00:44:00
+11.17.48,238,15,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1970-04-13T00:44:00
+11.17.49,238,15,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1970-04-13T00:44:00
+11.17.49,239,15,Path1,specimen_ready_for_test,,Delay Until - ,1970-04-13 00:50:00,1970-04-13T00:44:00
+11.17.49,240,15,Path1,lab_test,,,,1970-04-13T00:50:00
+11.17.49,240,15,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1970-04-13T00:50:00
+11.17.49,240,15,Path1,lab_test,,obs,"OrderedDict([('id', '15'), ('code', '1022471000000100'), ('DisplayName', 'MCH - Mean corpuscular haemoglobin'), ('value', '31.7'), ('unit', 'pg'), ('unit_code', 'pg'), ('system', 'http://unitsofmeasure.org')])",1970-04-13T00:50:00
+11.17.49,241,15,Path1,test_report,,,,1970-04-13T00:50:00
+11.17.49,242,15,Path1,send_report,,,,1970-04-13T00:50:00
+11.17.49,242,15,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1970-04-13T00:50:00
+11.17.52,242,15,Path1,send_report,,BundleSent,TRUE,1970-04-13T00:50:00
+11.17.52,243,15,Path1,receive_report,,,,1970-04-13T00:50:00
+11.17.52,244,15,Path1,GP_checks_report,,Delay Until - ,1970-04-13 20:50:00,1970-04-13T00:50:00
+11.17.52,245,15,Path1,inform_patient,,,,1970-04-13T20:50:00
+11.17.52,245,15,Path1,inform_patient,,listing_provided,TRUE,1970-04-13T20:50:00
+11.17.52,245,15,Path1,inform_patient,,json_provided,TRUE,1970-04-13T20:50:00
+11.17.52,246,15,Path1,Finish,,,,1970-04-13T20:50:00
+11.17.52,247,47,Path1,Start,,,,1972-02-25T00:00:00
+11.17.52,247,47,Path1,Start,,NhsNumber,7832003812,1972-02-25T00:00:00
+11.17.52,248,47,Path1,Initial_patient_GP_Visit,,Delay Until - ,1972-02-25 00:32:00,1972-02-25T00:00:00
+11.17.52,249,47,Path1,patient_assessment,,,,1972-02-25T00:32:00
+11.17.52,250,47,Path1,test_request,,,,1972-02-25T00:32:00
+11.17.52,251,47,Path1,Specimen_check,,,,1972-02-25T00:32:00
+11.17.52,252,47,Path1,specimen_ready_for_test,,Delay Until - ,1972-02-25 00:51:00,1972-02-25T00:32:00
+11.17.52,253,47,Path1,lab_test,,,,1972-02-25T00:51:00
+11.17.52,254,47,Path1,test_report,,,,1972-02-25T00:51:00
+11.17.52,255,47,Path1,send_report,,,,1972-02-25T00:51:00
+11.17.52,256,47,Path1,receive_report,,,,1972-02-25T00:51:00
+11.17.52,257,47,Path1,GP_checks_report,,Delay Until - ,1972-02-25 01:51:00,1972-02-25T00:51:00
+11.17.52,258,47,Path1,inform_patient,,,,1972-02-25T01:51:00
+11.17.52,259,47,Path1,Finish,,,,1972-02-25T01:51:00
+11.17.52,260,29,Path1,Start,,,,1973-06-15T00:00:00
+11.17.52,260,29,Path1,Start,,NhsNumber,7832003812,1973-06-15T00:00:00
+11.17.52,261,29,Path1,Initial_patient_GP_Visit,,Delay Until - ,1973-06-15 00:21:00,1973-06-15T00:00:00
+11.17.52,262,29,Path1,patient_assessment,,,,1973-06-15T00:21:00
+11.17.52,262,29,Path1,patient_assessment,,PatientRcorded,TRUE,1973-06-15T00:21:00
+11.17.52,263,29,Path1,test_request,,,,1973-06-15T00:21:00
+11.17.52,263,29,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1973-06-15T00:21:00
+11.17.52,263,29,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1973-06-15T00:21:00
+11.17.52,263,29,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1973-06-15T00:21:00
+11.17.52,264,29,Path1,Specimen_check,,,,1973-06-15T00:21:00
+11.17.52,264,29,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1973-06-15T00:21:00
+11.17.52,264,29,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1973-06-15T00:21:00
+11.17.52,264,29,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1973-06-15T00:21:00
+11.17.52,264,29,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1973-06-15T00:21:00
+11.17.52,265,29,Path1,specimen_ready_for_test,,Delay Until - ,1973-06-15 00:45:00,1973-06-15T00:21:00
+11.17.52,266,29,Path1,lab_test,,,,1973-06-15T00:45:00
+11.17.52,266,29,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1973-06-15T00:45:00
+11.17.53,266,29,Path1,lab_test,,obs,"OrderedDict([('id', '29'), ('code', '1109831000000100'), ('DisplayName', 'Triglyceride substance concentration in serum'), ('value', '6.9'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1973-06-15T00:45:00
+11.17.53,267,29,Path1,test_report,,,,1973-06-15T00:45:00
+11.17.53,268,29,Path1,send_report,,,,1973-06-15T00:45:00
+11.17.53,268,29,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1973-06-15T00:45:00
+11.17.55,268,29,Path1,send_report,,BundleSent,TRUE,1973-06-15T00:45:00
+11.17.55,269,29,Path1,receive_report,,,,1973-06-15T00:45:00
+11.17.55,270,29,Path1,GP_checks_report,,Delay Until - ,1973-06-15 16:45:00,1973-06-15T00:45:00
+11.17.55,271,29,Path1,inform_patient,,,,1973-06-15T16:45:00
+11.17.55,271,29,Path1,inform_patient,,listing_provided,TRUE,1973-06-15T16:45:00
+11.17.55,271,29,Path1,inform_patient,,json_provided,TRUE,1973-06-15T16:45:00
+11.17.55,272,29,Path1,Finish,,,,1973-06-15T16:45:00
+11.17.55,273,9,Path1,Start,,,,1974-02-07T00:00:00
+11.17.55,273,9,Path1,Start,,NhsNumber,7832003812,1974-02-07T00:00:00
+11.17.55,274,9,Path1,Initial_patient_GP_Visit,,Delay Until - ,1974-02-07 00:20:00,1974-02-07T00:00:00
+11.17.55,275,9,Path1,patient_assessment,,,,1974-02-07T00:20:00
+11.17.55,275,9,Path1,patient_assessment,,PatientRcorded,TRUE,1974-02-07T00:20:00
+11.17.55,276,9,Path1,test_request,,,,1974-02-07T00:20:00
+11.17.56,276,9,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1974-02-07T00:20:00
+11.17.56,276,9,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1974-02-07T00:20:00
+11.17.56,276,9,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1974-02-07T00:20:00
+11.17.56,277,9,Path1,Specimen_check,,,,1974-02-07T00:20:00
+11.17.56,277,9,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1974-02-07T00:20:00
+11.17.56,277,9,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1974-02-07T00:20:00
+11.17.56,277,9,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1974-02-07T00:20:00
+11.17.56,277,9,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1974-02-07T00:20:00
+11.17.56,278,9,Path1,specimen_ready_for_test,,Delay Until - ,1974-02-07 00:22:00,1974-02-07T00:20:00
+11.17.56,279,9,Path1,lab_test,,,,1974-02-07T00:22:00
+11.17.56,279,9,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1974-02-07T00:22:00
+11.17.56,279,9,Path1,lab_test,,obs,"OrderedDict([('id', '9'), ('code', '1106561000000100'), ('DisplayName', 'Conjugated bilirubin substance concentration in serum'), ('value', '14'), ('unit', 'umol/L'), ('unit_code', 'umol/L'), ('system', 'http://unitsofmeasure.org')])",1974-02-07T00:22:00
+11.17.56,280,9,Path1,test_report,,,,1974-02-07T00:22:00
+11.17.56,281,9,Path1,send_report,,,,1974-02-07T00:22:00
+11.17.56,281,9,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1974-02-07T00:22:00
+11.17.59,281,9,Path1,send_report,,BundleSent,TRUE,1974-02-07T00:22:00
+11.17.59,282,9,Path1,receive_report,,,,1974-02-07T00:22:00
+11.17.59,283,9,Path1,GP_checks_report,,Delay Until - ,1974-02-08 00:22:00,1974-02-07T00:22:00
+11.17.59,284,9,Path1,inform_patient,,,,1974-02-08T00:22:00
+11.17.59,284,9,Path1,inform_patient,,listing_provided,TRUE,1974-02-08T00:22:00
+11.17.59,284,9,Path1,inform_patient,,json_provided,TRUE,1974-02-08T00:22:00
+11.17.59,285,9,Path1,Finish,,,,1974-02-08T00:22:00
+11.17.59,286,38,Path1,Start,,,,1976-05-12T00:00:00
+11.17.59,286,38,Path1,Start,,NhsNumber,7832003812,1976-05-12T00:00:00
+11.17.59,287,38,Path1,Initial_patient_GP_Visit,,Delay Until - ,1976-05-12 00:15:00,1976-05-12T00:00:00
+11.17.59,288,38,Path1,patient_assessment,,,,1976-05-12T00:15:00
+11.17.59,289,38,Path1,test_request,,,,1976-05-12T00:15:00
+11.17.59,290,38,Path1,Specimen_check,,,,1976-05-12T00:15:00
+11.17.59,291,38,Path1,specimen_ready_for_test,,Delay Until - ,1976-05-12 00:29:00,1976-05-12T00:15:00
+11.17.59,292,38,Path1,lab_test,,,,1976-05-12T00:29:00
+11.17.59,293,38,Path1,test_report,,,,1976-05-12T00:29:00
+11.17.59,294,38,Path1,send_report,,,,1976-05-12T00:29:00
+11.17.59,295,38,Path1,receive_report,,,,1976-05-12T00:29:00
+11.17.59,296,38,Path1,GP_checks_report,,Delay Until - ,1976-05-12 06:29:00,1976-05-12T00:29:00
+11.17.59,297,38,Path1,inform_patient,,,,1976-05-12T06:29:00
+11.17.59,298,38,Path1,Finish,,,,1976-05-12T06:29:00
+11.17.59,299,27,Path1,Start,,,,1976-06-04T00:00:00
+11.17.59,299,27,Path1,Start,,NhsNumber,7832003812,1976-06-04T00:00:00
+11.17.59,300,27,Path1,Initial_patient_GP_Visit,,Delay Until - ,1976-06-04 00:48:00,1976-06-04T00:00:00
+11.17.59,301,27,Path1,patient_assessment,,,,1976-06-04T00:48:00
+11.17.59,301,27,Path1,patient_assessment,,PatientRcorded,TRUE,1976-06-04T00:48:00
+11.17.59,302,27,Path1,test_request,,,,1976-06-04T00:48:00
+11.17.59,302,27,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1976-06-04T00:48:00
+11.17.59,302,27,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1976-06-04T00:48:00
+11.17.59,302,27,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1976-06-04T00:48:00
+11.17.59,303,27,Path1,Specimen_check,,,,1976-06-04T00:48:00
+11.17.59,303,27,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1976-06-04T00:48:00
+11.17.59,303,27,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1976-06-04T00:48:00
+11.17.59,303,27,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1976-06-04T00:48:00
+11.18.00,303,27,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1976-06-04T00:48:00
+11.18.00,304,27,Path1,specimen_ready_for_test,,Delay Until - ,1976-06-04 01:02:00,1976-06-04T00:48:00
+11.18.00,305,27,Path1,lab_test,,,,1976-06-04T01:02:00
+11.18.00,305,27,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1976-06-04T01:02:00
+11.18.00,305,27,Path1,lab_test,,obs,"OrderedDict([('id', '27'), ('code', '1107411000000100'), ('DisplayName', 'Estimated glomerular filtration rate by laboratory calculation'), ('value', '90'), ('unit', 'mL/min/1.73m2'), ('unit_code', 'ml/min/{1.73_m2}'), ('system', 'http://unitsofmeasure.org')])",1976-06-04T01:02:00
+11.18.00,306,27,Path1,test_report,,,,1976-06-04T01:02:00
+11.18.00,307,27,Path1,send_report,,,,1976-06-04T01:02:00
+11.18.00,307,27,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1976-06-04T01:02:00
+11.18.03,307,27,Path1,send_report,,BundleSent,TRUE,1976-06-04T01:02:00
+11.18.03,308,27,Path1,receive_report,,,,1976-06-04T01:02:00
+11.18.03,309,27,Path1,GP_checks_report,,Delay Until - ,1976-06-04 05:02:00,1976-06-04T01:02:00
+11.18.03,310,27,Path1,inform_patient,,,,1976-06-04T05:02:00
+11.18.03,310,27,Path1,inform_patient,,listing_provided,TRUE,1976-06-04T05:02:00
+11.18.03,310,27,Path1,inform_patient,,json_provided,TRUE,1976-06-04T05:02:00
+11.18.03,311,27,Path1,Finish,,,,1976-06-04T05:02:00
+11.18.03,312,31,Path1,Start,,,,1976-11-19T00:00:00
+11.18.03,312,31,Path1,Start,,NhsNumber,7832003812,1976-11-19T00:00:00
+11.18.03,313,31,Path1,Initial_patient_GP_Visit,,Delay Until - ,1976-11-19 00:20:00,1976-11-19T00:00:00
+11.18.03,314,31,Path1,patient_assessment,,,,1976-11-19T00:20:00
+11.18.03,314,31,Path1,patient_assessment,,PatientRcorded,TRUE,1976-11-19T00:20:00
+11.18.03,315,31,Path1,test_request,,,,1976-11-19T00:20:00
+11.18.03,315,31,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1976-11-19T00:20:00
+11.18.03,315,31,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1976-11-19T00:20:00
+11.18.03,315,31,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1976-11-19T00:20:00
+11.18.03,316,31,Path1,Specimen_check,,,,1976-11-19T00:20:00
+11.18.03,316,31,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1976-11-19T00:20:00
+11.18.03,316,31,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1976-11-19T00:20:00
+11.18.03,316,31,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1976-11-19T00:20:00
+11.18.03,316,31,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1976-11-19T00:20:00
+11.18.03,317,31,Path1,specimen_ready_for_test,,Delay Until - ,1976-11-19 00:46:00,1976-11-19T00:20:00
+11.18.03,318,31,Path1,lab_test,,,,1976-11-19T00:46:00
+11.18.03,318,31,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1976-11-19T00:46:00
+11.18.03,318,31,Path1,lab_test,,obs,"OrderedDict([('id', '31'), ('code', '1107741000000100'), ('DisplayName', 'HDL (high density lipoprotein) cholesterol/total cholesterol ratio in serum'), ('value', '9.6'), ('unit', 'ratio'), ('unit_code', '{ratio}'), ('system', 'http://unitsofmeasure.org')])",1976-11-19T00:46:00
+11.18.03,319,31,Path1,test_report,,,,1976-11-19T00:46:00
+11.18.03,320,31,Path1,send_report,,,,1976-11-19T00:46:00
+11.18.03,320,31,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1976-11-19T00:46:00
+11.18.06,320,31,Path1,send_report,,BundleSent,TRUE,1976-11-19T00:46:00
+11.18.06,321,31,Path1,receive_report,,,,1976-11-19T00:46:00
+11.18.06,322,31,Path1,GP_checks_report,,Delay Until - ,1976-11-19 18:46:00,1976-11-19T00:46:00
+11.18.06,323,31,Path1,inform_patient,,,,1976-11-19T18:46:00
+11.18.06,323,31,Path1,inform_patient,,listing_provided,TRUE,1976-11-19T18:46:00
+11.18.06,323,31,Path1,inform_patient,,json_provided,TRUE,1976-11-19T18:46:00
+11.18.06,324,31,Path1,Finish,,,,1976-11-19T18:46:00
+11.18.06,325,49,Path1,Start,,,,1977-03-03T00:00:00
+11.18.06,325,49,Path1,Start,,NhsNumber,7832003812,1977-03-03T00:00:00
+11.18.06,326,49,Path1,Initial_patient_GP_Visit,,Delay Until - ,1977-03-03 00:50:00,1977-03-03T00:00:00
+11.18.06,327,49,Path1,patient_assessment,,,,1977-03-03T00:50:00
+11.18.06,328,49,Path1,test_request,,,,1977-03-03T00:50:00
+11.18.06,329,49,Path1,Specimen_check,,,,1977-03-03T00:50:00
+11.18.06,330,49,Path1,specimen_ready_for_test,,Delay Until - ,1977-03-03 01:06:00,1977-03-03T00:50:00
+11.18.06,331,49,Path1,lab_test,,,,1977-03-03T01:06:00
+11.18.06,332,49,Path1,test_report,,,,1977-03-03T01:06:00
+11.18.06,333,49,Path1,send_report,,,,1977-03-03T01:06:00
+11.18.06,334,49,Path1,receive_report,,,,1977-03-03T01:06:00
+11.18.06,335,49,Path1,GP_checks_report,,Delay Until - ,1977-03-03 14:06:00,1977-03-03T01:06:00
+11.18.06,336,49,Path1,inform_patient,,,,1977-03-03T14:06:00
+11.18.06,337,49,Path1,Finish,,,,1977-03-03T14:06:00
+11.18.06,338,21,Path1,Start,,,,1977-04-30T00:00:00
+11.18.06,338,21,Path1,Start,,NhsNumber,7832003812,1977-04-30T00:00:00
+11.18.06,339,21,Path1,Initial_patient_GP_Visit,,Delay Until - ,1977-04-30 00:21:00,1977-04-30T00:00:00
+11.18.06,340,21,Path1,patient_assessment,,,,1977-04-30T00:21:00
+11.18.06,340,21,Path1,patient_assessment,,PatientRcorded,TRUE,1977-04-30T00:21:00
+11.18.06,341,21,Path1,test_request,,,,1977-04-30T00:21:00
+11.18.06,341,21,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1977-04-30T00:21:00
+11.18.06,341,21,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1977-04-30T00:21:00
+11.18.07,341,21,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1977-04-30T00:21:00
+11.18.07,342,21,Path1,Specimen_check,,,,1977-04-30T00:21:00
+11.18.07,342,21,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1977-04-30T00:21:00
+11.18.07,342,21,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1977-04-30T00:21:00
+11.18.07,342,21,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1977-04-30T00:21:00
+11.18.07,342,21,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1977-04-30T00:21:00
+11.18.07,343,21,Path1,specimen_ready_for_test,,Delay Until - ,1977-04-30 00:23:00,1977-04-30T00:21:00
+11.18.07,344,21,Path1,lab_test,,,,1977-04-30T00:23:00
+11.18.07,344,21,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1977-04-30T00:23:00
+11.18.07,344,21,Path1,lab_test,,obs,"OrderedDict([('id', '21'), ('code', '993501000000105'), ('DisplayName', 'Red blood cell distribution width'), ('value', '14'), ('unit', '%'), ('unit_code', '%'), ('system', 'http://unitsofmeasure.org')])",1977-04-30T00:23:00
+11.18.07,345,21,Path1,test_report,,,,1977-04-30T00:23:00
+11.18.07,346,21,Path1,send_report,,,,1977-04-30T00:23:00
+11.18.07,346,21,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1977-04-30T00:23:00
+11.18.10,346,21,Path1,send_report,,BundleSent,TRUE,1977-04-30T00:23:00
+11.18.10,347,21,Path1,receive_report,,,,1977-04-30T00:23:00
+11.18.10,348,21,Path1,GP_checks_report,,Delay Until - ,1977-04-30 15:23:00,1977-04-30T00:23:00
+11.18.10,349,21,Path1,inform_patient,,,,1977-04-30T15:23:00
+11.18.10,349,21,Path1,inform_patient,,listing_provided,TRUE,1977-04-30T15:23:00
+11.18.10,349,21,Path1,inform_patient,,json_provided,TRUE,1977-04-30T15:23:00
+11.18.10,350,21,Path1,Finish,,,,1977-04-30T15:23:00
+11.18.10,351,17,Path1,Start,,,,1978-11-20T00:00:00
+11.18.10,351,17,Path1,Start,,NhsNumber,7832003812,1978-11-20T00:00:00
+11.18.10,352,17,Path1,Initial_patient_GP_Visit,,Delay Until - ,1978-11-20 00:31:00,1978-11-20T00:00:00
+11.18.10,353,17,Path1,patient_assessment,,,,1978-11-20T00:31:00
+11.18.10,353,17,Path1,patient_assessment,,PatientRcorded,TRUE,1978-11-20T00:31:00
+11.18.10,354,17,Path1,test_request,,,,1978-11-20T00:31:00
+11.18.10,354,17,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1978-11-20T00:31:00
+11.18.10,354,17,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1978-11-20T00:31:00
+11.18.10,354,17,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1978-11-20T00:31:00
+11.18.10,355,17,Path1,Specimen_check,,,,1978-11-20T00:31:00
+11.18.10,355,17,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1978-11-20T00:31:00
+11.18.10,355,17,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1978-11-20T00:31:00
+11.18.10,355,17,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1978-11-20T00:31:00
+11.18.10,355,17,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1978-11-20T00:31:00
+11.18.10,356,17,Path1,specimen_ready_for_test,,Delay Until - ,1978-11-20 00:57:00,1978-11-20T00:31:00
+11.18.10,357,17,Path1,lab_test,,,,1978-11-20T00:57:00
+11.18.10,357,17,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1978-11-20T00:57:00
+11.18.10,357,17,Path1,lab_test,,obs,"OrderedDict([('id', '17'), ('code', '67541000237108'), ('DisplayName', 'Lymphocyte count in blood'), ('value', '1.45'), ('unit', '10^9/L'), ('unit_code', '10*9/L'), ('system', 'http://unitsofmeasure.org')])",1978-11-20T00:57:00
+11.18.10,358,17,Path1,test_report,,,,1978-11-20T00:57:00
+11.18.10,359,17,Path1,send_report,,,,1978-11-20T00:57:00
+11.18.11,359,17,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1978-11-20T00:57:00
+11.18.15,359,17,Path1,send_report,,BundleSent,TRUE,1978-11-20T00:57:00
+11.18.15,360,17,Path1,receive_report,,,,1978-11-20T00:57:00
+11.18.15,361,17,Path1,GP_checks_report,,Delay Until - ,1978-11-20 06:57:00,1978-11-20T00:57:00
+11.18.15,362,17,Path1,inform_patient,,,,1978-11-20T06:57:00
+11.18.15,362,17,Path1,inform_patient,,listing_provided,TRUE,1978-11-20T06:57:00
+11.18.15,362,17,Path1,inform_patient,,json_provided,TRUE,1978-11-20T06:57:00
+11.18.15,363,17,Path1,Finish,,,,1978-11-20T06:57:00
+11.18.15,364,3,Path1,Start,,,,1982-11-14T00:00:00
+11.18.15,364,3,Path1,Start,,NhsNumber,7832003812,1982-11-14T00:00:00
+11.18.15,365,3,Path1,Initial_patient_GP_Visit,,Delay Until - ,1982-11-14 00:46:00,1982-11-14T00:00:00
+11.18.15,366,3,Path1,patient_assessment,,,,1982-11-14T00:46:00
+11.18.15,366,3,Path1,patient_assessment,,PatientRcorded,TRUE,1982-11-14T00:46:00
+11.18.15,367,3,Path1,test_request,,,,1982-11-14T00:46:00
+11.18.15,367,3,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1982-11-14T00:46:00
+11.18.15,367,3,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1982-11-14T00:46:00
+11.18.15,367,3,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1982-11-14T00:46:00
+11.18.15,368,3,Path1,Specimen_check,,,,1982-11-14T00:46:00
+11.18.15,368,3,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1982-11-14T00:46:00
+11.18.15,368,3,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1982-11-14T00:46:00
+11.18.15,368,3,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1982-11-14T00:46:00
+11.18.15,368,3,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1982-11-14T00:46:00
+11.18.15,369,3,Path1,specimen_ready_for_test,,Delay Until - ,1982-11-14 00:54:00,1982-11-14T00:46:00
+11.18.15,370,3,Path1,lab_test,,,,1982-11-14T00:54:00
+11.18.15,370,3,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1982-11-14T00:54:00
+11.18.15,370,3,Path1,lab_test,,obs,"OrderedDict([('id', '3'), ('code', '1107871000000100'), ('DisplayName', 'Sodium substance concentration in serum'), ('value', '142'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1982-11-14T00:54:00
+11.18.15,371,3,Path1,test_report,,,,1982-11-14T00:54:00
+11.18.15,372,3,Path1,send_report,,,,1982-11-14T00:54:00
+11.18.16,372,3,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1982-11-14T00:54:00
+11.18.19,372,3,Path1,send_report,,BundleSent,TRUE,1982-11-14T00:54:00
+11.18.19,373,3,Path1,receive_report,,,,1982-11-14T00:54:00
+11.18.19,374,3,Path1,GP_checks_report,,Delay Until - ,1982-11-14 20:54:00,1982-11-14T00:54:00
+11.18.19,375,3,Path1,inform_patient,,,,1982-11-14T20:54:00
+11.18.19,375,3,Path1,inform_patient,,listing_provided,TRUE,1982-11-14T20:54:00
+11.18.19,375,3,Path1,inform_patient,,json_provided,TRUE,1982-11-14T20:54:00
+11.18.19,376,3,Path1,Finish,,,,1982-11-14T20:54:00
+11.18.19,377,41,Path1,Start,,,,1983-07-27T00:00:00
+11.18.19,377,41,Path1,Start,,NhsNumber,7832003812,1983-07-27T00:00:00
+11.18.19,378,41,Path1,Initial_patient_GP_Visit,,Delay Until - ,1983-07-27 00:26:00,1983-07-27T00:00:00
+11.18.19,379,41,Path1,patient_assessment,,,,1983-07-27T00:26:00
+11.18.19,380,41,Path1,test_request,,,,1983-07-27T00:26:00
+11.18.19,381,41,Path1,Specimen_check,,,,1983-07-27T00:26:00
+11.18.19,382,41,Path1,specimen_ready_for_test,,Delay Until - ,1983-07-27 00:42:00,1983-07-27T00:26:00
+11.18.19,383,41,Path1,lab_test,,,,1983-07-27T00:42:00
+11.18.19,384,41,Path1,test_report,,,,1983-07-27T00:42:00
+11.18.19,385,41,Path1,send_report,,,,1983-07-27T00:42:00
+11.18.19,386,41,Path1,receive_report,,,,1983-07-27T00:42:00
+11.18.19,387,41,Path1,GP_checks_report,,Delay Until - ,1983-07-27 12:42:00,1983-07-27T00:42:00
+11.18.19,388,41,Path1,inform_patient,,,,1983-07-27T12:42:00
+11.18.19,389,41,Path1,Finish,,,,1983-07-27T12:42:00
+11.18.19,390,43,Path1,Start,,,,1983-08-31T00:00:00
+11.18.19,390,43,Path1,Start,,NhsNumber,7832003812,1983-08-31T00:00:00
+11.18.19,391,43,Path1,Initial_patient_GP_Visit,,Delay Until - ,1983-08-31 00:34:00,1983-08-31T00:00:00
+11.18.19,392,43,Path1,patient_assessment,,,,1983-08-31T00:34:00
+11.18.19,393,43,Path1,test_request,,,,1983-08-31T00:34:00
+11.18.19,394,43,Path1,Specimen_check,,,,1983-08-31T00:34:00
+11.18.19,395,43,Path1,specimen_ready_for_test,,Delay Until - ,1983-08-31 00:50:00,1983-08-31T00:34:00
+11.18.19,396,43,Path1,lab_test,,,,1983-08-31T00:50:00
+11.18.19,397,43,Path1,test_report,,,,1983-08-31T00:50:00
+11.18.19,398,43,Path1,send_report,,,,1983-08-31T00:50:00
+11.18.19,399,43,Path1,receive_report,,,,1983-08-31T00:50:00
+11.18.19,400,43,Path1,GP_checks_report,,Delay Until - ,1983-08-31 21:50:00,1983-08-31T00:50:00
+11.18.19,401,43,Path1,inform_patient,,,,1983-08-31T21:50:00
+11.18.19,402,43,Path1,Finish,,,,1983-08-31T21:50:00
+11.18.19,403,44,Path1,Start,,,,1985-02-24T00:00:00
+11.18.19,403,44,Path1,Start,,NhsNumber,7832003812,1985-02-24T00:00:00
+11.18.19,404,44,Path1,Initial_patient_GP_Visit,,Delay Until - ,1985-02-24 00:43:00,1985-02-24T00:00:00
+11.18.19,405,44,Path1,patient_assessment,,,,1985-02-24T00:43:00
+11.18.19,406,44,Path1,test_request,,,,1985-02-24T00:43:00
+11.18.19,407,44,Path1,Specimen_check,,,,1985-02-24T00:43:00
+11.18.19,408,44,Path1,specimen_ready_for_test,,Delay Until - ,1985-02-24 01:13:00,1985-02-24T00:43:00
+11.18.19,409,44,Path1,lab_test,,,,1985-02-24T01:13:00
+11.18.19,410,44,Path1,test_report,,,,1985-02-24T01:13:00
+11.18.19,411,44,Path1,send_report,,,,1985-02-24T01:13:00
+11.18.19,412,44,Path1,receive_report,,,,1985-02-24T01:13:00
+11.18.19,413,44,Path1,GP_checks_report,,Delay Until - ,1985-02-24 21:13:00,1985-02-24T01:13:00
+11.18.19,414,44,Path1,inform_patient,,,,1985-02-24T21:13:00
+11.18.19,415,44,Path1,Finish,,,,1985-02-24T21:13:00
+11.18.19,416,4,Path1,Start,,,,1985-12-14T00:00:00
+11.18.19,416,4,Path1,Start,,NhsNumber,7832003812,1985-12-14T00:00:00
+11.18.19,417,4,Path1,Initial_patient_GP_Visit,,Delay Until - ,1985-12-14 00:41:00,1985-12-14T00:00:00
+11.18.19,418,4,Path1,patient_assessment,,,,1985-12-14T00:41:00
+11.18.19,418,4,Path1,patient_assessment,,PatientRcorded,TRUE,1985-12-14T00:41:00
+11.18.19,419,4,Path1,test_request,,,,1985-12-14T00:41:00
+11.18.19,419,4,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1985-12-14T00:41:00
+11.18.19,419,4,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1985-12-14T00:41:00
+11.18.19,419,4,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1985-12-14T00:41:00
+11.18.19,420,4,Path1,Specimen_check,,,,1985-12-14T00:41:00
+11.18.19,420,4,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1985-12-14T00:41:00
+11.18.19,420,4,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1985-12-14T00:41:00
+11.18.19,420,4,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1985-12-14T00:41:00
+11.18.19,420,4,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1985-12-14T00:41:00
+11.18.19,421,4,Path1,specimen_ready_for_test,,Delay Until - ,1985-12-14 01:01:00,1985-12-14T00:41:00
+11.18.19,422,4,Path1,lab_test,,,,1985-12-14T01:01:00
+11.18.19,422,4,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1985-12-14T01:01:00
+11.18.19,422,4,Path1,lab_test,,obs,"OrderedDict([('id', '4'), ('code', '1107761000000100'), ('DisplayName', 'Potassium substance concentration in serum'), ('value', '4.8'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1985-12-14T01:01:00
+11.18.19,423,4,Path1,test_report,,,,1985-12-14T01:01:00
+11.18.19,424,4,Path1,send_report,,,,1985-12-14T01:01:00
+11.18.19,424,4,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1985-12-14T01:01:00
+11.18.22,424,4,Path1,send_report,,BundleSent,TRUE,1985-12-14T01:01:00
+11.18.22,425,4,Path1,receive_report,,,,1985-12-14T01:01:00
+11.18.22,426,4,Path1,GP_checks_report,,Delay Until - ,1985-12-14 12:01:00,1985-12-14T01:01:00
+11.18.22,427,4,Path1,inform_patient,,,,1985-12-14T12:01:00
+11.18.22,427,4,Path1,inform_patient,,listing_provided,TRUE,1985-12-14T12:01:00
+11.18.22,427,4,Path1,inform_patient,,json_provided,TRUE,1985-12-14T12:01:00
+11.18.22,428,4,Path1,Finish,,,,1985-12-14T12:01:00
+11.18.22,429,22,Path1,Start,,,,1986-03-04T00:00:00
+11.18.22,429,22,Path1,Start,,NhsNumber,7832003812,1986-03-04T00:00:00
+11.18.22,430,22,Path1,Initial_patient_GP_Visit,,Delay Until - ,1986-03-04 00:11:00,1986-03-04T00:00:00
+11.18.22,431,22,Path1,patient_assessment,,,,1986-03-04T00:11:00
+11.18.22,431,22,Path1,patient_assessment,,PatientRcorded,TRUE,1986-03-04T00:11:00
+11.18.22,432,22,Path1,test_request,,,,1986-03-04T00:11:00
+11.18.22,432,22,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1986-03-04T00:11:00
+11.18.22,432,22,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1986-03-04T00:11:00
+11.18.22,432,22,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1986-03-04T00:11:00
+11.18.22,433,22,Path1,Specimen_check,,,,1986-03-04T00:11:00
+11.18.23,433,22,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1986-03-04T00:11:00
+11.18.23,433,22,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1986-03-04T00:11:00
+11.18.23,433,22,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1986-03-04T00:11:00
+11.18.23,433,22,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1986-03-04T00:11:00
+11.18.23,434,22,Path1,specimen_ready_for_test,,Delay Until - ,1986-03-04 00:21:00,1986-03-04T00:11:00
+11.18.23,435,22,Path1,lab_test,,,,1986-03-04T00:21:00
+11.18.23,435,22,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1986-03-04T00:21:00
+11.18.23,435,22,Path1,lab_test,,obs,"OrderedDict([('id', '22'), ('code', '993481000000101'), ('DisplayName', 'Mean platelet volume'), ('value', '13.0'), ('unit', 'fL'), ('unit_code', 'fL'), ('system', 'http://unitsofmeasure.org')])",1986-03-04T00:21:00
+11.18.23,436,22,Path1,test_report,,,,1986-03-04T00:21:00
+11.18.23,437,22,Path1,send_report,,,,1986-03-04T00:21:00
+11.18.23,437,22,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1986-03-04T00:21:00
+11.18.26,437,22,Path1,send_report,,BundleSent,TRUE,1986-03-04T00:21:00
+11.18.26,438,22,Path1,receive_report,,,,1986-03-04T00:21:00
+11.18.26,439,22,Path1,GP_checks_report,,Delay Until - ,1986-03-04 14:21:00,1986-03-04T00:21:00
+11.18.26,440,22,Path1,inform_patient,,,,1986-03-04T14:21:00
+11.18.26,440,22,Path1,inform_patient,,listing_provided,TRUE,1986-03-04T14:21:00
+11.18.26,440,22,Path1,inform_patient,,json_provided,TRUE,1986-03-04T14:21:00
+11.18.26,441,22,Path1,Finish,,,,1986-03-04T14:21:00
+11.18.26,442,11,Path1,Start,,,,1987-05-15T00:00:00
+11.18.26,442,11,Path1,Start,,NhsNumber,7832003812,1987-05-15T00:00:00
+11.18.26,443,11,Path1,Initial_patient_GP_Visit,,Delay Until - ,1987-05-15 00:40:00,1987-05-15T00:00:00
+11.18.26,444,11,Path1,patient_assessment,,,,1987-05-15T00:40:00
+11.18.26,444,11,Path1,patient_assessment,,PatientRcorded,TRUE,1987-05-15T00:40:00
+11.18.26,445,11,Path1,test_request,,,,1987-05-15T00:40:00
+11.18.26,445,11,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1987-05-15T00:40:00
+11.18.26,445,11,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1987-05-15T00:40:00
+11.18.26,445,11,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1987-05-15T00:40:00
+11.18.26,446,11,Path1,Specimen_check,,,,1987-05-15T00:40:00
+11.18.26,446,11,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1987-05-15T00:40:00
+11.18.26,446,11,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1987-05-15T00:40:00
+11.18.26,446,11,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1987-05-15T00:40:00
+11.18.27,446,11,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1987-05-15T00:40:00
+11.18.27,447,11,Path1,specimen_ready_for_test,,Delay Until - ,1987-05-15 01:03:00,1987-05-15T00:40:00
+11.18.27,448,11,Path1,lab_test,,,,1987-05-15T01:03:00
+11.18.27,448,11,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1987-05-15T01:03:00
+11.18.27,448,11,Path1,lab_test,,obs,"OrderedDict([('id', '11'), ('code', '1110441000000100'), ('DisplayName', 'White blood cell count in blood'), ('value', '6.1'), ('unit', '10^9/L'), ('unit_code', '10*9/L'), ('system', 'http://unitsofmeasure.org')])",1987-05-15T01:03:00
+11.18.27,449,11,Path1,test_report,,,,1987-05-15T01:03:00
+11.18.27,450,11,Path1,send_report,,,,1987-05-15T01:03:00
+11.18.27,450,11,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1987-05-15T01:03:00
+11.18.30,450,11,Path1,send_report,,BundleSent,TRUE,1987-05-15T01:03:00
+11.18.30,451,11,Path1,receive_report,,,,1987-05-15T01:03:00
+11.18.30,452,11,Path1,GP_checks_report,,Delay Until - ,1987-05-15 12:03:00,1987-05-15T01:03:00
+11.18.30,453,11,Path1,inform_patient,,,,1987-05-15T12:03:00
+11.18.30,453,11,Path1,inform_patient,,listing_provided,TRUE,1987-05-15T12:03:00
+11.18.30,453,11,Path1,inform_patient,,json_provided,TRUE,1987-05-15T12:03:00
+11.18.30,454,11,Path1,Finish,,,,1987-05-15T12:03:00
+11.18.30,455,2,Path1,Start,,,,1990-10-01T00:00:00
+11.18.30,455,2,Path1,Start,,NhsNumber,7832003812,1990-10-01T00:00:00
+11.18.30,456,2,Path1,Initial_patient_GP_Visit,,Delay Until - ,1990-10-01 00:17:00,1990-10-01T00:00:00
+11.18.30,457,2,Path1,patient_assessment,,,,1990-10-01T00:17:00
+11.18.30,457,2,Path1,patient_assessment,,PatientRcorded,TRUE,1990-10-01T00:17:00
+11.18.30,458,2,Path1,test_request,,,,1990-10-01T00:17:00
+11.18.30,458,2,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1990-10-01T00:17:00
+11.18.30,458,2,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1990-10-01T00:17:00
+11.18.30,458,2,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1990-10-01T00:17:00
+11.18.30,459,2,Path1,Specimen_check,,,,1990-10-01T00:17:00
+11.18.30,459,2,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1990-10-01T00:17:00
+11.18.30,459,2,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1990-10-01T00:17:00
+11.18.30,459,2,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1990-10-01T00:17:00
+11.18.30,459,2,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1990-10-01T00:17:00
+11.18.30,460,2,Path1,specimen_ready_for_test,,Delay Until - ,1990-10-01 00:37:00,1990-10-01T00:17:00
+11.18.30,461,2,Path1,lab_test,,,,1990-10-01T00:37:00
+11.18.30,461,2,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1990-10-01T00:37:00
+11.18.30,461,2,Path1,lab_test,,obs,"OrderedDict([('id', '2'), ('code', '1107811000000100'), ('DisplayName', 'Prostate specific antigen mass concentration in serum'), ('value', '5.9'), ('unit', 'ug/L'), ('unit_code', 'ug/L'), ('system', 'http://unitsofmeasure.org')])",1990-10-01T00:37:00
+11.18.30,462,2,Path1,test_report,,,,1990-10-01T00:37:00
+11.18.30,463,2,Path1,send_report,,,,1990-10-01T00:37:00
+11.18.31,463,2,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1990-10-01T00:37:00
+11.18.33,463,2,Path1,send_report,,BundleSent,TRUE,1990-10-01T00:37:00
+11.18.33,464,2,Path1,receive_report,,,,1990-10-01T00:37:00
+11.18.33,465,2,Path1,GP_checks_report,,Delay Until - ,1990-10-01 13:37:00,1990-10-01T00:37:00
+11.18.33,466,2,Path1,inform_patient,,,,1990-10-01T13:37:00
+11.18.33,466,2,Path1,inform_patient,,listing_provided,TRUE,1990-10-01T13:37:00
+11.18.33,466,2,Path1,inform_patient,,json_provided,TRUE,1990-10-01T13:37:00
+11.18.33,467,2,Path1,Finish,,,,1990-10-01T13:37:00
+11.18.33,468,39,Path1,Start,,,,1994-01-11T00:00:00
+11.18.33,468,39,Path1,Start,,NhsNumber,7832003812,1994-01-11T00:00:00
+11.18.34,469,39,Path1,Initial_patient_GP_Visit,,Delay Until - ,1994-01-11 00:27:00,1994-01-11T00:00:00
+11.18.34,470,39,Path1,patient_assessment,,,,1994-01-11T00:27:00
+11.18.34,471,39,Path1,test_request,,,,1994-01-11T00:27:00
+11.18.34,472,39,Path1,Specimen_check,,,,1994-01-11T00:27:00
+11.18.34,473,39,Path1,specimen_ready_for_test,,Delay Until - ,1994-01-11 00:38:00,1994-01-11T00:27:00
+11.18.34,474,39,Path1,lab_test,,,,1994-01-11T00:38:00
+11.18.34,475,39,Path1,test_report,,,,1994-01-11T00:38:00
+11.18.34,476,39,Path1,send_report,,,,1994-01-11T00:38:00
+11.18.34,477,39,Path1,receive_report,,,,1994-01-11T00:38:00
+11.18.34,478,39,Path1,GP_checks_report,,Delay Until - ,1994-01-11 01:38:00,1994-01-11T00:38:00
+11.18.34,479,39,Path1,inform_patient,,,,1994-01-11T01:38:00
+11.18.34,480,39,Path1,Finish,,,,1994-01-11T01:38:00
+11.18.34,481,37,Path1,Start,,,,1995-12-15T00:00:00
+11.18.34,481,37,Path1,Start,,NhsNumber,7832003812,1995-12-15T00:00:00
+11.18.34,482,37,Path1,Initial_patient_GP_Visit,,Delay Until - ,1995-12-15 00:35:00,1995-12-15T00:00:00
+11.18.34,483,37,Path1,patient_assessment,,,,1995-12-15T00:35:00
+11.18.34,484,37,Path1,test_request,,,,1995-12-15T00:35:00
+11.18.34,485,37,Path1,Specimen_check,,,,1995-12-15T00:35:00
+11.18.34,486,37,Path1,specimen_ready_for_test,,Delay Until - ,1995-12-15 01:03:00,1995-12-15T00:35:00
+11.18.34,487,37,Path1,lab_test,,,,1995-12-15T01:03:00
+11.18.34,488,37,Path1,test_report,,,,1995-12-15T01:03:00
+11.18.34,489,37,Path1,send_report,,,,1995-12-15T01:03:00
+11.18.34,490,37,Path1,receive_report,,,,1995-12-15T01:03:00
+11.18.34,491,37,Path1,GP_checks_report,,Delay Until - ,1995-12-16 00:03:00,1995-12-15T01:03:00
+11.18.34,492,37,Path1,inform_patient,,,,1995-12-16T00:03:00
+11.18.34,493,37,Path1,Finish,,,,1995-12-16T00:03:00
+11.18.34,494,24,Path1,Start,,,,1996-11-02T00:00:00
+11.18.34,494,24,Path1,Start,,NhsNumber,7832003812,1996-11-02T00:00:00
+11.18.34,495,24,Path1,Initial_patient_GP_Visit,,Delay Until - ,1996-11-02 00:33:00,1996-11-02T00:00:00
+11.18.34,496,24,Path1,patient_assessment,,,,1996-11-02T00:33:00
+11.18.34,496,24,Path1,patient_assessment,,PatientRcorded,TRUE,1996-11-02T00:33:00
+11.18.34,497,24,Path1,test_request,,,,1996-11-02T00:33:00
+11.18.34,497,24,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1996-11-02T00:33:00
+11.18.34,497,24,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1996-11-02T00:33:00
+11.18.34,497,24,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1996-11-02T00:33:00
+11.18.34,498,24,Path1,Specimen_check,,,,1996-11-02T00:33:00
+11.18.34,498,24,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1996-11-02T00:33:00
+11.18.34,498,24,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1996-11-02T00:33:00
+11.18.34,498,24,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1996-11-02T00:33:00
+11.18.34,498,24,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1996-11-02T00:33:00
+11.18.34,499,24,Path1,specimen_ready_for_test,,Delay Until - ,1996-11-02 01:00:00,1996-11-02T00:33:00
+11.18.34,500,24,Path1,lab_test,,,,1996-11-02T01:00:00
+11.18.34,500,24,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1996-11-02T01:00:00
+11.18.34,500,24,Path1,lab_test,,obs,"OrderedDict([('id', '24'), ('code', '1107761000000100'), ('DisplayName', 'Potassium substance concentration in serum'), ('value', '4.5'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",1996-11-02T01:00:00
+11.18.34,501,24,Path1,test_report,,,,1996-11-02T01:00:00
+11.18.34,502,24,Path1,send_report,,,,1996-11-02T01:00:00
+11.18.34,502,24,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1996-11-02T01:00:00
+11.18.37,502,24,Path1,send_report,,BundleSent,TRUE,1996-11-02T01:00:00
+11.18.37,503,24,Path1,receive_report,,,,1996-11-02T01:00:00
+11.18.37,504,24,Path1,GP_checks_report,,Delay Until - ,1996-11-02 05:00:00,1996-11-02T01:00:00
+11.18.37,505,24,Path1,inform_patient,,,,1996-11-02T05:00:00
+11.18.37,505,24,Path1,inform_patient,,listing_provided,TRUE,1996-11-02T05:00:00
+11.18.37,505,24,Path1,inform_patient,,json_provided,TRUE,1996-11-02T05:00:00
+11.18.37,506,24,Path1,Finish,,,,1996-11-02T05:00:00
+11.18.37,507,14,Path1,Start,,,,1998-03-25T00:00:00
+11.18.37,507,14,Path1,Start,,NhsNumber,7832003812,1998-03-25T00:00:00
+11.18.37,508,14,Path1,Initial_patient_GP_Visit,,Delay Until - ,1998-03-25 00:31:00,1998-03-25T00:00:00
+11.18.37,509,14,Path1,patient_assessment,,,,1998-03-25T00:31:00
+11.18.37,509,14,Path1,patient_assessment,,PatientRcorded,TRUE,1998-03-25T00:31:00
+11.18.37,510,14,Path1,test_request,,,,1998-03-25T00:31:00
+11.18.37,510,14,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1998-03-25T00:31:00
+11.18.37,510,14,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1998-03-25T00:31:00
+11.18.38,510,14,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1998-03-25T00:31:00
+11.18.38,511,14,Path1,Specimen_check,,,,1998-03-25T00:31:00
+11.18.38,511,14,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1998-03-25T00:31:00
+11.18.38,511,14,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1998-03-25T00:31:00
+11.18.38,511,14,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1998-03-25T00:31:00
+11.18.38,511,14,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1998-03-25T00:31:00
+11.18.38,512,14,Path1,specimen_ready_for_test,,Delay Until - ,1998-03-25 00:33:00,1998-03-25T00:31:00
+11.18.38,513,14,Path1,lab_test,,,,1998-03-25T00:33:00
+11.18.38,513,14,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1998-03-25T00:33:00
+11.18.38,513,14,Path1,lab_test,,obs,"OrderedDict([('id', '14'), ('code', '1022451000000100'), ('DisplayName', 'Red blood cell count'), ('value', '4.23'), ('unit', '10^9/L'), ('unit_code', '10*9/L'), ('system', 'http://unitsofmeasure.org')])",1998-03-25T00:33:00
+11.18.38,514,14,Path1,test_report,,,,1998-03-25T00:33:00
+11.18.38,515,14,Path1,send_report,,,,1998-03-25T00:33:00
+11.18.38,515,14,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1998-03-25T00:33:00
+11.18.41,515,14,Path1,send_report,,BundleSent,TRUE,1998-03-25T00:33:00
+11.18.41,516,14,Path1,receive_report,,,,1998-03-25T00:33:00
+11.18.41,517,14,Path1,GP_checks_report,,Delay Until - ,1998-03-25 12:33:00,1998-03-25T00:33:00
+11.18.41,518,14,Path1,inform_patient,,,,1998-03-25T12:33:00
+11.18.41,518,14,Path1,inform_patient,,listing_provided,TRUE,1998-03-25T12:33:00
+11.18.41,518,14,Path1,inform_patient,,json_provided,TRUE,1998-03-25T12:33:00
+11.18.41,519,14,Path1,Finish,,,,1998-03-25T12:33:00
+11.18.41,520,50,Path1,Start,,,,2002-08-18T00:00:00
+11.18.41,520,50,Path1,Start,,NhsNumber,7832003812,2002-08-18T00:00:00
+11.18.41,521,50,Path1,Initial_patient_GP_Visit,,Delay Until - ,2002-08-18 00:14:00,2002-08-18T00:00:00
+11.18.41,522,50,Path1,patient_assessment,,,,2002-08-18T00:14:00
+11.18.41,523,50,Path1,test_request,,,,2002-08-18T00:14:00
+11.18.41,524,50,Path1,Specimen_check,,,,2002-08-18T00:14:00
+11.18.41,525,50,Path1,specimen_ready_for_test,,Delay Until - ,2002-08-18 00:17:00,2002-08-18T00:14:00
+11.18.41,526,50,Path1,lab_test,,,,2002-08-18T00:17:00
+11.18.41,527,50,Path1,test_report,,,,2002-08-18T00:17:00
+11.18.41,528,50,Path1,send_report,,,,2002-08-18T00:17:00
+11.18.41,529,50,Path1,receive_report,,,,2002-08-18T00:17:00
+11.18.41,530,50,Path1,GP_checks_report,,Delay Until - ,2002-08-18 17:17:00,2002-08-18T00:17:00
+11.18.41,531,50,Path1,inform_patient,,,,2002-08-18T17:17:00
+11.18.41,532,50,Path1,Finish,,,,2002-08-18T17:17:00
+11.18.41,533,40,Path1,Start,,,,2007-06-29T00:00:00
+11.18.41,533,40,Path1,Start,,NhsNumber,7832003812,2007-06-29T00:00:00
+11.18.41,534,40,Path1,Initial_patient_GP_Visit,,Delay Until - ,2007-06-29 00:50:00,2007-06-29T00:00:00
+11.18.41,535,40,Path1,patient_assessment,,,,2007-06-29T00:50:00
+11.18.41,536,40,Path1,test_request,,,,2007-06-29T00:50:00
+11.18.41,537,40,Path1,Specimen_check,,,,2007-06-29T00:50:00
+11.18.41,538,40,Path1,specimen_ready_for_test,,Delay Until - ,2007-06-29 00:58:00,2007-06-29T00:50:00
+11.18.41,539,40,Path1,lab_test,,,,2007-06-29T00:58:00
+11.18.41,540,40,Path1,test_report,,,,2007-06-29T00:58:00
+11.18.41,541,40,Path1,send_report,,,,2007-06-29T00:58:00
+11.18.41,542,40,Path1,receive_report,,,,2007-06-29T00:58:00
+11.18.41,543,40,Path1,GP_checks_report,,Delay Until - ,2007-06-29 16:58:00,2007-06-29T00:58:00
+11.18.41,544,40,Path1,inform_patient,,,,2007-06-29T16:58:00
+11.18.41,545,40,Path1,Finish,,,,2007-06-29T16:58:00
+11.18.41,546,25,Path1,Start,,,,2008-03-13T00:00:00
+11.18.41,546,25,Path1,Start,,NhsNumber,7832003812,2008-03-13T00:00:00
+11.18.41,547,25,Path1,Initial_patient_GP_Visit,,Delay Until - ,2008-03-13 00:12:00,2008-03-13T00:00:00
+11.18.41,548,25,Path1,patient_assessment,,,,2008-03-13T00:12:00
+11.18.41,548,25,Path1,patient_assessment,,PatientRcorded,TRUE,2008-03-13T00:12:00
+11.18.41,549,25,Path1,test_request,,,,2008-03-13T00:12:00
+11.18.41,549,25,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2008-03-13T00:12:00
+11.18.41,549,25,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2008-03-13T00:12:00
+11.18.41,549,25,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2008-03-13T00:12:00
+11.18.41,550,25,Path1,Specimen_check,,,,2008-03-13T00:12:00
+11.18.41,550,25,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2008-03-13T00:12:00
+11.18.41,550,25,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2008-03-13T00:12:00
+11.18.41,550,25,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2008-03-13T00:12:00
+11.18.42,550,25,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2008-03-13T00:12:00
+11.18.42,551,25,Path1,specimen_ready_for_test,,Delay Until - ,2008-03-13 00:20:00,2008-03-13T00:12:00
+11.18.42,552,25,Path1,lab_test,,,,2008-03-13T00:20:00
+11.18.42,552,25,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2008-03-13T00:20:00
+11.18.42,552,25,Path1,lab_test,,obs,"OrderedDict([('id', '25'), ('code', '1106511000000100'), ('DisplayName', 'Chloride substance concentration in serum'), ('value', '107'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",2008-03-13T00:20:00
+11.18.42,553,25,Path1,test_report,,,,2008-03-13T00:20:00
+11.18.42,554,25,Path1,send_report,,,,2008-03-13T00:20:00
+11.18.42,554,25,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2008-03-13T00:20:00
+11.18.45,554,25,Path1,send_report,,BundleSent,TRUE,2008-03-13T00:20:00
+11.18.45,555,25,Path1,receive_report,,,,2008-03-13T00:20:00
+11.18.45,556,25,Path1,GP_checks_report,,Delay Until - ,2008-03-13 18:20:00,2008-03-13T00:20:00
+11.18.45,557,25,Path1,inform_patient,,,,2008-03-13T18:20:00
+11.18.45,557,25,Path1,inform_patient,,listing_provided,TRUE,2008-03-13T18:20:00
+11.18.45,557,25,Path1,inform_patient,,json_provided,TRUE,2008-03-13T18:20:00
+11.18.45,558,25,Path1,Finish,,,,2008-03-13T18:20:00
+11.18.45,559,33,Path1,Start,,,,2009-12-26T00:00:00
+11.18.45,559,33,Path1,Start,,NhsNumber,7832003812,2009-12-26T00:00:00
+11.18.45,560,33,Path1,Initial_patient_GP_Visit,,Delay Until - ,2009-12-26 00:17:00,2009-12-26T00:00:00
+11.18.45,561,33,Path1,patient_assessment,,,,2009-12-26T00:17:00
+11.18.45,561,33,Path1,patient_assessment,,PatientRcorded,TRUE,2009-12-26T00:17:00
+11.18.45,562,33,Path1,test_request,,,,2009-12-26T00:17:00
+11.18.45,562,33,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2009-12-26T00:17:00
+11.18.45,562,33,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2009-12-26T00:17:00
+11.18.45,562,33,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2009-12-26T00:17:00
+11.18.45,563,33,Path1,Specimen_check,,,,2009-12-26T00:17:00
+11.18.45,563,33,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2009-12-26T00:17:00
+11.18.45,563,33,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2009-12-26T00:17:00
+11.18.45,563,33,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2009-12-26T00:17:00
+11.18.45,563,33,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2009-12-26T00:17:00
+11.18.45,564,33,Path1,specimen_ready_for_test,,Delay Until - ,2009-12-26 00:19:00,2009-12-26T00:17:00
+11.18.45,565,33,Path1,lab_test,,,,2009-12-26T00:19:00
+11.18.45,565,33,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2009-12-26T00:19:00
+11.18.45,565,33,Path1,lab_test,,obs,"OrderedDict([('id', '33'), ('code', '1107481000000100'), ('DisplayName', 'HbA1c (haemoglobin A1c) substance concentration in blood'), ('value', '76'), ('unit', 'mmol/mol'), ('unit_code', 'mmol/mol'), ('system', 'http://unitsofmeasure.org')])",2009-12-26T00:19:00
+11.18.45,566,33,Path1,test_report,,,,2009-12-26T00:19:00
+11.18.45,567,33,Path1,send_report,,,,2009-12-26T00:19:00
+11.18.45,567,33,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2009-12-26T00:19:00
+11.18.48,567,33,Path1,send_report,,BundleSent,TRUE,2009-12-26T00:19:00
+11.18.48,568,33,Path1,receive_report,,,,2009-12-26T00:19:00
+11.18.48,569,33,Path1,GP_checks_report,,Delay Until - ,2009-12-26 21:19:00,2009-12-26T00:19:00
+11.18.48,570,33,Path1,inform_patient,,,,2009-12-26T21:19:00
+11.18.48,570,33,Path1,inform_patient,,listing_provided,TRUE,2009-12-26T21:19:00
+11.18.48,570,33,Path1,inform_patient,,json_provided,TRUE,2009-12-26T21:19:00
+11.18.48,571,33,Path1,Finish,,,,2009-12-26T21:19:00
+11.18.48,572,45,Path1,Start,,,,2010-06-12T00:00:00
+11.18.48,572,45,Path1,Start,,NhsNumber,7832003812,2010-06-12T00:00:00
+11.18.48,573,45,Path1,Initial_patient_GP_Visit,,Delay Until - ,2010-06-12 00:34:00,2010-06-12T00:00:00
+11.18.48,574,45,Path1,patient_assessment,,,,2010-06-12T00:34:00
+11.18.48,575,45,Path1,test_request,,,,2010-06-12T00:34:00
+11.18.48,576,45,Path1,Specimen_check,,,,2010-06-12T00:34:00
+11.18.48,577,45,Path1,specimen_ready_for_test,,Delay Until - ,2010-06-12 00:48:00,2010-06-12T00:34:00
+11.18.48,578,45,Path1,lab_test,,,,2010-06-12T00:48:00
+11.18.48,579,45,Path1,test_report,,,,2010-06-12T00:48:00
+11.18.48,580,45,Path1,send_report,,,,2010-06-12T00:48:00
+11.18.48,581,45,Path1,receive_report,,,,2010-06-12T00:48:00
+11.18.48,582,45,Path1,GP_checks_report,,Delay Until - ,2010-06-12 19:48:00,2010-06-12T00:48:00
+11.18.48,583,45,Path1,inform_patient,,,,2010-06-12T19:48:00
+11.18.48,584,45,Path1,Finish,,,,2010-06-12T19:48:00
+11.18.48,585,36,Path1,Start,,,,2012-04-03T00:00:00
+11.18.48,585,36,Path1,Start,,NhsNumber,7832003812,2012-04-03T00:00:00
+11.18.48,586,36,Path1,Initial_patient_GP_Visit,,Delay Until - ,2012-04-03 00:25:00,2012-04-03T00:00:00
+11.18.48,587,36,Path1,patient_assessment,,,,2012-04-03T00:25:00
+11.18.48,587,36,Path1,patient_assessment,,PatientRcorded,TRUE,2012-04-03T00:25:00
+11.18.48,588,36,Path1,test_request,,,,2012-04-03T00:25:00
+11.18.48,588,36,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2012-04-03T00:25:00
+11.18.48,588,36,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2012-04-03T00:25:00
+11.18.49,588,36,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2012-04-03T00:25:00
+11.18.49,589,36,Path1,Specimen_check,,,,2012-04-03T00:25:00
+11.18.49,589,36,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2012-04-03T00:25:00
+11.18.49,589,36,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2012-04-03T00:25:00
+11.18.49,589,36,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2012-04-03T00:25:00
+11.18.49,589,36,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2012-04-03T00:25:00
+11.18.49,590,36,Path1,specimen_ready_for_test,,Delay Until - ,2012-04-03 00:27:00,2012-04-03T00:25:00
+11.18.49,591,36,Path1,lab_test,,,,2012-04-03T00:27:00
+11.18.49,591,36,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2012-04-03T00:27:00
+11.18.49,591,36,Path1,lab_test,,obs,"OrderedDict([('id', '36'), ('code', '1109401000000100'), ('DisplayName', 'Free T4 (thyroxine) mass concentration in serum'), ('value', '19.0'), ('unit', 'pmol/L'), ('unit_code', 'pmol/L'), ('system', 'http://unitsofmeasure.org')])",2012-04-03T00:27:00
+11.18.49,592,36,Path1,test_report,,,,2012-04-03T00:27:00
+11.18.49,593,36,Path1,send_report,,,,2012-04-03T00:27:00
+11.18.49,593,36,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2012-04-03T00:27:00
+11.18.52,593,36,Path1,send_report,,BundleSent,TRUE,2012-04-03T00:27:00
+11.18.52,594,36,Path1,receive_report,,,,2012-04-03T00:27:00
+11.18.52,595,36,Path1,GP_checks_report,,Delay Until - ,2012-04-03 22:27:00,2012-04-03T00:27:00
+11.18.52,596,36,Path1,inform_patient,,,,2012-04-03T22:27:00
+11.18.52,596,36,Path1,inform_patient,,listing_provided,TRUE,2012-04-03T22:27:00
+11.18.52,596,36,Path1,inform_patient,,json_provided,TRUE,2012-04-03T22:27:00
+11.18.52,597,36,Path1,Finish,,,,2012-04-03T22:27:00
+11.18.52,598,5,Path1,Start,,,,2013-10-18T00:00:00
+11.18.52,598,5,Path1,Start,,NhsNumber,7832003812,2013-10-18T00:00:00
+11.18.52,599,5,Path1,Initial_patient_GP_Visit,,Delay Until - ,2013-10-18 00:37:00,2013-10-18T00:00:00
+11.18.52,600,5,Path1,patient_assessment,,,,2013-10-18T00:37:00
+11.18.52,600,5,Path1,patient_assessment,,PatientRcorded,TRUE,2013-10-18T00:37:00
+11.18.52,601,5,Path1,test_request,,,,2013-10-18T00:37:00
+11.18.52,601,5,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2013-10-18T00:37:00
+11.18.52,601,5,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2013-10-18T00:37:00
+11.18.52,601,5,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2013-10-18T00:37:00
+11.18.52,602,5,Path1,Specimen_check,,,,2013-10-18T00:37:00
+11.18.52,602,5,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2013-10-18T00:37:00
+11.18.52,602,5,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2013-10-18T00:37:00
+11.18.52,602,5,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2013-10-18T00:37:00
+11.18.52,602,5,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2013-10-18T00:37:00
+11.18.52,603,5,Path1,specimen_ready_for_test,,Delay Until - ,2013-10-18 00:48:00,2013-10-18T00:37:00
+11.18.52,604,5,Path1,lab_test,,,,2013-10-18T00:48:00
+11.18.52,604,5,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2013-10-18T00:48:00
+11.18.52,604,5,Path1,lab_test,,obs,"OrderedDict([('id', '5'), ('code', '1106511000000100'), ('DisplayName', 'Chloride substance concentration in serum'), ('value', '105'), ('unit', 'mmol/L'), ('unit_code', 'mmol/L'), ('system', 'http://unitsofmeasure.org')])",2013-10-18T00:48:00
+11.18.52,605,5,Path1,test_report,,,,2013-10-18T00:48:00
+11.18.52,606,5,Path1,send_report,,,,2013-10-18T00:48:00
+11.18.53,606,5,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2013-10-18T00:48:00
+11.18.55,606,5,Path1,send_report,,BundleSent,TRUE,2013-10-18T00:48:00
+11.18.55,607,5,Path1,receive_report,,,,2013-10-18T00:48:00
+11.18.55,608,5,Path1,GP_checks_report,,Delay Until - ,2013-10-18 01:48:00,2013-10-18T00:48:00
+11.18.55,609,5,Path1,inform_patient,,,,2013-10-18T01:48:00
+11.18.55,609,5,Path1,inform_patient,,listing_provided,TRUE,2013-10-18T01:48:00
+11.18.55,609,5,Path1,inform_patient,,json_provided,TRUE,2013-10-18T01:48:00
+11.18.55,610,5,Path1,Finish,,,,2013-10-18T01:48:00
+11.18.55,611,10,Path1,Start,,,,2014-10-24T00:00:00
+11.18.55,611,10,Path1,Start,,NhsNumber,7832003812,2014-10-24T00:00:00
+11.18.56,612,10,Path1,Initial_patient_GP_Visit,,Delay Until - ,2014-10-24 00:37:00,2014-10-24T00:00:00
+11.18.56,613,10,Path1,patient_assessment,,,,2014-10-24T00:37:00
+11.18.56,613,10,Path1,patient_assessment,,PatientRcorded,TRUE,2014-10-24T00:37:00
+11.18.56,614,10,Path1,test_request,,,,2014-10-24T00:37:00
+11.18.56,614,10,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2014-10-24T00:37:00
+11.18.56,614,10,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2014-10-24T00:37:00
+11.18.56,614,10,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2014-10-24T00:37:00
+11.18.56,615,10,Path1,Specimen_check,,,,2014-10-24T00:37:00
+11.18.56,615,10,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2014-10-24T00:37:00
+11.18.56,615,10,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2014-10-24T00:37:00
+11.18.56,615,10,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2014-10-24T00:37:00
+11.18.56,615,10,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2014-10-24T00:37:00
+11.18.56,616,10,Path1,specimen_ready_for_test,,Delay Until - ,2014-10-24 00:41:00,2014-10-24T00:37:00
+11.18.56,617,10,Path1,lab_test,,,,2014-10-24T00:41:00
+11.18.56,617,10,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2014-10-24T00:41:00
+11.18.56,617,10,Path1,lab_test,,obs,"OrderedDict([('id', '10'), ('code', '1107511000000100'), ('DisplayName', 'Haemoglobin mass concentration in blood'), ('value', '134'), ('unit', 'g/L'), ('unit_code', 'g/L'), ('system', 'http://unitsofmeasure.org')])",2014-10-24T00:41:00
+11.18.56,618,10,Path1,test_report,,,,2014-10-24T00:41:00
+11.18.56,619,10,Path1,send_report,,,,2014-10-24T00:41:00
+11.18.56,619,10,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2014-10-24T00:41:00
+11.18.59,619,10,Path1,send_report,,BundleSent,TRUE,2014-10-24T00:41:00
+11.18.59,620,10,Path1,receive_report,,,,2014-10-24T00:41:00
+11.18.59,621,10,Path1,GP_checks_report,,Delay Until - ,2014-10-24 20:41:00,2014-10-24T00:41:00
+11.18.59,622,10,Path1,inform_patient,,,,2014-10-24T20:41:00
+11.18.59,622,10,Path1,inform_patient,,listing_provided,TRUE,2014-10-24T20:41:00
+11.18.59,622,10,Path1,inform_patient,,json_provided,TRUE,2014-10-24T20:41:00
+11.18.59,623,10,Path1,Finish,,,,2014-10-24T20:41:00
+11.18.59,624,8,Path1,Start,,,,2017-11-09T00:00:00
+11.18.59,624,8,Path1,Start,,NhsNumber,7832003812,2017-11-09T00:00:00
+11.18.59,625,8,Path1,Initial_patient_GP_Visit,,Delay Until - ,2017-11-09 00:18:00,2017-11-09T00:00:00
+11.18.59,626,8,Path1,patient_assessment,,,,2017-11-09T00:18:00
+11.18.59,626,8,Path1,patient_assessment,,PatientRcorded,TRUE,2017-11-09T00:18:00
+11.18.59,627,8,Path1,test_request,,,,2017-11-09T00:18:00
+11.18.59,627,8,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2017-11-09T00:18:00
+11.18.59,627,8,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2017-11-09T00:18:00
+11.18.59,627,8,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2017-11-09T00:18:00
+11.18.59,628,8,Path1,Specimen_check,,,,2017-11-09T00:18:00
+11.18.59,628,8,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2017-11-09T00:18:00
+11.18.59,628,8,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2017-11-09T00:18:00
+11.18.59,628,8,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2017-11-09T00:18:00
+11.18.59,628,8,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2017-11-09T00:18:00
+11.19.00,629,8,Path1,specimen_ready_for_test,,Delay Until - ,2017-11-09 00:37:00,2017-11-09T00:18:00
+11.19.00,630,8,Path1,lab_test,,,,2017-11-09T00:37:00
+11.19.00,630,8,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2017-11-09T00:37:00
+11.19.00,630,8,Path1,lab_test,,obs,"OrderedDict([('id', '8'), ('code', '15331000237104'), ('DisplayName', 'Bilirubin total molar concentration in serum'), ('value', '325'), ('unit', 'umol/L'), ('unit_code', 'umol/L'), ('system', 'http://unitsofmeasure.org')])",2017-11-09T00:37:00
+11.19.00,631,8,Path1,test_report,,,,2017-11-09T00:37:00
+11.19.00,632,8,Path1,send_report,,,,2017-11-09T00:37:00
+11.19.00,632,8,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2017-11-09T00:37:00
+11.19.03,632,8,Path1,send_report,,BundleSent,TRUE,2017-11-09T00:37:00
+11.19.03,633,8,Path1,receive_report,,,,2017-11-09T00:37:00
+11.19.03,634,8,Path1,GP_checks_report,,Delay Until - ,2017-11-09 23:37:00,2017-11-09T00:37:00
+11.19.03,635,8,Path1,inform_patient,,,,2017-11-09T23:37:00
+11.19.03,635,8,Path1,inform_patient,,listing_provided,TRUE,2017-11-09T23:37:00
+11.19.03,635,8,Path1,inform_patient,,json_provided,TRUE,2017-11-09T23:37:00
+11.19.03,636,8,Path1,Finish,,,,2017-11-09T23:37:00
+11.19.03,637,16,Path1,Start,,,,2018-07-03T00:00:00
+11.19.03,637,16,Path1,Start,,NhsNumber,7832003812,2018-07-03T00:00:00
+11.19.03,638,16,Path1,Initial_patient_GP_Visit,,Delay Until - ,2018-07-03 00:45:00,2018-07-03T00:00:00
+11.19.03,639,16,Path1,patient_assessment,,,,2018-07-03T00:45:00
+11.19.03,639,16,Path1,patient_assessment,,PatientRcorded,TRUE,2018-07-03T00:45:00
+11.19.03,640,16,Path1,test_request,,,,2018-07-03T00:45:00
+11.19.03,640,16,Path1,test_request,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2018-07-03T00:45:00
+11.19.03,640,16,Path1,test_request,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2018-07-03T00:45:00
+11.19.03,640,16,Path1,test_request,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2018-07-03T00:45:00
+11.19.03,641,16,Path1,Specimen_check,,,,2018-07-03T00:45:00
+11.19.03,641,16,Path1,Specimen_check,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2018-07-03T00:45:00
+11.19.03,641,16,Path1,Specimen_check,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2018-07-03T00:45:00
+11.19.03,641,16,Path1,Specimen_check,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2018-07-03T00:45:00
+11.19.03,641,16,Path1,Specimen_check,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2018-07-03T00:45:00
+11.19.03,642,16,Path1,specimen_ready_for_test,,Delay Until - ,2018-07-03 00:51:00,2018-07-03T00:45:00
+11.19.03,643,16,Path1,lab_test,,,,2018-07-03T00:51:00
+11.19.03,643,16,Path1,lab_test,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2018-07-03T00:51:00
+11.19.03,643,16,Path1,lab_test,,obs,"OrderedDict([('id', '16'), ('code', '1108071000000100'), ('DisplayName', 'Neutrophil count in blood'), ('value', '4.02'), ('unit', '10^9/L'), ('unit_code', '10*9/L'), ('system', 'http://unitsofmeasure.org')])",2018-07-03T00:51:00
+11.19.03,644,16,Path1,test_report,,,,2018-07-03T00:51:00
+11.19.03,645,16,Path1,send_report,,,,2018-07-03T00:51:00
+11.19.03,645,16,Path1,send_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2018-07-03T00:51:00
+11.19.06,645,16,Path1,send_report,,BundleSent,TRUE,2018-07-03T00:51:00
+11.19.06,646,16,Path1,receive_report,,,,2018-07-03T00:51:00
+11.19.06,647,16,Path1,GP_checks_report,,Delay Until - ,2018-07-03 23:51:00,2018-07-03T00:51:00
+11.19.06,648,16,Path1,inform_patient,,,,2018-07-03T23:51:00
+11.19.06,648,16,Path1,inform_patient,,listing_provided,TRUE,2018-07-03T23:51:00
+11.19.06,648,16,Path1,inform_patient,,json_provided,TRUE,2018-07-03T23:51:00
+11.19.06,649,16,Path1,Finish,,,,2018-07-03T23:51:00
+11.19.06,650,48,Path1,Start,,,,2018-07-22T00:00:00
+11.19.06,650,48,Path1,Start,,NhsNumber,7832003812,2018-07-22T00:00:00
+11.19.06,651,48,Path1,Initial_patient_GP_Visit,,Delay Until - ,2018-07-22 00:49:00,2018-07-22T00:00:00
+11.19.06,652,48,Path1,patient_assessment,,,,2018-07-22T00:49:00
+11.19.06,653,48,Path1,test_request,,,,2018-07-22T00:49:00
+11.19.06,654,48,Path1,Specimen_check,,,,2018-07-22T00:49:00
+11.19.06,655,48,Path1,specimen_ready_for_test,,Delay Until - ,2018-07-22 01:02:00,2018-07-22T00:49:00
+11.19.06,656,48,Path1,lab_test,,,,2018-07-22T01:02:00
+11.19.06,657,48,Path1,test_report,,,,2018-07-22T01:02:00
+11.19.06,658,48,Path1,send_report,,,,2018-07-22T01:02:00
+11.19.06,659,48,Path1,receive_report,,,,2018-07-22T01:02:00
+11.19.06,660,48,Path1,GP_checks_report,,Delay Until - ,2018-07-22 15:02:00,2018-07-22T01:02:00
+11.19.06,661,48,Path1,inform_patient,,,,2018-07-22T15:02:00
+11.19.06,662,48,Path1,Finish,,,,2018-07-22T15:02:00

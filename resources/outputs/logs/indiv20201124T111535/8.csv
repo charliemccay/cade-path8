@@ -1,0 +1,29 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+624,Path1,Initial_patient_GP_Visit,,,,2017-11-09T00:00:00
+624,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,2017-11-09T00:00:00
+625,Path1,patient_assessment,,,,2017-11-09T00:00:00
+626,Path1,test_request,,,,2017-11-09T00:18:00
+626,Path1,test_request,,PatientRcorded,TRUE,2017-11-09T00:18:00
+627,Path1,Specimen_check,,,,2017-11-09T00:18:00
+627,Path1,Specimen_check,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",2017-11-09T00:18:00
+627,Path1,Specimen_check,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",2017-11-09T00:18:00
+627,Path1,Specimen_check,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2017-11-09T00:18:00
+628,Path1,specimen_ready_for_test,,,,2017-11-09T00:18:00
+628,Path1,specimen_ready_for_test,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",2017-11-09T00:18:00
+628,Path1,specimen_ready_for_test,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2017-11-09T00:18:00
+628,Path1,specimen_ready_for_test,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",2017-11-09T00:18:00
+628,Path1,specimen_ready_for_test,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",2017-11-09T00:18:00
+629,Path1,lab_test,,,,2017-11-09T00:18:00
+630,Path1,test_report,,,,2017-11-09T00:37:00
+630,Path1,test_report,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",2017-11-09T00:37:00
+630,Path1,test_report,,obs,"OrderedDict([('id', '8'), ('code', '15331000237104'), ('DisplayName', 'Bilirubin total molar concentration in serum'), ('value', '325'), ('unit', 'umol/L'), ('unit_code', 'umol/L'), ('system', 'http://unitsofmeasure.org')])",2017-11-09T00:37:00
+631,Path1,send_report,,,,2017-11-09T00:37:00
+632,Path1,receive_report,,,,2017-11-09T00:37:00
+632,Path1,receive_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",2017-11-09T00:37:00
+632,Path1,receive_report,,BundleSent,TRUE,2017-11-09T00:37:00
+633,Path1,GP_checks_report,,,,2017-11-09T00:37:00
+634,Path1,inform_patient,,,,2017-11-09T00:37:00
+635,Path1,Finish,,,,2017-11-09T23:37:00
+635,Path1,Finish,,listing_provided,TRUE,2017-11-09T23:37:00
+635,Path1,Finish,,json_provided,TRUE,2017-11-09T23:37:00
+636,Path1,Finish,,,,2017-11-09T23:37:00

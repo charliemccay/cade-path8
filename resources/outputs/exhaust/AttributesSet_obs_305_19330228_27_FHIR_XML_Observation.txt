@@ -1,0 +1,71 @@
+<Observation>
+    <id value="4fdc8a19-9fb4-4909-bbf7-dab61db1f8c9"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="4fdc8a19-9fb4-4909-bbf7-dab61db1f8c9"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1107411000000100"/>
+            <display value="Estimated glomerular filtration rate by laboratory calculation"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5a3d236b-42d0-4863-9511-09567e05c3c9"/>
+
+        <display value="Frost, Connor"/>
+    </subject>
+    <effectiveDateTime value="1976-06-04T01:02:00Z"/>
+    <performer>
+        <reference value="Organization/f8592ebf-3b0b-40cb-a306-4643adccee48"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="90"/>
+        <unit value="mL/min/1.73m2 as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="ml/min/{1.73_m2}"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/cd49abd6-7efe-4ff9-ab95-eb091e9ae4a0"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/4fdc8a19-9fb4-4909-bbf7-dab61db1f8c9
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/4fdc8a19-9fb4-4909-bbf7-dab61db1f8c9/_history/1&quot; in 10ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/4fdc8a19-9fb4-4909-bbf7-dab61db1f8c9/_history/1&quot; in 10ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,6 +1,38 @@
 id,code,DisplayName,value,unit,unit_code,system
 1,1000381000000105,Se prostate specific Ag level,72,ug/L,ug/L,http://unitsofmeasure.org
-2,1000381000000105,Se prostate specific Ag level,73,ug/L,ug/L,http://unitsofmeasure.org
-3,1000381000000105,Se prostate specific Ag level,74,ug/L,ug/L,http://unitsofmeasure.org
-4,1000381000000105,Se prostate specific Ag level,75,ug/L,ug/L,http://unitsofmeasure.org
-5,1000381000000105,Se prostate specific Ag level,76,ug/L,ug/L,http://unitsofmeasure.org
+2,1107811000000100,Prostate specific antigen mass concentration in serum,5.9,ug/L,ug/L,http://unitsofmeasure.org
+3,1107871000000100,Sodium substance concentration in serum,142,mmol/L,mmol/L,http://unitsofmeasure.org
+4,1107761000000100,Potassium substance concentration in serum,4.8,mmol/L,mmol/L,http://unitsofmeasure.org
+5,1106511000000100,Chloride substance concentration in serum,105,mmol/L,mmol/L,http://unitsofmeasure.org
+6,1107001000000100,Creatinine substance concentration in serum,64,umol/L,umol/L,http://unitsofmeasure.org
+7,1107411000000100,Estimated glomerular filtration rate by laboratory calculation,87,mL/min/1.73m2,mL/min/{1.73_m2},http://unitsofmeasure.org
+8,15331000237104,Bilirubin total molar concentration in serum,325,umol/L,umol/L,http://unitsofmeasure.org
+9,1106561000000100,Conjugated bilirubin substance concentration in serum,14,umol/L,umol/L,http://unitsofmeasure.org
+10,1107511000000100,Haemoglobin mass concentration in blood,134,g/L,g/L,http://unitsofmeasure.org
+11,1110441000000100,White blood cell count in blood,6.1,10^9/L,10*9/L,http://unitsofmeasure.org
+12,1108041000000100,Platelet count in blood,143,10^9/L,10*p/L,http://unitsofmeasure.org
+13,1111571000000100,Haematocrit volume fraction of blood,0.372,ratio,{ratio},http://unitsofmeasure.org
+14,1022451000000100,Red blood cell count,4.23,10^9/L,10*9/L,http://unitsofmeasure.org
+15,1022471000000100,MCH - Mean corpuscular haemoglobin,31.7,pg,pg,http://unitsofmeasure.org
+16,1108071000000100,Neutrophil count in blood,4.02,10^9/L,10*9/L,http://unitsofmeasure.org
+17,67541000237108,Lymphocyte count in blood,1.45,10^9/L,10*9/L,http://unitsofmeasure.org
+18,1107991000000100,Monocyte count in blood,0.56,10^9/L,10*9/L,http://unitsofmeasure.org
+19,1107391000000100,Eosinophil count in blood,0.06,10^9/L,10*9/L,http://unitsofmeasure.org
+20,1106091000000100,Basophil count in blood,0.03,10^9/L,10*9/L,http://unitsofmeasure.org
+21,993501000000105,Red blood cell distribution width,14,%,%,http://unitsofmeasure.org
+22,993481000000101,Mean platelet volume,13.0,fL,fL,http://unitsofmeasure.org
+23,1107871000000100,Sodium substance concentration in serum,143,mmol/L,mmol/L,http://unitsofmeasure.org
+24,1107761000000100,Potassium substance concentration in serum,4.5,mmol/L,mmol/L,http://unitsofmeasure.org
+25,1106511000000100,Chloride substance concentration in serum,107,mmol/L,mmol/L,http://unitsofmeasure.org
+26,1107001000000100,Creatinine substance concentration in serum,58,umol/L,umol/L,http://unitsofmeasure.org
+27,1107411000000100,Estimated glomerular filtration rate by laboratory calculation,90,mL/min/1.73m2,ml/min/{1.73_m2},http://unitsofmeasure.org
+28,1106541000000100,Cholesterol substance concentration in serum,7.7,mmol/L,mmol/L,http://unitsofmeasure.org
+29,1109831000000100,Triglyceride substance concentration in serum,6.9,mmol/L,mmol/L,http://unitsofmeasure.org
+30,1107681000000100,HDL (high density lipoprotein) cholesterol substance concentration in serum,0.8,mmol/L,mmol/L,http://unitsofmeasure.org
+31,1107741000000100,HDL (high density lipoprotein) cholesterol/total cholesterol ratio in serum,9.6,ratio,{ratio},http://unitsofmeasure.org
+32,12021000237106,Non-HDL (high density lipoprotein) cholesterol molar concentration in serum,6.9,mmol/L,mmol/L,http://unitsofmeasure.org
+33,1107481000000100,HbA1c (haemoglobin A1c) substance concentration in blood,76,mmol/mol,mmol/mol,http://unitsofmeasure.org
+34,1107011000000100,Creatinine substance concentration in urine,4.2,mmol/L,mmol/L,http://unitsofmeasure.org
+35,1109411000000100,TSH (thyroid stimulating hormone) arbitrary concentration in plasma,0.10,mU/L,mU/L,http://unitsofmeasure.org
+36,1109401000000100,Free T4 (thyroxine) mass concentration in serum,19.0,pmol/L,pmol/L,http://unitsofmeasure.org
+37,1109481000000100,Free T3 (triiodothyronine) mass concentration in serum,3.6,pmol/L,pmol/L,http://unitsofmeasure.org

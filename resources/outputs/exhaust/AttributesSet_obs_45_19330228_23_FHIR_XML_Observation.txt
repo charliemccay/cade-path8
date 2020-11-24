@@ -1,0 +1,71 @@
+<Observation>
+    <id value="9d4c7ec8-541f-4ad6-a983-3e6576a67343"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="9d4c7ec8-541f-4ad6-a983-3e6576a67343"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1107871000000100"/>
+            <display value="Sodium substance concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/16b978c6-27f0-48f2-91a8-a8c435ee0d31"/>
+
+        <display value="Little, Robert"/>
+    </subject>
+    <effectiveDateTime value="1938-01-23T00:43:00Z"/>
+    <performer>
+        <reference value="Organization/d495f0e8-e1c3-4a32-a61b-a24cdd02c2b1"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="143"/>
+        <unit value="mmol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/1d28e62b-8380-46ec-8ac1-a86a21d8a51e"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/9d4c7ec8-541f-4ad6-a983-3e6576a67343
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/9d4c7ec8-541f-4ad6-a983-3e6576a67343/_history/1&quot; in 63ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/9d4c7ec8-541f-4ad6-a983-3e6576a67343/_history/1&quot; in 63ms"/>
+   </issue>
+</OperationOutcome>

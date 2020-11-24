@@ -1,0 +1,71 @@
+<Observation>
+    <id value="f8593c1a-778f-4fc1-b9c4-b4da53efae18"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="f8593c1a-778f-4fc1-b9c4-b4da53efae18"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="67541000237108"/>
+            <display value="Lymphocyte count in blood"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/3cdc8447-693b-4f07-8c64-7c5e6c697de6"/>
+
+        <display value="Greenwood, Matilda"/>
+    </subject>
+    <effectiveDateTime value="1978-11-20T00:57:00Z"/>
+    <performer>
+        <reference value="Organization/ec0b7526-d3c8-455a-a35e-024eff8e565b"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="1.45"/>
+        <unit value="10^9/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="10*9/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/1efbf839-d605-4d8d-ad60-6941a45bc9cd"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/f8593c1a-778f-4fc1-b9c4-b4da53efae18
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/f8593c1a-778f-4fc1-b9c4-b4da53efae18/_history/1&quot; in 10ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/f8593c1a-778f-4fc1-b9c4-b4da53efae18/_history/1&quot; in 10ms"/>
+   </issue>
+</OperationOutcome>

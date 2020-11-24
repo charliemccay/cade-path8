@@ -1,0 +1,71 @@
+<Observation>
+    <id value="5ffdd112-f0ee-44bb-8c51-0efed3a9a140"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="5ffdd112-f0ee-44bb-8c51-0efed3a9a140"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1109831000000100"/>
+            <display value="Triglyceride substance concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/190b722b-1ba7-47dc-b255-255abc62693f"/>
+
+        <display value="Davis, Georgina"/>
+    </subject>
+    <effectiveDateTime value="1973-06-15T00:45:00Z"/>
+    <performer>
+        <reference value="Organization/c3066126-8dd5-4c88-bb95-b0d995e4a97f"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="6.9"/>
+        <unit value="mmol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/e46c76bb-33bf-496a-94ba-ac6816a29562"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/5ffdd112-f0ee-44bb-8c51-0efed3a9a140
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/5ffdd112-f0ee-44bb-8c51-0efed3a9a140/_history/1&quot; in 10ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/5ffdd112-f0ee-44bb-8c51-0efed3a9a140/_history/1&quot; in 10ms"/>
+   </issue>
+</OperationOutcome>

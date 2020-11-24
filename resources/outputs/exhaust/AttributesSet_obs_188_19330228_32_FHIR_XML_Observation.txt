@@ -1,0 +1,71 @@
+<Observation>
+    <id value="c695364a-0608-49b5-ac4a-78466141c655"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="c695364a-0608-49b5-ac4a-78466141c655"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="12021000237106"/>
+            <display value="Non-HDL (high density lipoprotein) cholesterol molar concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/f380a0ad-e715-4fde-a363-a8e3d5fb8def"/>
+
+        <display value="Sanderson, Isaac"/>
+    </subject>
+    <effectiveDateTime value="1962-07-22T00:54:00Z"/>
+    <performer>
+        <reference value="Organization/5640e794-04ef-4975-81db-e8ed1ed8a8d2"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="6.9"/>
+        <unit value="mmol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/67fedbbf-bcb3-4abc-b363-562ba36212c4"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/c695364a-0608-49b5-ac4a-78466141c655
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/c695364a-0608-49b5-ac4a-78466141c655/_history/1&quot; in 9ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/c695364a-0608-49b5-ac4a-78466141c655/_history/1&quot; in 9ms"/>
+   </issue>
+</OperationOutcome>

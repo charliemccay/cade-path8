@@ -1,0 +1,29 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+52,Path1,Initial_patient_GP_Visit,,,,1938-07-08T00:00:00
+52,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,1938-07-08T00:00:00
+53,Path1,patient_assessment,,,,1938-07-08T00:00:00
+54,Path1,test_request,,,,1938-07-08T00:13:00
+54,Path1,test_request,,PatientRcorded,TRUE,1938-07-08T00:13:00
+55,Path1,Specimen_check,,,,1938-07-08T00:13:00
+55,Path1,Specimen_check,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1938-07-08T00:13:00
+55,Path1,Specimen_check,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1938-07-08T00:13:00
+55,Path1,Specimen_check,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1938-07-08T00:13:00
+56,Path1,specimen_ready_for_test,,,,1938-07-08T00:13:00
+56,Path1,specimen_ready_for_test,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1938-07-08T00:13:00
+56,Path1,specimen_ready_for_test,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1938-07-08T00:13:00
+56,Path1,specimen_ready_for_test,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1938-07-08T00:13:00
+56,Path1,specimen_ready_for_test,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1938-07-08T00:13:00
+57,Path1,lab_test,,,,1938-07-08T00:13:00
+58,Path1,test_report,,,,1938-07-08T00:31:00
+58,Path1,test_report,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1938-07-08T00:31:00
+58,Path1,test_report,,obs,"OrderedDict([('id', '1'), ('code', '1000381000000105'), ('DisplayName', 'Se prostate specific Ag level'), ('value', '72'), ('unit', 'ug/L'), ('unit_code', 'ug/L'), ('system', 'http://unitsofmeasure.org')])",1938-07-08T00:31:00
+59,Path1,send_report,,,,1938-07-08T00:31:00
+60,Path1,receive_report,,,,1938-07-08T00:31:00
+60,Path1,receive_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1938-07-08T00:31:00
+60,Path1,receive_report,,BundleSent,TRUE,1938-07-08T00:31:00
+61,Path1,GP_checks_report,,,,1938-07-08T00:31:00
+62,Path1,inform_patient,,,,1938-07-08T00:31:00
+63,Path1,Finish,,,,1938-07-08T12:31:00
+63,Path1,Finish,,listing_provided,TRUE,1938-07-08T12:31:00
+63,Path1,Finish,,json_provided,TRUE,1938-07-08T12:31:00
+64,Path1,Finish,,,,1938-07-08T12:31:00

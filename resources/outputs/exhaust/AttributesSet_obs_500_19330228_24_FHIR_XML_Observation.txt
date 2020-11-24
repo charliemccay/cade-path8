@@ -1,0 +1,71 @@
+<Observation>
+    <id value="46482394-3afd-4dd5-b836-8050098453f0"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="46482394-3afd-4dd5-b836-8050098453f0"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1107761000000100"/>
+            <display value="Potassium substance concentration in serum"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/6b90385d-ddac-4f53-a6ff-4c6d3a2d448e"/>
+
+        <display value="O'Brien, Hollie"/>
+    </subject>
+    <effectiveDateTime value="1996-11-02T01:00:00Z"/>
+    <performer>
+        <reference value="Organization/fd6410fd-f902-44ee-b51b-34071fb14377"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="4.5"/>
+        <unit value="mmol/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mmol/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/bc9228bf-8cc5-4a0c-a62c-7e8e7d74b2b1"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/46482394-3afd-4dd5-b836-8050098453f0
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/46482394-3afd-4dd5-b836-8050098453f0/_history/1&quot; in 7ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/46482394-3afd-4dd5-b836-8050098453f0/_history/1&quot; in 7ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,0 +1,51 @@
+<Specimen>
+    <id value="b2d80660-4a3b-4172-a29c-583b356c011f"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="b2d80660-4a3b-4172-a29c-583b356c011f"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/3a4ce09a-93f0-4a0e-9904-ce2a2eb2b027"/>
+
+        <display value="Stevenson, Jack"/>
+    </subject>
+    <receivedTime value="2018-07-03T00:45:00Z"/>
+    <collection>
+        <collectedDateTime value="2018-07-03T00:45:00Z"/>
+    </collection>
+</Specimen>
+http://fhir:8080/baseDstu3/Specimen/b2d80660-4a3b-4172-a29c-583b356c011f
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/b2d80660-4a3b-4172-a29c-583b356c011f/_history/1&quot; in 8ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/b2d80660-4a3b-4172-a29c-583b356c011f/_history/1&quot; in 8ms"/>
+   </issue>
+</OperationOutcome>

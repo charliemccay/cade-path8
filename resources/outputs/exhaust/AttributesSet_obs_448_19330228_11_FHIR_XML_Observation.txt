@@ -1,0 +1,71 @@
+<Observation>
+    <id value="bb7de6cf-8694-49ec-818b-141f3b6d85a2"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="bb7de6cf-8694-49ec-818b-141f3b6d85a2"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1110441000000100"/>
+            <display value="White blood cell count in blood"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/2edb3bc1-7169-44c0-885c-3d4c747ee16e"/>
+
+        <display value="Reeves, Holly"/>
+    </subject>
+    <effectiveDateTime value="1987-05-15T01:03:00Z"/>
+    <performer>
+        <reference value="Organization/a3114ff6-1f68-4253-8121-94a3a3258f74"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="6.1"/>
+        <unit value="10^9/L as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="10*9/L"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/282f50fc-e42a-49bd-a22b-ad6ef17fb69a"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/bb7de6cf-8694-49ec-818b-141f3b6d85a2
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/bb7de6cf-8694-49ec-818b-141f3b6d85a2/_history/1&quot; in 18ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/bb7de6cf-8694-49ec-818b-141f3b6d85a2/_history/1&quot; in 18ms"/>
+   </issue>
+</OperationOutcome>

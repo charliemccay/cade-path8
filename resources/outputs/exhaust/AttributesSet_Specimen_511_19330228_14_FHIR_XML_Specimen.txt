@@ -1,0 +1,51 @@
+<Specimen>
+    <id value="e81e1530-8233-4aed-9e7d-aafb33128201"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="e81e1530-8233-4aed-9e7d-aafb33128201"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/c8b37968-88bc-4b65-9d93-b13d9ebfc39c"/>
+
+        <display value="Harper, Madison"/>
+    </subject>
+    <receivedTime value="1998-03-25T00:31:00Z"/>
+    <collection>
+        <collectedDateTime value="1998-03-25T00:31:00Z"/>
+    </collection>
+</Specimen>
+http://fhir:8080/baseDstu3/Specimen/e81e1530-8233-4aed-9e7d-aafb33128201
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/e81e1530-8233-4aed-9e7d-aafb33128201/_history/1&quot; in 6ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/e81e1530-8233-4aed-9e7d-aafb33128201/_history/1&quot; in 6ms"/>
+   </issue>
+</OperationOutcome>

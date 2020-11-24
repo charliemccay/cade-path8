@@ -1,0 +1,63 @@
+<ProcedureRequest>
+    <id value="ff91882a-a98c-4d0c-ac8a-02cda165aa2d"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="ff91882a-a98c-4d0c-ac8a-02cda165aa2d"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/190b722b-1ba7-47dc-b255-255abc62693f"/>
+
+        <display value="Davis, Georgina"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/4991a57e-4178-4924-9a74-e24857fedfb4"/>
+
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/c3066126-8dd5-4c88-bb95-b0d995e4a97f"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://fhir:8080/baseDstu3/ProcedureRequest/ff91882a-a98c-4d0c-ac8a-02cda165aa2d
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/ff91882a-a98c-4d0c-ac8a-02cda165aa2d/_history/1&quot; in 11ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/ff91882a-a98c-4d0c-ac8a-02cda165aa2d/_history/1&quot; in 11ms"/>
+   </issue>
+</OperationOutcome>

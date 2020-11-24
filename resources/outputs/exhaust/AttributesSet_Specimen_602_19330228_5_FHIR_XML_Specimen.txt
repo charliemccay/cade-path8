@@ -1,0 +1,51 @@
+<Specimen>
+    <id value="6aab9d2e-21d6-4d6a-a3a1-87c148f28c00"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="6aab9d2e-21d6-4d6a-a3a1-87c148f28c00"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/f0c72421-1426-4531-8195-a919643ef36a"/>
+
+        <display value="Ward, Abby"/>
+    </subject>
+    <receivedTime value="2013-10-18T00:37:00Z"/>
+    <collection>
+        <collectedDateTime value="2013-10-18T00:37:00Z"/>
+    </collection>
+</Specimen>
+http://fhir:8080/baseDstu3/Specimen/6aab9d2e-21d6-4d6a-a3a1-87c148f28c00
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/6aab9d2e-21d6-4d6a-a3a1-87c148f28c00/_history/1&quot; in 5ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/6aab9d2e-21d6-4d6a-a3a1-87c148f28c00/_history/1&quot; in 5ms"/>
+   </issue>
+</OperationOutcome>

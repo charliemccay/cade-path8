@@ -1,0 +1,51 @@
+<Specimen>
+    <id value="bc9228bf-8cc5-4a0c-a62c-7e8e7d74b2b1"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="bc9228bf-8cc5-4a0c-a62c-7e8e7d74b2b1"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/6b90385d-ddac-4f53-a6ff-4c6d3a2d448e"/>
+
+        <display value="O'Brien, Hollie"/>
+    </subject>
+    <receivedTime value="1996-11-02T00:33:00Z"/>
+    <collection>
+        <collectedDateTime value="1996-11-02T00:33:00Z"/>
+    </collection>
+</Specimen>
+http://fhir:8080/baseDstu3/Specimen/bc9228bf-8cc5-4a0c-a62c-7e8e7d74b2b1
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/bc9228bf-8cc5-4a0c-a62c-7e8e7d74b2b1/_history/1&quot; in 5ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/bc9228bf-8cc5-4a0c-a62c-7e8e7d74b2b1/_history/1&quot; in 5ms"/>
+   </issue>
+</OperationOutcome>

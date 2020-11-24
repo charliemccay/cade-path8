@@ -1,0 +1,29 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+273,Path1,Initial_patient_GP_Visit,,,,1974-02-07T00:00:00
+273,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,1974-02-07T00:00:00
+274,Path1,patient_assessment,,,,1974-02-07T00:00:00
+275,Path1,test_request,,,,1974-02-07T00:20:00
+275,Path1,test_request,,PatientRcorded,TRUE,1974-02-07T00:20:00
+276,Path1,Specimen_check,,,,1974-02-07T00:20:00
+276,Path1,Specimen_check,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1974-02-07T00:20:00
+276,Path1,Specimen_check,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1974-02-07T00:20:00
+276,Path1,Specimen_check,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1974-02-07T00:20:00
+277,Path1,specimen_ready_for_test,,,,1974-02-07T00:20:00
+277,Path1,specimen_ready_for_test,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1974-02-07T00:20:00
+277,Path1,specimen_ready_for_test,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1974-02-07T00:20:00
+277,Path1,specimen_ready_for_test,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1974-02-07T00:20:00
+277,Path1,specimen_ready_for_test,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1974-02-07T00:20:00
+278,Path1,lab_test,,,,1974-02-07T00:20:00
+279,Path1,test_report,,,,1974-02-07T00:22:00
+279,Path1,test_report,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1974-02-07T00:22:00
+279,Path1,test_report,,obs,"OrderedDict([('id', '9'), ('code', '1106561000000100'), ('DisplayName', 'Conjugated bilirubin substance concentration in serum'), ('value', '14'), ('unit', 'umol/L'), ('unit_code', 'umol/L'), ('system', 'http://unitsofmeasure.org')])",1974-02-07T00:22:00
+280,Path1,send_report,,,,1974-02-07T00:22:00
+281,Path1,receive_report,,,,1974-02-07T00:22:00
+281,Path1,receive_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1974-02-07T00:22:00
+281,Path1,receive_report,,BundleSent,TRUE,1974-02-07T00:22:00
+282,Path1,GP_checks_report,,,,1974-02-07T00:22:00
+283,Path1,inform_patient,,,,1974-02-07T00:22:00
+284,Path1,Finish,,,,1974-02-08T00:22:00
+284,Path1,Finish,,listing_provided,TRUE,1974-02-08T00:22:00
+284,Path1,Finish,,json_provided,TRUE,1974-02-08T00:22:00
+285,Path1,Finish,,,,1974-02-08T00:22:00

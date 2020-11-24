@@ -1,0 +1,71 @@
+<Observation>
+    <id value="f18773f6-dce2-4ac3-b5bc-51dd3a2b90cd"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="f18773f6-dce2-4ac3-b5bc-51dd3a2b90cd"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1022471000000100"/>
+            <display value="MCH - Mean corpuscular haemoglobin"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/a829adad-ad51-4d79-83c3-4592a3028f1b"/>
+
+        <display value="Barlow, Millie"/>
+    </subject>
+    <effectiveDateTime value="1970-04-13T00:50:00Z"/>
+    <performer>
+        <reference value="Organization/cb67a40e-0d2d-4f8f-8955-fddc11c211ca"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="31.7"/>
+        <unit value="pg as text"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="pg"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/895ac140-9b25-47d8-896f-bfdd36a6d0de"/>
+
+    </specimen>
+</Observation>
+http://fhir:8080/baseDstu3/Observation/f18773f6-dce2-4ac3-b5bc-51dd3a2b90cd
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/f18773f6-dce2-4ac3-b5bc-51dd3a2b90cd/_history/1&quot; in 14ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/f18773f6-dce2-4ac3-b5bc-51dd3a2b90cd/_history/1&quot; in 14ms"/>
+   </issue>
+</OperationOutcome>

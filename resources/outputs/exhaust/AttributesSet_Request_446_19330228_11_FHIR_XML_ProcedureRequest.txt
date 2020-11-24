@@ -1,0 +1,63 @@
+<ProcedureRequest>
+    <id value="12f588d9-e6d7-424e-9ba4-080d66040ebe"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="12f588d9-e6d7-424e-9ba4-080d66040ebe"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/2edb3bc1-7169-44c0-885c-3d4c747ee16e"/>
+
+        <display value="Reeves, Holly"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/482e4d92-fac1-4ade-b45d-6f259c0b847c"/>
+
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/a3114ff6-1f68-4253-8121-94a3a3258f74"/>
+
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://fhir:8080/baseDstu3/ProcedureRequest/12f588d9-e6d7-424e-9ba4-080d66040ebe
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/12f588d9-e6d7-424e-9ba4-080d66040ebe/_history/1&quot; in 11ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/12f588d9-e6d7-424e-9ba4-080d66040ebe/_history/1&quot; in 11ms"/>
+   </issue>
+</OperationOutcome>
